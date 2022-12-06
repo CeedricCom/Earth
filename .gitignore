@@ -6,6 +6,8 @@ whitelist.json
 world/
 world_nether/
 world_the_end/
+logs/
 ops.json
 permissions.yml
 libraries/
+.console_history
