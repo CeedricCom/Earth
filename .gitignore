@@ -1,0 +1,11 @@
+banned-players.json
+banned-ips.json
+cache
+usercache.json
+whitelist.json
+world/
+world_nether/
+world_the_end/
+ops.json
+permissions.yml
+libraries/
