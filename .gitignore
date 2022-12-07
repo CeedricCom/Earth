@@ -11,3 +11,5 @@ ops.json
 permissions.yml
 libraries/
 .console_history
+plugins/Towny/data/
+plugins/mcMMO/flatfile/
