@@ -14,6 +14,14 @@ libraries/
 plugins/Towny/data/
 plugins/Towny/backup/
 plugins/Towny/logs/
+plugins/Towny/debtAccountsConverted/
 plugins/mcMMO/flatfile/
 plugins/mcMMO/backup/
-plugins/dynmap
+plugins/dynmap/
+plugins/Essentials/usermap.csv
+plugins/Essentials/userdata/
+plugins/iConomy/minecraft.trace.db
+plugins/iConomy/minecraft.lock.db
+plugins/iConomy/minecraft.h2.db
+plugins/iConomy/VERSION
+abrir.bat
