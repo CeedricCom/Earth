@@ -24,4 +24,5 @@ plugins/iConomy/minecraft.trace.db
 plugins/iConomy/minecraft.lock.db
 plugins/iConomy/minecraft.h2.db
 plugins/iConomy/VERSION
+plugins/LuckPerms/luckperms-h2.mv.db
 abrir.bat
