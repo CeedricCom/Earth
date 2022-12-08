@@ -2,7 +2,7 @@ x-min: -100
 x-max: 100
 z-min: -100
 z-max: 100
-delay-in-seconds: 10
+delay-in-seconds: 600
 commands:
   - "cratereloaded:cr give to %player% supplycrate 1"
 world: world
