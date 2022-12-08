@@ -41,7 +41,7 @@ on-join-unavailable: '&6There are currently no Supply Crates available'
 toggle-on: '&6Coordinates successfully toggled ON'
 toggle-off: '&6Coordinates successfully toggled &4OFF'
 join-message-delay: 20
-menu-name: 'Supply Crate'
-no-permission: 'You do not have permission to do that!'
+menu-name: Supply Crate
+no-permission: You do not have permission to do that!
 incorrect-usage: '&6Usage: /supplydrop <coords/drop/reload>'
 reloaded: '&6Successfully reloaded the configuration!'

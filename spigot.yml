@@ -167,6 +167,8 @@ world-settings:
     seed-mineshaft: default
     seed-stronghold: default
     verbose: false
+  worldeditregentempworld:
+    verbose: false
 config-version: 12
 stats:
   disable-saving: false

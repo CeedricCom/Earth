@@ -24,5 +24,12 @@ plugins/iConomy/minecraft.trace.db
 plugins/iConomy/minecraft.lock.db
 plugins/iConomy/minecraft.h2.db
 plugins/iConomy/VERSION
+plugins/SuperVanish/data.yml
 plugins/LuckPerms/luckperms-h2.mv.db
+plugins/spark/tmp/
+plugins/WorldEdit/sessions/
+plugins/WorldEdit/.archive-unpack
+plugins/WorldEdit/assets
+plugins/CoreProtect/database.db
+plugins/CoreProtect/.license
 abrir.bat
