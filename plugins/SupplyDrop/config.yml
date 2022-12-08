@@ -1,0 +1,47 @@
+world-name: world
+drop-delay: 10
+delay-after-restarts: 2
+items:
+- CHORUS_FRUIT;3
+- ZOMBIE_VILLAGER_EGG;1
+- DIAMOND;32
+- DIAMOND;16
+- DIAMOND;48
+- GUNPOWDER;32
+- GUNPOWDER;64
+- GUNPOWDER;16
+- IRON;16
+- IRON;24
+reward-amount: 5
+command-rewards-on: false
+commands:
+- eco give %player% 10
+- eco give %player% 50
+- eco give %player% 100
+command-amount: 2
+sound: BLOCK_CHEST_OPEN
+x-min: -2500.0
+z-min: -2500.0
+x-max: 2500.0
+z-max: 2500.0
+on-drop: '&6&l A Supply Crate has been dropped at %x%, %y%, %z%'
+on-find: '&6&l%player% has found the Supply Crate!'
+title-on-drop: ''
+subtitle-on-drop: ''
+title-on-found: ''
+subtitle-on-found: ''
+commands-given: '&6You received some extra rewards!'
+title-chest-detected: '&6%x%, %y%, %z%'
+subtitle-chest-detected: ''
+title-chest-undetected: '&6&oNo chest detected'
+subtitle-chest-undetected: ''
+join-message-enabled: true
+on-join-available: '&6There is currently a Supply Crate at &c%x%, %y%, %z%'
+on-join-unavailable: '&6There are currently no Supply Crates available'
+toggle-on: '&6Coordinates successfully toggled ON'
+toggle-off: '&6Coordinates successfully toggled &4OFF'
+join-message-delay: 20
+menu-name: 'Supply Crate'
+no-permission: 'You do not have permission to do that!'
+incorrect-usage: '&6Usage: /supplydrop <coords/drop/reload>'
+reloaded: '&6Successfully reloaded the configuration!'
