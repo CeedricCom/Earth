@@ -1,0 +1,1508 @@
+# +----------------------------------------------------------------------------------------------+
+# |                                                                                              |
+# |                                           Combat Plus                                        |
+# |                                                                                              |
+# |                               Discord: https://discord.gg/m7j2Y9H                            |
+# |                                                                                              |
+# |                                           Author: Nik                                        |
+# |                                                                                              |
+# +----------------------------------------------------------------------------------------------+
+# General plugin settings
+settings:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Would you like to check for updates on startup?
+  check_for_updates: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we disable the bypass permissions?
+  disable_bypass_permissions: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Would you like to receive additional information in-game when an Event gets triggered? (Debug)
+  # This is very useful if you'd like to Report a bug to me via our Discord
+  developer_mode: false
+
+# Custom attack speed properties
+custom_attack_speed:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we modify the player's attack speed?
+  enabled: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The new attack speed
+  # The default value removes the cooldown completely
+  attack_speed: 24
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The base attack speed value, Do not change this
+  # Unless this changes in a newer version of minecraft
+  default_attack_speed: 4
+
+# Damage modifiers properties
+damage_modifiers:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we bring back 1.8 sharpness damage?
+  old_sharpness: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we disable sweep attacks?
+  disable_sweep_attacks: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Custom tool damages properties
+  custom_tool_damages:
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Should we modify damage dealt by tools?
+    enabled: true
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # The tool damage modifiers
+    # The default values replicate 1.8 weapon and tool damages
+    # The value is simply going to add up to the damage dealt
+    # If you'd like to not add or subtract any additional damage simply set the value to zero
+    tools:
+      WOODEN_SWORD: 1
+      STONE_SWORD: 1
+      IRON_SWORD: 1
+      GOLDEN_SWORD: 1
+      DIAMOND_SWORD: 1
+      NETHERITE_SWORD: 1
+      WOODEN_SHOVEL: 0.5
+      STONE_SHOVEL: 0.5
+      IRON_SHOVEL: 0.5
+      GOLDEN_SHOVEL: 0.5
+      DIAMOND_SHOVEL: 0.5
+      NETHERITE_SHOVEL: 0.5
+      WOODEN_AXE: -2
+      STONE_AXE: -2
+      IRON_AXE: -2
+      GOLDEN_AXE: -2
+      DIAMOND_AXE: -2
+      NETHERITE_AXE: -2
+      WOODEN_PICKAXE: 1
+      STONE_PICKAXE: 1
+      IRON_PICKAXE: 1
+      GOLDEN_PICKAXE: 1
+      DIAMOND_PICKAXE: 1
+      NETHERITE_PICKAXE: 1
+      WOODEN_HOE: 0
+      STONE_HOE: 0
+      IRON_HOE: 0
+      GOLDEN_HOE: 0
+      DIAMOND_HOE: 0
+      NETHERITE_HOE: 0
+  
+
+  # Multiply final damage by this
+  multiplier: 1.21
+
+# Would you like to hide the item flags shown on tools indicating their damage and attack speed?
+hide_tool_flags: true
+
+# Would you like to prevent players from boosting themselves by using Arrows?
+disable_arrow_boost: false
+
+# Custom player knockback properties
+custom_player_knockback:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we modify the player's knockback?
+  enabled: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The velocity friction to apply
+  friction: 2.0
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The horizontal knockback to apply
+  horizontal: 0.33
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The extra horizontal knockback to apply
+  extra_horizontal: 0.425
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The vertical knockback to apply
+  vertical: 0.33
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The extra vertical knockback to apply
+  extra_vertical: 0.085
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The vertical velocity limit to apply
+  vertical_limit: 0.4
+
+# Custom player regeneration properties
+custom_player_regeneration:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we modify the player's regeneration?
+  enabled: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The regeneration rate (In seconds)
+  # The default value replicates 1.8 regeneration
+  frequency: 3
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The regeneration amount
+  # The default value replicates 1.8 regeneration
+  amount: 1
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The exchaustion amount
+  # The default value replicates 1.8 regeneration
+  exchaustion: 3
+
+# Sword blocking properties
+sword_blocking:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Would you like players to get a Resistance and a Slowness Effect if they hold Right Click?
+  enabled: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we ignore it if the player is holding a shield on his offhand?
+  ignore_shields: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+  effect: DAMAGE_RESISTANCE
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The duration in ticks (20 ticks = 1 second)
+  duration_ticks: 8
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The effect amplifier
+  amplifier: 0
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The slow duration in ticks (20 ticks = 1 second)
+  slow_duration_ticks: 8
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The slow amplifier
+  slow_amplifier: 2
+
+# Cooldowns properties
+cooldowns:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Golden Apple Cooldown
+  golden_apple:
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Should we enable this?
+    enabled: false
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Cooldown in seconds
+    cooldown: 20
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Should the cooldown get sent in an Actionbar Message?
+    actionbar: true
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Worlds listed below will be ignored from applying the above features
+    disabled_worlds:
+      - example_world
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Enchanted Golden Apple Cooldown
+  enchanted_golden_apple:
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Should we enable this?
+    enabled: false
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Cooldown in seconds
+    cooldown: 20
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Should the cooldown be sent in an Actionbar Message?
+    actionbar: true
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Worlds listed below will be ignored from applying the above features
+    disabled_worlds:
+      - example_world
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Enderpearl Cooldown
+  enderpearl:
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Should we enable this?
+    enabled: true
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Cooldown in seconds
+    cooldown: 30
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Should the cooldown be sent in an Actionbar Message?
+    actionbar: true
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Worlds listed below will be ignored from applying the above features
+    disabled_worlds:
+      - example_world
+
+# Fishing rod knockback properties
+fishing_rod_knockback:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we enable this?
+  enabled: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The knockback damage to be applied
+  damage: 0.01
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we disable the Fishing Rod dragging?
+  cancel_dragging: true
+
+# Would you like to completely disable the use of the player's offhand?
+disable_offhand: false
+
+# Healthbar Properties
+healthbar:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Would you like Combat Plus to send an Actionbar message to the Attacker indicating the Target's Health and Damage Dealt?
+  enabled: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we only show the health bar of players?
+  players_only: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Worlds listed below will be ignored from applying the above features
+  disabled_worlds:
+    - example_world
+
+# CombatLog Properties
+combatlog:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Would you like to enable the Combat Log?
+  enabled: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # How long should players be tagged? (In seconds)
+  cooldown: 30
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should players get tagged when fighting Mobs?
+  mobs: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should players get tagged if they shoot players with projectiles?
+  projectiles: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should Combat Plus send an Actionbar message to the player?
+  actionbar: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should Combat Plus broadcast when a player dies due to logging out when tagged?
+  broadcast: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we disable the tagged player's flight?
+  disable_fly: true
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we prevent tagged players from Teleporting?
+  prevent_teleportations: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we prevent tagged players from Dropping Items?
+  prevent_dropping_items: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we prevent tagged players from Picking Up Items?
+  prevent_picking_items: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Worlds listed below will be ignored from applying the above features
+  disabled_worlds:
+    - example_world
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # CombatLog Command Properties
+  commands:
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Should we prevent tagged players from Using Commands?
+    enabled: true
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    # Commands listed below will not be blocked from tagged players
+    excluded:
+      - /heal
+      - /feed
+
+# Player health properties
+custom_player_health:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # Should we enable this?
+  enabled: false
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The max health that a player should have
+  max_health: 40
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  # The base max health value, Do not change this
+  # Unless this changes in a newer version of minecraft
+  default_max_health: 20

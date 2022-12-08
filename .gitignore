@@ -32,4 +32,5 @@ plugins/WorldEdit/.archive-unpack
 plugins/WorldEdit/assets
 plugins/CoreProtect/database.db
 plugins/CoreProtect/.license
+plugins/CombatLogX/playerdata/
 abrir.bat
