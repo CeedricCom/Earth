@@ -1578,10 +1578,10 @@ economy:
   
   # The daily upkeep to remain neutral, paid by the Nation bank. If unable to pay, neutral/peaceful status is lost.
   # Neutrality will exclude you from a war event, as well as deterring enemies.
-  price_nation_neutrality: '100.0'
+  price_nation_neutrality: '0'
   
   # The daily upkeep to remain neutral, paid by the Town bank. If unable to pay, neutral/peaceful status is lost.
-  price_town_neutrality: '25.0'
+  price_town_neutrality: '0'
   
   new_expand:
   
@@ -1792,7 +1792,7 @@ economy:
     # The debt has a ceiling equal to the estimated value of the town (from new town and claims costs)
     # The debt can be repaid using /t deposit x.
     # Once all debt is repaid, the town immediately returns to a normal state.
-    enabled: 'false'
+    enabled: 'true'
   
     # When using bankruptcy is enabled a Town a debtcap.
     # The debt cap is calculated by adding the following:
@@ -2067,7 +2067,7 @@ town_ruining:
     # In this state, the town cannot be claimed, but can be looted.
     # The feature prevents mayors from escaping attack/occupation, 
     # by deleting then quickly recreating their town.
-    enabled: 'false'
+    enabled: 'true'
   
     # This value determines the maximum duration in which a town can lie in ruins
     # After this time is reached, the town will be completely deleted.
@@ -2076,7 +2076,7 @@ town_ruining:
   
     # This value determines the minimum duration in which a town must lie in ruins,
     # before it can be reclaimed by a resident.
-    min_duration_hours: '4'
+    min_duration_hours: '24'
   
     # If this is true, then after a town has been ruined for the minimum configured time,
     # it can then be reclaimed by any resident who runs /t reclaim, and pays the required price. (price is configured in the eco section)

@@ -88,6 +88,8 @@ towns:
   - towny.outlaw.jailer
   - towny.command.nation.join
   - towny.command.nation.leave
+  - siegewar.town.siege.*
+  - siegewar.command.siegewar.town.*
   
   # Ranks contain additional permissions residents will be
   # granted if they are assigned that specific rank.
@@ -104,6 +106,8 @@ towns:
     - towny.command.town.rank.vip
     - towny.command.town.rank.helper
     - towny.outlaw.jailer
+    - siegewar.town.siege.*
+    - siegewar.command.siegewar.town.*
     helper:
     - towny.claimed.townowned.switch.*
   
@@ -121,6 +125,10 @@ towns:
     - towny.command.town.unjail
     - towny.command.town.jail.list
     - towny.outlaw.jailer
+    - siegewar.town.siege.battle.points
+    - towny.command.town.rank.guard
+    guard:
+    - siegewar.town.siege.battle.points
   
 # This section of permissions covers players who are members of any town in a nation.
 nations:
@@ -141,6 +149,8 @@ nations:
   king:
   - towny.command.nation.*
   - towny.command.nation.deposit.other
+  - siegewar.nation.siege.*
+  - siegewar.command.siegewar.nation.*
   ranks:
     assistant:
     - towny.command.nation.rank.helper
@@ -150,3 +160,10 @@ nations:
     - towny.command.nation.deposit.other
     helper:
     - towny.command.nation.add
+    soldier:
+    - siegewar.nation.siege.battle.points
+    - towny.nation.siege.pay.grade.100
+    general:
+    - siegewar.nation.siege.*
+    - towny.command.nation.rank.soldier
+    - towny.nation.siege.pay.grade.500
