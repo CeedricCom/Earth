@@ -24,3 +24,10 @@ plugins/Essentials/userdata/
 plugins/iConomy/VERSION
 abrir.bat
 reset plugins/spark/tmp/
+plugins/SuperVanish/data.yml
+plugins/WorldEdit/sessions/
+plugins/WorldEdit/.archive-unpack
+plugins/WorldEdit/assets
+plugins/CoreProtect/.license
+plugins/CombatLogX/playerdata/
+abrir.bat

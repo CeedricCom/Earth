@@ -1400,7 +1400,7 @@ default_perm_flags:
   # switch - trigger or activate switches (as defined in switch_ids)
   town:
     default:
-      pvp: 'true'
+      pvp: 'false'
       fire: 'false'
       explosion: 'false'
       mobs: 'false'
