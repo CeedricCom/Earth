@@ -1,0 +1,165 @@
+# ======================================================= #
+#                                                         #
+#                   CONFIG.YML                            #
+#                   FOR 2.0                               #
+#                                                         #
+# ======================================================= #
+
+#  NOTE:                                                  #
+#  You do not configure rewards here. Please go to        #
+#     plugins/CrateReloaded/crate.yml to do that.         #
+# ======================================================= #
+#
+# Affix placed before the stem of messages
+prefix: '&8[&bCrates&8]&e'
+
+# Defines the plugin's language, and region.
+# The link below provides a list of supported languages
+# https://github.com/Hazebyte/CrateReloaded/blob/master/language
+locale: en
+
+# Systematic recording of events
+logger: false
+
+# Decimal format that determines the number of decimals
+# e.g. 3.14 = #.##, 2.5 = #.#
+decimal-format: '#'
+
+# How long a player has to wait between actions
+cooldown: 0.0
+
+# The plugin to utilize for holograms (HolographicDisplays or CMI)
+hologram-plugin: 'HolographicDisplays'
+
+# Creative Control
+# Prevents players from duplicating keys with creative gamemode.
+creative:
+  # Enables safety checks
+  safety: true
+  # Allows ops to override the safety checks imposed on creative players
+  exclude-ops: false
+
+# Timezone
+# See https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations
+timezone: 'PST'
+
+# Date Format
+# e.g. Tue, 02 Jan 2018 18:07:59 IST
+date-format: 'E, dd MMM yyyy HH:mm:ss z'
+
+# Claim
+claim:
+  # The command prefix. DO NOT MODIFY.
+  # ONLY TO BE CHANGED IF PREFIX IS CONFLICTING
+  command: 'cr'
+
+  # The maximum amount of rewards a player can claim
+  # The maximum amount a player can claim is the minimum of either their inventory space or this limit.
+  limit: 15
+
+  # Menu name
+  menu: 'Claim Rewards!'
+
+  # If the inventory is full, let the claim manager handle it.
+  # Otherwise, it will drop to the ground.
+  handle-full-inventory: true
+
+  # Remind users that they have rewards to claim
+  reminder:
+    # Send a message to the player upon joining the server
+    join: true
+    # Send a message to the player in an interval
+    timer: true
+    # Interval in seconds
+    period: 900
+
+  # Formatting the items
+  format:
+    item:
+      - '{lore}'
+      - '&7Number of Rewards: &6{number}'
+      - '&7Received on {date}'
+    item-success: '&a&lClaimed!'
+
+# Crate Settings
+crate:
+
+  # Comparison Level
+  # Compares two items and determines if it is a crate
+  # 0 - Basic (Name, Type, Lore)
+  # 1 - Normal (Setting 0 + Enchants, Flags)
+  # 2 - Strict (Setting 1 + Custom NBT) . . . Note: Old keys will not work if this option is selected.
+  compare: 0
+
+  # Display Item
+  # Shown during an animation
+  display: ''
+
+  # Default Preview Menu Name
+  menu: 'Menu'
+
+  # Confirmation Menu Name
+  confirmation-menu: 'Confirm!'
+
+  # Are players allowed to put crates into crafting containers
+  craft: false
+
+  # Are players allowed to put crate items into item frames
+  item-frame: false
+
+  # Animation Exiting
+  # Allows players to exit animations that have not yet been completed
+  peri-exit: false
+
+  # Length of CSGO animation
+  csgo: 6
+
+  # Length of roulette animation
+  roulette: 5
+
+  # Length of wheel animation
+  wheel: 8
+
+  # Trigger Buttons
+  buttons:
+    enabled: true
+
+    # Next Button
+    # It is used to turn the virtual inventory page
+    next: 'ARROW 1 name:&aNext_Page lore:&eClick_to_enter_the_next_page.'
+
+    # Close Button
+    # It is used to close the inventory
+    close: 'MUSIC_DISC_11 1 name:&4Close! flag:HIDE_POTION_EFFECTS'
+
+    # Next Button
+    back: 'RED_BED 1 name:&4&lGo_back lore:&eGo_back_to_previous_page.'
+
+    # Confirmation Menu Buttons
+    # Each crate may have an individualized button defined in the crate.yml
+    # If no buttons are defined, default buttons will be used
+    accept: 'GREEN_STAINED_GLASS_PANE 1 name:&aYes lore:&fClick_here_to_open_{crate}!'
+    decline: 'RED_STAINED_GLASS_PANE 1 name:&4No'
+
+    # CSGO Display Buttons
+    # Used for display only, and does not trigger any actions
+    csgo-top: 'REDSTONE_TORCH 1 name:&6Prize!'
+    csgo-bot: 'REDSTONE_TORCH 1 name:&6Prize!'
+
+  # Pushback Settings
+  pushback:
+    enabled: true
+
+    # Modifier
+    x: 1.0
+    y: 1.0
+    z: 1.0
+
+  # Hologram Settings
+  hologram:
+
+    # Modifier
+    # Holograms are set to be centered, one block above the target location
+    x: 0.0
+    y: 0.0
+    z: 0.0
