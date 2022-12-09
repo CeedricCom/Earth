@@ -1,0 +1,399 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                                                      | #
+# |            HCFClasses Plugin Configuration           | #
+# |                                                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Information:
+
+# Author: Benzimmer
+# Profile: http://tiny.cc/benzimmer
+# Discord Link: https://discord.gg/fuffySb
+# Resource Link: http://tiny.cc/hcfclassesplugin
+
+############################################################
+#                                                          #
+#                     General Section                      #
+#                                                          #
+############################################################
+
+TASK_DELAY: 1 # in seconds
+
+EFFECT_TASK: 20 # in ticks (not advised to change)
+
+USE_NEW_TIMEFORMAT: false # Set this to true for time formats to be hh,mm,ss.
+
+SEARCH_FOR_UPDATES: true # Search for updates on startup
+
+REGION_CHECK_HOLDABLE_ITEMS: false # Enable this for the plugin to check for holdable items as well as clickable ones
+
+# Use /classes wand and /classes createregion <name> to list them here
+# This will disable clickable items, holdable items, rogue backstabs, archer criticals and NOT activating the class
+
+DISABLE_CLASSES_IN_REGIONS: 
+- exampleregion
+
+# This will disable clickable items, holdable items, rogue backstabs, archer criticals and NOT activating the class
+
+DISABLE_CLASSES_IN_WORLDS: 
+- exampleworld
+
+############################################################
+#                                                          #
+#                    Scoreboard Section                    #
+#                                                          #
+############################################################
+
+SCOREBOARD:
+  SCOREBOARD_TITLE: '&a&lClasses'
+  USE_SCOREBOARD: false
+  UPDATE_TICKS: 20
+  
+  SCOREBOARD_LINES:
+  - '&8&m-------------'
+  - ' '
+  - '&6&lClass name:'
+  - '%classname%'
+  - ' '
+  - '&6&lElapsed Time:'
+  - '%time%'
+  - ' '
+  - '&8&m-------------' 
+ 
+  # This will be used as scoreboard when bard is enabled
+ 
+  BARD_ENABLED: false # If enabled it will active the below scoreboard for bard (only if USE_SCOREBOARD is true)
+  
+  BARD_LINES:
+  - '&8&m-------------'
+  - ' '
+  - '&6&lClass name:'
+  - '%classname%'
+  - ' '
+  - '&6&lElapsed Time:'
+  - '%time%'
+  - ' '
+  - '&6&lEnergy Remaining:'
+  - '%energy%'
+  - ' '
+  - '&8&m-------------' 
+  
+  DISABLE_IN_WORLD: # Any player in these worlds will not receive scoreboard updates (LOWERCASE WORLD NAMES)
+  - exampleworld
+    
+FEATHERBOARD_TRIGGER: # Make sure the scoreboard name is in the "scoreboards" folder of Featherboard
+
+  CLASS_SCOREBOARD: 
+    ENABLED: false 
+    NAME: 'hcfclasses'
+  
+  BARD_SCOREBOARD:
+    ENABLED: false
+    NAME: 'bard'
+    
+############################################################
+#                                                          #
+#                  Potion Effect Section                   #
+#                                                          #
+############################################################
+    
+EFFECT_NAMES:
+  SPEED: "Speed"
+  SLOW: "Slowness"
+  FAST_DIGGING: "Haste"
+  INCREASE_DAMAGE: "Strength"
+  CONFUSION: "Confusion"
+  JUMP: "Jump Boost"
+  REGENERATION: "Regeneration"
+  DAMAGE_RESISTANCE: "Resistance"
+  FIRE_RESISTANCE: "Fire Resistance"
+  WATER_BREATHING: "Water Breathing"
+  INVISIBILITY: "Invisibiltiy"
+  BLINDNESS: "Blindness"
+  NIGHT_VISION: "Night Vision"
+  HUNGER: "Hunger"
+  WEAKNESS: "Weakness"
+  POISON: "Poison"
+  WITHER: "Wither"
+  HEALTH_BOOST: "Health Boost"
+  ABSORPTION: "Absorption"
+  SATURATION": "Saturation"
+  HEAL: "Heal"
+  HARM: "Harm"
+  SLOW_DIGGING: "Mining Fatigue"
+    
+############################################################
+#                                                          #
+#                 Default Classes Section                  #
+#                                                          #
+############################################################
+
+ARCHER:
+  ENABLED: false
+  
+  TIME_UNTIL_ACTIVATION: -1 # Set to -1 to disable
+  
+  ARMOR:
+    BOOTS: LEATHER_BOOTS
+    LEGGINGS: LEATHER_LEGGINGS
+    CHESTPLATE: LEATHER_CHESTPLATE
+    HELMET: LEATHER_HELMET
+  
+  LONG_RANGE_DAMAGE_MULTIPLER: 2
+  LONG_RANGE_DISTANCE: 25
+  DEFAULT_DAMAGE_MULTIPLER: 1.5
+  
+  DISABLE_ARCHER_TAGS: true # Disable being able to critical other archers
+  
+  ADDITIONAL_DAMAGE:
+    ENABLED: false # This means the tagged player will take more damage for x amount of time
+    TIME_LENGTH: 10 # This is in seconds
+    DAMAGE_MULTIPLIER: 1.5 # This is how much extra damage they will take
+  
+  SPEED_BOOST:
+    ENABLED: true
+    AMPLIFIER: 4
+    DURATION: 15
+    COOLDOWN: 30
+
+  JUMP_BOOST:
+    ENABLED: true
+    AMPLIFIER: 2
+    DURATION: 15
+    COOLDOWN: 30
+    
+  EFFECTS: # Set the effect name and amplifiers here
+    SPEED: 5 
+    JUMP: 1
+  
+BARD:
+  ENABLED: false
+  
+  TIME_UNTIL_ACTIVATION: -1 # Set to -1 to disable
+
+  SEND_HELD_MESSAGES: false # Set this to true to display held item messages
+  
+  EFFECT_REPLENISH_TASK: 20 # Delay in ticks for checks when players had previous potion effects (Set to -1 to disable)
+  
+  ARMOR:
+    BOOTS: DIAMOND_BOOTS
+    LEGGINGS: DIAMOND_LEGGINGS
+    CHESTPLATE: DIAMOND_CHESTPLATE
+    HELMET: DIAMOND_HELMET
+        
+  CLICKED_ITEM_DISTANCE: 30.0
+  HELD_ITEM_DISTANCE: 5.0
+  ENERGY_PER_TASK: 2
+  MAX_ENERGY: 120
+  INCLUDE_BARD_IN_EFFECTS: true # Set this to false if you dont want Bard to receive effects
+  
+  DISABLE_IN_TOWNS: true # If you are using towny and dont want to allow Bards in claims
+  
+  ANNOUNCE_ENERGY: # List the energy amounts to send a message at
+  - 10
+  - 20
+  - 30
+  - 50
+  - 100
+  
+  ITEMS:
+  
+    SPEED:
+      TYPE: SUGAR
+      CLICKED: 
+        AMPLIFIER: 2
+        ENABLED: true
+        ENERGY: 30
+        COOLDOWN: 10
+        DURATION: 5
+      HELD:
+        AMPLIFIER: 0
+        ENABLED: true
+        ENERGY: 5
+        DURATION: 5
+        
+    INCREASE_DAMAGE:
+      TYPE: BLAZE_POWDER
+      CLICKED: 
+        AMPLIFIER: 1
+        ENABLED: true
+        ENERGY: 50
+        COOLDOWN: 10
+        DURATION: 5
+      HELD:
+        AMPLIFIER: 0
+        ENABLED: false
+        ENERGY: 5
+        DURATION: 5
+        
+    DAMAGE_RESISTANCE:
+      TYPE: IRON_INGOT
+      CLICKED: 
+        AMPLIFIER: 1 
+        ENABLED: true
+        ENERGY: 35
+        COOLDOWN: 10
+        DURATION: 5
+      HELD:
+        AMPLIFIER: 0
+        ENABLED: true
+        ENERGY: 5
+        DURATION: 5
+        
+    JUMP:
+      TYPE: FEATHER
+      CLICKED: 
+        AMPLIFIER: 1
+        ENABLED: true
+        ENERGY: 40
+        COOLDOWN: 10
+        DURATION: 5
+      HELD:
+        AMPLIFIER: 0
+        ENABLED: true
+        ENERGY: 5
+        DURATION: 5
+        
+    WITHER:
+      TYPE: SPIDER_EYE
+      CLICKED: 
+        AMPLIFIER: 1
+        ENABLED: true
+        ENERGY: 40
+        COOLDOWN: 10
+        DURATION: 5
+      HELD:
+        AMPLIFIER: 0
+        ENABLED: false
+        ENERGY: 5
+        DURATION: 5
+        
+    REGENERATION:
+      TYPE: GHAST_TEAR
+      CLICKED: 
+        AMPLIFIER: 1
+        ENABLED: true
+        ENERGY: 40
+        COOLDOWN: 10
+        DURATION: 5
+      HELD:
+        AMPLIFIER: 0
+        ENABLED: true
+        ENERGY: 5
+        DURATION: 5
+        
+    FIRE_RESISTANCE:
+      TYPE: MAGMA_CREAM
+      CLICKED: 
+        AMPLIFIER: 1
+        ENABLED: true
+        ENERGY: 20
+        COOLDOWN: 10
+        DURATION: 5
+      HELD:
+        AMPLIFIER: 0
+        ENABLED: true
+        ENERGY: 5
+        DURATION: 5
+
+    INVISIBILITY:
+      TYPE: EMERALD
+      CLICKED: 
+        AMPLIFIER: 1
+        ENABLED: false
+        ENERGY: 40
+        COOLDOWN: 10
+        DURATION: 5
+      HELD:
+        AMPLIFIER: 0
+        ENABLED: false
+        ENERGY: 5
+        DURATION: 5
+        
+    FOOD:
+      TYPE: WHEAT
+      CLICKED: 
+        ENABLED: true
+        ENERGY: 30
+        COOLDOWN: 10
+      HELD:
+        ENABLED: false
+        ENERGY: 5
+
+  EFFECTS: # Set the effect name and amplifiers here
+    SPEED: 1
+    JUMP: 1
+    REGENERATION: 1
+  
+ROGUE:
+  ENABLED: false
+ 
+  TIME_UNTIL_ACTIVATION: -1 # Set to -1 to disable
+  
+  ARMOR:
+    BOOTS: CHAINMAIL_BOOTS
+    LEGGINGS: CHAINMAIL_LEGGINGS
+    CHESTPLATE: CHAINMAIL_CHESTPLATE
+    HELMET: CHAINMAIL_HELMET
+  
+  SWORD_TYPE: DIAMOND_SWORD
+  SWORD_DAMAGE: 4
+  SWORD_COOLDOWN: 2 # In seconds
+  BREAK_SWORD: true
+  
+  SPEED_BOOST:
+    ENABLED: true
+    AMPLIFIER: 6
+    DURATION: 15
+    COOLDOWN: 30
+    
+  JUMP_BOOST:
+    ENABLED: true
+    AMPLIFIER: 2
+    DURATION: 15
+    COOLDOWN: 30
+
+  EFFECTS: # Set the effect name and amplifiers here
+    SPEED: 2
+  
+MINER:
+  ENABLED: true
+
+  TIME_UNTIL_ACTIVATION: -1 # Set to -1 to disable
+  
+  ARMOR:
+    BOOTS: IRON_BOOTS
+    LEGGINGS: IRON_LEGGINGS
+    CHESTPLATE: IRON_CHESTPLATE
+    HELMET: IRON_HELMET
+  
+  INVISIBILITY: 
+    ENABLED: true
+    BELOW_BLOCK: 16 # Set to 255 to be enabled all time
+
+  EFFECTS: # Set the effect name and amplifiers here
+    FAST_DIGGING: 1
+    FIRE_RESISTANCE: 0
+    NIGHT_VISION: 0
+    
+############################################################
+#                                                          #
+#                 Forced Team Hook Section                 #
+#                                                          #
+#       ONLY use this if you have multiple team plugins    #
+#                on the supported plugin list              #
+#                                                          #
+#                                                          #
+############################################################  
+
+TOWNY_USE_NATIONS: false # Set this to true to enable nations instead of towns
+MCMMO_USE_PARTIES: false # Set this to true to enable McMMO parties
+
+# Please type the plugin name you want to force hook
+
+FORCED_HOOK:
+  ENABLED: false
+  PLUGIN: ''  
+    
