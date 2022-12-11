@@ -18,7 +18,13 @@ plugins/Towny/settings/lang/
 plugins/Towny/debtAccountsConverted/
 plugins/mcMMO/flatfile/
 plugins/mcMMO/backup/
-plugins/dynmap/
+plugins/dynmap/web/
+plugins/dynmap/texturepacks/
+plugins/dynmap/templates/
+plugins/dynmap/renderdata/
+plugins/dynmap/markers/
+plugins/dynmap/export/
+plugins/dynmap/colorschemes/
 plugins/Essentials/usermap.csv
 plugins/Essentials/userdata/
 *.db
