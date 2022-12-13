@@ -1094,13 +1094,13 @@ filters_colour_chat:
   papi_chat_formatting:
   
     # When using PlaceholderAPI, and a tag would show both nation and town, this will determine how they are formatted.
-    both: '[%n|%t] '
+    both: '[%n|%t]'
   
     # When using PlaceholderAPI, and a tag would showing a town, this will determine how it is formatted.
-    town: '[%s] '
+    town: '[%s]'
   
     # When using PlaceholderAPI, and a tag would show a nation, this will determine how it is formatted.
-    nation: '[%s] '
+    nation: '[%s]'
   
     # Colour code applied to player names using the %townyadvanced_towny_colour% placeholder.
     ranks:
@@ -1118,13 +1118,13 @@ filters_colour_chat:
     no_town: '&f'
   
     # Used when two players are in the same town.
-    same_town: '&2'
+    same_town: '&b'
   
     # Used when two players are in the same nation.
-    same_nation: '&2'
+    same_nation: '&e'
   
     # Used when two players' nations are allied.
-    ally: '&b'
+    ally: '&1'
   
     # Used when two players are enemies.
     enemy: '&c'
