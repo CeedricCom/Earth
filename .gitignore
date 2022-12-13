@@ -24,7 +24,11 @@ plugins/dynmap/templates/
 plugins/dynmap/renderdata/
 plugins/dynmap/markers/
 plugins/dynmap/export/
+plugins/dynmap/ids-by-ip.txt
+plugins/dynmap/lightings.txt
+plugins/dynmap/shaders.txt
 plugins/dynmap/colorschemes/
+plugins/dynmap/world.pending
 plugins/Essentials/usermap.csv
 plugins/Essentials/userdata/
 *.db
