@@ -80,9 +80,9 @@ yellow-number-in-tablist:
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Belowname
 belowname-objective:
-  enabled: false
+  enabled: true
   number: "%health%"
-  text: "&cHealth"
+  text: "&c❤"
   disable-in-worlds:
     - disabledworld
   disable-in-servers:

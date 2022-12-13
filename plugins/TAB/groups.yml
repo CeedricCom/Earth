@@ -13,7 +13,7 @@ example_group:
  # default settings for all groups, all groups will take properties from this section unless player's primary group overrides a specific setting
 _DEFAULT_:
   tabprefix: "%rel_townyadvanced_color%%townyadvanced_nation_tag_override% %townyadvanced_town_tag_override% "
-  tagprefix: "%luckperms-prefix%"
+  tagprefix: "%rel_townyadvanced_color%%townyadvanced_nation_tag_override% %townyadvanced_town_tag_override% "
   customtabname: "%essentials_nickname%"
   customtagname: "%essentials_nickname%" # don't forget to enable unlimited nametag mode to make this one work
   tabsuffix: "%luckperms-suffix%%afk%"
