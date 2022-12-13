@@ -40,8 +40,8 @@ Channels:
     general:
         commands: [g]
         type: GLOBAL
-        channeltag: '&f[g]'
-        messagecolour: '&f'
+        channeltag: '&2'
+        messagecolour: '&a'
         permission: 'towny.chat.general'
         default: true
         range: '-1'
@@ -92,8 +92,8 @@ Channels:
         
     local:
         commands: [l,lc]
-        type: PRIVATE
-        channeltag: '&f[local]'
-        messagecolour: '&f'
+        type: GLOBAL
+        channeltag: '&5'
+        messagecolour: '&d'
         permission: 'towny.chat.local'
         range: '100'

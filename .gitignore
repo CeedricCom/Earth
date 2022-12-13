@@ -35,6 +35,7 @@ plugins/SuperVanish/data.yml
 plugins/WorldEdit/sessions/
 plugins/WorldEdit/.archive-unpack
 plugins/WorldEdit/assets
+plugins/ProtocolLib/lastupdate
 plugins/CoreProtect/.license
 plugins/CombatLogX/playerdata/
 plugins/HolographicDisplays/database.yml
