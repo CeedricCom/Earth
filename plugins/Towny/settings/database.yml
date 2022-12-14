@@ -1,0 +1,27 @@
+  
+database:
+  
+  # The Database version number. Do not change.
+  version: '1'
+  
+  # Valid load and save types are: flatfile and mysql.
+  database_load: flatfile
+  database_save: flatfile
+  
+  # SQL database connection details (IF set to use mysql).
+  sql:
+    hostname: localhost
+    port: '3306'
+    dbname: towny
+    table_prefix: towny_
+    username: root
+    password: ''
+    flags: ?verifyServerCertificate=false&useSSL=false&useUnicode=true&characterEncoding=utf-8
+  
+    # Modifiable settings to control the connection pooling.
+    # Unless you actually know what you're doing and how Towny uses its mysql connection,
+    # it is strongly recommended you do not change these settings.
+    pooling:
+      max_pool_size: '5'
+      max_lifetime: '180000'
+      connection_timeout: '5000'

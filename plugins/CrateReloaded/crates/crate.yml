@@ -1,0 +1,47 @@
+############################################
+# +---------------------------------------+#
+# |         Config Revision 17            |#
+# +---------------------------------------+#
+############################################
+
+# -------------------------------------------------------------------------------------------------------------------
+supplycrate:
+    type: MYSTERYCRATE # Place a chest down, and the chest will be filled with items
+    item: 'CHEST 1 name:&6&lSupply_Crate lore:&7Right_click_to_open glow:false'
+    buy:
+        enabled: false
+        cost: 0
+    message:
+        open: ''
+        broadcast: ''
+    effect: {}
+    reward:
+        minimum-rewards: 3
+        maximum-rewards: 5
+        rewards:
+            - 'unique:(), chance:(100), item:(ender_pearl {random:8,16})'
+
+            - 'unique:(), chance:(50), item:(gold_ingot {random:8,32})'
+            - 'unique:(), chance:(50), item:(diamond {random:4,8})'
+            - 'unique:(), chance:(50), item:(emerald {random:4,8})'
+            - 'unique:(), chance:(50), item:(lapis_lazuli {random:8,24})'
+            - 'unique:(), chance:(50), item:(redstone {random:8,24})'
+            - 'unique:(), chance:(50), item:(quartz {random:16,32})'
+            - 'unique:(), chance:(50), item:(prismarine_shard {random:16,32})'
+            - 'unique:(), chance:(50), item:(prismarine_crystals {random:16,32})'
+
+            - 'unique:(), chance:(50), item:(spider_eye {random:16,32})'
+            - 'unique:(), chance:(50), item:(magma_cream {random:16,32})'
+            - 'unique:(), chance:(50), item:(blaze_powder {random:16,32})'
+            - 'unique:(), chance:(50), item:(gunpowder {random:16,32})'
+            - 'unique:(), chance:(50), item:(pufferfish {random:2,4})'
+            - 'unique:(), chance:(50), item:(shulker_shell {random:8,16})'
+            - 'unique:(), chance:(50), item:(chorus_fruit {random:4,8})'
+            - 'unique:(), chance:(25), item:(ghast_tear {random:1,3})'
+
+            - 'unique:(), chance:(7.5), item:(sweet_berries 1)'
+            - 'unique:(), chance:(7.5), item:(zombie_villager_spawn_egg 1)'
+            - 'unique:(), chance:(7.5), item:(nether_star 1)'
+
+            - 'unique:(), chance:(1), item:(trident 1)'
+            - 'unique:(), chance:(1), item:(panda_spawn_egg 1)'

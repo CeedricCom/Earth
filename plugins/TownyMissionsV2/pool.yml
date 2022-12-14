@@ -1,0 +1,89 @@
+#A mission is a quest that can be completed by a mission bearer. A mission bearer is an entity such as a town
+#or a nation. Each mission has a set duration (or infinite). Once the mission expires it is failed. A mission
+#is made up of many goals. There are many types of goals. The goal is then worked on by players and once completed
+#rewards are handed to all those who contributed based on their contribution. When the mission is completed
+#more rewards can be handed to the mission bearer as a whole.
+
+
+tick: 60s #How frequently the pool ticks, unless testing the plugin this usually shouldn't be changed
+pool:
+  1: #Each key can be uniquely named whatever you please, it is probably better name it something meaningful
+    name: 'test-1'
+    #What type of mission bearer the mission is designed for. Omit this if it can be given to any mission bearer
+    #type.
+    type: 'TOWN'
+    #how long the mission lasts. The format is similar to core protect or ban commands. Simply omit the duration
+    #for a mission with infinite duration
+    duration: '1d'
+    #mission rewards are different to goal rewards. Mission rewards are given to the bearer of the mission, that being
+    #the town or the nation. Thus the only two working rewards types for mission rewards are GOVERNMENT_BANK and COMMAND
+    #Rewards should usually be given to GOALS rather than MISSIONS because players contribute to goals.
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 1000
+      2:
+        type: COMMAND
+        name: 'Extra Announcement'
+        command: 'say %s earned $%amount% from their towny mission!!! They are big rich'
+        total: 1000
+
+    #The definition of the goal is the type of goal it is.
+    goals:
+      1:
+        definition: 'CHAT'
+        goal: 5
+        word: 'Gamer'
+        #this goal does not have any rewards
+      2:
+        definition: 'GATHER'
+        goal: 100
+        material: 'PUMPKIN'
+        #Goals have rewards. These rewards are distributed on completion of the mission. There are many types
+        #of goal rewards.
+        #  - MONEY <- Deposits money to the players account
+        #  - EXP <- Gives the player n experience orbs
+        #  - COMMAND <- Runs a command  , Use the %s to substitute the player and %amount% to substitute the amount given
+        #  - ITEM  <- Gives the player an item. If they are offline its given on join
+        #  - TEST  <- This reward isnt useful it just prints to ur console lol
+
+        #rewards are distributed on goal completion based on contribution. This was not done for the whole mission
+        #because how do you weigh different goals to each other.
+        rewards:
+          1:
+            type: MONEY
+            total: 1000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            #view https://www.spigotmc.org/wiki/itemstack-serialization/ for more
+            type: ITEM
+            total: 50
+            itemstack:
+              type: DIAMOND
+              meta:
+                display-name: '&e&lDiaaaamonds'
+          4:
+            type: COMMAND
+            total: 50
+            name: 'More Boasting'
+            command: 'say Hello %s. You received %amount% brownie points :)'
+
+          5:
+            type: TEST
+            total: 1000
+
+      3:
+        definition: 'GATHER'
+        goal: 50
+        material: DIRT
+        rewards:
+          1:
+            type: MONEY
+            total: 150
+
+
+
+
+

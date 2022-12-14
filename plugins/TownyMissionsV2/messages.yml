@@ -1,0 +1,57 @@
+test: 'Hello World! This is a test. Variable A: %s Variable B: %s'
+no-permission: '&cHey! You do not have permission to use this command.'
+command:
+  notInteger: "&cArgument must be an integer"
+  notNumber: '&cArgument must be a number'
+  notBoolean: '&cArgument must be either true or false'
+  notOnlinePlayer: '&cPlayer does not exist or is not online'
+  notGovernment: '&cThat government %s does not exist'
+  notTown: '&cThat town %s does not exist'
+  notNation: '&cThat nation %s does not exist'
+  notEnum: '&cArgument is not correct. Please enter a valid %s'
+  invalidArgumentOther: '&cArgument is not correct'
+  invalidDuration: '&cArgument is not a valid duration'
+  invalidUsage: '&cInvalid usage. Try: %s'
+  contribute:
+    no-mission: '&cYou do not have any missions to contribute to!'
+    not-primary: '&cYou can not contribute to your current mission like this. Try selecting another with /missions %s'
+  autocontribute:
+    toggle-all: '&6Successfully toggled auto-contribute &e%s &6for ALL missions'
+    toggle-specific: '&6Successfully toggled auto-contribute &e%s &6for that mission'
+  misc:
+    not-in-government: '&cYou cannot use this command as you to not belong to a %s'
+
+
+error:
+  active-no-goal: '&cMission Bearer has active mission however it does not have any goals to contribute to. Please contact an admin about this issue.'
+
+reward:
+  exp-name: 'exp'
+  money-name: 'money'
+  government-bank-reward-name: 'bank money'
+
+mission:
+  mission-title: '&2Mission: &a%s'
+  help-text: '&2%s Mission - Use &a/missions %s &2for more'
+  duration-text: '&2Time Left: &a%s'
+  cooldown-text: '&2Cooldown: &a%s'
+  chat:
+    goal-text: '&2Say %s %s times'
+
+  gather:
+    goal-text: '&2Gather &a%s &2%s'
+
+  goal:
+    completion: '&eSuccessfully Completed %s'
+    give: '&e&lNew Objective %s'
+    complete-title: '&e&lGoal Complete'
+    complete-subtitle: '&f%s'
+
+  reward:
+    completion: '&6Received &e%s &6%s'
+
+  government:
+    completion: '&e%s &6and the residents of &e%s &6have completed successfully completed their &e&l%s Mission &6earning big rewards!'
+
+
+
