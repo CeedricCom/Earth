@@ -1,0 +1,14 @@
+Success: "&6The max players is now to &c%n."
+
+NoNumber: "&cPlease specify a valid number."
+
+Error: "&cAn error occurred while changing max players"
+
+NoPermission: "&cYou don't have the permission to use this command"
+
+# If true, the server.properties (on Bukkit/Spigot) or the config.yml (on Bungee) will be update
+# And the new slots will be keep after the restart
+SaveOnRestart: false
+
+# BungeeCord only: Does the plugin display real max players when you ping the server on server list?
+UpdateServerPing: true

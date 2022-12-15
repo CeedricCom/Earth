@@ -47,6 +47,8 @@ plugins/HolographicDisplays/database.yml
 plugins/CrateReloaded/messages/
 plugins/CrateReloaded/claim/
 plugins/CrateReloaded/location.yml
+plugins/Chunk/tasks/
+server.properties
 abrir.bat
 cratereloaded-*.zip
 plugins/Chunky/tasks/

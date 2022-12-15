@@ -18,56 +18,56 @@ description: >
 siegewar_plugin_prefix: '&f[&6Guerra de Asedio&f] '
 #Added in (Siegewar version)
 #Siege war happy-path messages
-msg_siege_war_attack_pay_war_chest: '&bUn cofre de guerra ha sido preparado por %s, con un valor de %s. Quien gane el asedio obtendrá este dinero.'
+msg_siege_war_attack_pay_war_chest: '&bUn cofre de guerra ha sido preparado por %s, con un valor de %s. Quien gane el asedio obtendrÃ¡ este dinero.'
 msg_siege_war_attack_recover_war_chest: '&bEl cofre de guerra ha sido recuperado por %s, tiene un valor de %s.'
-msg_siege_war_neutral_town_plundered: '&b¡%s ha sido saqueado de %s por %s!'
-msg_siege_war_nation_town_plundered: '&b¡%s ha sido saqueado de %s por %s!'
-msg_siege_war_town_ruined_from_plunder: '&b¡%s ha sido reducido a ruinas por %s!'
-msg_siege_war_town_bankrupted_from_plunder: '&b¡%s ha entrado en bancarrota por %s!'
-msg_siege_war_nation_defeated: '&b¡%s ha sido derrotado!'
-msg_siege_war_attacking_troops_at_siege_banner: '&bAsedio en %s > Los atacantes están en el estandarte de asedio.'
-msg_siege_war_banner_control_session_success: '&b¡Sesión de control de estandarte exitosa!. Has sido añadido a la lista de control de banners.'
+msg_siege_war_neutral_town_plundered: '&bÂ¡%s ha sido saqueado de %s por %s!'
+msg_siege_war_nation_town_plundered: '&bÂ¡%s ha sido saqueado de %s por %s!'
+msg_siege_war_town_ruined_from_plunder: '&bÂ¡%s ha sido reducido a ruinas por %s!'
+msg_siege_war_town_bankrupted_from_plunder: '&bÂ¡%s ha entrado en bancarrota por %s!'
+msg_siege_war_nation_defeated: '&bÂ¡%s ha sido derrotado!'
+msg_siege_war_attacking_troops_at_siege_banner: '&bAsedio en %s > Los atacantes estÃ¡n en el estandarte de asedio.'
+msg_siege_war_banner_control_session_success: '&bÂ¡SesiÃ³n de control de estandarte exitosa!. Has sido aÃ±adido a la lista de control de banners.'
 msg_siege_war_banner_control_gained_by_attacker: '&bAsedio en %s > Los atacantes han ganado el control del estandarte.'
 msg_siege_war_banner_control_gained_by_defender: '&bAsedio en %s > Los defensores han ganado el control del estandarte.'
-msg_town_destroyed_by_nation_tax: '&b%s no ha podido pagar los impuestos y ha caído.'
-msg_town_destroyed_by_nation_tax_multiple: '&bLas siguientes ciudades no pudieron pagar el impuesto de la nación y han caido: '
+msg_town_destroyed_by_nation_tax: '&b%s no ha podido pagar los impuestos y ha caÃ­do.'
+msg_town_destroyed_by_nation_tax_multiple: '&bLas siguientes ciudades no pudieron pagar el impuesto de la naciÃ³n y han caido: '
 #Siege war error message
 #Recruiting
 msg_err_siege_besieged_town_cannot_recruit: "&cLas ciudades asediadas no pueden reclutar nuevos residentes."
 #Claiming/Unclaiming
-msg_err_siege_claim_too_near_siege_zone: "&cLa parcela está demasiado cerca de un asedio."
+msg_err_siege_claim_too_near_siege_zone: "&cLa parcela estÃ¡ demasiado cerca de un asedio."
 msg_err_siege_besieged_town_cannot_claim: "&cLas ciudades asediadas no pueden reclamar nuevos terrenos."
 msg_err_siege_besieged_town_cannot_unclaim: "&cLas ciudades asediadas (o ciudades que recientemente perdieron un asedio) no pueden eliminar territorio."
 msg_err_war_common_occupied_town_cannot_unclaim: "&cLas ciudades ocupadas militarmente no pueden reclamar terrenos."
 #Revolt
-msg_err_siege_war_town_voluntary_leave_impossible: "&cLas ciudades no pueden dejar las naciones sin un acuerdo. Para abandonar su nación, persuada al rey (o un ayudante) para que saque su ciudad."
+msg_err_siege_war_town_voluntary_leave_impossible: "&cLas ciudades no pueden dejar las naciones sin un acuerdo. Para abandonar su naciÃ³n, persuada al rey (o un ayudante) para que saque su ciudad."
 msg_err_siege_war_revolt_immunity_active: "&cTu ciudad tiene inmunidad a revueltas. No pueden entrar en una revuelta hasta que la imunidad a revueltas expire."
 #Attack
 msg_err_siege_war_banner_must_be_placed_above_ground: '&cEl estandarte debe ser puesto sobre el suelo.'
 msg_err_siege_war_action_not_a_town_member: '&cDebes ser miembro de una ciudad para hacer esto.'
-NUKE ???? msg_err_siege_war_action_not_a_nation_member: '&cDebes ser miembro de una nación para hacer esto.'
+NUKE ???? msg_err_siege_war_action_not_a_nation_member: '&cDebes ser miembro de una naciÃ³n para hacer esto.'
 msg_err_siege_war_cannot_attack_own_town: '&cNo puedes atacar tu propia ciudad.'
-msg_err_siege_war_cannot_attack_town_in_own_nation: '&cNo puedes atacar una ciudad en tu propia nación.'
-msg_err_siege_war_cannot_attack_non_enemy_nation: '&cNo puedes atacar una ciudad a menos que la nación de esa ciudad sea enemiga de tu nación.'
-msg_err_siege_war_too_many_adjacent_cardinal_town_blocks: '&cNo puedes hacer esto porque este chunk está en frente de más de un bloque de ciudad. Intenta colocar el item en un área diferente.'
-msg_err_siege_war_nation_already_attacking_town: '&cTu nación ya está atacando esta ciudad.'
+msg_err_siege_war_cannot_attack_town_in_own_nation: '&cNo puedes atacar una ciudad en tu propia naciÃ³n.'
+msg_err_siege_war_cannot_attack_non_enemy_nation: '&cNo puedes atacar una ciudad a menos que la naciÃ³n de esa ciudad sea enemiga de tu naciÃ³n.'
+msg_err_siege_war_too_many_adjacent_cardinal_town_blocks: '&cNo puedes hacer esto porque este chunk estÃ¡ en frente de mÃ¡s de un bloque de ciudad. Intenta colocar el item en un Ã¡rea diferente.'
+msg_err_siege_war_nation_already_attacking_town: '&cTu naciÃ³n ya estÃ¡ atacando esta ciudad.'
 msg_err_siege_war_cannot_attack_siege_immunity: '&cLa ciudad objetivo tiene inmunidad de asedio. No puede ser atacada hasta que la inmunidad termine.'
-msg_err_siege_war_cannot_join_siege: '&cNo puedes atacar una ciudad mientras esté bajo asedio por otra nación.'
-msg_err_siege_war_nation_has_too_many_active_siege_attacks: '&cTu nación está en el maximo número de asedios que puede realizar. Para iniciar otro asedio, uno o más de tus asedios actuales debe terminar.'
-msg_err_siege_war_town_not_close_enough_to_nation: '&cLa ciudad está muy lejos de la capital de tu nación para ser atacada.'
+msg_err_siege_war_cannot_join_siege: '&cNo puedes atacar una ciudad mientras estÃ© bajo asedio por otra naciÃ³n.'
+msg_err_siege_war_nation_has_too_many_active_siege_attacks: '&cTu naciÃ³n estÃ¡ en el maximo nÃºmero de asedios que puede realizar. Para iniciar otro asedio, uno o mÃ¡s de tus asedios actuales debe terminar.'
+msg_err_siege_war_town_not_close_enough_to_nation: '&cLa ciudad estÃ¡ muy lejos de la capital de tu naciÃ³n para ser atacada.'
 #Invade
 msg_err_siege_war_no_siege_on_target_town: '&cNo hay un asedio en la ciudad objetivo de %s.'
 #Plunder
-msg_err_siege_war_cannot_plunder_without_victory: "&cNo puedes saquear a menos que tu nación gane en un asedio."
-msg_err_siege_war_cannot_plunder_without_economy: "&cNo puedes saquear porque no hay ningún plugin de economía activo"
+msg_err_siege_war_cannot_plunder_without_victory: "&cNo puedes saquear a menos que tu naciÃ³n gane en un asedio."
+msg_err_siege_war_cannot_plunder_without_economy: "&cNo puedes saquear porque no hay ningÃºn plugin de economÃ­a activo"
 msg_err_siege_war_town_already_plundered: '&cEsta ciudad ya ha sido saqueada.'
 #Block change
-msg_err_siege_war_cannot_destroy_siege_banner: "&cMientras el asedio está en progreso no puedes destruir el estandarte de asedio o el bloque adyacente."
+msg_err_siege_war_cannot_destroy_siege_banner: "&cMientras el asedio estÃ¡ en progreso no puedes destruir el estandarte de asedio o el bloque adyacente."
 msg_err_siege_war_banner_support_block_not_stable: "&cNo puedes colocar el estandarte en un terreno inestable. ej. arena o grava."
 #Banner control
-msg_war_siege_zone_milk_bucket_forbidden_while_attempting_banner_control: 'No puedes usar este item mientras estás en una sesión de control de estandarte.'
+msg_war_siege_zone_milk_bucket_forbidden_while_attempting_banner_control: 'No puedes usar este item mientras estÃ¡s en una sesiÃ³n de control de estandarte.'
 #Town Info Siege Section
-status_town_revolt_immunity_timer: '&2Temporizador de Inmunidad de Rebelión: &a%s'
+status_town_revolt_immunity_timer: '&2Temporizador de Inmunidad de RebeliÃ³n: &a%s'
 status_town_siege_status_in_progress: 'En Curso'
 status_town_siege_status_banner_xyz: '&2 > Estandarte XYZ: &a%d,%d,%d'
 status_town_siege_immunity_timer: '&2 > Temporizador de Inmunidad: &a%s'
@@ -81,25 +81,25 @@ msg_nobody: '&aNadie'
 msg_attackers: '&aAtacantes'
 msg_defenders: '&aDefensores'
 #Town Neutrality
-status_town_peacefulness_status_change_timer: '&2Cuenta regresiva para cambiar a Estado Neutral: &a%d días'
-msg_war_common_town_declared_peaceful: '&b!Neutralidad declarada!. La ciudad será confirmada como neutral en %d día(s).'
-msg_war_common_town_declared_non_peaceful: '&b¡No-Neutralidad Declarada! La ciudad estará confirmada como No-Neutral en %d día(s).'
+status_town_peacefulness_status_change_timer: '&2Cuenta regresiva para cambiar a Estado Neutral: &a%d dÃ­as'
+msg_war_common_town_declared_peaceful: '&b!Neutralidad declarada!. La ciudad serÃ¡ confirmada como neutral en %d dÃ­a(s).'
+msg_war_common_town_declared_non_peaceful: '&bÂ¡No-Neutralidad Declarada! La ciudad estarÃ¡ confirmada como No-Neutral en %d dÃ­a(s).'
 msg_war_common_town_peacefulness_countdown_cancelled: '&bLa cuenta regresiva del cambio de estado de Neutralidad fue cancelada.'
-msg_war_siege_cannot_add_nation_military_rank_to_peaceful_resident: '&cNo se puede añadir rango militar al residente, porque están en una ciudad Neutral.'
+msg_war_siege_cannot_add_nation_military_rank_to_peaceful_resident: '&cNo se puede aÃ±adir rango militar al residente, porque estÃ¡n en una ciudad Neutral.'
 #Siege immunities
 msg_set_siege_immunities_town: 'Inmunidad de Asedio para la ciudad %s establecida por %s horas.'
-msg_set_siege_immunities_nation: 'Inmunidad de Asedio para todas las ciudades en la nación %s se establecieron por %s horas.'
+msg_set_siege_immunities_nation: 'Inmunidad de Asedio para todas las ciudades en la naciÃ³n %s se establecieron por %s horas.'
 msg_set_siege_immunities_all: 'Inmunidad de asedios para todas las ciudades se establecieron a %s horas.'
 #Siege-zone block placement restrictions
-msg_war_siege_zone_block_placement_forbidden: '&cNo puedes colocar este tipo de bloque en los valdíos de una zona de asedio.'
-msg_war_siege_zone_bucket_emptying_forbidden: '&cNo puedes usar este tipo de cubeta en los valdíos de una zona de asedio.'
+msg_war_siege_zone_block_placement_forbidden: '&cNo puedes colocar este tipo de bloque en los valdÃ­os de una zona de asedio.'
+msg_war_siege_zone_bucket_emptying_forbidden: '&cNo puedes usar este tipo de cubeta en los valdÃ­os de una zona de asedio.'
 #Added in 0.02:
-admin_help_1: 'Recargar el archivo de configuración y de idioma.'
-config_and_lang_file_reloaded_successfully: 'Archivo de configuración e idioma recargado correctamente.'
-config_and_lang_file_could_not_be_loaded: 'Recarga fallida. Ve la consola para más detalles.'
+admin_help_1: 'Recargar el archivo de configuraciÃ³n y de idioma.'
+config_and_lang_file_reloaded_successfully: 'Archivo de configuraciÃ³n e idioma recargado correctamente.'
+config_and_lang_file_could_not_be_loaded: 'Recarga fallida. Ve la consola para mÃ¡s detalles.'
 #Added in 0.05:
-msg_err_not_being_sieged: '&cCiudad %s no tiene ningún asedio activo.'
-msg_err_town_not_registered: '&cCiudad %s no está registrada.'
+msg_err_not_being_sieged: '&cCiudad %s no tiene ningÃºn asedio activo.'
+msg_err_town_not_registered: '&cCiudad %s no estÃ¡ registrada.'
 #Scoreboard
 hud_title: 'Asedio'
 hud_siegestatus: 'Estado de Asedio'
@@ -117,26 +117,26 @@ siege_status_unknown: 'Desconocido'
 dynmap_siege_banner_control: 'Control del estandarte: %s'
 dynmap_siege_time_left: 'Tiempo restante: %s'
 #Added in 0.06:
-msg_inventory_degrade_warning: '&4ADVERTENCIA: &cAlgo de tu equipamiento está cerca de romperse debido al desgaste de inventario.'
+msg_inventory_degrade_warning: '&4ADVERTENCIA: &cAlgo de tu equipamiento estÃ¡ cerca de romperse debido al desgaste de inventario.'
 msg_swa_remove_siege_success: '&bAsedio removido existosamente.'
-msg_you_received_war_sickness: '&cNo eres un partícipe de este asedio y no puedes estár en la Zona de Asedio. Por favor alejate para limpiar "enfermedad de guerra". Causas comunes de enfermedad de guerra: ser de una ciudad neutral, no tener un rango militar, no ser aliado de ningún bando.'
-msg_you_will_get_sickness: '&c No eres partícipe de este asedio y no puedes estár en la Zona de Asedio. Por favor alejate o recibirás la "enfermedad de guerra" en %s segundos.'
+msg_you_received_war_sickness: '&cNo eres un partÃ­cipe de este asedio y no puedes estÃ¡r en la Zona de Asedio. Por favor alejate para limpiar "enfermedad de guerra". Causas comunes de enfermedad de guerra: ser de una ciudad neutral, no tener un rango militar, no ser aliado de ningÃºn bando.'
+msg_you_will_get_sickness: '&c No eres partÃ­cipe de este asedio y no puedes estÃ¡r en la Zona de Asedio. Por favor alejate o recibirÃ¡s la "enfermedad de guerra" en %s segundos.'
 #Added in 0.08:
 msg_swa_set_towns_gained_success: '&bSuccessfully set towns gained to %d for %s.'
 msg_swa_set_towns_lost_success: '&bSuccessfully set towns lost to %d for %s.'
 msg_swa_set_plunder_gained_success: '&bSuccessfully set plunder gained to %d for %s.'
 msg_swa_set_plunder_lost_success: '&bSuccessfully set plunder lost to %d for %s.'
-msg_err_nation_not_registered: '&cNación %s no está registrada.'
-msg_err_cannot_remove_enemy: '&c!No puedes eliminar una nación como enemiga si tienes un asedio activo en contra de esa nación!'
+msg_err_nation_not_registered: '&cNaciÃ³n %s no estÃ¡ registrada.'
+msg_err_cannot_remove_enemy: '&c!No puedes eliminar una naciÃ³n como enemiga si tienes un asedio activo en contra de esa naciÃ³n!'
 #Added in 0.09
-nation_help_12: 'Paga a tus soldados. La cantidad será distribuida de acuerdo a su rango militar.'
-msg_siege_war_military_salary_available: "Un Salario Militar de %s está disponible. Puedes reclamarlo usando \"/sw collect\"."
+nation_help_12: 'Paga a tus soldados. La cantidad serÃ¡ distribuida de acuerdo a su rango militar.'
+msg_siege_war_military_salary_available: "Un Salario Militar de %s estÃ¡ disponible. Puedes reclamarlo usando \"/sw collect\"."
 msg_siege_war_military_salary_collected: "Has reclamado un salario militar de %s."
 msg_err_siege_war_no_soldiers_to_pay: "No habian soldados a quien pagar."
-msg_err_siege_war_not_enough_nation_funds_to_pay: "La nación no tiene los suficientes fondos para pagar esa cantidad."
-msg_siege_war_soldiers_paid: "Los soldados de la nación han sido pagados con un total de %s, que será distribuido de acuerdo a su rango militar."
+msg_err_siege_war_not_enough_nation_funds_to_pay: "La naciÃ³n no tiene los suficientes fondos para pagar esa cantidad."
+msg_siege_war_soldiers_paid: "Los soldados de la naciÃ³n han sido pagados con un total de %s, que serÃ¡ distribuido de acuerdo a su rango militar."
 #Added in 0.11
-msg_err_invalid_bool: "&cOpción inválida. Opciones: enendido/apagado"
+msg_err_invalid_bool: "&cOpciÃ³n invÃ¡lida. Opciones: enendido/apagado"
 msg_beacon_preference_set: "&bPreferencias de faro establecida a %s."
 #Misc
 msg_na: 'N/A'
@@ -146,13 +146,13 @@ status_town_siege_status_warchest: '&2 > Cofre de Guerra: &a%s'
 #Battle sessions
 status_town_siege_battle: '&2Batalla'
 status_town_siege_battle_time_remaining: '&2 > Tiempo Restante: &a%s'
-msg_war_siege_battle_session_started: "&bUna nueva sesión de batalla ha comenzado."
-msg_war_siege_battle_session_ended_with_battles: "&bLa sesión de batalla actual ha terminado. Los siguientes bandos ganaron sus batallas:"
-msg_war_siege_battle_session_ended_without_battles: "&bLa sesión de batalla actual ha terminado. No hubo batallas."
+msg_war_siege_battle_session_started: "&bUna nueva sesiÃ³n de batalla ha comenzado."
+msg_war_siege_battle_session_ended_with_battles: "&bLa sesiÃ³n de batalla actual ha terminado. Los siguientes bandos ganaron sus batallas:"
+msg_war_siege_battle_session_ended_without_battles: "&bLa sesiÃ³n de batalla actual ha terminado. No hubo batallas."
 msg_war_siege_battle_session_ended_attacker_result: "&b * Atacantes @ %s (%s)"
 msg_war_siege_battle_session_ended_defender_result: "&b * Defensores @ %s (%s)"
 msg_war_siege_battle_session_ended_draw_result: "&b * Empate@ %s (0)"
-msg_war_siege_battle_session_break_cannot_get_banner_control: "&cEl control del estandarte no se puede ganar hasta que comience la siguiente sesión de batalla. La siguiente sesión comenzará en %s."
+msg_war_siege_battle_session_break_cannot_get_banner_control: "&cEl control del estandarte no se puede ganar hasta que comience la siguiente sesiÃ³n de batalla. La siguiente sesiÃ³n comenzarÃ¡ en %s."
 #Hud
 hud_siege_balance: 'Saldo de Asedio: '
 hud_warchest: 'Cofre de Guerra: '
@@ -160,31 +160,31 @@ hud_battle_time_remaining: 'Tiempo Restante de Batalla: '
 #Dynmap
 dynmap_siege_battle_time_left: 'Tiempo restante de Batalla: %s'
 #Banner control
-msg_siege_war_banner_control_reversed_by_attacker: '&bAsedio en %s > ¡Los atacantes han robado el control del estandarte a los defensores!'
-msg_siege_war_banner_control_reversed_by_defender: '&bAsedio en %s > ¡Los defensores han robado el control del estandarte de los atacantes!'
-msg_siege_war_banner_control_reversal_bonus: '. Máxima tasa de generación de puntos X %s.'
+msg_siege_war_banner_control_reversed_by_attacker: '&bAsedio en %s > Â¡Los atacantes han robado el control del estandarte a los defensores!'
+msg_siege_war_banner_control_reversed_by_defender: '&bAsedio en %s > Â¡Los defensores han robado el control del estandarte de los atacantes!'
+msg_siege_war_banner_control_reversal_bonus: '. MÃ¡xima tasa de generaciÃ³n de puntos X %s.'
 #Admin
 msg_swa_set_siege_balance_success: '&bSe ha establecido correctamente el saldo de asedio a %d por %s.'
 #Added in 0.13
-msg_siege_war_version: '&bLa versión actual de SiegeWar es: %s.'
+msg_siege_war_version: '&bLa versiÃ³n actual de SiegeWar es: %s.'
 #Added in 0.14
-msg_siege_war_banner_control_session_started: '&bSesión de control de banner iniciada. Quedense cerca del estandarte del asedio (%d bloques horizontalmente, %d bloques arriba, %d bloques de abajo), no en la ciudad, y no volando, para %s. Si su sesión tiene éxito, obtendrá el control de estandarte para su bando (o será añadido a la lista de control de estandarte).'
-msg_siege_war_banner_control_session_started_with_altitude: '&bSesión de control de banner iniciada. Quedense cerca del estandarte del asedio (%d bloques horizontalmente, %d bloques arriba, %d bloques de abajo), no debajo de la altitud, no en la ciudad, y no volando, por %s. Si su sesión tiene éxito, obtendrá el control de estandarte para su bando (o será añadido a la lista de control de estandartes).'
-msg_siege_war_banner_control_session_failure: '&c¡Sesión de control de banner falló! Las causas comunes son: morir, irse demasiado lejos del estandarte, entrar en la ciudad o volar.'
-msg_siege_war_banner_control_session_failure_with_altitude: '&cSesión de control de banner falló!. Las causas comunes son: morir, alejarse del estandarte, ir por debajo de la altitud del estandarte, entrar en la ciudad, o volar.'
+msg_siege_war_banner_control_session_started: '&bSesiÃ³n de control de banner iniciada. Quedense cerca del estandarte del asedio (%d bloques horizontalmente, %d bloques arriba, %d bloques de abajo), no en la ciudad, y no volando, para %s. Si su sesiÃ³n tiene Ã©xito, obtendrÃ¡ el control de estandarte para su bando (o serÃ¡ aÃ±adido a la lista de control de estandarte).'
+msg_siege_war_banner_control_session_started_with_altitude: '&bSesiÃ³n de control de banner iniciada. Quedense cerca del estandarte del asedio (%d bloques horizontalmente, %d bloques arriba, %d bloques de abajo), no debajo de la altitud, no en la ciudad, y no volando, por %s. Si su sesiÃ³n tiene Ã©xito, obtendrÃ¡ el control de estandarte para su bando (o serÃ¡ aÃ±adido a la lista de control de estandartes).'
+msg_siege_war_banner_control_session_failure: '&cÂ¡SesiÃ³n de control de banner fallÃ³! Las causas comunes son: morir, irse demasiado lejos del estandarte, entrar en la ciudad o volar.'
+msg_siege_war_banner_control_session_failure_with_altitude: '&cSesiÃ³n de control de banner fallÃ³!. Las causas comunes son: morir, alejarse del estandarte, ir por debajo de la altitud del estandarte, entrar en la ciudad, o volar.'
 ##### Added in 0.15
 #Town Merging
-msg_err_cannot_merge_towns: '&c¡No se puede fusionar una ciudad que está siendo asediada!'
+msg_err_cannot_merge_towns: '&cÂ¡No se puede fusionar una ciudad que estÃ¡ siendo asediada!'
 #General
 siege.name: '%s contra %s'
-msg_err_action_disable: '&cNo tienes permisos suficientes para esa acción.'
+msg_err_action_disable: '&cNo tienes permisos suficientes para esa acciÃ³n.'
 msg_err_unknown_town: '&cCiudad Desconocida'
-msg_err_unknown_nation: '&cNación Desconocida'
+msg_err_unknown_nation: '&cNaciÃ³n Desconocida'
 #Siege Types
 siege_type_conquest: 'Conquista'
-siege_type_liberation: 'Liberación'
-siege_type_revolt: 'Rebelión'
-siege_type_suppression: 'Supresión'
+siege_type_liberation: 'LiberaciÃ³n'
+siege_type_revolt: 'RebeliÃ³n'
+siege_type_suppression: 'SupresiÃ³n'
 #Dynmap
 dynmap_siege_title: 'Asedio: %s vs %s'
 dynmap_siege_type: 'Tipo: %s'
@@ -467,11 +467,11 @@ artefact_name_chicago_typewriter: 'Chicago Typewriter'
 artefact_name_trident_of_zeus: 'Tridente de Zeus'
 artefact_name_trident_of_poseidon: 'Tridente de Poseidon'
 artefact_name_chestplate_of_mars: 'Pechera de Marte'
-artefact_custom_effect_lore_lightning_strike_on_hit: '&7Golpe relámpago al golpear'
+artefact_custom_effect_lore_lightning_strike_on_hit: '&7Golpe relÃ¡mpago al golpear'
 #Added in 0.47
-artefact_name_antimatter_potion: 'Poción de Antimateria'
+artefact_name_antimatter_potion: 'PociÃ³n de Antimateria'
 artefact_custom_effect_lore_delayed_massive_self_explosion_on_consume: '&7Drinker explota en 7 segundos'
-artefact_name_splash_potion_of_true_invisibility: 'Poción de salpicadura de la Invisibilidad Verdadera'
+artefact_name_splash_potion_of_true_invisibility: 'PociÃ³n de salpicadura de la Invisibilidad Verdadera'
 artefact_name_poison_blade: 'Hoja Envenenada'
 artefact_custom_effect_lore_poison_on_hit: '&7Envenena al Golpear'
 artefact_name_blade_of_the_viper: 'Hoja de Vibora'
@@ -479,12 +479,12 @@ artefact_custom_effect_lore_strong_poison_on_hit: '&7Veneno Fuerte al Golpear'
 artefact_custom_effect_lore_slow_on_hit: '&7Lentitud al Golpear'
 #Added in 0.48
 #Shown when an admin adds hours using /swa siegeduration addhours
-hours_added_to_sieges: '%s horas han sido añadidas a la duración de todos los asedios.'
+hours_added_to_sieges: '%s horas han sido aÃ±adidas a la duraciÃ³n de todos los asedios.'
 #Shown when SW cancels a battle session because there's no active sieges.
-battle_session_cancelled_no_sieges: 'No hay asedios activos, cancelando Sesión de Batalla'
+battle_session_cancelled_no_sieges: 'No hay asedios activos, cancelando SesiÃ³n de Batalla'
 #Added in 0.49
 #Shown when a nation tries to set their capital city while it is sieged.
-msg_err_besieged_capital_cannot_change_king: "&cTu nación no está permitida de cambiar de rey mientras sus ciudades están siendo asediadas."
+msg_err_besieged_capital_cannot_change_king: "&cTu naciÃ³n no estÃ¡ permitida de cambiar de rey mientras sus ciudades estÃ¡n siendo asediadas."
 #Added in 0.50
 #Shown when a siege assembly is started in a town which already has a siege assembly.
-msg_err_town_already_has_a_siege_assembly: '&cEsta ciudad ya tiene una Planificación de Asedio activa.'
+msg_err_town_already_has_a_siege_assembly: '&cEsta ciudad ya tiene una PlanificaciÃ³n de Asedio activa.'
