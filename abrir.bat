@@ -1,1 +1,0 @@
-java -Xms5G -Xmx12G -jar purpur-custom-pots.jar nogui
