@@ -26,7 +26,7 @@ logger: false
 decimal-format: '#'
 
 # How long a player has to wait between actions
-cooldown: 0.0
+cooldown: 1.0
 
 # The plugin to utilize for holograms (HolographicDisplays or CMI)
 hologram-plugin: 'HolographicDisplays'
