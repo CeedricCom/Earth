@@ -250,8 +250,8 @@ max-growth-height:
   reeds: 3
 misc:
   disable-end-credits: false
-  disable-relative-projectile-velocity: false
-  disable-sprint-interruption-on-attack: false
+  disable-relative-projectile-velocity: true
+  disable-sprint-interruption-on-attack: true
   light-queue-size: 20
   max-leash-distance: 10.0
   redstone-implementation: VANILLA
