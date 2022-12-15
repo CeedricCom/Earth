@@ -18,7 +18,7 @@ description: >
 siegewar_plugin_prefix: '&f[&6Asedio&f] '
 #Added in (Siegewar version)
 #Siege war happy-path messages
-msg_siege_war_attack_pay_war_chest: '&bUn cofre de guerra ha sido preparado por %s, con un valor de %s. Quien gane el asedio obtendrÃ¡ este dinero.'
+msg_siege_war_attack_pay_war_chest: '&bUn cofre de guerra ha sido preparado por %s, con un valor de %s. Quien gane el asedio obtendrá este dinero.'
 msg_siege_war_attack_recover_war_chest: '&bEl cofre de guerra ha sido recuperado por %s, con un valor de %s.'
 msg_siege_war_neutral_town_plundered: '&b%s ha sido saqueado por %s por %s!'
 msg_siege_war_nation_town_plundered: '&b%s has been plundered of %s by %s!'

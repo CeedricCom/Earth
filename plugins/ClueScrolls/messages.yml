@@ -1,0 +1,194 @@
+no-permission: '&cNo permission.'
+clue-complete: '&a&l(!) &aYou have completed the &a&l%clueName%&r&a clue!'
+titlebar:
+  title: '&a&lClue Completed'
+  subtitle: '&7%objective%'
+dropped-rewards: '&cYour reward items have been dropped in front of you!'
+no-inv-space: '&4You don''t have enough space in your inventory!'
+must-use-main-hand: '&4Please use this item in your main hand.'
+scroll-not-completed: '&4You have not yet completed this clue scroll.'
+scroll-not-completed-expiring: '&4You have not yet completed this clue scroll. You
+  have %remaining% left to complete this scroll.'
+command-successful: '&a&l+ Command successfully executed'
+receive-rewards: '&a&l+ %received% rewards!'
+next-clue: "\n&a&l(!) &a&lNEW CLUE: &r&a&n%clueName%\n&a&l(!) &a&lOBJECTIVE: &r&7%objective%\n\
+  &r "
+not-enough-exp: |-
+  &cYou don't have enough experience to purchase that!
+  &7Needed XP: %needed_exp%
+  &7Your XP: %player_has_exp%
+not-enough-money: |-
+  &cYou don't have enough money to purchase that!
+  &7Needed Money: %needed_money%
+  &7Your Money: %player_has_money%
+must-be-player: '&cYou must be a player to use this command!'
+no-rewards-defined: '&cIt looks like no rewards are defined! Please tell an admin
+  so that they can set this up.'
+dependency-not-found: '&cA dependency, %dependency%, needed to complete this is not
+  found! Please tell an admin so that they can fix this.'
+command:
+  give:
+    scroll:
+      success: '&aSuccessfully gave %amount% %type% scroll to player %player%.'
+      error-invalid-type: '&cError: %type% is not a valid scroll type. Available scrolls:
+        %scrolls%.'
+      mystery:
+        error-invalid-type: '&cError: %type% is not a valid mystery scroll type. Available
+          scrolls: %scrolls%.'
+    crystal:
+      success: '&aSuccessfully gave %amount% %type% crystal to player %player%.'
+      error-invalid-type: '&cError: %type% is not a valid tier type. Available tiers:
+        %tiers%.'
+      mystery:
+        error-invalid-type: '&cError: %type% is not a valid mystery crystal type.
+          Available scrolls: %scrolls%.'
+    invalid-type: '&cYou must specify either scroll or crystal.'
+    invalid-type-2: '&cYou must specify either tier or mystery.'
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll give (player) (scroll/crystal)
+      (tier/mystery) (name) [amount]'
+    insufficient-perms: '&cInsufficient permissions. You can only give scrolls to
+      yourself.'
+    error-invalid-amount: '&cError: %amount% is not a valid number!'
+    amount-not-negative: '&cError: %amount% cannot be less than 1.'
+  giveall:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll give (scroll/crystal)
+      (tier/mystery) (name) [amount]'
+    invalid-type: '&cYou must specify either scroll or crystal.'
+    invalid-type-2: '&cYou must specify either tier or mystery.'
+    error-invalid-amount: '&cError: %amount% is not a valid number!'
+    amount-not-negative: '&cError: %amount% cannot be less than 1.'
+    scroll:
+      success: '&aSuccessfully gave %amount% %type% scroll to all online players.'
+      error-invalid-type: '&cError: %type% is not a valid scroll type. Available scrolls:
+        %scrolls%.'
+      mystery:
+        error-invalid-type: '&cError: %type% is not a valid mystery scroll type. Available
+          scrolls: %scrolls%.'
+    crystal:
+      success: '&aSuccessfully gave %amount% %type% crystal to all online players.'
+      error-invalid-type: '&cError: %type% is not a valid tier type. Available tiers:
+        %tiers%.'
+      mystery:
+        error-invalid-type: '&cError: %type% is not a valid mystery crystal type.
+          Available scrolls: %scrolls%.'
+  reload:
+    success: '&a[ClueScrolls] config.yml and messages.yml reloaded! rewards.yml saved
+      and reloaded!'
+  rehook:
+    success: '&a[ClueScrolls] Plugin successfully rehooked.'
+  additem:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll additem (tier) (name)
+      (weight)'
+    error-air-item: '&cError: What you are holding is not a valid item!'
+    error-reward-exists: '&cReward name %name% already exists!'
+    error-invalid-weight: '&cError: %weight% is not a valid number!'
+    success: '&aReward &b%name% &ahas been added with a weight of &b%weight%&a to
+      &b%tier%&a!'
+  addcommand:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll addcommand (tier) (name)
+      (weight) (command)'
+    error-reward-exists: '&cReward name %name% already exists!'
+    error-invalid-weight: '&cError: %weight% is not a valid number!'
+    success: '&aReward &b%name% &ahas been added with a weight of &b%weight% &a and
+      the command of &b%command%&a to &b%tier%&a!'
+  removereward:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll removereward (tier)
+      (name)'
+    error-reward-missing: '&cError: %name% is not a valid reward! Do &b/cluescroll
+      listrewards'
+    success: '&aReward &b%name% &awas successfully removed from &b%tier%&a!'
+  rewardinfo:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll rewardinfo (tier) (name)'
+    error-reward-missing: '&cError: %name% is not a valid reward! Do &b/cluescroll
+      listrewards'
+    info-command: |-
+      &aReward Name - &b%reward_name%
+      &aTier - &b%tier%
+      &aWeight - &b%weight%
+      &aCommand - &b%command%
+    info-item: |-
+      &aReward Name - &b%reward_name%
+      &aTier - &b%tier%
+      &aWeight - &b%weight%
+      &aItem - &b%amount%x &b%type_name% &a- &b%type_id%:%damage%
+  listrewards:
+    layout: |-
+      &bRewards:
+      &b   Global: %global_rewards%
+      %tier_rewards%
+    global_rewards_list_format: '&a%reward_name%&b, '
+    tier_rewards_layout: |
+      &b   %tier%: %tier_rewards_list%
+    tier_rewards_list_format: '&a%reward_name%&b, '
+  getreward:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll getreward (tier) (name)'
+    error-reward-missing: '&cError: %name% is not a valid reward! Do &b/cluescroll
+      listrewards'
+    success: '&aReward &b%name% &afrom tier &b%tier% &ahas been given to you.'
+  givereward:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll givereward (player)
+      (tier) (name)'
+    error-reward-missing: '&cError: %name% is not a valid reward! Do &b/cluescroll
+      listrewards'
+    success: '&aSuccessfully gave reward %name% from tier %tier% to player %player%.'
+  editreward:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll editreward (tier) (reward)
+      (name/weight) (value)'
+    error-reward-missing: '&cError: %name% is not a valid reward! Do &b/cluescroll
+      listrewards'
+    error-invalid-weight: '&cError: %weight% is not a valid number!'
+    name-success: '&aSuccessfully renamed reward &b%old% &afrom tier &b%tier% &ato
+      &b%new%&a!'
+    weight-success: '&aSuccessfully changed reward &b%name% &aweight from &b%old%
+      &ato &b%new%&a!'
+  resetcooldown:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll resetcooldown (all/name)
+      (all/identifier)'
+    error-invalid-identifier: '&cError: %identifier% is not an identifier.'
+    success: '&aSuccessfully reset %identifier% for %target%.'
+  customtrigger:
+    incorrect-args: '&cIncorrect arguments. Use &b/cluescroll customtrigger (player)
+      (identifier) [amount]'
+    error-invalid-amount: '&cError: %amount% is not a valid number!'
+    amount-not-negative: '&cError: %amount% cannot be less than 1.'
+    success: '&aSuccessfully triggered identifier %identifier% for player %player%
+      with amount %amount%.'
+  help:
+    list: |
+      &d&l&m]------&r &d&lClue Scrolls Help &m------[&r
+      &b/cluescroll help &a- Display command help
+      &b/cluescroll give (player) (scroll/crystal) (tier/mystery) (name) [amount] &a- Give a scroll or crystal to a player
+      &b/cluescroll giveall (scroll/crystal) (tier/mystery) (name) [amount] &a- Give all online players a scroll or crystal
+      &b/cluescroll reload &a- Reload the config
+      &b/cluescroll rehook &a- Rehook the plugin
+      &b/cluescroll additem (tier) (name) (weight) &a- Add an item to the rewards
+      &b/cluescroll addcommand (tier) (name) (weight) (command) &a- Add a command to the rewards
+      &b/cluescroll removereward (tier) (name) &a- Remove an item from the rewards
+      &b/cluescroll listrewards &a- Lists all rewards and their weight
+      &b/cluescroll rewardinfo (tier) (name) &a- Get info about a reward
+      &b/cluescroll getreward (tier) (name) &a- Get a reward
+      &b/cluescroll givereward (player) (tier) (name) &a- Give a reward
+      &b/cluescroll editor &a- Open the editor GUI
+      &b/cluescroll editreward (tier) (name) (name/weight) (value) &a- Edit a value of a reward
+      &b/cluescroll resetcooldown (all/name) (all/identifier)
+      &b/cluescroll customtrigger (player) (identifier) [amount] - &aExecute a custom trigger
+dropped-scroll: '&cYour clue scroll has been dropped in front of you!'
+not-bound-to-player: '&cYou cannot use this scroll. It is not bound to you!'
+cannot-apply-crystal-inventory: '&cYou can only apply crystals to scrolls which are
+  inside your inventory.'
+cannot-apply-crystal-wrong-tier: '&cYour crystal doesn''t match the tier of the scroll
+  you''re trying to use it on!'
+cannot-apply-crystal-scroll-bound: '&cYou cannot use this crystal on this scroll because
+  it is not bound to you!'
+cannot-move-crystal: '&cYou cannot move crystals into that inventory.'
+cannot-apply-crystal-scroll-hidden: '&cYou cannot apply crystals to this scroll until
+  you unlock the scroll''s contents.'
+scroll-already-complete: '&cThis scroll is already complete! Hold the scroll in your
+  hand and right-click to complete.'
+cannot-move-scroll: '&cYou cannot move clue scrolls into that inventory.'
+scroll-expired: '&cThis scroll has expired. You can no longer work on this.'
+no-permission-purchase: '&cYou''re not allowed to purchase that.'
+command-not-bound-to-player: '&cYou cannot receive this command reward. It is not
+  bound to you!'
+gui:
+  weight-greater-zero: '&cThe weight of a reward must be greater than zero!'

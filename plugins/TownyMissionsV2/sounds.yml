@@ -1,0 +1,17 @@
+test:
+  test: 'BLOCK_ANVIL_BREAK,2.7,2.7'
+
+mission:
+  mission:
+    completion: 'ENTITY_PLAYER_LEVELUP,1.5,1.0'
+
+  goal:
+    completion: 'ENTITY_FIREWORK_ROCKET_LAUNCH,2.0,1.0'
+    auto-contribute-1: 'ENTITY_EXPERIENCE_ORB_PICKUP,0.75,1.8'
+    auto-contribute-2: 'ENTITY_EXPERIENCE_ORB_PICKUP,0.75,1.9'
+    auto-contribute-3: 'ENTITY_EXPERIENCE_ORB_PICKUP,0.75,2.0'
+
+gui:
+  action:
+    fail: 'UI_BUTTON_CLICK,1.0,1.0'
+    success: 'ENTITY_EXPERIENCE_ORB_PICKUP,1.0,1.0'

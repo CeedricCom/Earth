@@ -1,0 +1,9 @@
+#Whether to save missions
+use-storage: true
+
+#Storage implementation to use
+# - SQLITE
+storage-type: SQLITE
+
+#Whether to or not to run the mission pool at start
+start-pool: true

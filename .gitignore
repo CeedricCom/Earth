@@ -24,9 +24,14 @@ plugins/dynmap/templates/
 plugins/dynmap/renderdata/
 plugins/dynmap/markers/
 plugins/dynmap/export/
+plugins/dynmap/ids-by-ip.txt
+plugins/dynmap/lightings.txt
+plugins/dynmap/shaders.txt
 plugins/dynmap/colorschemes/
+plugins/dynmap/world.pending
 plugins/Essentials/usermap.csv
 plugins/Essentials/userdata/
+plugins/spark/tmp/
 *.db
 plugins/iConomy/VERSION
 abrir.bat
@@ -35,6 +40,7 @@ plugins/SuperVanish/data.yml
 plugins/WorldEdit/sessions/
 plugins/WorldEdit/.archive-unpack
 plugins/WorldEdit/assets
+plugins/ProtocolLib/lastupdate
 plugins/CoreProtect/.license
 plugins/CombatLogX/playerdata/
 plugins/HolographicDisplays/database.yml
@@ -44,3 +50,4 @@ plugins/CrateReloaded/location.yml
 abrir.bat
 cratereloaded-*.zip
 plugins/Chunky/tasks/
+plugins/dynmap/ids-by-ip.txt

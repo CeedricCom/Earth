@@ -74,7 +74,7 @@ chatconfigcomments: ''
 channel_formats:
   # This is the format which will be used for GLOBAL chat/channels.
   # This is also the format used when you have modify_chat.enable: true, but use other plugins to handle chat.
-  global: '&5{permprefix}{nationtagoverride}{towntagoverride}&d{townyprefix}{modplayername}&f:{msgcolour} {msg}'
+  global: '{channelTag}{permprefix}{nationtagoverride}{towntagoverride}{msgcolour}{townyprefix}{modplayername}&f: {msg}'
   # TOWN channel types.
   town: '&3{towntagoverride}&b{modplayername}&f:{msgcolour} {msg}'
   # NATION channel types.
