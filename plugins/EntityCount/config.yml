@@ -1,0 +1,20 @@
+# EntityCount
+# Count entities in a world
+# This file must contain valid YAML code. A YAML checker may be found at http://www.yamllint.com
+#
+# Design: SlimeDog
+# Implementation: drives_a_ford
+# Testing: SlimeDog
+#
+# Minecraft version support: 1.13.2, 1.14.4, 1.15.2, 1.16.5, 1.17.x
+#
+
+# ========== CHECK FOR UPDATES =====================================================================
+# If you do not want notification of available updates in the console log, you may disable it here.
+check-for-updates: true
+
+# ========== BSTATS METRICS ========================================================================
+# By default, the plugin collects and transmits anonymous statistics to bstats.org.
+# Data collection may be disabled here, or generally in the bStats/config.yml.
+#
+enable-metrics: true

@@ -1,0 +1,88 @@
+# Please visit https://github.com/froobynooby/FarmControl/wiki/Profiles for help with making profiles.
+
+profiles:
+  # Remove random movements and disable collisions of mobs in animal farms
+  soft-nerf-animal-farms:
+    group:
+      types:
+        - "category:animal"
+        - "category:monster"
+      count: 1
+    actions:
+      - remove-random-movement
+      - disable-collisions
+
+  # Remove the awareness of mobs in animal farms
+  hard-nerf-fish:
+    group:
+      types:
+        - "category:fish"
+        - squid
+      count: 3
+      distance: 40
+    actions:
+      - remove-awareness
+      - remove-ai
+      - disable-collisions
+
+  ai-wipe:
+    group:
+      types:
+        - "category:fish"
+        - "category:ambient"
+        - squid
+    count: 3
+    distance: 20
+    actions:
+      - remove
+
+  # Remove the AI of mobs in animal farms
+  freeze-animal-farms:
+    group:
+      types:
+        - "category:animal"
+      count: 15
+      distance: 5
+    actions:
+      - remove-ai
+      - disable-collisions
+
+  # No more than 20 animals (all of the same type) within close proximity
+  trim-animal-farms:
+    group:
+      types:
+        - "category:animal"
+      count: 21
+      distance: 5
+      pure: true
+    actions:
+      - remove
+
+  # No more than 50 animals (all of the same type) sparsely placed (within 160 blocks of each other)
+  trim-sparse-animal-farms:
+    group:
+      types:
+        - "category:animal"
+      count: 51
+      distance: 160
+      pure: true
+    actions:
+      - remove
+
+  # No more than 10 villagers per chunk
+  trim-villager-chunks:
+    group:
+      types:
+        - "villager"
+      count: 11
+      distance: same-chunk
+    actions:
+      - remove
+  trim-monsters:
+    group:
+      types:
+        - "category:monster"
+      count: 21
+      distance: 5
+    actions:
+      - remove

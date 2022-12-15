@@ -3,6 +3,7 @@ banned-ips.json
 cache
 usercache.json
 whitelist.json
+crash-reports/
 world/
 world_nether/
 world_the_end/
@@ -29,6 +30,8 @@ plugins/dynmap/lightings.txt
 plugins/dynmap/shaders.txt
 plugins/dynmap/colorschemes/
 plugins/dynmap/world.pending
+plugins/TAB/placeholder-errors.log
+plugins/spark/activity.json
 plugins/Essentials/usermap.csv
 plugins/Essentials/userdata/
 plugins/spark/tmp/

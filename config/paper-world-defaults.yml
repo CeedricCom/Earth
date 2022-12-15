@@ -15,7 +15,7 @@
 _version: 29
 anticheat:
   anti-xray:
-    enabled: false
+    enabled: true
     engine-mode: 1
     hidden-blocks:
     - copper_ore
@@ -63,18 +63,18 @@ chunks:
     small_fireball: -1
     snowball: -1
   fixed-chunk-inhabited-time: -1
-  max-auto-save-chunks-per-tick: 24
-  prevent-moving-into-unloaded-chunks: false
+  max-auto-save-chunks-per-tick: 6
+  prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
   fix-climbing-bypassing-cramming-rule: false
-  max-entity-collisions: 8
+  max-entity-collisions: 2
   only-players-collide: false
 entities:
   armor-stands:
-    do-collision-entity-lookups: true
-    tick: true
+    do-collision-entity-lookups: false
+    tick: false
   behavior:
     baby-zombie-movement-modifier: 0.5
     disable-chest-cat-detection: false
@@ -128,36 +128,40 @@ entities:
   spawning:
     all-chunks-are-slime-chunks: false
     alt-item-despawn-rate:
-      enabled: false
+      enabled: true
       items:
         cobblestone: 300
+        dirt: 300
+        gravel: 300
+        netherrack: 300
+        sand: 300
     count-all-mobs-for-spawning: false
     creative-arrow-despawn-rate: default
     despawn-ranges:
       ambient:
-        hard: 128
-        soft: 32
+        hard: 96
+        soft: 28
       axolotls:
-        hard: 128
-        soft: 32
+        hard: 96
+        soft: 28
       creature:
-        hard: 128
-        soft: 32
+        hard: 96
+        soft: 28
       misc:
-        hard: 128
-        soft: 32
+        hard: 96
+        soft: 28
       monster:
-        hard: 128
-        soft: 32
+        hard: 96
+        soft: 28
       underground_water_creature:
-        hard: 128
-        soft: 32
+        hard: 96
+        soft: 28
       water_ambient:
-        hard: 64
-        soft: 32
+        hard: 96
+        soft: 28
       water_creature:
-        hard: 128
-        soft: 32
+        hard: 96
+        soft: 28
     disable-mob-spawner-spawn-egg-transformation: false
     duplicate-uuid:
       mode: SAFE_REGEN
@@ -205,7 +209,7 @@ environment:
     enabled: true
   generate-flat-bedrock: false
   nether-ceiling-void-damage-height: disabled
-  optimize-explosions: false
+  optimize-explosions: true
   portal-create-radius: 16
   portal-search-radius: 128
   portal-search-vanilla-dimension-scaling: true
@@ -254,7 +258,7 @@ misc:
   disable-sprint-interruption-on-attack: true
   light-queue-size: 20
   max-leash-distance: 10.0
-  redstone-implementation: VANILLA
+  redstone-implementation: EIGENCRAFT
   shield-blocking-delay: 5
   show-sign-click-command-failure-msgs-to-player: false
   update-pathfinding-on-block-update: true

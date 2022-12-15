@@ -6,6 +6,8 @@ header-footer:
   disable-in-servers:
     - disabledserver
   header:
+    - "&6&lGladia2.0"
+    - "&7A clone by cedric and Delta"
     - ""
   footer:
     - ""
@@ -71,7 +73,7 @@ scoreboard-teams:
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Yellow-number
 yellow-number-in-tablist:
-  enabled: true
+  enabled: false
   value: "%ping%"
   disable-in-worlds:
     - disabledworld

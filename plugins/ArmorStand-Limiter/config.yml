@@ -1,0 +1,210 @@
+#                                                                   
+#    /\   _  _   _   _ (_  |_  _   _   _|   |   .  _  . |_  _  _    
+#   /--\ |  ||| (_) |  __) |_ (_| | ) (_|   |__ | ||| | |_ (- |     
+#                                                                   
+#  Developed by xSavior_of_God                                      
+#                                                                   
+#  For SUPPORT                                                      
+#   <Discord/>     https://discord.gg/5UuVdTE                       
+#                                                                   
+#                                                                   
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+# How many ArmorStands must there be...
+ArmorStandLimit:
+  # ...in a block to be removed?
+  Block: 
+    # The maximum number of armorstands that can be in a block, 
+    # if higher, all armorstands will be removed!
+    Trigger: 50
+    # Do you want to check every x ('Refersh') minutes if there are more Armor Stands 
+    # than 'ArmorStandLimit' in a block?
+    Task:
+      # Do you want to enable this task?
+      Enabled: false
+      # How often should the check be done? ( Recommended 5 )
+      Refresh: 10
+  # ...in a chunk to be removed?
+  Chunk:
+    # The maximum number of armorstands that can be in a chunk, 
+    # if higher, all armorstands will be removed!
+    Trigger: 256
+    # Do you want to check every x ('Refersh') minutes if there are more Armor Stands 
+    # than 'ArmorStandLimit' in a chunk?
+    Task:
+      # Do you want to enable this task?
+      Enabled: false
+      # How often should the check be done? ( Recommended 5 )
+      Refresh: 10
+  # Various checks to perform before removing an armorstand
+  Checks:
+    # List of worlds where armorstands should not be removed
+    DisabledWorlds:
+      - 'world_disabled'
+    # List of words that, if present in the name of the armor stand, 
+    # prohibit its removal
+    DisableIfNameContains:
+      - 'CustomName'
+    # Disable removal if Armor Stand has a Name
+    DisableIfNamed: true
+    # (ONLY 1.9+) Disable removal if Armor Stand is Invulnerable
+    DisableIfIsInvulnerable: true
+    # Disable removal if Armor Stand is Invisible
+    DisableIfIsInvisible: true
+    # Disable removal if Armor Stand has Arms
+    DisableIfHasArms: true
+    # Disable removal if Armor Stand has not BasePlate
+    DisableIfHasNotBasePlate: true
+    # Disable removal if Armor Stand has Helmet
+    DisableIfHasHelmet: false
+    # Disable removal if Armor Stand has Chestplate
+    DisableIfHasChestplate: false
+    # Disable removal if Armor Stand has Leggings
+    DisableIfHasLeggings: false
+    # Disable removal if Armor Stand has Boots
+    DisableIfHasBoots: false
+    # Disable removal if Armor Stand is small
+    DisableIfIsSmall: true
+    # Disable if an entity is part of a hologram
+    DisableIfHolographicDisplaysEntityPart: false
+    # Disable if is active part of a Model Engine Entity 
+    # ( Required ModelEngine https://www.spigotmc.org/resources/79477/ )
+    DisableIfIsModelEngineEntity: false
+
+noPerms: "&cUnknown Command or you don't have permissions!"
+tooManyArmorStand: "&c&lHey! &7You can't place it here, there are more than {max} armor stands in this chunk!"
+
+# TPS Meter will allow you to analyze the tps every tick, 
+# if they are lower than the preset value in 'Trigger' the Armor Stands 
+# will be cleared only if they are more than 'ArmorStandLimit' in a single block
+TPSMeter:
+  # Do you want to enable this feature?
+  Enabled: false
+  # Under how many TPS must the server go down to trigger this event? ( Recommended 17 )
+  Trigger: 17
+
+# Various events
+Events:
+  # Do you want to limit the armor stands placed by users in a chunk?
+  # the limit is based on the one set above (ArmorStandLimit -> Chunk -> Trigger)
+  LimitArmorStandPlaceForChunk: false
+  # Do you want to disable armorstand spawning through dispensers?
+  DisableDispenserSpawningArmorstand: false
+  # Do you want to disable the armor stand from moving...
+  DisableArmorStandMoving:
+    # Gravity
+    #( This option also disables movement in the water )
+    Gravity: false
+    # pushed by a piston
+    Piston: false
+
+# Want to be notified whenever Armor Stands are removed?
+Notifications:
+  # This option will allow you to completely disable all notifications, 
+  # if on true, it will only enable them if they are enabled
+  Enabled: true
+
+  # Do you want to receive a message in the console as a notification?
+  Console:
+    Enabled: true
+    # Message format
+    #  
+    # Placeholders:
+    #   {x} => Coordinate X
+    #   {z} => Coordinate Z
+    #   {world} => World Name
+    #   {type}  => Chunk or xyz
+    #   {counter} => Total number of Armor Stands found in that location
+    #   {max} => The value of 'ArmorStandLimit'
+    Message: |
+      &c&l----------------------------
+      &r
+      &eArmorStand Limiter
+      &r
+      &fWorld &e{world}
+      &fType &e{type}
+      &fX  &e{x}
+      &fZ  &e{z}
+      &fCounter   &c{counter}&f/{max}
+      &r
+      &c&l----------------------------
+
+  # Want to receive an in-game message as a notification?
+  OnlinePlayer:
+    Enabled: true
+    # What is the permission you need to have to receive this notification?
+    Permission: "armostandlimiter.notify"
+    # Message format
+    #  
+    # Placeholders:
+    #   {x} => Coordinate X
+    #   {z} => Coordinate Z
+    #   {world} => World Name
+    #   {type}  => Chunk or xyz
+    #   {counter} => Total number of Armor Stands found in that location
+    #   {max} => The value of 'ArmorStandLimit'
+    Message: |
+      &c&l----------------------------
+      &r
+      &eArmorStand Limiter
+      &r
+      &fWorld &e{world}
+      &fType &e{type}
+      &fX  &e{x}
+      &fZ  &e{z}
+      &fCounter   &c{counter}&f/{max}
+      &r
+      &c&l----------------------------
+
+  Telegram:
+    Enabled: false
+    # Telegram bot API
+    API: "https://api.telegram.org/bot"
+    # The token of the bot that sends you the notification
+    Token: ""
+    # The unique id of the chat in which the message will be sent
+    ChatID: ""
+    # Message format
+    #  
+    # Placeholders:
+    #   {x} => Coordinate X
+    #   {z} => Coordinate Z
+    #   {world} => World Name
+    #   {type}  => Chunk or xyz
+    #   {counter} => Total number of Armor Stands found in that location
+    #   {max} => The value of 'ArmorStandLimit'
+    Message: |
+      <b>ArmorStand Limiter</b>
+      %empity%
+      <b>World</b>  <code>{world}</code>
+      <b>Type</b>  <code>{type}</code>
+      <b>X</b>  <code>{x}</code>
+      <b>Z</b>  <code>{z}</code>
+      %empity%
+      <b>Counter</b>  {counter} <code>| {max}</code>
+
+  Discord:
+    Enabled: false
+    # The token of the bot that sends you the notification
+    Webhook: ""
+    # Message format
+    Title: "ArmorStand Limiter"
+    # Default null(Invisible) characters
+    Description: "%empity%"
+    # color code, type HEX ("#ffeb3b") 
+    Color: "#ffeb3b"
+    # Message format
+    #  
+    # Placeholders:
+    #   {x} => Coordinate X
+    #   {z} => Coordinate Z
+    #   {world} => World Name
+    #   {type}  => Chunk or xyz
+    #   {counter} => Total number of Armor Stands found in that location
+    #   {max} => The value of 'ArmorStandLimit'
+    Message: |
+      **World**  {world}
+      **Type**  `{type}`
+      **X**  `{x}`
+      **Z**  `{z}`
+      **Counter**  `{counter}`/{max}

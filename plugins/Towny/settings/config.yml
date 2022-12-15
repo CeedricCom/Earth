@@ -1112,7 +1112,7 @@ filters_colour_chat:
   # Colour codes used in the RELATIONAL placeholder %rel_townyadvanced_color% to display the relation between two players.
   papi_relational_formatting:
     # Used when two players have no special relationship.
-    none: '&f'
+    none: '&a'
   
     # Given to players who have no town.
     no_town: '&f'

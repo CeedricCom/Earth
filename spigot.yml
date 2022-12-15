@@ -15,11 +15,11 @@ settings:
   sample-count: 12
   timeout-time: 60
   restart-on-crash: true
-  restart-script: ./start.sh
+  restart-script: ./abrir.sh
   bungeecord: false
   player-shuffle: 0
   user-cache-size: 1000
-  save-user-cache-on-stop-only: false
+  save-user-cache-on-stop-only: true
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
   netty-threads: 4
@@ -40,7 +40,7 @@ messages:
   outdated-server: Outdated server! I'm still on {0}
   restart: Server is restarting
 advancements:
-  disable-saving: false
+  disable-saving: true
   disabled:
   - minecraft:story/disabled
 commands:
@@ -70,11 +70,11 @@ world-settings:
     enable-zombie-pigmen-portal-spawns: true
     wither-spawn-sound-radius: 0
     hanging-tick-frequency: 100
-    arrow-despawn-rate: 1200
-    trident-despawn-rate: 1200
+    arrow-despawn-rate: 300
+    trident-despawn-rate: 300
     zombie-aggressive-towards-villager: true
-    nerf-spawner-mobs: false
-    mob-spawn-range: 8
+    nerf-spawner-mobs: true
+    mob-spawn-range: 6
     end-portal-sound-radius: 0
     hunger:
       jump-walk-exhaustion: 0.05
@@ -86,8 +86,8 @@ world-settings:
       other-multiplier: 0.0
     max-tnt-per-tick: 100
     max-tick-time:
-      tile: 50
-      entity: 50
+      tile: 10
+      entity: 20
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -110,13 +110,13 @@ world-settings:
       cavevines-modifier: 100
       glowberry-modifier: 100
     entity-activation-range:
-      animals: 32
+      animals: 16
       monsters: 32
       raiders: 48
-      misc: 16
+      misc: 8
       water: 16
-      villagers: 32
-      flying-monsters: 32
+      villagers: 24
+      flying-monsters: 24
       wake-up-inactive:
         animals-max-per-tick: 4
         animals-every: 1200
@@ -133,11 +133,11 @@ world-settings:
       villagers-work-immunity-after: 100
       villagers-work-immunity-for: 20
       villagers-active-for-panic: true
-      tick-inactive-villagers: true
+      tick-inactive-villagers: false
       ignore-spectators: false
     entity-tracking-range:
       players: 48
-      animals: 48
+      animals: 24
       monsters: 48
       misc: 32
       other: 64
