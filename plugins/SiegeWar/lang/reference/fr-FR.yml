@@ -5,7 +5,7 @@ language: french
 author: PainOchoco
 website: 'http://townyadvanced.github.io/'
 description: >
-  Fichier de langue pour tous les messages du jeu. Ne modifiez pas ce fichier. Si vous souhaitez modifier l'une des entrÃ©es, faites une copie autrement nommÃ©e. D'autres fichiers de langue peuvent Ãªtre activÃ©s en modifiant le paramÃ¨tre [language] dans le fichier config.yml
+  Fichier de langue pour tous les messages du jeu. Ne modifiez pas ce fichier. Si vous souhaitez modifier l'une des entrées, faites une copie autrement nommée. D'autres fichiers de langue peuvent être activés en modifiant le paramètre [language] dans le fichier config.yml
 #You MUST retain spacing in the texts.
 #If a text begins or ends with a space, it must remain that way.
 #%s = data to be supplied by the plugin.
@@ -18,103 +18,103 @@ description: >
 siegewar_plugin_prefix: '&f[&6SiegeWar&f] '
 #Added in (Siegewar version)
 #Siege war happy-path messages
-msg_siege_war_attack_pay_war_chest: '&bUn coffre de guerre a Ã©tÃ© prÃ©parÃ© par %s, avec une valeur de %s. Celui qui remporte le siÃ¨ge recevra cet argent.'
-msg_siege_war_attack_recover_war_chest: '&bLe coffre de guerre a Ã©tÃ© rÃ©cupÃ©rÃ© par %s, avec une valeur de %s.'
-msg_siege_war_neutral_town_plundered: '&b%s a Ã©tÃ© pillÃ© de %s par %s !'
-msg_siege_war_nation_town_plundered: '&b%s a Ã©tÃ© pillÃ© de %s par %s !'
-msg_siege_war_town_ruined_from_plunder: '&b%s a Ã©tÃ© rÃ©duit en ruines par %s!'
-msg_siege_war_town_bankrupted_from_plunder: '&b%s a Ã©tÃ© mis en faillite par %s!'
-msg_siege_war_nation_defeated: '&b%s a Ã©tÃ© vaincu !.'
-msg_siege_war_attacking_troops_at_siege_banner: '&bSiÃ¨ge sur %s > Les attaquants sont Ã  la banniÃ¨re de siÃ¨ge.'
-msg_siege_war_banner_control_session_success: '&bLa session de contrÃ´le de banniÃ¨re a rÃ©ussi ! Vous avez Ã©tÃ© ajoutÃ© Ã  la liste de contrÃ´le des banniÃ¨res.'
-msg_siege_war_banner_control_gained_by_attacker: '&bSiÃ¨ge sur %s > Les attaquants ont acquis le contrÃ´le de la banniÃ¨re.'
-msg_siege_war_banner_control_gained_by_defender: '&bSiÃ¨ge sur %s > Les dÃ©fenseurs ont acquis le contrÃ´le de la banniÃ¨re.'
-msg_town_destroyed_by_nation_tax: '&b%s ne pouvait pas payer de taxes et est ruinÃ©.'
-msg_town_destroyed_by_nation_tax_multiple: '&bLes villes suivantes ne pouvaient pas payer les taxes national et sont ruinÃ©es : '
+msg_siege_war_attack_pay_war_chest: '&bUn coffre de guerre a été préparé par %s, avec une valeur de %s. Celui qui remporte le siège recevra cet argent.'
+msg_siege_war_attack_recover_war_chest: '&bLe coffre de guerre a été récupéré par %s, avec une valeur de %s.'
+msg_siege_war_neutral_town_plundered: '&b%s a été pillé de %s par %s !'
+msg_siege_war_nation_town_plundered: '&b%s a été pillé de %s par %s !'
+msg_siege_war_town_ruined_from_plunder: '&b%s a été réduit en ruines par %s!'
+msg_siege_war_town_bankrupted_from_plunder: '&b%s a été mis en faillite par %s!'
+msg_siege_war_nation_defeated: '&b%s a été vaincu !.'
+msg_siege_war_attacking_troops_at_siege_banner: '&bSiège sur %s > Les attaquants sont à la bannière de siège.'
+msg_siege_war_banner_control_session_success: '&bLa session de contrôle de bannière a réussi ! Vous avez été ajouté à la liste de contrôle des bannières.'
+msg_siege_war_banner_control_gained_by_attacker: '&bSiège sur %s > Les attaquants ont acquis le contrôle de la bannière.'
+msg_siege_war_banner_control_gained_by_defender: '&bSiège sur %s > Les défenseurs ont acquis le contrôle de la bannière.'
+msg_town_destroyed_by_nation_tax: '&b%s ne pouvait pas payer de taxes et est ruiné.'
+msg_town_destroyed_by_nation_tax_multiple: '&bLes villes suivantes ne pouvaient pas payer les taxes national et sont ruinées : '
 #Siege war error message
 #Recruiting
-msg_err_siege_besieged_town_cannot_recruit: "&cLes villes assiÃ©gÃ©es ne peuvent pas recruter de nouveaux rÃ©sidents."
+msg_err_siege_besieged_town_cannot_recruit: "&cLes villes assiégées ne peuvent pas recruter de nouveaux résidents."
 #Claiming/Unclaiming
-msg_err_siege_claim_too_near_siege_zone: "&cLe claim est trop proche d'un siÃ¨ge."
-msg_err_siege_besieged_town_cannot_claim: "&cLes villes assiÃ©gÃ©es ne peuvent pas claim de nouvelles terres."
-msg_err_siege_besieged_town_cannot_unclaim: "&cLes villes assiÃ©gÃ©es (ou les villes qui ont rÃ©cemment perdu un siÃ¨ge) ne peuvent pas claim des terres."
-msg_err_war_common_occupied_town_cannot_unclaim: "&cLes villes occupÃ©es ne peuvent pas claim des terres."
+msg_err_siege_claim_too_near_siege_zone: "&cLe claim est trop proche d'un siège."
+msg_err_siege_besieged_town_cannot_claim: "&cLes villes assiégées ne peuvent pas claim de nouvelles terres."
+msg_err_siege_besieged_town_cannot_unclaim: "&cLes villes assiégées (ou les villes qui ont récemment perdu un siège) ne peuvent pas claim des terres."
+msg_err_war_common_occupied_town_cannot_unclaim: "&cLes villes occupées ne peuvent pas claim des terres."
 #Revolt
 msg_err_siege_war_town_voluntary_leave_impossible: "&cLes villes ne peuvent pas quitter les nations sans accord. Pour quitter votre nation, persuadez le roi (ou un assistant) d'expulser votre ville."
-msg_err_siege_war_revolt_immunity_active: "&cVotre ville bÃ©nÃ©ficie d'une immunitÃ© Ã  la rÃ©volte. Elle ne peut pas se rÃ©volter tant que l'immunitÃ© Ã  la rÃ©volte n'est pas expirÃ©e."
+msg_err_siege_war_revolt_immunity_active: "&cVotre ville bénéficie d'une immunité à la révolte. Elle ne peut pas se révolter tant que l'immunité à la révolte n'est pas expirée."
 #Attack
-msg_err_siege_war_banner_must_be_placed_above_ground: '&cLa banniÃ¨re de siÃ¨ge doit Ãªtre placÃ©e au-dessus du sol.'
-msg_err_siege_war_action_not_a_town_member: '&cVous devez Ãªtre membre d''une ville pour effectuer cette action.'
+msg_err_siege_war_banner_must_be_placed_above_ground: '&cLa bannière de siège doit être placée au-dessus du sol.'
+msg_err_siege_war_action_not_a_town_member: '&cVous devez être membre d''une ville pour effectuer cette action.'
 NUKE ???? msg_err_siege_war_action_not_a_nation_member: '&cYou must be a member of a nation to do this action.'
 msg_err_siege_war_cannot_attack_own_town: '&cVous ne pouvez pas attaquer votre propre ville.'
 msg_err_siege_war_cannot_attack_town_in_own_nation: '&cVous ne pouvez pas attaquer une ville de votre propre nation.'
-msg_err_siege_war_cannot_attack_non_enemy_nation: '&cVous ne pouvez pas attaquer une ville Ã  moins que la nation de cette ville ne soit un ennemi de votre nation.'
-msg_err_siege_war_too_many_adjacent_cardinal_town_blocks: '&cVous ne pouvez pas effectuer cette action car ce chunk fait face Ã  plusieurs claims. Essayez de placer la banniÃ¨re autre part.'
-msg_err_siege_war_nation_already_attacking_town: '&cVotre nation attaque dÃ©jÃ  cette ville.'
-msg_err_siege_war_cannot_attack_siege_immunity: '&cLa ville cible bÃ©nÃ©ficie de l''immunitÃ© de siÃ¨ge. Elle ne peut pas Ãªtre attaquÃ© avant l''expiration de l''immunitÃ© de siÃ¨ge.'
-msg_err_siege_war_cannot_join_siege: '&cVous ne pouvez pas attaquer une ville lorsqu''elle est assiÃ©gÃ©e par une autre nation.'
-msg_err_siege_war_nation_has_too_many_active_siege_attacks: '&cVotre nation a atteint le nombre maximum d''attaques de siÃ¨ge simultanÃ©es. Pour lancer une autre attaque, une ou plusieurs des attaques en cours doivent se terminer.'
-msg_err_siege_war_town_not_close_enough_to_nation: '&cLa ville est trop Ã©loignÃ©e de votre capitale pour Ãªtre attaquÃ©e.'
+msg_err_siege_war_cannot_attack_non_enemy_nation: '&cVous ne pouvez pas attaquer une ville à moins que la nation de cette ville ne soit un ennemi de votre nation.'
+msg_err_siege_war_too_many_adjacent_cardinal_town_blocks: '&cVous ne pouvez pas effectuer cette action car ce chunk fait face à plusieurs claims. Essayez de placer la bannière autre part.'
+msg_err_siege_war_nation_already_attacking_town: '&cVotre nation attaque déjà cette ville.'
+msg_err_siege_war_cannot_attack_siege_immunity: '&cLa ville cible bénéficie de l''immunité de siège. Elle ne peut pas être attaqué avant l''expiration de l''immunité de siège.'
+msg_err_siege_war_cannot_join_siege: '&cVous ne pouvez pas attaquer une ville lorsqu''elle est assiégée par une autre nation.'
+msg_err_siege_war_nation_has_too_many_active_siege_attacks: '&cVotre nation a atteint le nombre maximum d''attaques de siège simultanées. Pour lancer une autre attaque, une ou plusieurs des attaques en cours doivent se terminer.'
+msg_err_siege_war_town_not_close_enough_to_nation: '&cLa ville est trop éloignée de votre capitale pour être attaquée.'
 #Invade
-msg_err_siege_war_no_siege_on_target_town: '&cIl n''y a pas de siÃ¨ge sur la ville de %s.'
+msg_err_siege_war_no_siege_on_target_town: '&cIl n''y a pas de siège sur la ville de %s.'
 #Plunder
-msg_err_siege_war_cannot_plunder_without_victory: "&cVous ne pouvez pas piller Ã  moins que votre nation ne remporte le siÃ¨ge."
-msg_err_siege_war_cannot_plunder_without_economy: "&cVous ne pouvez pas piller car aucun plugin Ã©conomique n'est actif"
-msg_err_siege_war_town_already_plundered: '&cCette ville a dÃ©jÃ  Ã©tÃ© pillÃ©e.'
+msg_err_siege_war_cannot_plunder_without_victory: "&cVous ne pouvez pas piller à moins que votre nation ne remporte le siège."
+msg_err_siege_war_cannot_plunder_without_economy: "&cVous ne pouvez pas piller car aucun plugin économique n'est actif"
+msg_err_siege_war_town_already_plundered: '&cCette ville a déjà été pillée.'
 #Block change
-msg_err_siege_war_cannot_destroy_siege_banner: "&cPendant que le siÃ¨ge est en cours, vous ne pouvez pas dÃ©truire la banniÃ¨re de siÃ¨ge ou le bloc auquel elle est attachÃ©e."
-msg_err_siege_war_banner_support_block_not_stable: "&cVous ne pouvez pas placer la banniÃ¨re sur un sol instable, par ex. sable ou gravier."
+msg_err_siege_war_cannot_destroy_siege_banner: "&cPendant que le siège est en cours, vous ne pouvez pas détruire la bannière de siège ou le bloc auquel elle est attachée."
+msg_err_siege_war_banner_support_block_not_stable: "&cVous ne pouvez pas placer la bannière sur un sol instable, par ex. sable ou gravier."
 #Banner control
-msg_war_siege_zone_milk_bucket_forbidden_while_attempting_banner_control: 'Vous ne pouvez pas utiliser cet item pendant une session de contrÃ´le de banniÃ¨re.'
+msg_war_siege_zone_milk_bucket_forbidden_while_attempting_banner_control: 'Vous ne pouvez pas utiliser cet item pendant une session de contrôle de bannière.'
 #Town Info Siege Section
-status_town_revolt_immunity_timer: '&2ImmunitÃ© Ã  la rÃ©volte : &a%s'
+status_town_revolt_immunity_timer: '&2Immunité à la révolte : &a%s'
 status_town_siege_status_in_progress: 'En cours'
-status_town_siege_status_banner_xyz: '&2 > BanniÃ¨re XYZ : &a%d,%d,%d'
-status_town_siege_immunity_timer: '&2 > Temps d''immunitÃ© : &a%s'
+status_town_siege_status_banner_xyz: '&2 > Bannière XYZ : &a%d,%d,%d'
+status_town_siege_immunity_timer: '&2 > Temps d''immunité : &a%s'
 status_town_siege_victory_timer: '&2 > Temps de victoire : &a%s'
-status_town_banner_control: '&2 > ContrÃ´le de la banniÃ¨re : %s &a[%s]&2: &f'
-status_town_banner_control_nobody: '&2 > ContrÃ´le de la banniÃ¨re : %s'
+status_town_banner_control: '&2 > Contrôle de la bannière : %s &a[%s]&2: &f'
+status_town_banner_control_nobody: '&2 > Contrôle de la bannière : %s'
 #General
 status_no_green: '&aNON'
 msg_occupier: '&4*Occupant*'
 msg_nobody: '&aPersonne'
 msg_attackers: '&aAttaquants'
-msg_defenders: '&aDÃ©fenseurs'
+msg_defenders: '&aDéfenseurs'
 #Town Neutrality
-status_town_peacefulness_status_change_timer: '&2Compte Ã  rebours avant le changement de statut de paix : &a%d jours'
-msg_war_common_town_declared_peaceful: '&bPaix dÃ©clarÃ©e ! La ville sera confirmÃ©e comme pacifique dans %d jour(s).'
-msg_war_common_town_declared_non_peaceful: '&bNon-pacificitÃ© dÃ©clarÃ©e! La ville sera confirmÃ©e comme non pacifique dans %d jour(s)'
-msg_war_common_town_peacefulness_countdown_cancelled: '&bLe compte Ã  rebours du changement de statut de paix a Ã©tÃ© annulÃ©.'
-msg_war_siege_cannot_add_nation_military_rank_to_peaceful_resident: '&cImpossible d''ajouter un grade militaire aux rÃ©sidents, car ils sont dans une ville paisible.'
+status_town_peacefulness_status_change_timer: '&2Compte à rebours avant le changement de statut de paix : &a%d jours'
+msg_war_common_town_declared_peaceful: '&bPaix déclarée ! La ville sera confirmée comme pacifique dans %d jour(s).'
+msg_war_common_town_declared_non_peaceful: '&bNon-pacificité déclarée! La ville sera confirmée comme non pacifique dans %d jour(s)'
+msg_war_common_town_peacefulness_countdown_cancelled: '&bLe compte à rebours du changement de statut de paix a été annulé.'
+msg_war_siege_cannot_add_nation_military_rank_to_peaceful_resident: '&cImpossible d''ajouter un grade militaire aux résidents, car ils sont dans une ville paisible.'
 #Siege immunities
-msg_set_siege_immunities_town: 'L''immunitÃ© au siÃ¨ge de la ville %s est dÃ©finie sur %s heures.'
-msg_set_siege_immunities_nation: 'Les immunitÃ©s de siÃ¨ge pour toutes les villes de la nation %s sont fixÃ©es Ã  %s heures.'
-msg_set_siege_immunities_all: 'Les immunitÃ©s de siÃ¨ge pour toutes les villes sont fixÃ©es Ã  %s heures.'
+msg_set_siege_immunities_town: 'L''immunité au siège de la ville %s est définie sur %s heures.'
+msg_set_siege_immunities_nation: 'Les immunités de siège pour toutes les villes de la nation %s sont fixées à %s heures.'
+msg_set_siege_immunities_all: 'Les immunités de siège pour toutes les villes sont fixées à %s heures.'
 #Siege-zone block placement restrictions
-msg_war_siege_zone_block_placement_forbidden: '&cVous ne pouvez pas placer ce type de bloc dans la zone naturelle d''une zone de siÃ¨ge.'
-msg_war_siege_zone_bucket_emptying_forbidden: '&cVous ne pouvez pas utiliser ce type de seau dans la zone naturelle d''une zone de siÃ¨ge.'
+msg_war_siege_zone_block_placement_forbidden: '&cVous ne pouvez pas placer ce type de bloc dans la zone naturelle d''une zone de siège.'
+msg_war_siege_zone_bucket_emptying_forbidden: '&cVous ne pouvez pas utiliser ce type de seau dans la zone naturelle d''une zone de siège.'
 #Added in 0.02:
 admin_help_1: 'Rechargez le fichier de configuration et de langue.'
-config_and_lang_file_reloaded_successfully: 'Le fichier de configuration et de langue a Ã©tÃ© rechargÃ© avec succÃ¨s.'
-config_and_lang_file_could_not_be_loaded: 'Ã‰chec du rechargement. Voir la console pour plus de dÃ©tails.'
+config_and_lang_file_reloaded_successfully: 'Le fichier de configuration et de langue a été rechargé avec succès.'
+config_and_lang_file_could_not_be_loaded: 'Échec du rechargement. Voir la console pour plus de détails.'
 #Added in 0.05:
-msg_err_not_being_sieged: '&cLa ville %s n''a pas de siÃ¨ge actif.'
-msg_err_town_not_registered: '&cLa ville %s n''est pas enregistrÃ©e.'
+msg_err_not_being_sieged: '&cLa ville %s n''a pas de siège actif.'
+msg_err_town_not_registered: '&cLa ville %s n''est pas enregistrée.'
 #Scoreboard
-hud_title: 'SiÃ¨ge'
-hud_siegestatus: 'Statut du siÃ¨ge'
+hud_title: 'Siège'
+hud_siegestatus: 'Statut du siège'
 hud_attackers: 'ATQ: '
 hud_defenders: 'DEF: '
-hud_banner_control: "Ctrl banniÃ¨re: "
+hud_banner_control: "Ctrl bannière: "
 hud_time_remaining: 'Temps restant: '
-msg_swa_resident_already_has_control: '&cLe rÃ©sident %s a dÃ©jÃ  le contrÃ´le.'
-msg_swa_resident_doesnt_have_control: "&Le rÃ©sident %s n'a pas le contrÃ´le."
-msg_swa_set_plunder_success: '&bPillage dÃ©fini pour %s sur %s.'
+msg_swa_resident_already_has_control: '&cLe résident %s a déjà le contrôle.'
+msg_swa_resident_doesnt_have_control: "&Le résident %s n'a pas le contrôle."
+msg_swa_set_plunder_success: '&bPillage défini pour %s sur %s.'
 siege_status_in_progress: 'En cours'
 siege_status_attacker_win: 'Victoire de l''Attaquant'
-siege_status_defender_win: 'Victoire du DÃ©fenseur'
+siege_status_defender_win: 'Victoire du Défenseur'
 siege_status_unknown: 'Inconnu'
-dynmap_siege_banner_control: 'ContrÃ´le de la banniÃ¨re: %s'
+dynmap_siege_banner_control: 'Contrôle de la bannière: %s'
 dynmap_siege_time_left: 'Temps restant: %s'
 #Added in 0.06:
 msg_inventory_degrade_warning: '&4WARNING: &cSome of your gear is close to breaking due to inventory degradation.'
@@ -229,9 +229,9 @@ status_town_siege_status_plundered: '&2 > Town Plundered: %s'
 status_town_siege_status_invaded: '   &2Town Invaded: %s'
 #Siege statuses
 siege_status_attacker_abandon: 'Abandon de l''attaquant'
-siege_status_defender_surrender: 'Capitulation du dÃ©fenseur'
+siege_status_defender_surrender: 'Capitulation du défenseur'
 siege_status_pending_attacker_abandon: 'En attente de l''abandon de l''attaquant'
-siege_status_pending_defender_surrender: 'En attente de la capitulation du dÃ©fenseur'
+siege_status_pending_defender_surrender: 'En attente de la capitulation du défenseur'
 #Nation screen
 status_nation_occupied_home_towns: '&2Occupied Home Towns &a[%s]&2: &f'
 status_nation_occupied_foreign_towns: '&2Occupied Foreign Towns &a[%s]&2: &f'
