@@ -52,7 +52,8 @@ plugins/CrateReloaded/claim/
 plugins/CrateReloaded/location.yml
 plugins/LuckPerms/translations/
 plugins/SiegeWar/lang/
-plugins/Chunk/tasks/
+plugins/Chunky/tasks/
+plugins/Chunky/borders.json
 server.properties
 abrir.bat
 cratereloaded-*.zip
