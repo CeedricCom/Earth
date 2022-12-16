@@ -12,6 +12,7 @@ ops.json
 permissions.yml
 libraries/
 .console_history
+plugins/ExploitFixer/locales/
 plugins/Towny/data/
 plugins/Towny/backup/
 plugins/Towny/logs/

@@ -143,3 +143,6 @@ username-changes: true
 
 # Logs changes made via the plugin "WorldEdit" if it's in use on your server.
 worldedit: true
+
+# Logs the spread of sculk blocks from sculk catalysts.
+sculk-spread: true
