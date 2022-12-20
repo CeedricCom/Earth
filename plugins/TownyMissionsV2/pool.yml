@@ -7,81 +7,655 @@
 
 tick: 60s #How frequently the pool ticks, unless testing the plugin this usually shouldn't be changed
 pool:
-  1: #Each key can be uniquely named whatever you please, it is probably better name it something meaningful
-    name: 'test-1'
-    #What type of mission bearer the mission is designed for. Omit this if it can be given to any mission bearer
-    #type.
+  town-mission-gatherer:
+    name: 'Gatherer'
     type: 'TOWN'
-    #how long the mission lasts. The format is similar to core protect or ban commands. Simply omit the duration
-    #for a mission with infinite duration
-    duration: '1d'
-    #mission rewards are different to goal rewards. Mission rewards are given to the bearer of the mission, that being
-    #the town or the nation. Thus the only two working rewards types for mission rewards are GOVERNMENT_BANK and COMMAND
-    #Rewards should usually be given to GOALS rather than MISSIONS because players contribute to goals.
+    duration: '7d'
     rewards:
       1:
         type: GOVERNMENT_BANK
-        total: 1000
-      2:
-        type: COMMAND
-        name: 'Extra Announcement'
-        command: 'say %s earned $%amount% from their towny mission!!! They are big rich'
-        total: 1000
-
-    #The definition of the goal is the type of goal it is.
+        total: 35000
     goals:
       1:
-        definition: 'CHAT'
-        goal: 5
-        word: 'Gamer'
-        #this goal does not have any rewards
-      2:
         definition: 'GATHER'
-        goal: 100
-        material: 'PUMPKIN'
-        #Goals have rewards. These rewards are distributed on completion of the mission. There are many types
-        #of goal rewards.
-        #  - MONEY <- Deposits money to the players account
-        #  - EXP <- Gives the player n experience orbs
-        #  - COMMAND <- Runs a command  , Use the %s to substitute the player and %amount% to substitute the amount given
-        #  - ITEM  <- Gives the player an item. If they are offline its given on join
-        #  - TEST  <- This reward isnt useful it just prints to ur console lol
-
-        #rewards are distributed on goal completion based on contribution. This was not done for the whole mission
-        #because how do you weigh different goals to each other.
+        goal: 10000
+        material: 'NETHERRACK'
         rewards:
           1:
             type: MONEY
-            total: 1000
+            total: 6500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 512
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: GOLD_BLOCK
+          4:
+            type: ITEM
+            total: 320
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: GLISTERING_MELON_SLICE
+      2:
+        definition: 'GATHER'
+        goal: 4000
+        material: 'GRAVEL'
+        rewards:
+          1:
+            type: MONEY
+            total: 7500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 576
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: GUNPOWDER
+      3:
+        definition: 'GATHER'
+        goal: 7000
+        material: 'SAND'
+        rewards:
+          1:
+            type: MONEY
+            total: 7500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 576
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'GLASS'
+  town-mission-crop-farmer:
+    name: 'Farmer'
+    type: 'TOWN'
+    duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 20000
+    goals:
+      1:
+        definition: 'GATHER'
+        goal: 7500
+        material: 'CARROT'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
           2:
             type: EXP
             total: 5000
           3:
             #view https://www.spigotmc.org/wiki/itemstack-serialization/ for more
             type: ITEM
-            total: 50
+            total: 576
             itemstack:
-              type: DIAMOND
-              meta:
-                display-name: '&e&lDiaaaamonds'
-          4:
-            type: COMMAND
-            total: 50
-            name: 'More Boasting'
-            command: 'say Hello %s. You received %amount% brownie points :)'
-
-          5:
-            type: TEST
-            total: 1000
-
-      3:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'GOLDEN_CARROT'
+      2:
         definition: 'GATHER'
-        goal: 50
-        material: DIRT
+        goal: 25000
+        material: POTATO
         rewards:
           1:
             type: MONEY
-            total: 150
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            #view https://www.spigotmc.org/wiki/itemstack-serialization/ for more
+            type: ITEM
+            total: 576
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'BAKED_POTATO'
+      3:
+        definition: 'GATHER'
+        goal: 10000
+        material: WHEAT
+        rewards:
+          1:
+            type: MONEY
+            total: 7500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            #view https://www.spigotmc.org/wiki/itemstack-serialization/ for more
+            type: ITEM
+            total: 512
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'NETHER_WART'
+  nation-mission-famer: #Each key can be uniquely named whatever you please, it is probably better name it something meaningful
+    name: 'Gatherer'
+    type: 'NATION'
+    duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 15000
+
+    goals:
+      1:
+        definition: 'GATHER'
+        goal: 5000 # about an inventory and a half
+        material: 'RED_MUSHROOM_BLOCK'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 1024
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'ENCHANTED_BOOK'
+              meta:
+                enchants:
+                  - unbreaking:4
+      2:
+        definition: 'GATHER'
+        goal: 10000
+        material: PUMPKIN
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 256
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'EMERALD_BLOCK'
+      3:
+        definition: 'GATHER'
+        goal: 10000
+        material: 'MELON'
+        rewards:
+          1:
+            type: MONEY
+            total: 7500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 256
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              type: 'EMERALD_BLOCK'
+  nation-mission-gatherer-2: #Each key can be uniquely named whatever you please, it is probably better name it something meaningful
+    name: 'Gatherer'
+    type: 'NATION'
+    duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 15000
+      2:
+        type: ITEM
+        total: 16
+        itemstack:
+          v: 19
+          ==: org.bukkit.inventory.ItemStack
+          type: 'WITHER_ROSE'
+
+    goals:
+      1:
+        definition: 'GATHER'
+        goal: 256
+        material: 'POPPY'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+      2:
+        definition: 'GATHER'
+        goal: 256
+        material: 'DANDELION'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 64
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'EMERALD_BLOCK'
+      3:
+        definition: 'GATHER'
+        goal: 128
+        material: 'ORANGE_TULIP'
+        rewards:
+          1:
+            type: MONEY
+            total: 7500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 64
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'EMERALD_BLOCK'
+  nation-mission-animals: #Each key can be uniquely named whatever you please, it is probably better name it something meaningful
+    name: 'Animals'
+    type: 'NATION'
+    duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 15000
+      2:
+        type: ITEM
+        total: 16
+        itemstack:
+          v: 19
+          ==: org.bukkit.inventory.ItemStack
+          type: 'GHAST_TEAR'
+    goals:
+      1:
+        definition: 'GATHER'
+        goal: 256 # 4 stacks of leather - GOOD LUCK
+        material: 'LEATHER'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 1
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'ZOMBIE_VILLAGER_SPAWN_EGG'
+      2:
+        definition: 'GATHER'
+        goal: 448
+        material: 'EGG'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 288
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'EMERALD_BLOCK'
+      3:
+        definition: 'GATHER'
+        goal: 448
+        material: 'HONEYCOMB'
+        rewards:
+          1:
+            type: MONEY
+            total: 7500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 8
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'SHULKER_SHELL'
+  nation-mission-fishing: #Each key can be uniquely named whatever you please, it is probably better name it something meaningful
+    name: 'Fishing'
+    type: 'NATION'
+    duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 15000
+      2:
+        type: ITEM
+        total: 1
+        itemstack:
+          v: 19
+          ==: org.bukkit.inventory.ItemStack
+          type: 'HEART_OF_THE_SEA'
+    goals:
+      1:
+        definition: 'GATHER'
+        goal: 256
+        material: 'COD'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 1
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'ENCHANTED_BOOK'
+              meta:
+                enchants:
+                  - 'lure:3'
+      2:
+        definition: 'GATHER'
+        goal: 64
+        material: 'PUFFERFISH'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 1
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'ZOMBIE_VILLAGER_SPAWN_EGG'
+      3:
+        definition: 'GATHER'
+        goal: 32
+        material: 'TROPICAL_FISH'
+        rewards:
+          1:
+            type: MONEY
+            total: 7500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 4
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'ENCHANTED_BOOK'
+              meta:
+                enchants: 
+                  - mending:1
+  nation-mission-miner: #Each key can be uniquely named whatever you please, it is probably better name it something meaningful
+    name: 'Miner'
+    type: 'NATION'
+    duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 20000
+      2:
+        type: ITEM
+        total: 1
+        itemstack:
+          v: 19
+          ==: org.bukkit.inventory.ItemStack
+          type: BEACON
+    goals:
+      1:
+        definition: 'GATHER'
+        goal: 4000
+        material: 'DIAMOND'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 1
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'ENCHANTED_BOOK'
+              meta:
+                enchants:
+                  - 'fortune:4'
+          4:
+            type: ITEM
+            total: 2
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'DRAGON_BREATH'
+      2:
+        definition: 'GATHER'
+        goal: 15000
+        material: 'IRON_INGOT'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 5
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'POTION'
+              meta:
+                display-name: '&6&LThe FastBreak Potion'
+                meta-type: POTION
+                potion-type: HEALING
+                lore:
+                  - "&f"
+                  - "&cNote that brewing will"
+                  - "&cbreak this potion"
+                color:
+                  RED: 255
+                  GREEN: 166
+                  BLUE: 23
+                custom-effects:
+                  - effect: HASTE
+                    duration: 12000 # 10 minutes
+                    amplifier: 1
+                  - effect: SPEED
+                    duration: 12000 # 10 minutes
+                    amplifier: 3
+                  - effect: FIRE_RESISTANCE
+                    duration: 12000 # 10 minutes
+                    amplifier: 0
+
+      3:
+        definition: 'GATHER'
+        goal: 25000
+        material: 'COPPER_INGOT'
+        rewards:
+          1:
+            type: MONEY
+            total: 7500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 5
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'POTION'
+              meta:
+                display-name: '&6&LThe FastBreak Potion'
+                meta-type: 'POTION'
+                potion-type: 'HEALING'
+                lore:
+                  - "&f"
+                  - "&cNote that brewing will"
+                  - "&cbreak this potion"
+                color:
+                  RED: 255
+                  GREEN: 166
+                  BLUE: 23
+                custom-effects:
+                  - effect: HASTE
+                    duration: 12000 # 10 minutes
+                    amplifier: 1
+                  - effect: SPEED
+                    duration: 12000 # 10 minutes
+                    amplifier: 3
+                  - effect: FIRE_RESISTANCE
+                    duration: 12000 # 10 minutes
+                    amplifier: 0
+  town-mission-miner: #Each key can be uniquely named whatever you please, it is probably better name it something meaningful
+    name: 'Miner'
+    type: 'TOWN'
+    duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 20000
+
+    goals:
+      1:
+        definition: 'GATHER'
+        goal: 7000
+        material: 'GOLD_INGOT'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 1
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'ENCHANTED_BOOK'
+              meta:
+                enchants:
+                  - 'fortune:4'
+      2:
+        definition: 'GATHER'
+        goal: 9000
+        material: 'IRON_INGOT'
+        rewards:
+          1:
+            type: MONEY
+            total: 5000
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 5
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'POTION'
+              meta:
+                display-name: '&6&LThe FastBreak Potion'
+                meta-type: POTION
+                potion-type: HEALING
+                lore:
+                  - "&f"
+                  - "&cNote that brewing will"
+                  - "&cbreak this potion"
+                color:
+                  RED: 255
+                  GREEN: 166
+                  BLUE: 23
+                custom-effects:
+                  - effect: HASTE
+                    duration: 12000 # 10 minutes
+                    amplifier: 1
+                  - effect: SPEED
+                    duration: 12000 # 10 minutes
+                    amplifier: 3
+                  - effect: FIRE_RESISTANCE
+                    duration: 12000 # 10 minutes
+                    amplifier: 0
+
+      3:
+        definition: 'GATHER'
+        goal: 10000
+        material: 'COPPER_INGOT'
+        rewards:
+          1:
+            type: MONEY
+            total: 7500
+          2:
+            type: EXP
+            total: 5000
+          3:
+            type: ITEM
+            total: 5
+            itemstack:
+              v: 19
+              ==: org.bukkit.inventory.ItemStack
+              type: 'POTION'
+              meta:
+                display-name: '&6&LThe FastBreak Potion'
+                meta-type: 'POTION'
+                potion-type: 'HEALING'
+                lore:
+                  - "&f"
+                  - "&cNote that brewing will"
+                  - "&cbreak this potion"
+                color:
+                  RED: 255
+                  GREEN: 166
+                  BLUE: 23
+                custom-effects:
+                  - effect: HASTE
+                    duration: 12000 # 10 minutes
+                    amplifier: 1
+                  - effect: SPEED
+                    duration: 12000 # 10 minutes
+                    amplifier: 3
+                  - effect: FIRE_RESISTANCE
+                    duration: 12000 # 10 minutes
+                    amplifier: 0
 
 
 
