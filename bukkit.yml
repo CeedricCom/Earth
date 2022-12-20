@@ -4,7 +4,7 @@ settings:
   permissions-file: permissions.yml
   update-folder: update
   plugin-profiling: false
-  connection-throttle: 0
+  connection-throttle: 4000
   query-plugins: true
   deprecated-verbose: default
   shutdown-message: Server closed
@@ -17,16 +17,19 @@ spawn-limits:
   water-ambient: 5
   water-underground-creature: 5
   axolotls: 5
-  ambient: 10
+  ambient: 1
 chunk-gc:
   period-in-ticks: 600
 ticks-per:
   animal-spawns: 400
-  monster-spawns: 15
-  water-spawns: 50
-  water-ambient-spawns: 20
-  water-underground-creature-spawns: 11
-  axolotl-spawns: 25
-  ambient-spawns: 40
+  monster-spawns: 400
+  water-spawns: 400
+  water-ambient-spawns: 400
+  water-underground-creature-spawns: 400
+  axolotl-spawns: 400
+  ambient-spawns: 400
   autosave: 6000
 aliases: now-in-commands.yml
+worlds:
+  world:
+    generator: VoidGen

@@ -137,8 +137,8 @@ world-settings:
       ignore-spectators: false
     entity-tracking-range:
       players: 48
-      animals: 24
-      monsters: 48
+      animals: 12
+      monsters: 24
       misc: 32
       other: 64
     ticks-per:

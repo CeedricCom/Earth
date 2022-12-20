@@ -24,6 +24,7 @@ world-settings:
       proactive:
         - soft-nerf-animal-farms
         - hard-nerf-fish
+        - ai-wipe
       #  - trim-animal-farms
       #  - trim-sparse-animal-farms
 

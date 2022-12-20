@@ -1,7 +1,7 @@
-x-min: -100
-x-max: 100
-z-min: -100
-z-max: 100
+x-min: -14500
+x-max: 14500
+z-min: -5000
+z-max: 5000
 delay-in-seconds: 600
 commands:
   - "cratereloaded:cr give to %player% supplycrate 1"

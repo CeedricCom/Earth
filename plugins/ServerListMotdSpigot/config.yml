@@ -1,0 +1,29 @@
+# ServerListMotd Plugin by KennyTV & Bradydawg
+# Version 1.2.9
+
+# The message shown in the multiplayer server list motd.
+# If you put in multiple entries, one of them will be chosen randomly on every ping.
+motds:
+  - '&6&lGladia2.0%NEWLINE%&7A clone by cedric and Delta'
+ #- "Another entry"
+
+# Is shown at the top right corner of the server in the serverlist,
+# where the playercount would normally be displayed.
+custom-playercountmessage: false
+playercountmessage: "&4Hoia!"
+# If set to false, only the given text will be shown without the playercount (requires custom-playercountmessage set to true).
+show-playercount: true
+
+# Is shown when you move your mouse above the text at the top right corner of the server in the serverlist,
+# where the playercount would normally be displayed.
+custom-playercounthovermessage: false
+playercounthovermessage: "&cJoin%NEWLINE%&cplz"
+
+# Server Icon shown to the left of the MOTD, by default the icon name is server-icon.png and the default path is the main
+# server path. It is recommended that you do NOT change this, but you can if you truly want to.
+server-icon-path: server-icon.png
+
+# If you don't want to be up to date, you can disable this!
+update-checks: true
+
+no-permission-message: "&cYou do not have the permission to execute that command."

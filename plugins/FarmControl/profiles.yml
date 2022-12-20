@@ -6,7 +6,6 @@ profiles:
     group:
       types:
         - "category:animal"
-        - "category:monster"
       count: 1
     actions:
       - remove-random-movement
@@ -17,11 +16,13 @@ profiles:
     group:
       types:
         - "category:fish"
-        - squid
-      count: 3
+        - "squid"
+        - "glow_squid"
+      count: 1
       distance: 40
     actions:
       - remove-awareness
+      - remove-random-movement
       - remove-ai
       - disable-collisions
 
@@ -30,9 +31,13 @@ profiles:
       types:
         - "category:fish"
         - "category:ambient"
-        - squid
+        - "category:monster"
+        - "glow_squid"
+        - "dolphin"
+        - "squid"
+        - "rabbit"
     count: 3
-    distance: 20
+    distance: 40
     actions:
       - remove
 

@@ -122,7 +122,7 @@ components:
     # Default marker set for sign markers
     default-sign-set: markers
     # (optional) add spawn point markers to standard marker layer
-    showspawn: true
+    showspawn: false
     spawnicon: world
     spawnlabel: "Spawn"
     # (optional) layer for showing offline player's positions (for 'maxofflinetime' minutes after logoff)
@@ -162,11 +162,11 @@ components:
   - class: org.dynmap.ClientComponent
     type: playermarkers
     showplayerfaces: true
-    showplayerhealth: true
+    showplayerhealth: false
     # If true, show player body too (only valid if showplayerfaces=true)
     showplayerbody: false
     # Option to make player faces small - don't use with showplayerhealth or largeplayerfaces
-    smallplayerfaces: false
+    smallplayerfaces: true
     # Option to make player faces larger - don't use with showplayerhealth or smallplayerfaces
     largeplayerfaces: false
     # Optional - make player faces layer hidden by default
@@ -183,8 +183,8 @@ components:
     
   - class: org.dynmap.ClientComponent
     type: timeofdayclock
-    showdigitalclock: true
-    showweather: true
+    showdigitalclock: false
+    showweather: false
   # Mouse pointer world coordinate display
   - class: org.dynmap.ClientComponent
     type: coord
@@ -326,7 +326,7 @@ render-triggers:
   #- blockredstone
 
 # Title for the web page - if not specified, defaults to the server's name (unless it is the default of 'Unknown Server')
-#webpage-title: "My Awesome Server Map"
+webpage-title: "ceedric.com earth"
 
 # The path where the tile-files are placed.
 tilespath: web/tiles

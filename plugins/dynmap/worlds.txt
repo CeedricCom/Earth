@@ -14,9 +14,9 @@ worlds:
   #   Use 'enabled: true' to disable a certain world.
     enabled: true
   #   Use sendposition: false to prevent player positions from showing when on this world (if sendposition is globally enabled)
-  #  sendposition: false
+    sendposition: true
   #   Use sendhealth: false to prevent player health from showing when on this world (if sendhealth is globally enabled)
-  #  sendhealth: false
+    sendhealth: false
   #  # If world isn't contiguous chunks (due to teleporting, for example), fullrender needs to be given other locations to scan for tiles on each patch of chunks
   #  fullrenderlocations:
   #    - x: 10000
@@ -53,10 +53,10 @@ worlds:
   #  template: mycustomtemplate
   #   Rest of comes from template - uncomment to tailor for world specifically
   #  # World center - default is spawn point
-  #  center:
-  #    x: 0
-  #    y: 64
-  #    z: 0
+    center:
+      x: 2000
+      y: 64
+      z: -1000
   #  # If bigworld set to true, use alternate directory layout better suited to large worlds
   #  bigworld: true
   #  # Number of extra zoom-out levels for world (each level is twice as big as the previous one)

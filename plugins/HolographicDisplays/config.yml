@@ -32,3 +32,4 @@ time:
   zone: GMT+1
 update-notification: true
 debug: false
+holograms-view-range: 48
