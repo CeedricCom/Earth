@@ -61,5 +61,8 @@ cratereloaded-*.zip
 plugins/Chunky/tasks/
 plugins/dynmap/ids-by-ip.txt
 plugins/TAB/anti-override.log
+plugins/QuickShop/cache/
+plugins/QuickShop/qs.log
+plugins/QuickShop/overrides/
 version_history.json
 

@@ -4,7 +4,7 @@ settings:
   permissions-file: permissions.yml
   update-folder: update
   plugin-profiling: false
-  connection-throttle: 0
+  connection-throttle: 4000
   query-plugins: true
   deprecated-verbose: default
   shutdown-message: Server closed
@@ -30,3 +30,6 @@ ticks-per:
   ambient-spawns: 400
   autosave: 6000
 aliases: now-in-commands.yml
+worlds:
+  world:
+    generator: VoidGen

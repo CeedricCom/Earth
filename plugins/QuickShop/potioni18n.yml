@@ -1,0 +1,36 @@
+potioni18n:
+  comment: This is quickshop potion effect i18n file, you can add plugin potion effect
+    you saw in-game as key and give correct value to it or change value there.
+  SPEED: Speed
+  SLOW: Slow
+  FAST_DIGGING: Fast Digging
+  SLOW_DIGGING: Slow Digging
+  INCREASE_DAMAGE: Increase Damage
+  HEAL: Heal
+  HARM: Harm
+  JUMP: Jump
+  CONFUSION: Confusion
+  REGENERATION: Regeneration
+  DAMAGE_RESISTANCE: Damage Resistance
+  FIRE_RESISTANCE: Fire Resistance
+  WATER_BREATHING: Water Breathing
+  INVISIBILITY: Invisibility
+  BLINDNESS: Blindness
+  NIGHT_VISION: Night Vision
+  HUNGER: Hunger
+  WEAKNESS: Weakness
+  POISON: Poison
+  WITHER: Wither
+  HEALTH_BOOST: Health Boost
+  ABSORPTION: Absorption
+  SATURATION: Saturation
+  GLOWING: Glowing
+  LEVITATION: Levitation
+  LUCK: Luck
+  UNLUCK: Unluck
+  SLOW_FALLING: Slow Falling
+  CONDUIT_POWER: Conduit Power
+  DOLPHINS_GRACE: Dolphins Grace
+  BAD_OMEN: Bad Omen
+  HERO_OF_THE_VILLAGE: Hero Of The Village
+  DARKNESS: Darkness
