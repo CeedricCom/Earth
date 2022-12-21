@@ -16,24 +16,24 @@ ArmorStandLimit:
   Block: 
     # The maximum number of armorstands that can be in a block, 
     # if higher, all armorstands will be removed!
-    Trigger: 50
+    Trigger: 4
     # Do you want to check every x ('Refersh') minutes if there are more Armor Stands 
     # than 'ArmorStandLimit' in a block?
     Task:
       # Do you want to enable this task?
-      Enabled: false
+      Enabled: true
       # How often should the check be done? ( Recommended 5 )
       Refresh: 10
   # ...in a chunk to be removed?
   Chunk:
     # The maximum number of armorstands that can be in a chunk, 
     # if higher, all armorstands will be removed!
-    Trigger: 256
+    Trigger: 32
     # Do you want to check every x ('Refersh') minutes if there are more Armor Stands 
     # than 'ArmorStandLimit' in a chunk?
     Task:
       # Do you want to enable this task?
-      Enabled: false
+      Enabled: true
       # How often should the check be done? ( Recommended 5 )
       Refresh: 10
   # Various checks to perform before removing an armorstand
@@ -46,13 +46,13 @@ ArmorStandLimit:
     DisableIfNameContains:
       - 'CustomName'
     # Disable removal if Armor Stand has a Name
-    DisableIfNamed: true
+    DisableIfNamed: false
     # (ONLY 1.9+) Disable removal if Armor Stand is Invulnerable
     DisableIfIsInvulnerable: true
     # Disable removal if Armor Stand is Invisible
     DisableIfIsInvisible: true
     # Disable removal if Armor Stand has Arms
-    DisableIfHasArms: true
+    DisableIfHasArms: false
     # Disable removal if Armor Stand has not BasePlate
     DisableIfHasNotBasePlate: true
     # Disable removal if Armor Stand has Helmet
@@ -94,9 +94,9 @@ Events:
   DisableArmorStandMoving:
     # Gravity
     #( This option also disables movement in the water )
-    Gravity: false
+    Gravity: true
     # pushed by a piston
-    Piston: false
+    Piston: true
 
 # Want to be notified whenever Armor Stands are removed?
 Notifications:
