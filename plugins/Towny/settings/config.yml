@@ -1051,7 +1051,7 @@ plugin:
   
   # A blacklist used for validating town/nation names.
   # Names must be seperated by a comma: name1,name2
-  name_blacklist: 'nigga,nigger,shit,fuck,ass,cunt,faggot,bitch,bastard,town,t,spawn,pussy,dick,cock,sex,penis,delete,list,say,help,online,outlaw,reslist,leave,online,outlawlist,plotgrouplist,here,mayor,enemylist,ranklist,plots,deposit,rank,toggle,baltop,bankhistory,reclaim,withdraw,kick,new,invite,jail'
+  name_blacklist: nigga,nigger,shit,fuck,ass,cunt,faggot,bitch,bastard,town,t,spawn,pussy,dick,cock,sex,penis,delete,list,say,help,online,outlaw,reslist,leave,online,outlawlist,plotgrouplist,here,mayor,enemylist,ranklist,plots,deposit,rank,toggle,baltop,bankhistory,reclaim,withdraw,kick,new,invite,jail
   
   update_notifications:
   
