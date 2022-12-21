@@ -1,0 +1,18 @@
+portal-disabled: "&eThe portal has been disabled. It will be enabled in &a2 minutes&e."
+portal-enabled: "&eThe portal has been enabled."
+will-disabled-first: "&eThe portal will be disabled in &a%s seconds &eif you stay here."
+will-disabled-warn: "&eThe portal will be disabled in &a%s <f>&e."
+
+# <f> placeholder
+singular-word: "second"
+plural-word: "seconds"
+
+# all values in seconds
+stay-counter: 15 # how long you can stay in portal
+stay-warn: 5 # when start sending warning to player
+auto-enable: 45 # time before auto enable disabled portal
+
+# the list is all in lowercase
+ignored-worlds:
+  - spawn
+  - world1

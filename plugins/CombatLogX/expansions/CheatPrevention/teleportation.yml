@@ -4,7 +4,7 @@ prevent-portals: false
 
 # Should players be prevented from teleporting away during combat?
 # Default: true
-prevent-teleportation: false
+prevent-teleportation: true
 
 # Are there any reasons that a teleport should not be cancelled?
 # You can find a list of valid values in the link below:

@@ -1,0 +1,237 @@
+title: Your Items <|     |> Their Items
+spectator-title: Player 1 <|         |> Player 2
+my-slots:
+- '1'
+- '2'
+- '3'
+- '9'
+- '10'
+- '11'
+- '12'
+- '18'
+- '19'
+- '20'
+- '21'
+- '27'
+- '28'
+- '29'
+- '30'
+- '36'
+- '37'
+- '38'
+- '39'
+- '45'
+- '46'
+- '47'
+- '48'
+their-slots:
+- '5'
+- '6'
+- '7'
+- '14'
+- '15'
+- '16'
+- '17'
+- '23'
+- '24'
+- '25'
+- '26'
+- '32'
+- '33'
+- '34'
+- '35'
+- '41'
+- '42'
+- '43'
+- '44'
+- '50'
+- '51'
+- '52'
+- '53'
+my-extra-slots:
+- '45'
+- '46'
+- '47'
+- '48'
+- '39'
+- '38'
+- '37'
+- '36'
+- '27'
+- '28'
+- '29'
+- '30'
+their-extra-slots:
+- '50'
+- '51'
+- '52'
+- '53'
+- '44'
+- '43'
+- '42'
+- '41'
+- '32'
+- '33'
+- '34'
+- '35'
+head:
+  enabled: true
+  display-name: '&7You are trading with: &3&l%PLAYER%'
+force:
+  enabled: true
+  slot: 49
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: CLOCK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_red","text":"Force
+        Trade"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Click
+        to force the trade"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"to
+        countdown and accept as"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"it
+        stands now."}],"text":""}'
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+accept:
+  enabled: true
+  my-slot: 0
+  their-slot: 8
+  my-icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: RED_STAINED_GLASS_PANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Click
+        to Accept"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"If
+        either of you change"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"your
+        offers during the countdown,"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"you
+        will have to accept"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"the
+        trade again."}],"text":""}'
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 14
+  my-cancel:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: GREEN_STAINED_GLASS_PANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Click
+        to Cancel"}],"text":""}'
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 13
+  their-icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: GREEN_STAINED_GLASS_PANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"They''ve
+        accepted your offer."}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"If
+        you''re satisfied with the"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"trade
+        as shown right now,"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"click
+        your accept button!"}],"text":""}'
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 13
+  their-cancel:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: RED_STAINED_GLASS_PANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Your
+        partner is still considering."}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Click
+        your accept button to"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"signal
+        that you like the trade"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"as
+        it is now, or wait"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"for
+        them to offer more!"}],"text":""}'
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 14
+complete:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3218
+  type: GREEN_STAINED_GLASS_PANE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Trade
+      Complete!"}],"text":""}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Review
+      the final agreement and"}],"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"close
+      the trade window"}],"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"to
+      retrieve your items!"}],"text":""}'
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    Damage: 13
+cancelled:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3218
+  type: RED_STAINED_GLASS_PANE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Trade
+      Cancelled!"}],"text":""}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Your
+      trading partner cancelled"}],"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"the
+      trade. Close the window"}],"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"to
+      retrieve your items."}],"text":""}'
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    Damage: 14
+separator:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3218
+  type: BLACK_STAINED_GLASS_PANE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"text":" "}],"text":""}'
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    Damage: 15
+placeholder:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3218
+  type: BLACK_STAINED_GLASS_PANE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"text":" "}],"text":""}'
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    Damage: 15

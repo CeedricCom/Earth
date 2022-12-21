@@ -16,7 +16,7 @@ settings:
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./abrir.sh
-  bungeecord: true
+  bungeecord: false
   player-shuffle: 0
   user-cache-size: 1000
   save-user-cache-on-stop-only: true
