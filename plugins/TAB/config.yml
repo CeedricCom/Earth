@@ -6,12 +6,15 @@ header-footer:
   disable-in-servers:
     - disabledserver
   header:
-    - "&6&lGladia2.0"
-    - "&7A clone by cedric and Delta"
+    - "<#EFB000>CEEDRIC.COM</#D09900> &8| <#00FF57>&lTOWNY EARTH</#00E0FF>"
+    - "&8An earth server by #FF0000cedric &8and #FF0000Delta"
     - ""
+    - <gradient:#FF0000:#FF0000>&m                                                              </gradient>
   footer:
+    - <gradient:#FF0000:#FF0000>&m                                                              </gradient>
+    - '<#EFB000>&lONLINE&f: %online%     <#EFB000>&lPING&f: %ping%     <#EFB000>&lTPS&f: %tps%'
     - ""
-    - "&7discord.ceedric.com"
+    - "<#6788FF>discord.ceedric.com</#8DA6FF>"
   per-world:
     world1:
       header:
@@ -84,7 +87,7 @@ yellow-number-in-tablist:
 belowname-objective:
   enabled: true
   number: "%health%"
-  text: "&c❤"
+  text: "#FF0000❤"
   disable-in-worlds:
     - disabledworld
   disable-in-servers:
