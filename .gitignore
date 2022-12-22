@@ -65,4 +65,5 @@ plugins/QuickShop/cache/
 plugins/QuickShop/qs.log
 plugins/QuickShop/overrides/
 version_history.json
+plugins/Votifier/
 
