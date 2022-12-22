@@ -19,25 +19,15 @@ Concoctions:
         - WATER_LILY
         - PUFFERFISH
         - DRAGON_BREATH
-    Tier_Two_Ingredients:
-        - CARROT
-        - SLIME_BALL
-        - PHANTOM_MEMBRANE
-    Tier_Three_Ingredients:
-        - QUARTZ
-        - RABBIT_FOOT
-    Tier_Four_Ingredients:
-        - APPLE
-        - ROTTEN_FLESH
-    Tier_Five_Ingredients:
-        - BROWN_MUSHROOM
-        - INK_SAC
-    Tier_Six_Ingredients:
-        - FERN
-    Tier_Seven_Ingredients:
-        - POISONOUS_POTATO
-    Tier_Eight_Ingredients:
-        - GOLDEN_APPLE
+    Tier_Two_Ingredients: 
+        - EMERALD_BLOCK
+        - NAUTILUS_SHELL
+    Tier_Three_Ingredients: []
+    Tier_Four_Ingredients: []
+    Tier_Five_Ingredients: []
+    Tier_Six_Ingredients: []
+    Tier_Seven_Ingredients: []
+    Tier_Eight_Ingredients: []
 
 #
 # Settings for Potions
@@ -113,28 +103,70 @@ Potions:
         PotionData:
             PotionType: AWKWARD
         Children:
-            QUARTZ: POTION_OF_ABSORPTION
             GUNPOWDER: SPLASH_POTION_OF_AWKWARD
-            BROWN_MUSHROOM: POTION_OF_NAUSEA
-            SLIME_BALL: POTION_OF_DULLNESS
             GLISTERING_MELON_SLICE: POTION_OF_HEALING
-            INK_SAC: POTION_OF_BLINDNESS
-            APPLE: POTION_OF_HEALTH_BOOST
-            GOLDEN_APPLE: POTION_OF_RESISTANCE
-            FERN: POTION_OF_SATURATION
             MAGMA_CREAM: POTION_OF_FIRE_RESISTANCE
             PHANTOM_MEMBRANE: POTION_OF_SLOW_FALLING
             CARROT: POTION_OF_HASTE
             BLAZE_POWDER: POTION_OF_STRENGTH
-            POISONOUS_POTATO: POTION_OF_DECAY
             GOLDEN_CARROT: POTION_OF_NIGHT_VISION
             SUGAR: POTION_OF_SWIFTNESS
-            ROTTEN_FLESH: POTION_OF_HUNGER
             SPIDER_EYE: POTION_OF_POISON
             PUFFERFISH: POTION_OF_WATER_BREATHING
             GHAST_TEAR: POTION_OF_REGENERATION
             TURTLE_HELMET: POTION_OF_TURTLE_MASTER
             RABBIT_FOOT: POTION_OF_LEAPING
+            EMERALD_BLOCK: POTION_OF_VILLAGE_HERO
+            NAUTILUS_SHELL: POTION_OF_DOLPHINS_GRACE
+    POTION_OF_DOLPHINS_GRACE:
+        Material: POTION
+        Name: "&b&LThe WaterFly Potion"
+        PotionData:
+            PotionType: UNCRAFTABLE
+            Color: #2bc4fc
+        Children:
+            REDSTONE: POTION_OF_DOLPHINS_GRACE_EXTENDED
+            GUNPOWDER: POTION_OF_DOLPHINS_GRACE_SPLASH
+        Effects: ["DOLPHINS_GRACE 0 3600"]
+    POTION_OF_DOLPHINS_GRACE_SPLASH:
+        Material: SPLASH_POTION
+        Name: "&b&LThe WaterFly Potion"
+        PotionData:
+            PotionType: UNCRAFTABLE
+            Color: #2bc4fc
+        Effects: ["DOLPHINS_GRACE 0 3600"]
+    POTION_OF_DOLPHINS_GRACE_EXTENDED:
+        Material: POTION
+        Name: "&b&LThe WaterFly Potion"
+        PotionData:
+            PotionType: UNCRAFTABLE
+            Color: #2bc4fc
+        Children:
+            GUNPOWDER: POTION_OF_DOLPHINS_GRACE_EXTENDED_SPLASH
+        Effects: ["DOLPHINS_GRACE 0 6000"]
+    POTION_OF_DOLPHINS_GRACE_EXTENDED_SPLASH:
+        Material: SPLASH_POTION
+        Name: "&b&LThe WaterFly Potion"
+        PotionData:
+            PotionType: UNCRAFTABLE
+            Color: #2bc4fc
+        Effects: ["DOLPHINS_GRACE 0 6000"]
+    POTION_OF_VILLAGE_HERO:
+        Material: POTION
+        Name: '&a&lThe AutoTrade Potion'
+        PotionData:
+            PotionType: UNCRAFTABLE
+            Color: #159e42
+        Children:
+            REDSTONE: POTION_OF_VILLAGE_HERO_EXTENDED
+        Effects: ["HERO_OF_THE_VILLAGE 0 600"]
+    POTION_OF_VILLAGE_HERO_EXTENDED:
+        Material: POTION
+        Name: '&a&lThe AutoTrade Potion'
+        PotionData:
+            PotionType: UNCRAFTABLE
+            Color: #159e42
+        Effects: ["HERO_OF_THE_VILLAGE 0 1800"]
     POTION_OF_NIGHT_VISION:
         Material: POTION
         PotionData:

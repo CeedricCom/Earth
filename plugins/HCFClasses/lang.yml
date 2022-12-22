@@ -1,4 +1,4 @@
-PREFIX: '&8[&cHCFClasses&8] '
+PREFIX: ''
 RELOAD: '&aSuccessfully reloaded all HCFClasses configuration files.'
 HELP_PAGE_TITLE: '&8========> &2HCFClasses Help %page%/%maxpage% &8<========'
 HELP_PAGE_ENTRY: '&a%cmd% &7%desc%'
