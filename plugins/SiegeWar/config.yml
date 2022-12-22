@@ -300,7 +300,7 @@ war:
         # Subsequent reversals increase the rate further by that amount.
         # TIP: This feature grants small skilled armies a tactic to win battles against larger unskilled armies,
         # Tactic: Wait for the large army to cap the banner, then ambush/counterattack them, grabbing the reversal bonus, and holding the area to net an enhanced cap-point score.
-        enabled: 'false'
+        enabled: 'true'
   
         # This setting determines the strength of the bonus multiplier.
         # Example: 
