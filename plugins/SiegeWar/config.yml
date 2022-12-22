@@ -216,7 +216,7 @@ war:
       # The actual cooldown time will be the length of the previous siege, multiplied by this modifer.
       # A high value makes sieges less frequent. Suitable for moderately-aggressive servers
       # A low value makes sieges more frequent. Suitable for highly aggressive servers.
-      siege_immunity_time_modifier: '3'
+      siege_immunity_time_modifier: '2.35'
   
       # This value determines how long a town must wait before it can revolt against an occupying nation.
       # Revolt immunity beings after a town is defeated in a siege.
@@ -271,10 +271,10 @@ war:
   
           # This value determines the number of battle points awarded every SiegeWar-tick (20 seconds) to an attacker with banner-control.
           # TIP: Always keep this value at 10, for easier comparison with other server configurations.
-          attacker: '3'
+          attacker: '2'
   
           # This value determines the number of battle points awarded every SiegeWar-tick (20 seconds) to a defender with banner-control.
-          defender: '3'
+          defender: '2'
   
   
         deaths:
@@ -300,14 +300,14 @@ war:
         # Subsequent reversals increase the rate further by that amount.
         # TIP: This feature grants small skilled armies a tactic to win battles against larger unskilled armies,
         # Tactic: Wait for the large army to cap the banner, then ambush/counterattack them, grabbing the reversal bonus, and holding the area to net an enhanced cap-point score.
-        enabled: 'false'
+        enabled: 'true'
   
         # This setting determines the strength of the bonus multiplier.
         # Example: 
         # - Assuming this value is 3,
         # - If team A reverses banner control, any cap-points they get after that will be multiplied by 3.
         # - If team B re-reverses banner control, any cap-points they get after that will be multiplied by 6.
-        multiplier_value: '3'
+        multiplier_value: '0.75'
   
   
       # +------------------------------------------------------+ #
@@ -324,7 +324,7 @@ war:
         # If the counterattack booster is enabled, this value determines the strength of the boost.
         # Example: If this value is 10.0, and there are 3 players on the banner control list, and a player from the banner-controlling side dies,
         # then the death points awarded to the attacker will be increased by +30%.
-        extra_death_points_per_player_percentage: '10.0'
+        extra_death_points_per_player_percentage: '1.0'
   
   
       # +------------------------------------------------------+ #
@@ -337,7 +337,7 @@ war:
         # Set to -1 to disable the cap.
         # The value applies to both positive and negative balances e.g. 20000 means a lower limit of -20000 and an upper limit of 20000.
         # TIP: Set this value HIGH to give advantage to big nations, and LOW to give advantage to small nations.
-        value: '15000'
+        value: '20000'
   
   
       # +------------------------------------------------------+ #
@@ -352,7 +352,7 @@ war:
     death:
   
       # If enabled, a firework will get spawned whenever a player dies inside a siege zone.
-      spawn_firework: 'false'
+      spawn_firework: 'true'
   
   
 ############################################################
@@ -655,7 +655,7 @@ pvp_protection_overrides:
   
   # If true, then Towny plot protection is disabled in Siege-Zones.
   # TIP: This value is generally set to true, to avoid having unnatural safe claims within Siege-Zones.
-  stop_towny_plot_protection: 'false'
+  stop_towny_plot_protection: 'true'
   
   # If true, then Towny friendly-fire protection is disabled within Siege-Zones.
   stop_towny_friendly_fire_protection: 'false'
@@ -681,15 +681,15 @@ trap_warfare_mitigation:
   enabled: 'false'
   
   # The radius of block protection around the Siege Banner
-  radius_blocks: '32'
+  radius_blocks: '2'
   
   # Within the protection radius, players cannot build above this height.
   # The height is relative to the siege banner height
-  upper_height_limit: '10'
+  upper_height_limit: '0'
   
   # Within the protection radius, players cannot build below this height.
   # The height is relative to the siege banner height
-  lower_height_limit: '0'
+  lower_height_limit: '1'
   
   
 ############################################################
