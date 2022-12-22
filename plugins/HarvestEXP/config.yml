@@ -104,7 +104,7 @@ settings:
    NETHERWART:
    
       general:
-         enabled: true
+         enabled: false
          
       experience:
          # Note: While true, dropOnlyIfRipe will alter experience only if the crop is fully ripe when harvested.

@@ -363,7 +363,7 @@ Skills:
         Prevent_Hopper_Transfer_Bottles: false
         Level_Cap: 0
     Archery:
-        Enabled_For_PVP: true
+        Enabled_For_PVP: false
         Enabled_For_PVE: true
         Level_Cap: 0
     Axes:
