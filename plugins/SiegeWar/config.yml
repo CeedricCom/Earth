@@ -300,7 +300,7 @@ war:
         # Subsequent reversals increase the rate further by that amount.
         # TIP: This feature grants small skilled armies a tactic to win battles against larger unskilled armies,
         # Tactic: Wait for the large army to cap the banner, then ambush/counterattack them, grabbing the reversal bonus, and holding the area to net an enhanced cap-point score.
-        enabled: 'true'
+        enabled: 'false'
   
         # This setting determines the strength of the bonus multiplier.
         # Example: 
@@ -319,7 +319,7 @@ war:
         # If this setting is true, then if a player from the banner controlling side dies,
         # the death points are increased by a certain percentage.
         # TIP: This feature delivers extra balance to battles in which one side is outnumbered by the other.
-        enabled: 'true'
+        enabled: 'false'
   
         # If the counterattack booster is enabled, this value determines the strength of the boost.
         # Example: If this value is 10.0, and there are 3 players on the banner control list, and a player from the banner-controlling side dies,
@@ -678,7 +678,7 @@ trap_warfare_mitigation:
   # TIP: 
   # If this feature is enabled, 
   # then it is recommended to also have a server rule requiring attackers to remove all traps in the area before the banner is placed
-  enabled: 'true'
+  enabled: 'false'
   
   # The radius of block protection around the Siege Banner
   radius_blocks: '2'
