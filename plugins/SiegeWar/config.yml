@@ -1,9 +1,9 @@
   
 version:
   # This is the current version.  Please do not edit.
-  version: 0.9.0
+  version: 1.0.0
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.9.0
+  last_run_version: 1.0.0
   
   
 war:
@@ -614,7 +614,7 @@ battle_session_scheduler:
   
   # This value determines the duration of each battle session.
   # TIP: The default value of 50 is deliberately designed to give players a 10 minute break after each battle session, for reasons of health and safety.
-  duration_minutes: '10080'
+  duration_minutes: '50'
   
   # Should sessions be cancelled when there are no active sieges?
   cancel_session_when_no_active_sieges: 'false'
