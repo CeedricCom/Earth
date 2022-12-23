@@ -34,6 +34,8 @@ anticheat:
     - diamond_ore
     - deepslate_diamond_ore
     - redstone_ore
+    - ancient_debris
+    - nether_gold_ore
     - deepslate_redstone_ore
     - clay
     - emerald_ore

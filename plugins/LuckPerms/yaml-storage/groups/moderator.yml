@@ -1,0 +1,18 @@
+name: moderator
+permissions:
+- coreprotect.inspect
+- coreprotect.lookup
+- coreprotect.rollback
+- essentials.tpo
+- essentials.tpohere
+- essentials.tppos
+- invseeplusplus.edit
+- invseeplusplus.view
+- sv.joinvanished
+- sv.see
+- sv.use
+parents:
+- default
+prefixes:
+- MOD:
+    priority: 1
