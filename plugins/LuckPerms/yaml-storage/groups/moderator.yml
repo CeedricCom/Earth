@@ -1,5 +1,6 @@
 name: moderator
 permissions:
+- commandwhitelist.group.moderator
 - coreprotect.inspect
 - coreprotect.lookup
 - coreprotect.rollback

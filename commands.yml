@@ -5,3 +5,11 @@ aliases:
   - version $1-
   bal:
   - money
+  balance:
+  - money
+  baltop:
+  - money top
+  pay:
+  - money pay
+  tell:
+  - msg
