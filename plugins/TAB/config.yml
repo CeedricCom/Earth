@@ -179,11 +179,11 @@ placeholders:
 placeholder-output-replacements:
 # Checks if player has either nation or town, if so, show tag, if not, nothing. Avoids having placeholders spew in tab.
   "%townyadvanced_has_nation%":
-     "yes": "%townyadvanced_nation_tag_override%"
-     "no": ""
+     "true": "%townyadvanced_nation_tag_override%"
+     "false": ""
   "%townyadvanced_has_town%":
-     "yes": "%townyadvanced_town_tag_override"
-     "no": ""
+     "true": "%townyadvanced_town_tag_override"
+     "false": ""
 
   "%essentials_vanished%":
     "yes": "&7| Vanished"
