@@ -45,3 +45,38 @@ supplycrate:
 
             - 'unique:(), chance:(1), item:(trident 1)'
             - 'unique:(), chance:(1), item:(panda_spawn_egg 1)'
+
+votingcrate:
+    type: MYSTERYCRATE
+    item: 'CHEST 1 name:&6&lVote_Crate lore:&7Right_click_to_open glow:false'
+    animation: ROULETTE
+    buy:
+        enabled: false
+        cost: 0
+    message:
+        open: ''
+        broadcast: ''
+    effect: {}
+    reward:
+        minimum-rewards: 1
+        maximum-rewards: 1
+        rewards:
+            - 'unique:(), chance:(12), cmd:(/eco give {player} 125), msg:(&eYou received $125), display:(gold_ingot 1 name:&6$125)'
+            - 'unique:(), chance:(7), cmd:(/eco give {player} 150), msg:(&eYou received $150), display:(gold_ingot 1 name:&6$150)'
+            - 'unique:(), chance:(5), cmd:(/eco give {player} 165), msg:(&eYou received $165), display:(gold_ingot 1 name:&6$165)'
+            - 'unique:(), chance:(5), cmd:(/eco give {player} 200), msg:(&eYou received $200), display:(gold_ingot 1 name:&6$200)'
+            - 'unique:(), chance:(1),  cmd:(/eco give {player} 350), msg:(&eYou received $350), display:(gold_ingot 1 name:&6$350)'
+            - 'unique:(), chance:(20), item:(iron_ingot {random:10,40})'
+            - 'unique:(), chance:(10), item:(gold_ingot {random:10,40})'
+            - 'unique:(), chance:(10), item:(diamond {random:10,25})'
+            - "unique:(), chance:(3),  item:(potion 1 name:&e&lSpeed_Hack_Potion effect:haste power:3 duration:60 effect:speed power:3 duration:60)"
+            - 'unique:(), chance:(2),  item:(potion 1 name:&e&lFly_Hack_Potion effect:jump_boost power:5 duration:60 effect:speed power:2 duration:60)'
+            - 'unique:(), chance:(5),  item:(potion 1 name:&e&lFast_Break_Potion effect:speed power:2 duration:180 effect:haste power:2 duration:180)'
+            - 'unique:(), chance:(5), item:(netherite_ingot {random:3,6})'
+            - 'unique:(), chance:(15), item:(gunpowder {random:10,48})'
+            - 'unique:(), chance:(0.98), item:(zombie_villager_spawn_egg 1)'
+            - 'unique:(), chance:(2), item:(villager_spawn_egg 1)'
+            - 'unique:(), chance:(5), item:(diamond_sword 1 sharpness:5 durability:3 fire_aspect:2)'
+            - 'unique:(), chance:(5), item:(diamond_helmet 1 protection_environmental:4 durability:3 oxygen:3)'
+            - 'unique:(), chance:(0.01), item:(diamond_sword 1 name:&6&lThe_Reaper lore:&fForged_in_the_fires_of_hell sharpness:6 durability:3 fire_aspect:2)'
+            - "unique:(), chance:(0.01), item:(diamond_chestplate 1 name:&6&lThe_Dragons_Scale lore:&fGrants_the_power_of_the_end protection_environmental:5 durability:3)"

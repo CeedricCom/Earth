@@ -580,7 +580,7 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: END_STONE
+              type: 'END_STONE'
 
   nation-mission-crop-farmer:
     name: 'Farmer'

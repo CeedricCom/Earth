@@ -800,4 +800,3 @@ scrolls:
         type: command
         name: "1000 XP"
         command: "minecraft:xp add {0} 1000"
-              
