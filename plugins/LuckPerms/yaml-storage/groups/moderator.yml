@@ -11,6 +11,7 @@ permissions:
 - sv.joinvanished
 - sv.see
 - sv.use
+- weight.2
 parents:
 - default
 prefixes:

@@ -1,614 +1,803 @@
-tiers:
-  easy:
-    clueCount: 1
-    expire: -1
-    scroll:
-      title: '&a&lEasy Mission'
-      lore-prefix:
-      - '&fComplete the mission to'
-      - '&fearn a money reward.'
-      - ''
-      - '&6&lObjective:'
-      lore-suffix: []
-      cross-out-completed: true
-      one-clue-show: false
-      material: PAPER
-      hide-first-clue:
-        enabled: false
-        lore: []
-      receiveMessage: '&6You have received a new mission.'
-      bind: false
-    crystal:
-      title: crystal
-      lore: []
-      material: PAPER
-      receiveMessage: '%amount% crystal'
-    
-    
-    # EASY MISSIONS - 18
-    clues:
-      clue-craft-planks:
-        lore: '&f• Craft %amount% Planks: %completed%'
-        clueType: craft
-        amount: 64-128
-        objective: Craft %amount% Planks
-        clueName: Plank Crafter
-        data:
-          material:
-          - acacia_planks
-          - birch_planks
-          - dark_oak_planks
-          - jungle_planks
-          - oak_planks
-          - spruce_planks
-      clue-stone-bricks:
-        lore: '&f• Craft %amount% Stone Bricks: %completed%'
-        clueType: craft
-        amount: 48-96
-        objective: Craft %amount% Stone Bricks
-        clueName: Stone Brick Crafter
-        data:
-          material:
-          - stone_bricks
-      clue-craft-sandstone:
-        lore: '&f• Craft %amount% Sandstone: %completed%'
-        clueType: craft
-        amount: 32-64
-        objective: Craft %amount% Sandstone
-        clueName: Sandstone crafter
-        data:
-          material:
-          - sandstone
-      clue-harvest-wheat:
-        lore: '&f• Harvest %amount% wheat: %completed%'
-        clueType: harvest
-        amount: 16-32
-        objective: Harvest %amount% wheat
-        clueName: Wheat Harvester
-        data:
-          material:
-          - wheat
-      clue-harvest-carrot:
-        lore: '&f• Harvest %amount% carrot: %completed%'
-        clueType: harvest
-        amount: 32-64
-        objective: Harvest %amount% carrot
-        clueName: Carrot Harvester
-        data:
-          material:
-          - carrot
-      clue-harvest-potato:
-        lore: '&f• Harvest %amount% potato: %completed%'
-        clueType: harvest
-        amount: 32-64
-        objective: Harvest %amount% potato
-        clueName: Potato Harvester
-        data:
-          material:
-          - potato
-      clue-harvest-melon:
-        lore: '&f• Harvest %amount% melons: %completed%'
-        clueType: harvest
-        amount: 48-128
-        objective: Harvest %amount% melons
-        clueName: Melon Harvester
-        data:
-          material:
-          - melon
-      clue-harvest-pumpkin:
-        lore: '&f• Harvest %amount% pumpkins: %completed%'
-        clueType: harvest
-        amount: 48-128
-        objective: Harvest %amount% pumpkins
-        clueName: Pumpkin Harvester
-        data:
-          material:
-          - pumpkin
-      clue-enchant-iron-helmet:
-        lore: '&f• &fEnchant %amount% Iron Helmets: %completed%'
-        clueType: enchant
-        amount: 2-3
-        objective: Enchant %amount% Iron Helmets
-        clueName: Iron Helmet Enchanter
-        data:
-          material:
-          - iron_helmet
-      clue-enchant-iron-chestplate:
-        lore: '&f• &fEnchant %amount% Iron Chestplates: %completed%'
-        clueType: enchant
-        amount: 2-3
-        objective: Enchant %amount% Iron Chestplates
-        clueName: Iron Chestplate Enchanter
-        data:
-          material:
-          - iron_chestplate
-      clue-enchant-iron-leggings:
-        lore: '&f• &fEnchant %amount% Iron Leggings: %completed%'
-        clueType: enchant
-        amount: 2-3
-        objective: Enchant %amount% Iron Leggings
-        clueName: Iron Leggings Enchanter
-        data:
-          material:
-          - iron_leggings
-      clue-enchant-iron-boots:
-        lore: '&f• &fEnchant %amount% Iron Boots: %completed%'
-        clueType: enchant
-        amount: 2-3
-        objective: Enchant %amount% Iron Boots
-        clueName: Iron Boots Enchanter
-        data:
-          material:
-          - iron_boots
-      clue-craft-golden-apple:
-        lore: '&f• Craft %amount% Golden Apples: %completed%'
-        clueType: craft
-        amount: 2
-        objective: Craft %amount% Golden Apples
-        clueName: Golden Apple Crafter
-        data:
-          material: golden_apple
-      clue-craft-golden-carrot:
-        lore: '&f• Craft %amount% Golden Carrots: %completed%'
-        clueType: craft
-        amount: 9
-        objective: Craft %amount% Golden Carrots
-        clueName: Golden Carrot Crafter
-        data:
-          material: golden_carrot
-      clue-craft-anvil:
-        lore: '&f• Craft %amount% Anvil: %completed%'
-        clueType: craft
-        amount: 1-3
-        objective: Craft %amount% Anvil
-        clueName: Anvil Crafter
-        data:
-          material: anvil
-      clue-craft-enchanting-table:
-        lore: '&f• Craft %amount% Enchanting Table: %completed%'
-        clueType: craft
-        amount: 1
-        objective: Craft %amount% Enchanting Table
-        clueName: Enchanting Table Crafter
-        data:
-          material: enchanting_table
-      clue-walk:
-        lore: '&f• &fWalk %amount% Blocks: %completed%'
-        clueType: walk
-        amount: 800-1200
-        objective: Walk %amount% Blocks
-        clueName: Walker
-      fisherman:
-        lore: '&f• Fish %amount% items: %completed%'
-        clueType: fish
-        amount: 3-6
-        objective: Fish %amount% items
-        clueName: Item Fisher
-      clue-craft-anything:
-        lore: '&f• Craft %amount% items: %completed%'
-        clueType: craft
-        amount: 500
-        objective: Craft %amount% items
-        clueName: Item Crafter
-    rewards: '2'
-  
-  # 12 MEDIUM
-  medium:
-    clueCount: 1
-    expire: -1
-    scroll:
-      title: '&6&LMedium Mission'
-      lore-prefix:
-      - '&fComplete the mission to'
-      - '&fearn a money reward.'
-      - ''
-      - '&e&lObjective:'
-      lore-suffix: []
-      cross-out-completed: true
-      one-clue-show: true
-      material: PAPER
-      hide-first-clue:
-        enabled: false
-        lore: []
-      receiveMessage: '&6You have received a new mission.'
-      bind: false
-    crystal:
-      title: crystal
-      lore: []
-      material: PAPER
-      receiveMessage: '%amount% crystal'
-    clues:
-      clue-craft-anything:
-        lore: '&f• Craft %amount% items: %completed%'
-        clueType: craft
-        amount: 2000
-        objective: Craft %amount% items
-        clueName: Item Crafter
-      clue-enchant-diamond-helmet:
-        lore: '&f• &fEnchant %amount% Diamond Helmets: %completed%'
-        clueType: enchant
-        amount: 2-3
-        objective: Enchant %amount% Diamond Helmets
-        clueName: Diamond Helmet Enchanter
-        data:
-          material:
-          - diamond_helmet
-      clue-enchant-diamond-chestplate:
-        lore: '&f• &fEnchant %amount% Diamond Chestplates: %completed%'
-        clueType: enchant
-        amount: 2-3
-        objective: Enchant %amount% Diamond Chestplates
-        clueName: Diamond Chestplate Enchanter
-        data:
-          material:
-          - diamond_chestplate
-      clue-enchant-diamond-leggings:
-        lore: '&f• &fEnchant %amount% Diamond Leggings: %completed%'
-        clueType: enchant
-        amount: 2-3
-        objective: Enchant %amount% Diamond Leggings
-        clueName: Diamond Leggings Enchanter
-        data:
-          material:
-          - diamond_leggings
-      clue-enchant-diamond-boots:
-        lore: '&f• &fEnchant %amount% Diamond Boots: %completed%'
-        clueType: enchant
-        amount: 2-3
-        objective: Enchant %amount% Diamond Boots
-        clueName: Diamond Boots Enchanter
-        data:
-          material:
-          - diamond_boots
-      clue-craft-golden-apple:
-        lore: '&f• Craft %amount% Golden Apples: %completed%'
-        clueType: craft
-        amount: 6-10
-        objective: Craft %amount% Golden Apples
-        clueName: Golden Apple Crafter
-        data:
-          material: golden_apple
-      clue-craft-planks:
-        lore: '&f• Craft %amount% Bullets: %completed%'
-        clueType: craft
-        amount: 48-128
-        objective: Craft %amount% Bullets
-        clueName: Bullet Crafter
-        data:
-          material:
-          - ghast_tear
-      clue-kill-zombie:
-        lore: '&f• Kill %amount% Zombies: %completed%'
-        clueType: kill
-        amount: 4-7
-        objective: Kill %amount% Zombies
-        clueName: Zombie Killer
-        data:
-          entitytype: zombie
-      clue-kill-skeleton:
-        lore: '&f• Kill %amount% Skeletons: %completed%'
-        clueType: kill
-        amount: 4-7
-        objective: Kill %amount% Skeletons
-        clueName: Skeleton Killer
-        data:
-          entitytype: skeleton
-      clue-kill-spider:
-        lore: '&f• Kill %amount% Spiders: %completed%'
-        clueType: kill
-        amount: 4-7
-        objective: Kill %amount% Spiders
-        clueName: Spiders Killer
-        data:
-          entitytype: spider
-      clue-harvest-pumpkin:
-        lore: '&f• Harvest %amount% pumpkins: %completed%'
-        clueType: harvest
-        amount: 48-128
-        objective: Harvest %amount% pumpkins
-        clueName: Pumpkin Harvester
-        data:
-          material:
-          - pumpkin
-      fisherman:
-        lore: '&f• Fish %amount% items: %completed%'
-        clueType: fish
-        amount: 10-16
-        objective: Fish %amount% items
-        clueName: Item Fisher
-    
-    rewards: '2'
-  
-  # HARD - 4
-  hard:
-    clueCount: 1
-    expire: -1
-    scroll:
-      title: '&c&lHard Mission'
-      lore-prefix:
-      - '&fComplete the mission to'
-      - '&fearn a money reward.'
-      - ''
-      - '&e&lObjective:'
-      lore-suffix: []
-      cross-out-completed: true
-      one-clue-show: true
-      material: PAPER
-      hide-first-clue:
-        enabled: false
-        lore: []
-      receiveMessage: '&6You have received a new mission.'
-      bind: false
-    crystal:
-      title: crystal
-      lore: []
-      material: PAPER
-      receiveMessage: '%amount% crystal'
-    clues:
-      clue-craft-anything:
-        lore: '&f• Craft %amount% items: %completed%'
-        clueType: craft
-        amount: 7000
-        objective: Craft %amount% items
-        clueName: Item Crafter
-      clue-swim:
-        lore: '&f• &fSwim %amount% blocks: %completed%'
-        clueType: swim
-        amount: 700-1400
-        objective: Swim %amount% blocks
-        clueName: Swim
-      clue-fish-everything:
-        lore: '&f• Fish %amount% items: %completed%'
-        clueType: fish
-        amount: 25-30
-        objective: Fish %amount% items
-        clueName: Item Fisher
-      clue-get-xp:
-        lore: '&a&l• &fGain %amount% experience: %completed%'
-        clueType: expgain
-        amount: 30000
-        objective: Gain %amount% experience
-        clueName: Experience Grinder
-    rewards: '2'
-mystery:
-  scrolls:
-    mystery:
-      material: PAPER
-      title: '&b&lMystery Clue Scroll'
-      lore:
-      - '&7Click to unlock a &b&lMystery &7clue scroll.'
-      receiveMessage: '&b&l+ %amount% Mystery Scroll'
-      bind: false
-      tiers:
-        default: 100
-        tier2: 200
-  crystals:
-    mystery:
-      material: PAPER
-      title: mystery crystal
-      lore: []
-      receiveMessage: '%amount% mystery crystal'
-      bind: false
-      tiers:
-        default: 100
-        tier2: 200
-checkForUpdates: false
-auto-complete-scrolls: false
-glow-scrolls: true
-glow-crystals: true
-scrolls-unique-ids: true
-block-place-blacklist:
-- SEEDS
-block-break-blacklist:
-- SEEDS
-title:
-  fadeIn: 20
-  fadeOut: 20
-  stay: 80
-inventory:
-  purchase:
-    title: clue scrolls
-    size: 9
-    items: []
-  reward:
-    title: clue ccroll reward
-    size: 9
-    randomly-place-items: false
-    gui-enabled: false
-commandReward:
-  material: PAPER
-  title: reward command
-  lore: []
-  bind: false
-instant-command-reward-execution: true
-garbageNBT: 5-25
-runnableClueRefreshRate:
-  distance: 5
-  permission: -1
-  nearPlayers: -1
-clueTypes:
-  blockbreak:
-    enabled: true
-    countUltimateTimber: false
-    countCrazyEnchantments: false
-  blockplace:
-    enabled: false
-  breed:
-    enabled: true
-  bucketempty:
-    enabled: false
-  bucketfill:
-    enabled: false
-  chat:
-    enabled: false
-  command:
-    enabled: false
-  craft:
-    enabled: true
-  death:
-    enabled: false
-  eat:
-    enabled: false
-  enchant:
-    enabled: true
-  expgain:
-    enabled: true
-  fish:
-    enabled: true
-  glide:
-    enabled: false
-  harvest:
-    enabled: true
-  horsejump:
-    enabled: false
-  interactentity:
-    enabled: false
-  kill:
-    enabled: true
-  permission:
-    enabled: false
-  ride:
-    enabled: false
-  shear:
-    enabled: true
-  swim:
-    enabled: true
-  tame:
-    enabled: false
-  walk:
-    enabled: true
-  askyblock:
-    enabled: false
-  auctionhouse:
-    enabled: false
-  auctions:
-    enabled: false
-  autorank:
-    enabled: false
-  autosell:
-    enabled: false
-  boss:
-    enabled: false
-  chatreaction:
-    enabled: false
-  cratereloaded:
-    enabled: false
-  crazycrates:
-    enabled: false
-  deluxechat:
-    enabled: false
-  epicbosses:
-    enabled: false
-  morefish:
-    enabled: false
-  mythicmobs:
-    enabled: false
-  towny:
-    enabled: false
-  ultimatetimber:
-    enabled: false
-  uskyblock:
-    enabled: false
-  votifier:
-    enabled: false
-  worldguard:
-    enabled: false
-  mobarena:
-    enabled: false
-  randompackage:
-    enabled: false
-  citizens:
-    enabled: false
-  crackshot:
-    enabled: false
-  nearplayers:
-    enabled: false
-  playtime:
-    enabled: false
-  crazyenchantments:
-    enabled: false
-  bentobox:
-    enabled: false
-  fabledskyblock:
-    enabled: false
-  phatloots:
-    enabled: false
-  superiorskyblock:
-    enabled: false
-  jobs:
-    enabled: false
-  itemsadder:
-    enabled: false
-  essentials:
-    enabled: false
-  miniaturepets:
-    enabled: false
-  craftextinguisher:
-    enabled: false
-  vouchers:
-    enabled: false
-  specializedcrates:
-    enabled: false
-  epicspawners:
-    enabled: false
-  chatcontrol:
-    enabled: false
-  zauctionhouse:
-    enabled: true
-  auctionhousekiranhart:
-    enabled: true
-remove-scrolls-on-death: false
-remove-crystals-on-death: false
-version: 4.2.8
-click-to-execute-command-rewards: false
-auto-execute-command-rewards: true
-auto-rehook: -1
-scroll-slot-refresh: 100
-asyncClues: true
-scroll-complete-actions: []
-remove-expired-scrolls: true
-time-format:
-  short:
-    days: d
-    hours: h
-    minutes: m
-    seconds: s
-  long:
-    single:
-      day: day
-      hour: hour
-      minute: minute
-      second: second
-    plural:
-      day: days
-      hour: hours
-      minute: minutes
-      second: seconds
-placeholder-formats:
-  created: M/d/yy
-  expires: M/d/yy
-detect-entity-spawn-type: false
-mob-scroll-drops:
-  exampledrop:
-    chance: 0.5
-    entity-types:
-    - CREEPER
-    - SKELETON
-    - ZOMBIE
-    type: scroll
-    type-2: mystery
-    name: mystery
-    amount: 1
-    permission: cluescrolls.mobdrop.exampledrop
-database:
-  type: h2
-  tables_prefix: cluescrolls_
-  h2:
-    file: database.db
-  sql:
-    hostname: localhost
-    port: 3306
-    dbname: mydb
-    username: root
-    password: password
+percentages:
+  common: 57
+  rare: 30
+  epic: 10
+  legendary: 3
 
+tool-tip:
+  - '&fRight click the mission to complete it'
+  - '&cWarning - this will delete the specified item'
+  - '&cfrom your inventory'
+show-title: true
+chat-reward-message: '&6You have completed the mission'
+
+scrolls:
+  dragon-egg:
+    item: obsidian
+    rarity: legendary
+    max-goal: 580
+    min-goal: 570
+    rewards:
+      1:
+        type: item
+        amount: 1
+        name: "&fDragon Egg"
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: dragon_egg
+  dragon-head:
+    item: obsidian
+    rarity: legendary
+    max-goal: 580
+    min-goal: 570
+    rewards:
+      1:
+        type: item
+        amount: 1
+        name: "&fDragon Head"
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: dragon_head
+  elytra:
+    item: feather
+    rarity: legendary
+    max-goal: 1000
+    min-goal: 1050
+    rewards:
+      1:
+        type: item
+        amount: 1
+        name: "&fElytra"
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: elytra
+  god-pickaxe:
+    item: coal
+    rarity: legendary
+    max-goal: 2500
+    min-goal: 2600
+    rewards:
+      1:
+        type: item
+        amount: 1
+        name: '&5&lObsidian Pickaxe'
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: enchanted_book
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: "&5&lObsidian Pickaxe"
+            enchants:
+              DIG_SPEED: 5
+              LOOT_BONUS_BLOCKS: 4
+              DURABILITY: 5
+              MENDING: 1
+  dragon-breath:
+    item: gunpowder
+    rarity: legendary
+    max-goal: 315
+    min-goal: 325
+    rewards:
+      1:
+        type: item
+        amount: 32
+        name: "&fDragon Breath"
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: dragon_breath
+  end-crystal:
+    item: tnt
+    rarity: legendary
+    max-goal: 192
+    min-goal: 64
+    rewards:
+      1:
+        type: item
+        amount: 3
+        name: "&fEnd Crystal"
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: end_crystal
+  looting-5:
+    item: magma_cream
+    rarity: legendary
+    max-goal: 64
+    min-goal: 128
+    rewards:
+      1:
+        type: item
+        amount: 3
+        name: "&5&lObsidian Sword"
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: enchanted_book
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              LOOT_BONUS_MOBS: 5
+              DURABILITY: 3
+              DAMAGE_ALL: 5
+              MENDING: 1
+              FIRE_ASPECT: 2
+  warden-egg:
+    item: nether_bricks
+    rarity: legendary
+    max-goal: 560
+    min-goal: 580
+    rewards:
+      1:
+        type: item
+        amount: 1
+        name: "&fWarden Spawn Egg"
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: warden_spawn_egg
+  riptide-trident:
+    item: kelp
+    rarity: legendary
+    max-goal: 1152
+    min-goal: 1140
+    rewards:
+      1:
+        type: item
+        amount: 1
+        name: "&5&lObsidian Trident"
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: enchanted_book
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              RIPTIDE: 5
+              IMPALING: 5
+              DURABILITY: 3
+              MENDING: 1
+
+################ COMMON MISSIONS DIVIDER ################
+  stone-bricks-easy:
+    item: stone_bricks
+    min-goal: 48
+    max-goal: 96
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  sandstone-easy:
+    item: sandstone
+    min-goal: 32
+    max-goal: 64
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  wheat-easy:
+    item: wheat
+    min-goal: 16
+    max-goal: 32
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  carrot-easy:
+    item: carrot
+    min-goal: 16
+    max-goal: 32
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  potato-easy:
+    item: potato
+    min-goal: 16
+    max-goal: 32
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  melon-easy:
+    item: melon
+    min-goal: 16
+    max-goal: 32
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  pumpkin-easy:
+    item: pumpkin
+    min-goal: 16
+    max-goal: 32
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  golden-apple-easy:
+    item: golden_apple
+    min-goal: 1
+    max-goal: 5
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  golden-carrot-easy:
+    item: golden_carrot
+    min-goal: 16
+    max-goal: 32
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  anvil-easy:
+    item: anvil
+    min-goal: 1
+    max-goal: 3
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  iron-easy:
+    item: iron_ingot
+    min-goal: 8
+    max-goal: 16
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  gold-easy:
+    item: gold_ingot
+    min-goal: 8
+    max-goal: 16
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  coal-easy:
+    item: coal
+    min-goal: 16
+    max-goal: 32
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  fish-cod-easy:
+    item: cod
+    min-goal: 1
+    max-goal: 4
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+  fish-pufferfish-easy:
+    item: pufferfish
+    min-goal: 1
+    max-goal: 1
+    rarity: common
+    rewards:
+      1: 
+        type: command
+        name: "$75"
+        command: "money grant {0} 75"
+      2:
+        type: command
+        name: "500 XP"
+        command: "minecraft:xp add {0} 500"
+
+################ MEDIUM MISSIONS DIVIDER ################
+  stone-bricks-medium:
+    item: stone_bricks
+    min-goal: 96
+    max-goal: 384
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  sandstone-medium:
+    item: sandstone
+    min-goal: 64
+    max-goal: 128
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  wheat-medium:
+    item: wheat
+    min-goal: 32
+    max-goal: 64
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  carrot-medium:
+    item: carrot
+    min-goal: 32
+    max-goal: 64
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  potato-medium:
+    item: potato
+    min-goal: 32
+    max-goal: 64
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  melon-medium:
+    item: melon
+    min-goal: 32
+    max-goal: 64
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  pumpkin-medium:
+    item: pumpkin
+    min-goal: 32
+    max-goal: 64
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  golden-apple-medium:
+    item: golden_apple
+    min-goal: 2
+    max-goal: 10
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  golden-carrot-medium:
+    item: golden_carrot
+    min-goal: 32
+    max-goal: 64
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  anvil-medium:
+    item: anvil
+    min-goal: 2
+    max-goal: 6
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  iron-medium:
+    item: iron_ingot
+    min-goal: 16
+    max-goal: 32
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  gold-medium:
+    item: gold_ingot
+    min-goal: 16
+    max-goal: 32
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  coal-medium:
+    item: coal
+    min-goal: 32
+    max-goal: 64
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  fish-cod-medium:
+    item: cod
+    min-goal: 2
+    max-goal: 8
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+  fish-pufferfish-medium:
+    item: pufferfish
+    min-goal: 2
+    max-goal: 2
+    rarity: rare
+    rewards:
+      1: 
+        type: command
+        name: "$150"
+        command: "money grant {0} 150"
+      2:
+        type: command
+        name: "750 XP"
+        command: "minecraft:xp add {0} 750"
+
+################ HARD MISSIONS DIVIDER ################
+  stone-bricks-hard:
+    item: stone_bricks
+    min-goal: 144
+    max-goal: 576
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  sandstone-hard:
+    item: sandstone
+    min-goal: 96
+    max-goal: 192
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  wheat-hard:
+    item: wheat
+    min-goal: 48
+    max-goal: 96
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  carrot-hard:
+    item: carrot
+    min-goal: 48
+    max-goal: 96
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  potato-hard:
+    item: potato
+    min-goal: 48
+    max-goal: 96
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  melon-hard:
+    item: melon
+    min-goal: 48
+    max-goal: 96
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  pumpkin-hard:
+    item: pumpkin
+    min-goal: 48
+    max-goal: 96
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  golden-apple-hard:
+    item: golden_apple
+    min-goal: 3
+    max-goal: 15
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  golden-carrot-hard:
+    item: golden_carrot
+    min-goal: 48
+    max-goal: 96
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  anvil-hard:
+    item: anvil
+    min-goal: 3
+    max-goal: 9
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  iron-hard:
+    item: iron_ingot
+    min-goal: 24
+    max-goal: 48
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  gold-hard:
+    item: gold_ingot
+    min-goal: 24
+    max-goal: 48
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  coal-hard:
+    item: coal
+    min-goal: 48
+    max-goal: 96
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  fish-cod-hard:
+    item: cod
+    min-goal: 3
+    max-goal: 12
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+  fish-pufferfish-hard:
+    item: pufferfish
+    min-goal: 3
+    max-goal: 3
+    rarity: epic
+    rewards:
+      1: 
+        type: command
+        name: "$250"
+        command: "money grant {0} 250"
+      2:
+        type: command
+        name: "1000 XP"
+        command: "minecraft:xp add {0} 1000"
+              

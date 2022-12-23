@@ -1,0 +1,11 @@
+name: mvp
+permissions:
+- essentials.hat
+- essentials.nick
+- essentials.skull
+- imageonmap.new
+- prefixchanger.use
+- townyflight.command.tfly
+- weight.1
+parents:
+- default
