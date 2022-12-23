@@ -1,0 +1,33 @@
+name: default
+permissions:
+- mcmmo.ability.mining.blastmining.*
+- towny.wild.*
+- classes.use.miner
+- combatlogx.command.combat-timer
+- essentials.msg
+- essentials.realname
+- iconomy.access
+- iconomy.list
+- iconomy.payment
+- mcmmo.ability.alchemy:
+    value: false
+- quickshop.player
+- remayoring.remayor
+- siegewar.command.siegewar.collect:
+    value: false
+- siegewar.command.siegewar.guide:
+    value: false
+- siegewar.command.siegewar.nation.paysoldiers:
+    value: false
+- siegewar.command.siegewar.nation.removeoccupation:
+    value: false
+- siegewar.command.siegewar.nation.transferoccupation:
+    value: false
+- siegewar.command.siegewar.preference:
+    value: false
+- siegewar.command.siegewar.town.inviteoccupation:
+    value: false
+- towny.chat.alliance
+- towny.chat.local
+- townymissions.user
+- tradeplus.trade

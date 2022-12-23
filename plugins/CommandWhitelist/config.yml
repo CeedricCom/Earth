@@ -1,0 +1,90 @@
+
+# Messages use MiniMessage formatting (https://docs.adventure.kyori.net/minimessage/format)
+messages:
+  prefix: ''
+  command_denied: <red>No such command.
+  subcommand_denied: <red>You cannot use this subcommand
+  no_permission: <red>You don't have permission to do this.
+  no_such_subcommand: <red>No subcommand by that name.
+  config_reloaded: <yellow>Configuration reloaded.
+  added_to_whitelist: <yellow>Whitelisted command <gold>%s <yellow>for permission
+    <gold>%s
+  removed_from_whitelist: <yellow>Removed command <gold>%s <yellow>from permission
+    <gold>%s
+  group_doesnt_exist: <red>Group doesn't exist or error occured
+
+# Do not enable if you don't have issues with aliased commands.
+# This requires server restart to take effect.
+use_protocollib: false
+groups:
+  default:
+    commands:
+    - msg
+    - bal
+    - baltop
+    - pay
+    - r
+    - balance
+    - town
+    - t
+    - nation
+    - n
+    - accept
+    - confirm
+    - g
+    - general
+    - l
+    - local
+    - ac
+    - alliancechat
+    - nc
+    - tc
+    - mctop
+    - acrobatics
+    - alchemy
+    - archery
+    - axes
+    - excavation
+    - fishing
+    - herbalism
+    - mining
+    - repair
+    - salvage
+    - smelting
+    - swords
+    - taming
+    - unarmed
+    - woodcutting
+    - combattimer
+    - ct
+    - vote
+    - shop
+    - map
+    - partychat
+    - pc
+    - party
+    - mcrank
+    - tell
+    subcommands: []
+  mvp:
+    commands:
+    - hat
+    - nick
+    - playerskull
+    - tag
+    - tfly
+  moderator:
+    commands:
+    - ban
+    - mute
+    - warn
+    - unban
+    - unmute
+    - unwarn
+    - i
+    - endersee
+    - invsee
+    - vanish
+    - v
+    - tpo
+    - tppos

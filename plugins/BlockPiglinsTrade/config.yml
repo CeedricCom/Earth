@@ -1,0 +1,12 @@
+# ----------------------------------
+# -
+#       BlockPiglinsTrade
+# -
+#         By: Ssomar
+# -
+# ----------------------------------
+# Soon a plugin to change the material and set custom trade of piglins !
+# disablePickupOfPiglinsAfterFirstTry improve performance
+
+enable: true
+disablePickupOfPiglinsAfterFirstTry: true

@@ -517,7 +517,7 @@ repair-enchanted: true
 
 # Allow 'unsafe' enchantments in kits and item spawning.
 # Warning: Mixing and overleveling some enchantments can cause issues with clients, servers and plugins.
-unsafe-enchantments: false
+unsafe-enchantments: true
 
 # The maximum range from the player that the /tree and /bigtree commands can spawn trees.
 tree-command-range-limit: 300

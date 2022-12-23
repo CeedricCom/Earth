@@ -1,0 +1,14 @@
+name: mvp
+permissions:
+- commandwhitelist.group.mvp
+- essentials.hat
+- essentials.nick
+- essentials.skull
+- essentials.skull.others
+- essentials.skull.spawn
+- imageonmap.new
+- prefixchanger.use
+- townyflight.command.tfly
+- weight.1
+parents:
+- default

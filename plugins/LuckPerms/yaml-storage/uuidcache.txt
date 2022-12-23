@@ -1,0 +1,6 @@
+# LuckPerms UUID lookup cache
+eb5e6429-327c-413c-a064-4e71c7098f0e:ceedric_
+42e79fb5-fb2e-4e2f-aae4-e5b0cd969d29:chubd
+350f93be-6fde-4ffa-ade5-cdf0122ec516:DeltaOrion
+1f502439-54c4-4ddd-9b53-7f63061fecb6:Godsick
+2eedb599-e291-4f85-820c-58e5528e40b8:Reyko

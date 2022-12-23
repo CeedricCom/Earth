@@ -258,7 +258,7 @@ Experience_Values:
         Grass_Block: 40
         Gravel: 200
         Mycelium: 40
-        Sand: 200
+        Sand: 120
         Red_Sand: 40
         Snow: 20
         Snow_Block: 40
@@ -483,7 +483,7 @@ Experience_Values:
         Red_Terracotta: 50
         White_Terracotta: 50
         Yellow_Terracotta: 50
-        Stone: 200
+        Stone: 120
         Granite: 15
         Andesite: 15
         Diorite: 15

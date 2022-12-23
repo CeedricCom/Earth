@@ -83,7 +83,7 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: 'ENDSTONE'
+              type: 'END_STONE'
 
   town-mission-crop-farmer:
     name: 'Town Farm Replant'
@@ -498,7 +498,7 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: 'ENDSTONE'
+              type: 'END_STONE'
 
 
 #---------- NATION MISSION SEPERATOR ------------#
@@ -580,7 +580,7 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: 'ENDSTONE'
+              type: 'END_STONE'
 
   nation-mission-crop-farmer:
     name: 'Farmer'
@@ -1044,7 +1044,7 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: 'ENDSTONE'
+              type: 'END_STONE'
 
 
 
