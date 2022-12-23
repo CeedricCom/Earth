@@ -1,0 +1,16 @@
+# Please be aware of changing a function here can cause the plugin til malfunction.
+# Consider to use the ingame GUI the make all settings (/enchantcontrol)
+# Values can be changed here, but at own risk!!!
+# Support will NOT be provided, if you have manfully changed the config!
+
+configVersion: 1.1
+setup: true
+prefix: '&r'
+action: RemoveSingle
+enchant: Remove
+book: 'Yes'
+unsafeEnchant: false
+enchants:
+  '19':
+    disabled: true
+    custom: false

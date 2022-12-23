@@ -89,6 +89,7 @@ towns:
   - towny.command.nation.join
   - towny.command.nation.leave
   - siegewar.town.siege.*
+  - townymissions.mayor
   - siegewar.command.siegewar.town.*
   
   # Ranks contain additional permissions residents will be
