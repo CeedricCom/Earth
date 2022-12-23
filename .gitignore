@@ -28,8 +28,15 @@ plugins/dynmap/markers/
 plugins/dynmap/export/
 plugins/dynmap/ids-by-ip.txt
 plugins/dynmap/lightings.txt
+plugins/dynmap/custom-lightings.txt
+plugins/dynmap/custom-shaders.txt
+plugins/dynmap/markers.yml
+plugins/dynmap/perspectives.txt
+plugins/dynmap/custom-perspectives.txt
+plugins/dynmap/makers.yml.old
 plugins/dynmap/shaders.txt
 plugins/dynmap/colorschemes/
+plugins/dynmap/hiddenplayers.txt
 plugins/dynmap/world.pending
 plugins/TAB/placeholder-errors.log
 plugins/spark/activity.json
@@ -63,7 +70,6 @@ server.properties
 abrir.bat
 cratereloaded-*.zip
 plugins/Chunky/tasks/
-plugins/dynmap/ids-by-ip.txt
 plugins/TAB/anti-override.log
 plugins/QuickShop/cache/
 plugins/QuickShop/qs.log
