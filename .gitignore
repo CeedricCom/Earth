@@ -53,6 +53,8 @@ plugins/CrateReloaded/claim/*
 plugins/LuckPerms/translations/
 plugins/LuckPerms/libs/
 plugins/ImageOnMap/images/
+plugins/CrateReloaded/messages/
+plugins/CrateReloaded/location.yml
 plugins/ImageOnMap/maps/
 plugins/SiegeWar/lang/
 plugins/Chunky/tasks/
