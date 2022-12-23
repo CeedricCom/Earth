@@ -1,0 +1,86 @@
+#Stay on the newest version to get better features!
+#Enable or disable automatic ingame update notification on join
+UpdateChecker: 'true'
+
+#de (German) or en (English)
+language: 'en'
+#enable/disable the debug mode
+debug: 'false'
+
+#Message shown if you type /pl | Enter none to disable | Players with the permission commandtool.bypass.pl will see the real plugins
+/pl-message: 'Plugins (&aCommandTool&f):'
+
+#deactivate the whole command blocking function of groups
+disable-groups: 'true'
+
+groups:
+  #do not rename the default group!
+  default:
+    commands: []
+    #Message if you type a blocked command
+    blocked-command-message: '&fUnknown command. Type \"/help\" for help.'
+    #If the value is blacklist, the commands are blocked
+    #If the value is whitelist, the commands only executable
+    whitelist-or-blacklist-commands: 'blacklist'
+    tabcomplete: []
+    #If the value is blacklist, the commands are invisible
+    #If the value is whitelist, the commands only  visible
+    whitelist-or-blacklist-tabcomplete: 'blacklist'
+    #If a player is in two groups, the group with the higher weight number is used
+    #The minimum value is 0
+    weight: '0'
+    #here you can add other groups
+    included-groups: []
+
+  #This group for example will remove and block all commands. You can only enter /spawn in the group
+  #add permission commandtool.group.test to apply this group
+  test:
+    commands:
+      - spawn
+    blocked-command-message: '&fUnknown command. Type \"/help\" for help.'
+    whitelist-or-blacklist-commands: 'whitelist'
+    tabcomplete:
+      - spawn
+    whitelist-or-blacklist-tabcomplete: 'whitelist'
+    weight: '1'
+    included-groups: []
+
+############################################################
+# +------------------------------------------------------+ #
+# |              Commandtool (Custom Commands)           | #
+# +------------------------------------------------------+ #
+############################################################
+#deactivate the custom command feature
+disable-custom-commands: 'false'
+command:
+  'map':
+    permission: "util.map"
+    usage: "&c/map"
+    no_permission: "You don't have permission to do this."
+    usage: '&c/map' #command usage message
+    cooldown: 0 #10 seconds cooldown | bypass permission: commandtool.cooldown.bypass
+    cooldown-message: '&cThis command is on cooldown for &2&l%ct-cooldown-secondsLeft% &cseconds!' #cooldown message with PlaceholderAPI placeholders
+    command:
+      - map #command
+    output:
+      message:
+        - "&6You can check out the map at &ehttps://map.ceedric.com"
+      console: []
+      broadcast: []
+  'shop':
+    permission: "util.shop"
+    usage: "&c/shop"
+    no_permission: "You don't have permission to do this."
+    usage: '&c/shop' #command usage message
+    cooldown: 0 #10 seconds cooldown | bypass permission: commandtool.cooldown.bypass
+    cooldown-message: '&cThis command is on cooldown for &2&l%ct-cooldown-secondsLeft% &cseconds!' #cooldown message with PlaceholderAPI placeholders
+    command:
+      - shop #command
+    output:
+      message:
+        - "&6Check out the shop at &ehttps://shop.ceedric.com"
+      console: []
+      broadcast: []
+
+#Config Version. Don't change
+config-version: '2'

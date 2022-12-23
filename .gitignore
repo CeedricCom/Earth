@@ -36,7 +36,7 @@ plugins/dynmap/custom-perspectives.txt
 plugins/dynmap/makers.yml.old
 plugins/dynmap/shaders.txt
 plugins/dynmap/colorschemes/
-plugins/dynmap/versions.txt/
+plugins/dynmap/version.txt/
 plugins/dynmap/hiddenplayers.txt
 plugins/dynmap/world.pending
 plugins/TAB/placeholder-errors.log

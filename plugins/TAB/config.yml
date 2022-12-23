@@ -182,7 +182,7 @@ placeholder-output-replacements:
      "true": "%townyadvanced_nation_tag_override%"
      "false": ""
   "%townyadvanced_has_town%":
-     "true": "%townyadvanced_town_tag_override"
+     "true": "%townyadvanced_town_tag_override%"
      "false": ""
 
   "%essentials_vanished%":
