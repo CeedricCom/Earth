@@ -177,6 +177,14 @@ placeholders:
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Placeholder-output-replacements
 placeholder-output-replacements:
+# Checks if player has either nation or town, if so, show tag, if not, nothing. Avoids having placeholders spew in tab.
+  "%townyadvanced_has_nation%":
+     "true": "%townyadvanced_nation_tag_override%"
+     "false": ""
+  "%townyadvanced_has_town%":
+     "true": "%townyadvanced_town_tag_override"
+     "false": ""
+
   "%essentials_vanished%":
     "yes": "&7| Vanished"
     "no": ""
