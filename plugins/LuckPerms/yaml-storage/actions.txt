@@ -76,3 +76,5 @@
 {"timestamp":1671807530,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"USER","uniqueId":"eb5e6429-327c-413c-a064-4e71c7098f0e","name":"ceedric_"},"description":"parent set mvp"}
 {"timestamp":1671807731,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"mvp"},"description":"webeditor add essentials.skull.spawn true"}
 {"timestamp":1671807748,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"mvp"},"description":"webeditor add essentials.skull.others true"}
+{"timestamp":1671812591,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"default"},"description":"webeditor add util.shop true"}
+{"timestamp":1671812591,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"default"},"description":"webeditor add util.map true"}

@@ -31,3 +31,5 @@ permissions:
 - towny.chat.local
 - townymissions.user
 - tradeplus.trade
+- util.map
+- util.shop
