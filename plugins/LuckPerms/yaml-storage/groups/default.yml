@@ -5,6 +5,7 @@ permissions:
 - classes.use.miner
 - combatlogx.command.combat-timer
 - essentials.msg
+- essentials.realname
 - iconomy.access
 - iconomy.list
 - iconomy.payment

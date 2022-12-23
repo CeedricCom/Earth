@@ -334,20 +334,6 @@ scrolls:
         type: command
         name: "500 XP"
         command: "minecraft:xp add {0} 500"
-  gold-easy:
-    item: gold_ingot
-    min-goal: 8
-    max-goal: 16
-    rarity: common
-    rewards:
-      1: 
-        type: command
-        name: "$75"
-        command: "money grant {0} 75"
-      2:
-        type: command
-        name: "500 XP"
-        command: "minecraft:xp add {0} 500"
   coal-easy:
     item: coal
     min-goal: 16
