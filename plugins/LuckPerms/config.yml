@@ -397,7 +397,7 @@ meta-formatting:
     duplicates: first-only
     start-spacer: ""
     middle-spacer: " "
-    end-spacer: ""
+    end-spacer: " "
   suffix:
     format:
       - "highest"

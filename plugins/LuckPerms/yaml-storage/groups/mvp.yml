@@ -1,5 +1,6 @@
 name: mvp
 permissions:
+- commandwhitelist.group.default
 - commandwhitelist.group.mvp
 - essentials.hat
 - essentials.nick
