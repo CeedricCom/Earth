@@ -1,0 +1,11 @@
+messages:
+  prefix: '&2Command&7Tool &8»'
+  no_permission: '&cYou do not have the required permissions!'
+  help_usage: '&cUse /ct help'
+  command-usage: '&cUse &8/&7ct command (&badd&7/&bremove&7) <&bcommand> (&bmessage&7/&bconsole&7/&bbroadcast&7)
+    <&boutput&7>'
+  command-already-exist: '&cThe command already exists in the config!'
+  command-remove: '&aThe command has been removed.'
+  command-add: '&aThe command has been added.'
+  reload: '&aThe plugin has been reloaded.'
+messages-version: '1'

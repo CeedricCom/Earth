@@ -1,5 +1,6 @@
 name: moderator
 permissions:
+- commandwhitelist.group.moderator
 - coreprotect.inspect
 - coreprotect.lookup
 - coreprotect.rollback
@@ -11,6 +12,7 @@ permissions:
 - sv.joinvanished
 - sv.see
 - sv.use
+- weight.2
 parents:
 - default
 prefixes:

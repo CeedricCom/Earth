@@ -5,6 +5,7 @@ permissions:
 - classes.use.miner
 - combatlogx.command.combat-timer
 - essentials.msg
+- essentials.realname
 - iconomy.access
 - iconomy.list
 - iconomy.payment
@@ -30,3 +31,5 @@ permissions:
 - towny.chat.local
 - townymissions.user
 - tradeplus.trade
+- util.map
+- util.shop
