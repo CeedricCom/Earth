@@ -1,10 +1,10 @@
 {
   "world": {
     "world": "world",
-    "centerX": -0.5,
-    "centerZ": -0.5,
-    "radiusX": 18431.5,
-    "radiusZ": 9215.5,
+    "centerX": 0.0,
+    "centerZ": 0.0,
+    "radiusX": 21504.0,
+    "radiusZ": 10752.0,
     "shape": "rectangle",
     "wrap": "none"
   }

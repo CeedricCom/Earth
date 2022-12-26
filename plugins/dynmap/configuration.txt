@@ -374,7 +374,7 @@ progressloginterval: 100
 # Parallel fullrender: if defined, number of concurrent threads used for fullrender or radiusrender
 #   Note: setting this will result in much more intensive CPU use, some additional memory use.  Caution should be used when
 #  setting this to equal or exceed the number of physical cores on the system.
-parallelrendercnt: 20
+parallelrendercnt: 5
 
 # Interval the browser should poll for updates.
 updaterate: 2000
