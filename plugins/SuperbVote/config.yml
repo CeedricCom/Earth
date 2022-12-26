@@ -99,7 +99,7 @@ vote-command:
   enabled: true
   use-json-text: false
   text: |-
-    You could vote for us, but the owner forgot to add the list of websites to vote at!
+    https://help.ceedric.com/vote/
 
 # Vote reminder.
 vote-reminder:
