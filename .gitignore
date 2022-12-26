@@ -4,6 +4,7 @@ cache
 usercache.json
 whitelist.json
 crash-reports/
+map/
 world/
 world_nether/
 world_the_end/
