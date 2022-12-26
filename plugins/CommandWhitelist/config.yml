@@ -60,6 +60,7 @@ groups:
     - vote
     - shop
     - map
+    - realname
     - partychat
     - pc
     - party
