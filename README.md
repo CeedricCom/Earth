@@ -1,4 +1,4 @@
-![](https://https://github.com/DeltaOrion/Gladia2.0/branding/Banner.png "Banner")
+![Banner](https://https://github.com/DeltaOrion/Gladia2.0/branding/Banner.png)
 # Gladia 2.0
 
 Gladia 2.0, is a 1:1000 scale replica of Earth, featuring Towny, SiegeWar, and an active economy. With a wide range of gameplay options and a friendly community, there's something for everyone on Gladia 2.0. We welcome players of all skill levels and encourage you to join us and start exploring the world of Gladia 2.0. Simply join at ceedric.com to get started!
@@ -18,6 +18,9 @@ The following plugins are connected to external databases. In order to get them 
   - LuckPerms
   - CoreProtect
   - Votifier
+
+The following plugins are missing from this repository as they are paid however their configs can still be found
+  - Matrix Anticheat
 
 Connect to the server on localhost:25564
 
@@ -87,7 +90,15 @@ The following repositories are linked to the project and contain other important
 
 ## Launch
 
-To launch the server navigate to the root folder and run the start.sh script. This will launch the server in a new screen. You can also use abrir.sh to launch it out of a screen
+To launch the server navigate to the root folder and run the start.sh script. This will launch the server in a new screen. You can also use abrir.sh to launch it out of a screen.
+
+First add permissions to run the file
+```sh
+chmod u+x start.sh
+chmod u+x abrir.sh
+```
+
+Then launch the server
 
 ```sh
 ./start.sh

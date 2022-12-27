@@ -1,0 +1,34 @@
+# Run at 04:20:00 every day.
+schedule:
+- "0 0 7 * * ?"
+actions:
+  "300":
+  - "chat | §c§lEarth will restart in 5 minutes"
+  "180":
+  - "chat | §c§lEarth will restart in 3 minutes"
+  "60":
+  - "chat | §c§lEarth will restart in 1 minute"
+  "30":
+  - "chat | §c§lEarth will restart in 30 seconds"
+  "5":
+  - "chat | §c§lEarth will restart in 5 seconds"
+  - "title | §c§lRestart :: §c5 seconds left :: 15 40 1"
+  - "sound | UI_BUTTON_CLICK"
+  "4":
+  - "chat | §c§lEarth will restart in 4 seconds"
+  - "title | §c§lRestart :: §c4 seconds left :: 15 40 1"
+  - "sound | UI_BUTTON_CLICK"
+  "3":
+  - "chat | §c§lEarth will restart in 3 seconds"
+  - "title | §c§lRestart :: §c3 seconds left :: 15 40 1"
+  - "sound | UI_BUTTON_CLICK"
+  "2":
+  - "chat | §c§lEarth will restart in 2 seconds"
+  - "title | §c§lRestart :: §c2 seconds left :: 15 40 1"
+  - "sound | UI_BUTTON_CLICK"
+  "1":
+  - "chat | §c§lEarth will restart in 1 seconds"
+  - "title | §c§lRestart :: §c1 seconds left :: 15 40 1"
+  - "sound | UI_BUTTON_CLICK"
+  "0":
+  - "command | restart"
