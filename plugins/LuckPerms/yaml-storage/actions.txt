@@ -85,3 +85,4 @@
 {"timestamp":1672029146,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"mvp"},"description":"webeditor remove prefix.0.MVP true"}
 {"timestamp":1672029599,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"mvp"},"description":"webeditor add commandwhitelist.group.default true"}
 {"timestamp":1672030956,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"USER","uniqueId":"eb5e6429-327c-413c-a064-4e71c7098f0e","name":"ceedric_"},"description":"webeditor remove prefix.0.D true"}
+{"timestamp":1672184254,"source":{"uniqueId":"00000000-0000-0000-0000-000000000000","name":"Console"},"target":{"type":"GROUP","name":"default"},"description":"webeditor add frozenjoin.default true"}

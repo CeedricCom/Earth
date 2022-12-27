@@ -1,0 +1,220 @@
+#
+#     _____                           __     _
+#    |   __|___ ___ ___ ___ ___    __|  |___|_|___
+#    |   __|  _| . |- _| -_|   |  |  |  | . | |   |
+#    |__|  |_| |___|___|___|_|_|  |_____|___|_|_|_|
+#
+#   Version: 2.3.1
+#   Author: Frosty
+#   Maintainers: BlitzOffline, Starmism
+#   Discord: https://discord.gg/helpchat
+#   SpigotMC: https://www.spigotmc.org/resources/frozenjoin.93473/
+#   Description: An Advanced Join/Quit Plugin With 100% Customisation
+#
+#
+# » PlaceholderAPI
+# The plugin in entirety supports PlaceholderAPI placeholders,
+# meaning you are able to use any placeholder within any of the below
+# listed messages.
+#
+# » Actions
+# The plugin supports actions within most of the messages to allow for max
+# customization (does not currently support objects), below are
+# listed all the currently available actions which can be run through the
+# different messages.
+#
+#   Available Modifiers:
+#    - [CHANCE=<chance>]
+#    - [DELAY=<delay>]
+#    - [ACTION] Arg1;Arg2;Arg3
+#
+#  Example Action with both modifiers:
+#    - [CHANCE=30][DELAY=5s][MESSAGE] &aYou had a &f30% &achance of getting this message, with a &f5s &adelay!
+#
+# Player:
+# • [CENTERMESSAGE] <message>
+# • [ACTIONBARMESSAGE] <message>
+# • [TITLEMESSAGE] <title;subtitle;fadein;stay;fadeout>
+# • [SOUND] <sound;volume;pitch>
+# • [BUNGEE] <server>
+# • [TELEPORT] <world;x;y;z;yaw;pitch>
+# • [CONSOLECOMMAND] <command>
+# • [PLAYERCOMMAND] <command>
+# • [MESSAGE] <message>
+# • [JSONMESSAGE] <JSON message>
+# • [EQUIP] <item,data;display;lore;amount;slot>
+#
+# Everyone:
+# • [JSONBROADCAST] <JSON message>
+# • [CENTERBROADCAST] <message>
+# • [ACTIONBARBROADCAST] <message>
+# • [TITLEBROADCAST] <title;subtitle;fadein;stay;fadeout>
+# • [SOUNDBROADCAST] <sound;volume;pitch>
+# • [AUDIENCEBROADCAST] <message>
+# • [BROADCAST] <message>
+#
+# Examples:
+# • [JSONBROADCAST] {"text":"Go to Google","color":"red","clickEvent":{"action":"open_url","value":"google.com"}}
+# • [JSONMESSAGE] {"text":"Go to Google","color":"red","clickEvent":{"action":"open_url","value":"google.com"}}
+# • [CENTERBROADCAST] &bThis is centered for everyone
+# • [CENTERMESSAGE] &bThis is centered
+# • [ACTIONBARBROADCAST] &cEveryone sees this in the actionbar
+# • [ACTIONBARMESSAGE] &cThis shows in the actionbar
+# • [TITLEMESSAGE] Hello;%player_name%;20;60;20
+# • [TITLEBROADCAST] Hello;Players;20;60;20
+# • [SOUNDBROADCAST] ENTITY_ARROW_HIT_PLAYER;2;2
+# • [SOUND] ENTITY_ARROW_HIT_PLAYER;2;2
+# • [BUNGEE] lobby
+# • [TELEPORT] world;0;60;0;90;90
+# • [CONSOLECOMMAND] eco give %player_name% 1000
+# • [PLAYERCOMMAND] balance
+# • [AUDIENCEBROADCAST] &eHello everyone but the player that just joined!
+# • [BROADCAST] &aHello Players
+# • [MESSAGE] &cHello &2World
+# • [EQUIP] STONE;&aTest Stone;Some~Lore;3;2
+#
+# » Looking for a feature to be added?
+# Submit a GitHub Issue and it will be looked at!
+# https://github.com/Frcsty/FrozenJoin/issues
+#
+# » Console Message Logging
+# Determines what level of message importance should be displayed in console
+# while the plugin is operational.
+# Available Levels: ENABLED, DISABLED
+#
+consoleMessages: 'ENABLED'
+#
+#
+# » Custom Plugin Settings
+# Dictates which settings should be used when using the plugin.
+#
+# » Custom Command Alias
+# As of right now the feature is disabled due to not working correctly.
+#
+# » First Join Message
+# Determines what message is broadcast to the server when a new
+# user joins the server.
+#
+firstJoinMessage: []
+#
+#
+# » Message of The Day
+# Here you can create new MOTD whom you can apply with permissions
+# to your players. You may create infinite MOTDs with fully custom
+# actions. The delay is fully optional, and it works in addition to
+# the [DELAY] modifier.
+motds:
+  default:
+    priority: 1
+    delay: 0s
+    delay-on-command: false
+    permission: frozenjoin.motd.default
+    actions:
+      - '[MESSAGE] &7Welcome back &f%player_name%&7,'
+      - '[MESSAGE] &7you can read our daily news at'
+      - '[MESSAGE] &8* &f&nhttps://google.com'
+#
+#
+# » Plugin Messages
+# Regarding on the action and if the user has access to it,
+# you can determine what messages are displayed for reloading the plugin,
+# and not having permission for any of the commands.
+#
+messages:
+  convertArgumentMessage: '&8[&bFrozenJoin&8] &8» &7Invalid convert arguments! Available&8: &bgenerate&7, &bstart&7, &bdump&7.'
+  convertDirectoryExistsMessage: '&8[&bFrozenJoin&8] &8» &7Directory &bFrozenJoin/converter &7already exists, use &b/frozenjoin convert dump &7if you wish to delete it.'
+  convertGeneratedDirectoryMessage: '&8[&bFrozenJoin&8] &8» &7Generated directory &bFrozenJoin/converter&7, place your DeluxeJoin &bconfig.yml&7, in it and run &b/frozenjoin convert start &7to convert it.'
+  convertDumpMissingDirectoryMessage: '&8[&bFrozenJoin&8] &8» &7Converter directory has already been deleted.'
+  convertDirectoryDeletedMessage: '&8[&bFrozenJoin&8] &8» &7Converter directory has been successfully deleted!'
+  convertDirectoryEmptyMessage: "&8[&bFrozenJoin&8] &8» &7Converter directory is empty or does't exist! You can generate it using &b/frozenjoin convert generate&7."
+  convertSuccessfullyConvertedMessage: '&8[&bFrozenJoin&8] &8» &7Successfully converted all files within the converter directory (Took &b%time%&7ms), you can find the converted files within &bFrozenJoin/converted &7directory, use &b/frozenjoin convert dump &7to delete the directory.'
+  customMessageInvalidPlayerMessage: '&8[&bFrozenJoin&8] &8» &7Invalid player.'
+  customMessageInvalidArgumentMessage: '&8[&bFrozenJoin&8] &8» &7Invalid custom message arguments! Available&8: &bjoin&7, &bquit'
+  customMessageSetTargetMessage: "&8[&bFrozenJoin&8] &8» &7You have set &b%player_name%&7's &b%type% &7message to &b'%message%'"
+  customMessageRemoveTargetMessage: "&8[&bFrozenJoin&8] &8» &7You have removed &b%player_name%&7's custom &b%type% &7message"
+  reloadMessage: '&8[&bFrozenJoin&8] &8» &7Reloaded configuration in &b%time%ms&7.'
+  denyMessage: '&8[&bFrozenJoin&8] &8» &7You do not have permission to execute this command!'
+  usageMessage: '&8[&bFrozenJoin&8] &8» &7Incorrect usage! &7Use &b/frozenjoin help&7 to get help.'
+  playerOnlyMessage: '&8[&bFrozenJoin&8] &8» &7This command can only be executed by a player!'
+  unknownCommandMessage: '&8[&bFrozenJoin&8] &8» &7Unknown Command.'
+  noMotdMessage: '&8[&bFrozenJoin&8] &8» &cYou do not have an motd applicable.'
+  helpMessage:
+    - '&bFrozenJoin &8- &b{version}'
+    - ''
+    - '&8* &bBase Command&8: &f/join'
+    - '&8* &bAlias&8: &f/fjoin&8, &f/frozenjoin'
+    - ''
+    - ' &8• &freload   &8- &7Reloads the config'
+    - ' &8• &fhelp     &8- &7Displays help message'
+    - ' &8• &fset      &8- &7Set a users custom message'
+    - ' &8• &fremove   &8- &7Remove a users custom message'
+    - ' &8• &fconvert  &8- &7Convert a deluxejoin config to frozenjoin'
+    - ''
+    - '&8* &bOther Commands&8:'
+    - ''
+    - '&f/motd &8- &7Shows motd message'
+    - ''
+  infoMessage:
+    - '&bFrozenJoin &8- &b{version}'
+    - ''
+    - ' &8• &7Author&8: &fFrosty'
+    - ' &8• &7Maintainers&8: &fBlitzOffline and Starmism'
+    - ' &8• &7Page&8: &f&nhttps://www.spigotmc.org/resources/frozenjoin.93473/'
+    - ''
+#
+# » Join/Quit Formats
+# Here you can create new objects whom you can apply with permissions
+# to your players. You may create infinite objects with fully custom
+# join & quit messages. (No format should have the same priority!).
+#
+#
+# » Priorities
+# are used to define which format gets used if the user has access
+# to multiple, they are listed from lowest to highest, 1 being lowest and above being highest.
+# Meaning highest priority format (in the example below 2), will be applied to the player
+# if they have access to both.
+#
+#
+# » Format Types
+# are used to allow for further customisations when it comes to display
+# join and quite message, for instance using the "RANDOM" format type you are able to
+# execute a random action specified inside the format, thus randomizing join/quit messages
+# "DEFAULT" format type being the format type as you have known from before, "VANISH" format
+# type being a format which will detect if a user is vanished, with the ability to invert
+# the messages.
+#
+# Available Format Types: "RANDOM", "NORMAL", "VANISH"
+#
+formats:
+  default:
+    priority: 3
+    type: 'NORMAL'
+    join:
+      - '[MESSAGE] &2&l------------------------------'
+      - '[MESSAGE] &a&lWelcome to Gladia2.0, %player_name%'
+      - '[MESSAGE] &7A clone by ceedric_ and DeltaOrion'
+      - '[MESSAGE] &2'
+      - '[MESSAGE] &fJoin our discord at &adiscord.ceedric.com'
+      - '[MESSAGE] &f'
+      - '[MESSAGE] &fVisit the help page with &a/help'
+      - '[MESSAGE] &fVote for rewards with &a/vote'
+      - '[MESSAGE] &fConsider supporting the server at &a/shop'
+      - '[MESSAGE] &f'
+      - '[MESSAGE] &2&l------------------------------'
+      - '[SOUND] ENTITY_PLAYER_LEVELUP;1.0;1.0'
+    quit: []
+    permission: 'frozenjoin.default'
+
+# Placeholders in this cache are automatically parsed every # ticks and those values are then replaced in messages and
+# actions. This is mainly to fix issues with some placeholders not working when a player leaves.
+placeholder-cache:
+  # The interval in ticks to refresh the placeholder cache. 20 ticks = 1 second.
+  # If you change this value, the server will need to be restarted to apply the changes.
+  update-interval: 10
+  # List of placeholders that should be cached. The list does update on /fjoin reload.
+  placeholders:
+    - "%luckperms_prefix%"
+
+# If you want bstats to track your server leave this enabled,
+# otherwise disable it by setting it to false
+stonks: true
