@@ -77,6 +77,10 @@ plugins/TAB/anti-override.log
 plugins/QuickShop/cache/
 plugins/QuickShop/qs.log
 plugins/QuickShop/overrides/
+plugins/CustomCrafting/lang/
+plugins/CustomCrafting/recipe_book.conf
+plugins/WolfyUtilities/lang/
+plugins/WolfyUtilities/generated_classes/
 version_history.json
 plugins/Votifier/
 plugins/LuckPerms/yaml-storage/actions.txt
