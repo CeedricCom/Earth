@@ -1,9 +1,9 @@
   
 version:
   # This is the current version.  Please do not edit.
-  version: 1.0.0
+  version: 1.1.1
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 1.0.0
+  last_run_version: 1.1.1
   
   
 war:
@@ -398,6 +398,9 @@ neutral_towns:
   #   (see user guide for full details)
   #
   enabled: 'true'
+  
+  # If this is true, a nation capital can be a peaceful town. If false, any capital will not be able to turn peaceful.
+  capitals_allowed_neutrality: 'true'
   
   # This value determines how long it takes to confirm a town neutrality status change.
   # It is recommended to be high, for use by genuinely neutral towns, not just for war cost avoidance.
