@@ -6,6 +6,7 @@ permissions:
 - combatlogx.command.combat-timer
 - essentials.msg
 - essentials.realname
+- frozenjoin.default
 - iconomy.access
 - iconomy.list
 - iconomy.payment
