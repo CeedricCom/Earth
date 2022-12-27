@@ -57,6 +57,7 @@ groups:
     - unarmed
     - woodcutting
     - combattimer
+    - remayor
     - ct
     - vote
     - shop
