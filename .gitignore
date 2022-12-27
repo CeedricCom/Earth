@@ -79,4 +79,8 @@ plugins/QuickShop/qs.log
 plugins/QuickShop/overrides/
 version_history.json
 plugins/Votifier/
-
+plugins/LuckPerms/yaml-storage/actions.txt
+plugins/LuckPerms/yaml-storage/uuidcache.txt
+plugins/LuckPerms/yaml-storage/users/
+plugins/ChunkyBorder/borders.json
+plugins/dynmap/newmaprender.tar.gz
