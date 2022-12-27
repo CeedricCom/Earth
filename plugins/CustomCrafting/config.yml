@@ -1,0 +1,111 @@
+# Config for CustomCrafting v4.16.3.2
+# -
+# PlaceholderAPI:
+# Identifier: customcrafting
+# Placeholders:
+#   - %customcrafting_crafts%       > The total custom recipes the player has crafted
+#   - %customcrafting_recipes_[option]%
+#       - %customcrafting_recipes_vanilla%        > The total vanilla recipes that are loaded
+#       - %customcrafting_recipes_custom%         > The total custom recipes that are loaded
+#       - %customcrafting_recipes_available%      > The amount of custom recipes that the player has permission to use
+#   - %customcrafting_recipe_[option]_[namespaced_key]%
+#       - %customcrafting_recipe_type_[namespaced_key]%         > The type of the recipe
+#       - %customcrafting_recipe_crafts_[namespaced_key]%       > How often the player has crafted the recipe
+#       - %customcrafting_recipe_advanced_[namespaced_key]%     > If the recipe is an advanced crafting table recipe
+#       - %customcrafting_recipe_permission_[namespaced_key]%   > If the recipe requires a permission
+#       - %customcrafting_recipe_available_[namespaced_key]%    > If the recipe is available for the player
+
+debug: false
+language: en_US
+gui:
+  # Specifies if the background glass panes should be placed into the gui. If disabled things like crafting grids/slots won't be apparent anymore! Best in combination with custom gui textures!
+  draw_background: true
+creator:
+  # Configure if the stored values and items you put or configured in the GUI should be cleared after saving a recipe.
+  reset_after_save: true
+commands:
+  # Aliases for the main command of the plugin.
+  # This is often used to prevent incompatibility with other plugins that use the same alias as ChatClear, etc.
+  alias:
+  - cc
+local_storage:
+  # this should always be true if you don't use a database or want to export your data to the database.
+  # If you use a database you can still load local data, but configure how it loads them with the following settings below.
+  load: true
+  # Specifies if the local storage should be loaded before or after the database.
+  # This is useful if you have items/recipes that depend on items in the database or other way around.
+  # Make sure that the dependencies of items and recipes are loaded in the correct order.
+  before_database: true
+  # Sets if already existing recipes/items with the same namespaced key should be replaced when registered.
+  # Useful if you want to override a database recipe/item with the one from local storage.
+  # Or when "before_database" enabled override local recipes/items with database data.
+  # The recipes can only be replaced in Minecraft 1.15+, because the API pre 1.15 is unstable.
+  override_data: false
+database:
+  # If the database feature should be used or not.
+  enabled: false
+  # The type of the database. Currently, only MYSQL
+  type: MYSQL
+  # The ip or hostname of the data bank
+  host: localhost
+  # The port of the data bank
+  port: 3306
+  # The name of the schema
+  schema: mc_plugins
+  # The username of the user to use for the connection.
+  username: minecraft
+  # The users password
+  password: ''
+data:
+  # Toggle if the stacktrace should be printed out if a recipe or item fails to load.
+  print_stacktrace: false
+  # Do not change this number! It is used for internal conversion of items between Bukkit versions to make sure they are up-to-date.
+  bukkit_version: 3218
+  # Do not change this number! It is used to update configs of recipes and items to new formats!
+  version: 5
+crafting_table:
+  # If the advanced crafting table is enabled or not.
+  enable: true
+  # If the crafting table item should be reset on each server start. This means the config is replaced with a new version.
+  reset: true
+recipe_book:
+  # If the recipe book item should be reset on each server start. This means the config is replaced with a new version.
+  reset: true
+  # If closed and opened again, it'll open up the recipe and menu the player last left on.
+  keep_last_open: true
+  # The title of the single recipe menu
+  recipe_type_titles:
+    crafting_shaped: <translate:recipe.type.crafting.crafting_shaped>
+    crafting_shapeless: <translate:recipe.type.crafting.crafting_shapeless>
+    elite_crafting_shaped: <translate:recipe.type.crafting.elite_crafting_shaped>
+    elite_crafting_shapeless: <translate:recipe.type.crafting.crafting_shaped>
+    furnace: <translate:recipe.type.cooking.furnace>
+    blast_furnace: <translate:recipe.type.cooking.blast_furnace>
+    smoker: <translate:recipe.type.cooking.smoker>
+    campfire: <translate:recipe.type.cooking.campfire>
+    smithing: <translate:recipe.type.smithing>
+    anvil: <translate:recipe.type.anvil>
+    cauldron: <translate:recipe.type.cauldron>
+    stonecutter: <translate:recipe.type.stonecutter>
+    grindstone: <translate:recipe.type.grindstone>
+    brewing_stand: <translate:recipe.type.brewing_stand>
+workstation:
+  cauldron:
+    sound: {}
+    gui:
+      main_menu:
+        title: <translate:inventories.cauldron.cauldron.default_title>
+      result_menu:
+        title: <translate:inventories.cauldron.cauldron.default_title>
+custom_items:
+  # Use this option if you have saved CustomItems and your players got them in their inventory. Each time a Player joins the server it will try to update the CustomItems.
+  update: true
+recipes:
+  # Toggle the Brewing Recipes. They are off by default to prevent possible duplication issues
+  brewing: false
+  # Used to block any kind of custom recipe. If enabled no one will be able to craft any custom recipe anymore.
+  lockdown: false
+  # If the configs like items or recipes should be saved using formatting or just one continuous String.
+  pretty_printing: true
+  # The vanilla or custom recipes that are blocked from crafting.
+  disabled_recipes: []
