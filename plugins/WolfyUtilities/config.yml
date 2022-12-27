@@ -1,0 +1,7 @@
+#
+
+api_references:
+  mmoitems: true
+  oraxen: true
+  mythicmobs: true
+  itemsadder: true

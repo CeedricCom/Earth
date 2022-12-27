@@ -8,6 +8,6 @@ command.srt.help: |-
 command.srt.check.info: "§8[§fServerRestart§8] §7Next restart: §f{time}"
 command.srt.reload.info: "§8[§fServerRestart§8] §7Configuration reloaded!"
 command.srt.skip.info: "§8[§fServerRestart§8] §7Skipped, next: §f{time}"
-command.srt.frestart.invalid-seconds: "§8[§fServerRestart§8] §7Argument §f`seconds`\
-  §7 should be a number >= 0"
+command.srt.frestart.invalid-seconds: "§8[§fServerRestart§8] §7Argument §f`seconds`§\
+  7 should be a number >= 0"
 command.srt.frestart.info: "§8[§fServerRestart§8] §7Force restart: §f{time}"
