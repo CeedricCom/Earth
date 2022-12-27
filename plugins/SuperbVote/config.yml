@@ -104,8 +104,8 @@ vote-command:
 # Vote reminder.
 vote-reminder:
   message: "&cDon't forget to vote for us! You currently have &a%votes%&c votes."
-  on-join: true
-  repeat: 180
+  on-join: false
+  repeat: 900
 
 # Controls the /sv <top/leaderboard> command.
 leaderboard:
