@@ -1,1 +1,1 @@
-screen -S "Gladia2.0" ./abrir.sh
+screen -S "gladia" ./abrir.sh

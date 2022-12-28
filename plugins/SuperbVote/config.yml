@@ -5,14 +5,14 @@
 
 # Database configuration.
 storage:
-  database: json
+  database: mysql
   json:
     file: votes.json
   mysql:
     host: 127.0.0.1
-    username: root
-    password: topsecret
-    database: superbvote
+    username: votifier
+    password: Yq@hR$#43@J5?pDD
+    database: votifier
     table: votes
     streaks-table: streaks
     read-only: false
@@ -29,7 +29,7 @@ votes:
 # Streaks configuration
 # Important: Streaks does not support JSON storage
 streaks:
-  enabled: false
+  enabled: true
   # Fetch streaks almost everywhere to enable %streak%, %streak_days%, and %streak_today_services% placeholders
   # outside of streak-related commands
   enable-placeholders: true
@@ -44,7 +44,7 @@ streaks:
     use-json-text: false
     text: |-
       You currently hold a vote streak of %streak% (%streak_days% days), keep going!
-      You've voted on %streak_today_services% website(s) out of X today.
+      You've voted on %streak_today_services% website(s) out of 5 today.
 
 # Rewards. This is the main section you will need to edit. Ordering is important.
 rewards:

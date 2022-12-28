@@ -146,13 +146,13 @@ components:
   - class: org.dynmap.ClientComponent
     type: chat
     allowurlname: false
-  - class: org.dynmap.ClientComponent
-    type: chatballoon
-    focuschatballoons: false
-  - class: org.dynmap.ClientComponent
-    type: chatbox
-    showplayerfaces: true
-    messagettl: 5
+  #- class: org.dynmap.ClientComponent
+  #  type: chatballoon
+  #  focuschatballoons: false
+  #- class: org.dynmap.ClientComponent
+  #  type: chatbox
+  #  showplayerfaces: true
+  #  messagettl: 5
     # Optional: set number of lines in scrollable message history: if set, messagettl is not used to age out messages
     #scrollback: 100
     # Optional: set maximum number of lines visible for chatbox

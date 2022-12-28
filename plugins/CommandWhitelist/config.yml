@@ -78,13 +78,6 @@ groups:
     - tfly
   moderator:
     commands:
-    - ban
-    - mute
-    - warn
-    - unban
-    - unmute
-    - unwarn
-    - i
     - endersee
     - invsee
     - vanish
