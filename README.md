@@ -1,5 +1,6 @@
-![Banner](https://github.com/DeltaOrion/Gladia2.0/blob/master/branding/Banner.png?raw=true)
 # Gladia 2.0
+
+![Banner](https://github.com/DeltaOrion/Gladia2.0/blob/master/branding/Banner.png?raw=true)
 
 Gladia 2.0, is a 1:1000 scale replica of Earth, featuring Towny, SiegeWar, and an active economy. With a wide range of gameplay options and a friendly community, there's something for everyone on Gladia 2.0. We welcome players of all skill levels and encourage you to join us and start exploring the world of Gladia 2.0. Simply join at ceedric.com to get started!
 
