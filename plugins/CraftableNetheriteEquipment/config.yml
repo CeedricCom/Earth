@@ -1,0 +1,25 @@
+# CraftableNetheriteEquipment by HexedHero
+# https://www.spigotmc.org/resources/84559
+
+# Disable opening the Smithing Table.
+Disable Smithing Table: true
+# Message to send to the player when trying to access a Smithing Table.
+# Set to "" to disable.
+Disabled Message: "&cThe Smithing Table is disabled."
+
+# Toggle crafting for tools.
+Tools:
+
+   Pickaxe: true
+   Sword: false
+   Shovel: true
+   Axe: true
+   Hoe: true
+
+# Toggle crafting for armor.
+Armor:
+
+   Helmet: false
+   Chestplate: false
+   Leggings: false
+   Boots: false
