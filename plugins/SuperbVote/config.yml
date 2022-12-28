@@ -96,7 +96,7 @@ broadcast:
 # See http://www.minecraftforum.net/forums/minecraft-discussion/redstone-discussion-and/351959-1-9-json-text-component-for-tellraw-title-books
 # and https://www.minecraftjson.com for json text format
 vote-command:
-  enabled: true
+  enabled: false
   use-json-text: false
   text: |-
     https://help.ceedric.com/vote/
