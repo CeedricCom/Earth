@@ -82,12 +82,6 @@ The permissions are currently stored in a yaml database. Although you can techni
 lp export permissions --without-users
 ```
 
-## Other Repositories
-
-The following repositories are linked to the project and contain other important plugins
-- https://github.com/DeltaOrion/GladiaWebsite - The website for help.ceedric.com
-- https://github.com/DeltaOrion/GladiaClonePlugins - Any custom plugins used for the server
-
 ## Launch
 
 To launch the server navigate to the root folder and run the start.sh script. This will launch the server in a new screen. You can also use abrir.sh to launch it out of a screen.
@@ -103,6 +97,12 @@ Then launch the server
 ```sh
 ./start.sh
 ```
+
+## Other Repositories
+
+The following repositories are linked to the project and contain other important plugins
+- https://github.com/DeltaOrion/GladiaWebsite - The website for help.ceedric.com
+- https://github.com/DeltaOrion/GladiaClonePlugins - Any custom plugins used for the server
 
 ## Contributing
 
