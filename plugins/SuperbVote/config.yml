@@ -55,7 +55,7 @@ rewards:
   - if:
       every-cumulative-votes: 5
     commands:
-    - eco give %player% 50
+    - money grant %player% 50
     - scrolladmin give random %player%
     - cr give to %player% votingcrate 1
     broadcast-message: "&e&l%player% &ehas voted for &6ceedric.com &eand has earned &6&lBig Rewards! &eUse &6&l/vote &eto vote and earn rewards!"
@@ -63,7 +63,7 @@ rewards:
   - if:
       default: true
     commands:
-    - eco give %player% 50
+    - money grant %player% 50
     - scrolladmin give random %player%
     player-message: "&eThanks for voting for &6ceedric.com, you have been rewarded with &6$50 &eand a &6mission."
 
