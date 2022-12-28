@@ -103,7 +103,7 @@ vote-command:
 
 # Vote reminder.
 vote-reminder:
-  message: "&cDon't forget to vote for us! You currently have &a%votes%&c votes."
+  message: "&6Don't forget to vote for rewards! &e/vote"
   on-join: false
   repeat: 900
 
