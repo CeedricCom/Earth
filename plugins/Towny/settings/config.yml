@@ -1589,10 +1589,10 @@ economy:
   new_expand:
   
     # How much it costs to start a nation.
-    price_new_nation: '20000.0'
+    price_new_nation: '1000.0'
   
     # How much it costs to start a town.
-    price_new_town: '2000.0'
+    price_new_town: '1000.0'
   
     # The base cost a town has to pay to merge with another town. The town that initiates the merge pays the cost.
     price_town_merge: '5000'
