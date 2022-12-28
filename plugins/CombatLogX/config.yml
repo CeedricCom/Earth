@@ -13,9 +13,9 @@ update-checker: true
 
 # These are toggles for the different broadcast messages
 broadcast:
-  on-load: true
-  on-enable: true
-  on-disable: true
+  on-load: false
+  on-enable: false
+  on-disable: false
 
 # This is a list of worlds that CombatLogX will ignore when tagging players.
 # World names are case-sensitive. "world" is not the same as "WoRlD"
