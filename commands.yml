@@ -13,3 +13,7 @@ aliases:
   - money pay
   tell:
   - msg
+  rename:
+  - itemrename
+  mapto:
+  - tomap: null

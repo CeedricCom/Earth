@@ -28,6 +28,7 @@ settings:
   
   
   
+  
 
   # Would you like to check for updates on startup?
   check_for_updates: false
@@ -50,9 +51,11 @@ settings:
   
   
   
+  
 
   # Should we disable the bypass permissions?
   disable_bypass_permissions: true
+  
   
   
   
@@ -98,9 +101,11 @@ custom_attack_speed:
   
   
   
+  
 
   # Should we modify the player's attack speed?
   enabled: true
+  
   
   
   
@@ -124,6 +129,7 @@ custom_attack_speed:
   # The new attack speed
   # The default value removes the cooldown completely
   attack_speed: 24
+  
   
   
   
@@ -169,9 +175,11 @@ damage_modifiers:
   
   
   
+  
 
   # Should we bring back 1.8 sharpness damage?
   old_sharpness: true
+  
   
   
   
@@ -213,6 +221,7 @@ damage_modifiers:
   
   
   
+  
 
   # Custom tool damages properties
   custom_tool_damages:
@@ -235,9 +244,11 @@ damage_modifiers:
     
     
     
+    
 
     # Should we modify damage dealt by tools?
     enabled: true
+    
     
     
     
@@ -295,6 +306,7 @@ damage_modifiers:
       NETHERITE_HOE: 0
   
   
+  
 
   # Multiply final damage by this
   multiplier: 1.38
@@ -307,6 +319,7 @@ disable_arrow_boost: false
 
 # Custom player knockback properties
 custom_player_knockback:
+  
   
   
   
@@ -348,9 +361,11 @@ custom_player_knockback:
   
   
   
+  
 
   # The velocity friction to apply
   friction: 2.0
+  
   
   
   
@@ -392,9 +407,11 @@ custom_player_knockback:
   
   
   
+  
 
   # The extra horizontal knockback to apply
   extra_horizontal: 0.425
+  
   
   
   
@@ -436,9 +453,11 @@ custom_player_knockback:
   
   
   
+  
 
   # The extra vertical knockback to apply
   extra_vertical: 0.085
+  
   
   
   
@@ -483,9 +502,11 @@ custom_player_regeneration:
   
   
   
+  
 
   # Should we modify the player's regeneration?
   enabled: false
+  
   
   
   
@@ -528,10 +549,12 @@ custom_player_regeneration:
   
   
   
+  
 
   # The regeneration amount
   # The default value replicates 1.8 regeneration
   amount: 1
+  
   
   
   
@@ -577,9 +600,11 @@ sword_blocking:
   
   
   
+  
 
   # Would you like players to get a Resistance and a Slowness Effect if they hold Right Click?
   enabled: false
+  
   
   
   
@@ -621,9 +646,11 @@ sword_blocking:
   
   
   
+  
 
   # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
   effect: DAMAGE_RESISTANCE
+  
   
   
   
@@ -665,6 +692,7 @@ sword_blocking:
   
   
   
+  
 
   # The effect amplifier
   amplifier: 0
@@ -687,9 +715,11 @@ sword_blocking:
   
   
   
+  
 
   # The slow duration in ticks (20 ticks = 1 second)
   slow_duration_ticks: 8
+  
   
   
   
@@ -734,9 +764,11 @@ cooldowns:
   
   
   
+  
 
   # Golden Apple Cooldown
   golden_apple:
+    
     
     
     
@@ -778,9 +810,11 @@ cooldowns:
     
     
     
+    
 
     # Cooldown in seconds
     cooldown: 30
+    
     
     
     
@@ -822,10 +856,12 @@ cooldowns:
     
     
     
+    
 
     # Worlds listed below will be ignored from applying the above features
     disabled_worlds:
       - example_world
+  
   
   
   
@@ -867,9 +903,11 @@ cooldowns:
     
     
     
+    
 
     # Should we enable this?
-    enabled: true
+    enabled: false
+    
     
     
     
@@ -911,9 +949,11 @@ cooldowns:
     
     
     
+    
 
     # Should the cooldown be sent in an Actionbar Message?
     actionbar: true
+    
     
     
     
@@ -956,9 +996,11 @@ cooldowns:
   
   
   
+  
 
   # Enderpearl Cooldown
   enderpearl:
+    
     
     
     
@@ -1000,6 +1042,7 @@ cooldowns:
     
     
     
+    
 
     # Cooldown in seconds
     cooldown: 30
@@ -1022,9 +1065,11 @@ cooldowns:
     
     
     
+    
 
     # Should the cooldown be sent in an Actionbar Message?
     actionbar: true
+    
     
     
     
@@ -1070,6 +1115,7 @@ fishing_rod_knockback:
   
   
   
+  
 
   # Should we enable this?
   enabled: false
@@ -1092,9 +1138,11 @@ fishing_rod_knockback:
   
   
   
+  
 
   # The knockback damage to be applied
   damage: 0.01
+  
   
   
   
@@ -1142,6 +1190,7 @@ healthbar:
   
   
   
+  
 
   # Would you like Combat Plus to send an Actionbar message to the Attacker indicating the Target's Health and Damage Dealt?
   enabled: false
@@ -1164,9 +1213,11 @@ healthbar:
   
   
   
+  
 
   # Should we only show the health bar of players?
   players_only: true
+  
   
   
   
@@ -1212,9 +1263,11 @@ combatlog:
   
   
   
+  
 
   # Would you like to enable the Combat Log?
   enabled: false
+  
   
   
   
@@ -1256,9 +1309,11 @@ combatlog:
   
   
   
+  
 
   # Should players get tagged when fighting Mobs?
   mobs: false
+  
   
   
   
@@ -1300,9 +1355,11 @@ combatlog:
   
   
   
+  
 
   # Should Combat Plus send an Actionbar message to the player?
   actionbar: true
+  
   
   
   
@@ -1344,9 +1401,11 @@ combatlog:
   
   
   
+  
 
   # Should we disable the tagged player's flight?
   disable_fly: true
+  
   
   
   
@@ -1388,6 +1447,7 @@ combatlog:
   
   
   
+  
 
   # Should we prevent tagged players from Dropping Items?
   prevent_dropping_items: false
@@ -1410,9 +1470,11 @@ combatlog:
   
   
   
+  
 
   # Should we prevent tagged players from Picking Up Items?
   prevent_picking_items: false
+  
   
   
   
@@ -1455,6 +1517,7 @@ combatlog:
   
   
   
+  
 
   # CombatLog Command Properties
   commands:
@@ -1477,9 +1540,11 @@ combatlog:
     
     
     
+    
 
     # Should we prevent tagged players from Using Commands?
     enabled: true
+    
     
     
     
@@ -1526,6 +1591,7 @@ custom_player_health:
   
   
   
+  
 
   # Should we enable this?
   enabled: false
@@ -1548,9 +1614,11 @@ custom_player_health:
   
   
   
+  
 
   # The max health that a player should have
   max_health: 40
+  
   
   
   

@@ -1146,7 +1146,7 @@ protection:
   # A list of items, that are held in the hand, which can be protected against.
   # Group names you can use in this list: BOATS, MINECARTS
   # A full list of proper names can be found here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html 
-  item_use_ids: MINECARTS,BOATS,ENDER_PEARL,FIREBALL,CHORUS_FRUIT,LEAD,EGG
+  item_use_ids: MINECARTS,BOATS,FIREBALL,CHORUS_FRUIT,LEAD,EGG
   
   # Blocks that are protected via town/plot flags.
   # These are blocks in the world that will be protected by a town/resident/plot's switch setting.

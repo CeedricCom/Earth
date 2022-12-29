@@ -90,6 +90,8 @@ groups:
     - tag
     - tfly
     - tppos
+    - itemrename
+    - rename
   moderator:
     commands:
     - endersee
