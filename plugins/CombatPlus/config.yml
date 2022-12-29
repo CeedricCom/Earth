@@ -869,7 +869,7 @@ cooldowns:
     
 
     # Should we enable this?
-    enabled: false
+    enabled: true
     
     
     
@@ -980,7 +980,7 @@ cooldowns:
     
 
     # Should we enable this?
-    enabled: false
+    enabled: true
     
     
     
