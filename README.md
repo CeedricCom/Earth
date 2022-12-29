@@ -77,11 +77,36 @@ This command will render all loaded chunks in all zoom levels.
 
 ### LuckPerms Installation
 
-The permissions are currently stored in a yaml database. Although you can technically use luckperms like this it is better to use a MariaDB database. To do this run the following commands in your minecraft console
+The permissions are currently stored in a yaml database. Although you can technically use luckperms like this it is better to use a MariaDB database. To do this first change the lp config to work with the yml database
+
+```yml
+storage-method: yaml
+```
+
+Once you have done this launc the minecraft server and run the following command in the minecraft console
 
 ```
 lp export permissions --without-users
 ```
+
+Then change the storage method back to MariaDB. Restart the server and run the command
+
+```
+lp import permissions
+```
+
+## Firewalling 
+
+If you are running this on a bungeecord network it is extremely important that it is correctly firewalled to stop various exploits. The following ports should be firewalled so that only the server which the bungeecord network is running on can access them
+
+  - Voting Port
+  - Remote Databases
+  - Server Port
+
+For the default configuration these values are
+  - Voting Port: 8173
+  - Remote Databases: 3306
+  - Server Port: 25564
 
 ## Launch
 
