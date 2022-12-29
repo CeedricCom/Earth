@@ -31,7 +31,6 @@ profiles:
       types:
         - "category:fish"
         - "category:ambient"
-        - "category:monster"
         - "glow_squid"
         - "dolphin"
         - "squid"

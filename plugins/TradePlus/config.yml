@@ -11,7 +11,7 @@ permissions:
   accept: tradeplus.accept
 requestcooldownseconds: 3
 allow-trade-in-creative: false
-allow-shift-right-click: true
+allow-shift-right-click: false
 blocked:
   blacklist:
   - bedrock

@@ -66,6 +66,7 @@ groups:
     - remayor
     - vote
     - shop
+    - ignore
     - map
     - realname
     - partychat

@@ -366,7 +366,7 @@ siege_material_restrictions:
   # This setting is useful to help prevent extreme siege-zone grief such as obsidian forts.
   # The list is used to indicate the list of blocks which cannot be placed in the wilderness area of siegezones.
   # WARNING: Avoid putting 'common' blocks on this list as that may cause lag.
-  wilderness_block_placement_prevention_materials: obsidian, ice
+  wilderness_block_placement_prevention_materials: ice
   
   # This setting is useful to help prevent extreme siege-zone grief such as obsidian forts or cobble monsters.
   # The list is used to indicate the list of forbidden buckets

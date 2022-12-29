@@ -179,10 +179,10 @@ placeholders:
 placeholder-output-replacements:
 # Checks if player has either nation or town, if so, show tag, if not, nothing. Avoids having placeholders spew in tab.
   "%townyadvanced_has_nation%":
-     "true": "%townyadvanced_nation_tag_override%"
+     "true": "%townyadvanced_nation_tag_override% "
      "false": ""
   "%townyadvanced_has_town%":
-     "true": "%townyadvanced_town_tag_override%"
+     "true": "%townyadvanced_town_tag_override% "
      "false": ""
 
   "%essentials_vanished%":
@@ -195,12 +195,14 @@ placeholder-output-replacements:
     "%afk%": "" # if attempting to use bukkit-only placeholder on bungeecord
   "%essentials_nickname%":
     "%essentials_nickname%": "%player%" # placeholder did not parse correctly, show real name instead
+  "%luckperms_prefix%":
+    " ": ""
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Conditional-placeholders
 conditions:
   nick: # use it with %condition:nick%
     conditions:
-      - "%player%=%essentials_nickname%"
+      - "%player_name%=%essentials_nickname%"
     yes: "%player%"
     no: "~%essentials_nickname%"
 

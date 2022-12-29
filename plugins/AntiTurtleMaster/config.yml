@@ -1,0 +1,3 @@
+turtle-master-time-in-seconds: 10
+turtle-master-cooldown-in-seconds: 600
+cooldown-message: '&6You are in turtle master cooldown. Time Left: %cooldown%'

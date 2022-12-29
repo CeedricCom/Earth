@@ -74,7 +74,7 @@ components:
     # Limit length of single chat messages
     chatlengthlimit: 256
   #  # Optional - make players hidden when they are inside/underground/in shadows (#=light level: 0=full shadow,15=sky)
-  #  hideifshadow: 4
+    hideifshadow: 0
   #  # Optional - make player hidden when they are under cover (#=sky light level,0=underground,15=open to sky)
   #  hideifundercover: 14
   #  # (Optional) if true, players that are crouching/sneaking will be hidden 

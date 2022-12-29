@@ -13,8 +13,8 @@ example_group:
  # default settings for all groups, all groups will take properties from this section unless player's primary group overrides a specific setting
 _DEFAULT_:
 # After placeholder output is decided in config.yml, if it decides yes to either of the "has" placeholders, outputs name, else, nothing.
-  tabprefix: "%rel_townyadvanced_color%%townyadvanced_has_nation% %townyadvanced_has_town% &f"
-  tagprefix: "%rel_townyadvanced_color%%townyadvanced_has_nation% %townyadvanced_has_town% &f"
+  tabprefix: "%rel_townyadvanced_color%%townyadvanced_has_nation%%townyadvanced_has_town%&f"
+  tagprefix: "%rel_townyadvanced_color%%townyadvanced_has_nation%%townyadvanced_has_town%&f"
   customtabname: "%essentials_nickname%"
   customtagname: "%essentials_nickname%" # don't forget to enable unlimited nametag mode to make this one work
   tabsuffix: "%luckperms-suffix%"
