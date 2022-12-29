@@ -183,7 +183,7 @@ expansion:
 
   action-bar:
     # Shown above the hotbar while a player is in combat.
-    timer: "<bold><gold>Combat</gold> <gray>\u00BB</gray></bold> <white>{bars} <red>{combatlogx_time_left}</red> seconds.</white>"
+    timer: "<gradient:#DA0000:#FF0000>Combat Time: <bold><white>{combatlogx_time_left}</white></bold> seconds</gradient>"
 
     # Shown above the hotbar for a brief period when combat ends.
     ended: "<bold><gold>Combat</gold> <gray>\u00BB</gray></bold> <white>You are no longer in combat.</white>"
