@@ -1,10 +1,18 @@
 cooldown-seconds: 15
+prefix-weight: 1
 group-name: "mvp"
 prefix-blacklist:
   - "staff"
   - "mod"
+  - "fuck"
+  - "owner"
   - "admin"
   - "nigger"
   - "nigga"
   - "faggot"
   - "gypsy"
+  - "helper"
+  - "trial"
+  - "m0d"
+  - "n1gga"
+  - "shit"

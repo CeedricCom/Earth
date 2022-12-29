@@ -95,6 +95,8 @@ towns:
   # Ranks contain additional permissions residents will be
   # granted if they are assigned that specific rank.
   ranks:
+    mayor:
+    - towny.command.town.*
     comayor:
     - towny.tax_exempt
     - towny.command.towny.top

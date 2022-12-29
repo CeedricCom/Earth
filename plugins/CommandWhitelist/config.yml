@@ -32,6 +32,7 @@ groups:
     - accept
     - confirm
     - g
+    - cr
     - money
     - general
     - l
@@ -55,10 +56,14 @@ groups:
     - swords
     - taming
     - unarmed
+    - plot
+    - towny
+    - tw
+    - townyworld
+    - player
     - woodcutting
     - combattimer
     - remayor
-    - ct
     - vote
     - shop
     - map
@@ -66,6 +71,11 @@ groups:
     - partychat
     - pc
     - party
+    - mcstats
+    - siegewar
+    - sw
+    - missions
+    - res
     - mcrank
     - tell
     - tppos
@@ -74,6 +84,7 @@ groups:
     commands:
     - hat
     - nick
+    - tomap
     - playerskull
     - tag
     - tfly
@@ -85,4 +96,9 @@ groups:
     - vanish
     - v
     - tpo
+    - co
+    - coreprotect
     - tppos
+    - prefixadmin
+    - gms
+    - gmsp

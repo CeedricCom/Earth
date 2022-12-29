@@ -16,7 +16,8 @@ blocked-command-list:
   - "/home"
   - "/sethome"
   - "/t spawn"
-  - "/msg"
+  - "/res spawn"
+  - "/player spawn"
   - "/resources"
 
 # Which commands are allowed during combat?

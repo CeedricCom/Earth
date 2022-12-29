@@ -64,7 +64,7 @@ command:
       - map #command
     output:
       message:
-        - "&6You can check out the map at &ehttps://map.ceedric.com"
+        - "&6You can check out the map at &ehttp://map.ceedric.com"
       console: []
       broadcast: []
   'shop':
