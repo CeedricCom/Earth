@@ -79,6 +79,9 @@ groups:
     - res
     - mcrank
     - tell
+    - tips
+    - tpa
+    - warp
     subcommands: []
   mvp:
     commands:

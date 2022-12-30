@@ -1,0 +1,574 @@
+#This is the title that goes before all tips. For example [Tip] This is a tip
+title: '&6[Tip]'
+
+#TIME VARIABLES
+
+#Time between the looped tips, ie the tips that play every x minutes
+time-between-tips: 300
+#time between the consecutive tips
+time-between-quick-tips: 8
+delay-time: 10
+
+#SOUND VARIABLES
+#Enter volume of the click between 0 and 1
+volume: 1
+sound: 'UI_BUTTON_CLICK'
+
+#When using /tipsdata how many tips are disabled
+tips-per-page: 9
+
+#BELOW
+#Triggers for the political converse reminder tip
+political-converse-triggers:
+  - 'trump'
+  - 'TRUMP'
+  - 'biden'
+  - 'usa'
+  - 'america'
+  - 'china'
+  - 'germany'
+  - 'covid'
+  - 'brexit'
+  - 'BLM'
+#triggers for the keep chat friendly, blocking these could cause filter false posiitves
+friendly-chat-triggers:
+  - 'fck'
+  - 'niggr'
+  - 'sht'
+  - 'kys'
+  - 'retrd'
+  - 'cum'
+#chat that is 'allowed' on datearth but is discouraged
+sportsman-triggers:
+  - 'L'
+  - 'right click to pot'
+  - 'ez'
+  - 'fold'
+  - 'FOLD'
+#chat that is 'allowed' but could have alterior meanings
+respect-triggers:
+  - 'gay'
+  - 'lesbian'
+  - 'tranny'
+  - 'transgender'
+  - 'african-american'
+  - 'aboriginal'
+
+#Do NOT modify the keys, only modify enabled, the message and sound-enabled
+#Only change contextual tips
+
+disabled-command-tips:
+  #triggered on /tpa or /tpaccept
+  tpa:
+    enabled: true
+    message: '&eUse &6/navigate&e to teleport around. You can find towns by using &6/map&e. Use &6/help &efor more info.'
+  #triggered on /warp, /pwarp, /pw
+  warp:
+    enabled: true
+    message: '&eUse &6/navigate&e to teleport around. You can find towns by using &6/map&e. Use &6/help &efor more info.'
+
+contextual-tips:
+  #triggered when some iron
+  miner:
+    enabled: true
+    message: '&ePut on a full set of &6Iron Armor &eto activate the miner kit and get permanent &6Haste II&e and &6Fire Resistance&e.'
+    sound-enabled: true
+  #triggered when death to a player
+  wilderness-death0:
+    enabled: true
+    message: '&eProtect yourself from terrorists using &6tactical invisibility &eby drinking an &6invisibility potion&e.'
+    sound-enabled: true
+  #second death in wilderness
+  wilderness-death1:
+    enabled: true
+    message: '&eGet XP very quickly by breaking &6Pumpkins and Melons &eto equip yourself with the best gear possible.'
+    sound-enabled: true
+  #third death in wilderness riperoni
+  wilderness-death2:
+    enabled: true
+    message: '&eSustain yourself in a fight and outlast your opponents using &6golden apples &eand &6healing potions&e.'
+    sound-enabled: true
+  #fourth death in wilderness
+  wilderness-death3:
+    enabled: true
+    message: '&eBe careful when picking battles and make sure you are fully prepared with the best gear, healing items, and potions as possible.'
+    sound-enabled: true
+  #triggered by dying in claims
+  claims-death1:
+    enabled: true
+    message: '&eBe careful when entering enemy or hostile claims as you could could end up trapped!'
+    sound-enabled: true
+  #triggered with L, ez, bad, right click to pot
+  friendly-reminder:
+    enabled: true
+    message: '&eRemember to be &6friendly&e and &6mindful&e of everyone in the chat.'
+    sound-enabled: false
+
+  sportsman-reminder:
+    enabled: true
+    message: '&eRemember to be &6respectful&e and show good &6sportsmanship&e to others, including your enemies.'
+    sound-enabled: false
+
+  #triggered with, trump, biden, america, china, germany, covid, global warming, climate change
+  political-converse:
+    enabled: true
+    message: '&ePolitical discussions are allowed, but make sure to remain &6civil&e and &6respectful to everyone&e.'
+    sound-enabled: false
+
+  respectful:
+    enabled: true
+    message: '&ePlease be &6respectful&e and &6mindful&e of everyone no matter who they are or where they may have come from.'
+    sound-enabled: false
+  #triggered when getting diamond
+  experience-points:
+    enabled: true
+    message: '&eGain XP very quickly by breaking &6pumpkins &eand &6melons&e.'
+    sound-enabled: true
+  #joining a town
+  jointown1:
+    enabled: true
+    message: '&eWelcome to your first town: you can &6claim plots&e, &6build&e and use this as a base to store and &6protect&e your belongings.'
+    sound-enabled: true
+
+  chats:
+    enabled: true
+    message: '&eChange which chat you are in so you can talk with your friends, town or nation using &6/chat&e.'
+    sound-enabled: true
+  #triggered when they make a new town
+  newtown1:
+    enabled: true
+    message: '&eWelcome to your town: this is your base where you can &6build&e your projects, industry, store and &6protect&e your stuff and &6invite&e your friends.'
+    sound-enabled: true
+
+  newtown2:
+    enabled: true
+    message: '&eYou can claim extra land by using &6/t claim &e - this will cost you &6$250&e for every chunk you claim.'
+    sound-enabled: true
+
+  newtown3:
+    enabled: true
+    message: '&eInvite residents to your town using &6/t invite &eto expand your town to rule the world!'
+    sound-enabled: true
+
+  newtown4:
+    enabled: true
+    message: '&eChange the settings of your town and get more help anytime using &6/ts&e.'
+    sound-enabled: true
+  #after sending 10 messages in a town
+  town-chat:
+    enabled: true
+    message: '&eTalk to your friends, residents or nation members using &6/chat&e. You can also join or make a party with &6/party &eto communicate with friends.'
+    sound-enabled: true
+  #triggered 60 seconds after
+  newtown5:
+    enabled: true
+    message: '&eConsider joining a nation by asking kings for an invite and joining with &6/t invite accept&e or make one with &6/n new [name]&e to meet new friends and rule the world!'
+    sound-enabled: true
+
+  #triggered when player invites someone to their towns
+  permissions0:
+    enabled: true
+    message: '&eInvite your friends and other players to your town to help it grow and expand!'
+    sound-enabled: true
+
+  permissions1:
+    enabled: true
+    message: '&eHowever be weary of town &6permissions&e: you can stop people from stealing your stuff by claiming the plot with your valuables using &6/plot fs&e and &6/plot claim&e.'
+    sound-enabled: true
+
+  permissions2:
+    enabled: true
+    message: '&eYou can then allow your friends to access your plots with &6/res friend add [friend]&e.'
+    sound-enabled: true
+
+  permissions3:
+    enabled: true
+    message: '&eView more town permissions with &6/ts &eand clicking on the comparator.'
+    sound-enabled: true
+  #buying and selling plots - triggered by claiming
+  plotbuy1:
+    enabled: true
+    message: '&eYou have just claimed land for your town, use &6/towny map&e or &6/map &eto see your town claims.'
+    sound-enabled: true
+
+  plotbuy2:
+    enabled: true
+    message: '&eYou can give land to residents using &6/plot fs&e: they can then claim it with &6/plot claim&e. You can also claim plots yourself to protect your stuff.'
+    sound-enabled: true
+  #nation tips
+  newnation1:
+    enabled: true
+    message: '&eWelcome to your new nation! Conquer the world through sieges, diplomacy and industry.'
+    sound-enabled: true
+
+  newnation2:
+    enabled: true
+    message: '&eChange the settings of your nation using &6/ns&e and grow your nation by &6/n invite [town]&e.'
+    sound-enabled: true
+
+  sieges1:
+    enabled: true
+    message: '&eConquer your enemies by starting a siege: place a colored banner on a towns border. Learn more about sieges in &6/help&e.'
+    sound-enabled: true
+
+  sieges2:
+    enabled: true
+    message: '&eMilitary Ranked players can gain points in sieges by killing enemies or capturing the banner. You can hand out soldier with &6/n rank add [name] soldier&e.'
+    sound-enabled: true
+
+  diplomacy:
+    enabled: true
+    message: '&eThe power of diplomacy and industry can really enhance your nation: connect with our community via &6/discord&e and join the conversation.'
+    sound-enabled: true
+
+  #triggered by killing another player
+  killing1:
+    enabled: true
+    message: '&eConsider talking to your nation leader about starting or joining a &6siege &efor more PvP action! If you do not have a military rank in a siege, you will get war sickness!'
+    sound-enabled: true
+  #on nation perms enable
+  nationperms:
+    enabled: true
+    message: '&eBe careful when enabling nation perms, any town including spies who join the nation can access the plot. It is recommended that you claim plots instead and add friends with &6/res friend add [friend]&e.'
+    sound-enabled: true
+  #on ally perms enable
+  allyperms:
+    enabled: true
+    message: '&eBe careful when enabling ally perms, any town including spies who join your nation and the alliance can access the plot. It is recommended that you claim plots instead and add friends with &6/res friend add [friend]&e.'
+    sound-enabled: true
+
+  #triggered when player first joins server
+  starter-tip:
+    enabled: true
+    message: '&eWelcome to &6ceedric.com Earth&e: a Towny server where you can be the king of your nation and rule the world through &6conquest&e, &6diplomacy&e and &6industry&e on a 1:500 scale map of the Earth.'
+    sound-enabled: true
+
+  starter-tip2:
+    enabled: true
+    message: '&eGet started, you can: make a town with &6/t new [town name] &e, join another town by asking around and using &6/accept [town]&e, or simply making a base where you are.'
+    sound-enabled: true
+
+  starter-tip3:
+    enabled: true
+    message: '&eCheck your money with &6/money&e and get it using &6/vote&e. This will grant you missions that you can complete then right click on for more money.'
+    sound-enabled: true
+
+  starter-tip4:
+    enabled: true
+    message: '&eView more information using &6/help&e.'
+    sound-enabled: true
+
+  tips-off:
+    enabled: true
+    message: '&eAlready know what you are doing? Use &6/tips off &eor &6/tips sound off &eto mute these messages. You can turn them back on anytime with &6/tips on &eif you are ever stuck.'
+    sound-enabled: false
+  #3 minutes after they join the game
+  starter-tip5:
+    enabled: true
+    message: '&eYou can view the map of the world by using &6/map&e, and travel around using &6/navigate&e.'
+    sound-enabled: true
+
+  #6 minutes after joining the game
+  starter-tip6:
+    enabled: true
+    message: '&eTravel the world and teleport to various places using &6/navigate&e. You can also go to your town using &6/t spawn'
+    sound-enabled: true
+
+  #chestshop - triggered by placing a chest
+  chestshop:
+    enabled: true
+    message: '&eSafely trade even while you are offline by using &6chest shops&e: punch a chest with the item you want to sell and type your price in the chat. Finally, keep your &6chest shop&e topped up with stock.'
+    sound-enabled: true
+  #triggered when they first get money
+  trade:
+    enabled: true
+    message: '&eSafely trade money and XP with others using &6/trade [name]&e.'
+    sound-enabled: true
+  #netherrite/nether
+  portal:
+    enabled: true
+    message: '&eNether portals are disabled on Datearth, use &6/travel &einstead to go to the Nether anytime.'
+    sound-enabled: true
+  #breaking netherrite
+  netherite:
+    enabled: true
+    message: '&eUse a crafting table to craft netherite tools the same way as any other tool.'
+    sound-enabled: true
+
+  #ink-sacs - triggered by getting coal
+  ink-sacs:
+    enabled: true
+    message: '&eCraft ink-sacs using 2 coal and 2 charcoal. See more information in &6/help&e.'
+    sound-enabled: true
+
+  #mcmmo - farming crops
+  mcmmo:
+    enabled: true
+    message: '&eLevel up your character with &6MCMMO&e: train up stats by doing a task, for example farming crops to get herbalism.'
+    sound-enabled: true
+
+  mcmmo1:
+    enabled: true
+    message: '&eUse &6/mcstats &eand &6/mctop&e to see how you compare to others. Use &6/[skill-name] &eto see more about a skill, e.g. &6/mining&e.'
+    sound-enabled: true
+
+static-tips:
+  #These are tips that are played to users in a loop
+  #note you can add any to any catagory at any time
+
+  #Valid weightings in all caps are
+  #EVERYONE - all players
+  #RESIDENT - town resident or nomad
+  #KING -  king
+  #MAYOR - mayor
+
+  #EVERYONE TIPS
+  rules:
+    enabled: true
+    message: '&ePlease carefully read and obey our rules using &6/rules&e.'
+    weight: 'EVERYONE'
+
+  discord:
+    enabled: true
+    message: '&eJoin the &6/discord&e to get involved in our community and advertise your towns or nations.'
+    weight: 'EVERYONE'
+
+  ranks:
+    enabled: true
+    message: '&eEnjoying the server? Consider supporting us by donating using &6/buy &eand viewing our perks with &6/ranks&e.'
+    weight: 'EVERYONE'
+
+  sandmining:
+    enabled: true
+    message: '&eRemember that you cannot mine sand to stone in the desert. When collecting sand, leave at least 1 layer of sand behind.'
+    weight: 'EVERYONE'
+
+  altaccounts:
+    enabled: true
+    message: '&eAlt Accounts are not allowed! Ensure you only use one account per computer.'
+    weight: 'EVERYONE'
+
+  vote:
+    enabled: true
+    message: '&eVote to earn money and missions using &6/vote&e.'
+    weight: 'EVERYONE'
+
+  tips:
+    enabled: true
+    message: '&eAnnoyed at these tips? Use &6/tips off &eto turn them off&e.'
+    weight: 'EVERYONE'
+
+  scamming:
+    enabled: true
+    message: '&eScamming, insiding, and stealing are &6allowed&e. Please follow our PvP rules for killing. Do not spawn-trap people.'
+    weight: 'EVERYONE'
+
+  help:
+    enabled: true
+    message: '&eNeed extra help? Use &6/help &eto learn more about the server!'
+    weight: 'EVERYONE'
+
+  report:
+    enabled: true
+    message: '&eReport rule-breakers using &6/report [name] [reason]&e.'
+    weight: 'EVERYONE'
+
+  #RESIDENT
+  map:
+    enabled: true
+    message: '&eView the dynmap and explore the world using &6/map&e.'
+    weight: 'RESIDENT'
+
+  navigate:
+    enabled: true
+    message: '&eTravel the world and teleport around using &6/navigate&e. You can go to another town using &6/t spawn [town]&e.'
+    weight: 'RESIDENT'
+
+  chat:
+    enabled: true
+    message: '&eChange chat channels and talk to your friends, residents or nation using &6/chat&e. You can also use &6/tc &eas a shortcut to talk to your town directly!'
+    weight: 'RESIDENT'
+
+  chestshopstatic:
+    enabled: true
+    message: '&eSafely trade even while you are offline by using &6chest shops&e: punch a chest with the item you want to sell and type your price in the chat. Finally, keep your &6chest shop&e topped up with stock.'
+    weight: 'RESIDENT'
+
+  newtownstatic:
+    enabled: true
+    message: '&eWant to make a town for yourself? Use &6/t new [town name]&e.'
+    weight: 'RESIDENT'
+
+  plotsettings:
+    enabled: true
+    message: '&eUse &6/ps &eto change the settings of your plot. You can safely add your friends with &6/res friend add [friend]&e.'
+    weight: 'RESIDENT'
+  #TOWN
+
+
+  outpost:
+    enabled: true
+    message: '&eExpand your town by creating an outpost with &6/t claim outpost&e. This is a section of your town that is unattatched from the rest of your claims and can be accessed with &6/t outpost 1&e.'
+    weight: 'MAYOR'
+
+  invite-res:
+    enabled: true
+    message: '&eExpand your town by inviting residents with &6/t invite [player]&e. Put plots up for sale with &6/plot fs &eand have residents claim it with &6/plot claim&e.'
+    weight: 'MAYOR'
+
+  town-ranks:
+    enabled: true
+    message: '&eConsdier handing out town ranks to people you trust. See ranks in &6/ts &eor use &6/t rank add [player] [rank] &e. This will give them certain permissions to the town and plots!'
+    weight: 'MAYOR'
+
+  towntrading:
+    enabled: true
+    message: '&eConsider trading with others to make more money. Create chest shops or sell embassy plots to others using &6/plot set embassy&e.'
+    weight: 'MAYOR'
+
+  townindustry:
+    enabled: true
+    message: '&eYou can further increase the output of your town by creating industrial farms or breeding villagers.'
+    weight: 'MAYOR'
+
+  townwar:
+    enabled: true
+    message: '&eConsider preparing your town for war by building defences or creating large farms to produce gear and potions.'
+    weight: 'MAYOR'
+
+  townmoney:
+    enabled: true
+    message: '&eKeep your money safe by using &6/t deposit [amount]&e. You can withdraw at anytime using &6/t withdraw [amount]&e.'
+    weight: 'MAYOR'
+
+  townmakenation:
+    enabled: true
+    message: '&eConsider making your own nation with &6/n new [name]&e to rule the world!'
+    weight: 'MAYOR'
+
+  towndiscord:
+    enabled: true
+    message: '&eConsider joining the discord and our community with &6/discord &eto expand your town, and connect with your residents even if they are offline!'
+    weight: 'MAYOR'
+
+  towntag:
+    enabled: true
+    message: '&eUse &6/t set tag [tag]&e to abbreviate your town name or use &6/t set name [name]&e. to change it completely.'
+    weight: 'MAYOR'
+
+  townsettings:
+    enabled: true
+    message: '&eForgot a command or how to change a setting? Use &6/ts &eto change up your town.'
+    weight: 'MAYOR'
+
+  townbest:
+    enabled: true
+    message: '&eCompete to be the best town mayor: use &6/t list&e to see the biggest towns and &6/baltop &eto see the richest!'
+    weight: 'MAYOR'
+
+  #KING:
+  nationwar:
+    enabled: true
+    message: '&eConsider starting sieges to conquer, loot and rule over your enemies. Simply place a colored banner outside an enemy town!'
+    weight: 'KING'
+
+  nationsiege:
+    enabled: true
+    message: '&eConsider making a discord to unite and connect with your nation even when people are offline with &6/discord&e.'
+    weight: 'KING'
+
+  nationdiplo:
+    enabled: true
+    message: '&eStrengthen your nation with the power of diplomacy! Simply use &6/n ally add [nation] &eand communciate with allies using &6/ac&e.'
+    weight: 'KING'
+
+  nationstop:
+    enabled: true
+    message: '&eCompete to become the strongest nation: use &6/n list&e to see the largest nations.'
+    weight: 'KING'
+
+  nationunity:
+    enabled: true
+    message: '&eConsider hosting events in your nation to bring your people together and unite the nation!'
+    weight: 'KING'
+
+  nationsupply:
+    enabled: true
+    message: '&eConsider designating a few towns as large industrial supply towns for all your soldiers. However be careful with who you trust.'
+    weight: 'KING'
+
+  nationtaxes:
+    enabled: true
+    message: '&eIf a town cannot afford nation taxes it will be kicked from the nation. However if the town was recently captured in a siege it will go into ruin.'
+    weight: 'KING'
+
+  nationspawn:
+    enabled: true
+    message: '&eNations can have a spawn point as well as towns. Do not forget to set one with &6/n set spawn&e. Use this wisely: a nation can only have one spawn at a time! Teleport to a nation spawn with &6/n spawn [nation name]&e.'
+    weight: 'KING'
+
+  nationranks:
+    enabled: true
+    message: '&eNations can also have ranks. Use the comparator in &6/ns &eto see nation settings and hand out ranks with &6/n rank add [player] [rank]&e.'
+    weight: 'KING'
+
+  nationsetking:
+    enabled: true
+    message: '&eSetting the king of a nation will also move the capital and vice versa.'
+    weight: 'KING'
+
+  nationwarsickness:
+    enabled: true
+    message: '&eRemember that for your soldiers to participate in a siege they must have a &6military rank&e or they will get war sickness.'
+    weight: 'KING'
+
+  nationremayor:
+    enabled: true
+    message: '&eIs one of your towns inactive? Use &6/remayor [player] [town]&e to set a player as the new mayor of that town! This only avaliable to towns in your nation where the mayor and comayors have been inactive for &621 days&e.'
+    weight: 'KING'
+
+question-tips:
+
+  #triggered with help
+  help-question:
+    enabled: true
+    message: '&eStuck? Use &6/help&e at any time or &6/tips random&e to learn something new'
+    sound-enabled: false
+    triggers: 'help'
+
+  town-ask-question:
+    enabled: true
+    message: '&eYou can make a town with &6/t new [town]&e or can join one when invited using &6/accept [town]'
+    sound-enabled: false
+    triggers: 'how,to,town'
+
+  #triggered with 'what' 'do' 'I' or 'dont know' 'what'
+  whattodo-question:
+    enabled: true
+    message: '&eNot sure what to do? Try inviting residents, maybe making a new town or nation, building large farms or buildings, participating at a siege or ask others for inspiration'
+    sound-enabled: false
+    triggers: 'what,do,i'
+
+  howtoplay-question:
+    enabled: true
+    message: '&eTo play the game you should build and grow a town whether it be yours or with friends. To join a town ask around and to make one use &6/t new [town]&e for $2000. Get money by &6/vote&e.'
+    sound-enabled: false
+    triggers: 'how,do,i,play'
+
+  howtooutpost-question:
+    enabled: true
+    message: '&eUse &6/t claim outpost&e to make an outpost. This requires &62&e residents and &6$5000&e.'
+    sound-enabled: false
+    triggers: 'how,claim,outpost'
+  #triggered with 'how' 'make' 'money'
+  money-question:
+    enabled: true
+    message: '&eUse &6/vote &eto make money and get missions. Complete missions for more money. Trade with others using &6chest shops&e or &6/trade&e.'
+    sound-enabled: false
+    triggers: 'how,to,money'
+
+  claim-question:
+    enabled: true
+    message: '&eEach town plot is one chunk (a 16x16 area). You can claim more chunks for your town by using &6/t claim&e.'
+    sound-enabled: false
+    triggers: 'how,to,claim'

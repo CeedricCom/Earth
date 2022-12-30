@@ -95,3 +95,4 @@ plugins/ChunkyBorder/borders.json
 plugins/dynmap/newmaprender.tar.gz
 plugins/FrozenJoin/positions.yml
 plugins/matrix.jar
+plugins/ContextualTips/data.yml
