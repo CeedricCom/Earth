@@ -79,7 +79,6 @@ groups:
     - res
     - mcrank
     - tell
-    - tppos
     subcommands: []
   mvp:
     commands:
