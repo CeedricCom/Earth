@@ -94,4 +94,9 @@ plugins/SuperbVote/votes.json
 plugins/ChunkyBorder/borders.json
 plugins/dynmap/newmaprender.tar.gz
 plugins/FrozenJoin/positions.yml
-plugins/matrix.jar
+plugins/Matrix*.jar
+plugins/matrix*.jar
+plugins/Matrix/logs
+plugins/Matrix/config.yml
+plugins/Essentials/usermap.bin
+plugins/Essentials/uuids.bin
