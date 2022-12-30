@@ -1,5 +1,6 @@
 name: mvp
 permissions:
+- chatitem.use
 - commandwhitelist.group.default
 - commandwhitelist.group.mvp
 - essentials.hat
