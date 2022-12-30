@@ -129,6 +129,10 @@ contextual-tips:
     enabled: true
     message: '&eWelcome to your first town: you can &6claim plots&e, &6build&e and use this as a base to store and &6protect&e your belongings.'
     sound-enabled: true
+  sethomes:
+    enabled: false
+    message: '&eYou can set one home in your town using &6/sethome&e. You can then travel to your town or home with &6/navigate &eand &6/t spawn [town]&e.'
+    sound-enabled: true
 
   chats:
     enabled: true
@@ -256,6 +260,17 @@ contextual-tips:
   starter-tip4:
     enabled: true
     message: '&eView more information using &6/help&e.'
+    sound-enabled: true
+
+  starter-tip5:
+    enabled: true
+    message: '&eYou can view the map of the world by using &6/map&e, and travel around using &6/navigate&e.'
+    sound-enabled: true
+
+  #6 minutes after joining the game
+  starter-tip6:
+    enabled: true
+    message: '&eTravel the world and teleport to various places using &6/navigate&e. You can also go to your town using &6/t spawn.'
     sound-enabled: true
 
   tips-off:
