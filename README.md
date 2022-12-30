@@ -33,23 +33,42 @@ In the root directory of the repository perform the following commands
 sudo apt-get install screen zip wget -y
 ```
 
+Make the map folder where you will store all of the zips
+
 ```sh
 mkdir map
 cd map
-wget -i ../map_1_1000.txt
-cat earth_1-1000_survival_without-features_1-16-5.zip.* > map.zip
+touch map.txt
+```
+
+You can find the map downloads here https://earth.motfe.net/map-downloads/. Now make a file to store all of the download links.
+
+```
+nano map.txt 
+```
+
+Your map txt should look like this
+
+```txt
+<link1>
+<link2>
+<link3>
+```
+
+Next download the map using wget and unzip it
+
+```
+wget -i ../map.txt
+cat <map zip name>.zip.* > map.zip
 unzip map.zip
 ```
 
 Now move the newly unzipped folder into the world folder and remove all of the junk zip files.
 ```sh
 cd ..
-mv map/earth_1-1000_survival_without-features_1-16-5 world
+mv map/[folder-name] world
 rm -r map
 ```
-
-There is no guarentee that the links in map_1_1000.txt will work correctly. In that case you will have to grab new links from https://earth.motfe.net/map-downloads/ and paste them in the file.
-You may also need to change the cat and the mv commands to match the actual names of the downloaded files.
 
 ### Preloading The Chunks
 
