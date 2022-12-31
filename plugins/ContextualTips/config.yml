@@ -418,9 +418,18 @@ static-tips:
     enabled: true
     message: '&eUse &6/ps &eto change the settings of your plot. You can safely add your friends with &6/res friend add [friend]&e.'
     weight: 'RESIDENT'
+
+  alchemystatic:
+    enabled: true
+    message: "&eUpgrade your alchemy level to &6250 &eto unlock &6Hero of the Village Potion &e(Emerald block) and &6Dolphin's Grace Potion &e(Nautilus shell)!"
+    weight: 'RESIDENT'
+
+  missionstatic:
+    enabled: true
+    message: "&eLegendary missions contain great reward ranging from an elytra to Looting IV pickaxes."
+    weight: 'RESIDENT'
+
   #TOWN
-
-
   outpost:
     enabled: true
     message: '&eExpand your town by creating an outpost with &6/t claim outpost&e. This is a section of your town that is unattatched from the rest of your claims and can be accessed with &6/t outpost 1&e.'
@@ -433,7 +442,7 @@ static-tips:
 
   town-ranks:
     enabled: true
-    message: '&eConsdier handing out town ranks to people you trust. See ranks in &6/ts &eor use &6/t rank add [player] [rank] &e. This will give them certain permissions to the town and plots!'
+    message: '&eConsdier handing out town ranks to people you trust. See ranks in &6/ts &eor use &6/t rank add [player] [rank] &e. This will give them certain per missions to the town and plots!'
     weight: 'MAYOR'
 
   towntrading:
@@ -540,6 +549,11 @@ static-tips:
   nationremayor:
     enabled: true
     message: '&eIs one of your towns inactive? Use &6/remayor [player] [town]&e to set a player as the new mayor of that town! This only avaliable to towns in your nation where the mayor and comayors have been inactive for &621 days&e.'
+    weight: 'KING'
+
+  craftablepotion:
+    enabled: true
+    message: '&ePotions are a crucial during war times. You are able to craft them in times of emergency. Check the #wiki channel on /discord for the recipe.'
     weight: 'KING'
 
 question-tips:
