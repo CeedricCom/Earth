@@ -350,7 +350,7 @@ static-tips:
 
   ranks:
     enabled: true
-    message: '&eEnjoying the server? Consider supporting us by donating using &6/buy &eand viewing our perks with &6/ranks&e.'
+    message: '&eEnjoying the server? Consider supporting us by using &6/shop.'
     weight: 'EVERYONE'
 
   sandmining:
