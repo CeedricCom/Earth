@@ -33,7 +33,7 @@ settings:
   log-villager-deaths: true
   log-named-deaths: true
 messages:
-  whitelist: You are not whitelisted on this server!
+  whitelist: Earth releases on January 6th at 2PM EST!
   unknown-command: Unknown command. Type "/help" for help.
   server-full: The server is full!
   outdated-client: Outdated client! Please use {0}
