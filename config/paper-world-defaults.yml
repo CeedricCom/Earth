@@ -12,7 +12,7 @@
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
 
-_version: 29
+_version: 30
 anticheat:
   anti-xray:
     enabled: true
@@ -78,6 +78,7 @@ entities:
     do-collision-entity-lookups: false
     tick: false
   behavior:
+    allow-spider-world-border-climbing: true
     baby-zombie-movement-modifier: 0.5
     disable-chest-cat-detection: false
     disable-creeper-lingering-effect: false
@@ -168,7 +169,13 @@ entities:
     duplicate-uuid:
       mode: SAFE_REGEN
       safe-regen-delete-range: 32
-    filter-nbt-data-from-spawn-eggs-and-related: true
+    filter-bad-tile-entity-nbt-from-falling-blocks: true
+    filtered-entity-tag-nbt-paths:
+    - Pos
+    - Motion
+    - SleepingX
+    - SleepingY
+    - SleepingZ
     iron-golems-can-spawn-in-air: false
     monster-spawn-max-light-level: -1
     non-player-arrow-despawn-rate: default
