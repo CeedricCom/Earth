@@ -10,10 +10,18 @@ aliases:
   baltop:
   - money top
   pay:
-  - money pay
+  - money pay $1 $2
   tell:
   - msg
   rename:
   - itemrename
   mapto:
   - tomap: null
+  workbench:
+  - craft
+  navigate:
+  - earth
+  continent:
+  - earth
+  continents:
+  - earth

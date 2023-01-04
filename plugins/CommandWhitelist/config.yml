@@ -82,6 +82,12 @@ groups:
     - tips
     - tpa
     - warp
+    - suicide
+    - sit
+    - earth
+    - navigate
+    - continents
+    - continent
     subcommands: []
   mvp:
     commands:
@@ -94,6 +100,8 @@ groups:
     - tppos
     - itemrename
     - rename
+    - craft
+    - workbench
   moderator:
     commands:
     - endersee

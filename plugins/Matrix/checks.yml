@@ -491,7 +491,7 @@ velocity:
 # Check prevents a player from spamming messages in the servers chat.
 chat:
   # Enable this check?
-  enable: true
+  enable: false
 
   # Minimum amount of time between messages (Seconds)
   min_time: 3
