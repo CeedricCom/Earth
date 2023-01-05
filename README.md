@@ -2,11 +2,12 @@
 
 ![Banner](https://github.com/DeltaOrion/Gladia2.0/blob/master/branding/Banner.png?raw=true)
 
-Gladia, is a 1:500 scale Minecraft Earth Server gamemode in ceedric.com, featuring Towny, SiegeWar, and an active economy. With a wide range of gameplay options and a friendly community, there's something for everyone on Gladia 2.0. We welcome players of all skill levels and encourage you to join us and start exploring the world of Gladia. Simply join at ceedric.com to get started!
+Gladia, is a 1:500 scale Minecraft Earth Server gamemode on <a href="https://ceedric.com">ceedric.com</a>, featuring Towny, SiegeWar, and an active economy. With a wide range of gameplay options and a friendly community, there's something for everyone on Gladia 2.0. We welcome players of all skill levels and encourage you to join us and start exploring the world of Gladia. Simply join at ceedric.com to get started!
 
-IP: ceedric.com
-Website: https://ceedric.com
-Discord: https://discord.ceedric.com
+Links
+- IP: `ceedric.com`
+- Website: <a href="https://ceedric.com">https://ceedric.com</a>
+- Discord: <a href="https://discord.ceedric.com">https://discord.ceedric.com</a>
 
 ## Installation
 
@@ -76,7 +77,7 @@ rm -r map
 
 ### Preloading The Chunks
 
-Preloading the chunks is important for reducing the lag on release as otherwise players when walking through the world will be generating chunks which is an expensive operation. To preload the chunks use the following command in the minecraft console.
+Preloading the chunks is important for reducing the lag on release as otherwise players when walking through the world will be generating chunks which is an expensive operation. The server uses <a href="https://www.spigotmc.org/resources/chunky.81534/">chunky</a> to preload all of the chunks. To do so  use the following command in the minecraft console.
 
 ```
 chunky corners <x1> <z1> <x2> <z2>
@@ -90,7 +91,7 @@ where x1,z1 and x2,z2 are the two corners of the world. In the case of the 1:100
 
 ### Rendering Dynmap
 
-To render the dynmap run the following command on your minecraft console
+Our server uses the plugin <a href="https://github.com/webbukkit/dynmap">dynmap</a> to display the live map. To render the dynmap run the following command on your minecraft console
 ```
 dynmap fullrender
 ```
@@ -150,7 +151,7 @@ Then launch the server
 ## Related Repositories
 
 The following repositories are linked to the project and contain other important plugins
-- https://github.com/DeltaOrion/GladiaWebsite - The website for https://www.ceedric.com
+- https://github.com/DeltaOrion/GladiaWebsite - The website for <a href="https://www.ceedric.com">ceedric.com</a>
 - https://github.com/DeltaOrion/GladiaClonePlugins - Any custom plugins used for the server
 
 ## Contributing
