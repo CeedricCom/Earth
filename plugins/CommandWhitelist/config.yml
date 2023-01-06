@@ -88,6 +88,7 @@ groups:
     - navigate
     - continents
     - continent
+    - interactivechat
     subcommands: []
   mvp:
     commands:

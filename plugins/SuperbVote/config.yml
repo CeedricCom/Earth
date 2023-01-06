@@ -99,7 +99,7 @@ vote-command:
   enabled: false
   use-json-text: false
   text: |-
-    https://help.ceedric.com/vote/
+    https://www.ceedric.com/vote/
 
 # Vote reminder.
 vote-reminder:

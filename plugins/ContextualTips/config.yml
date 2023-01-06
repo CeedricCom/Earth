@@ -354,12 +354,12 @@ static-tips:
     weight: 'EVERYONE'
 
   sandmining:
-    enabled: true
+    enabled: false
     message: '&eRemember that you cannot mine sand to stone in the desert. When collecting sand, leave at least 1 layer of sand behind.'
     weight: 'EVERYONE'
 
   altaccounts:
-    enabled: true
+    enabled: false
     message: '&eAlt Accounts are not allowed! Ensure you only use one account per computer.'
     weight: 'EVERYONE'
 
