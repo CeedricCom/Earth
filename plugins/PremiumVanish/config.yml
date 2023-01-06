@@ -1,0 +1,576 @@
+# PremiumVanish v2.8.0 - Configuration
+
+##################################################
+############# Invisibility Features ##############
+##################################################
+InvisibilityFeatures:
+  # Should invisible players get night vision?
+  NightVisionEffect: true
+  # Should PV disable damage for invisible players?
+  DisableDamage: true
+  # Should PV disable hunger for invisible players?
+  DisableHunger: true
+  # Should PV prevent mobs from targeting invisible players?
+  DisableMobTarget: true
+  # Should invisible players not be able to stop the placement of blocks at their location?
+  # While this stops other players from revealing invisible players by spamming blocks around them
+  # it can also be abused since it allows placing blocks at impossible locations
+  DisablePreventBlockPlacement: true
+  # Should invisible players only be able to send chat messages if the message ends with the following character?
+  # You can set this to 'deny' to cancel the message in any case.
+  # Please leave this empty if you'd like to disable the feature.
+  RequireChatMessageSuffix: "/"
+  # Should invisible players open chests and shulker boxes without the animation and sound?
+  # This makes them go into spectator mode temporarily. It's better to only give access to this feature
+  # to staff members since a server crash can cause players to stay in spectator mode.
+  # Permission: pv.silentchest
+  OpenChestsSilently: true
+  # Should invisible players be able to open a player's inventory by right-clicking the player?
+  # Permission: pv.openplayerinv
+  OpenPlayerInventoryOnRightClick: true
+  # Should invisible players be able to edit inventories (including their own) even if they're in spectator mode?
+  # Permission: pv.spectatoreditinv
+  AllowSpectatorInventoryEdit: true
+  # Should invisible players not be able to trigger pressure plates and tripwire?
+  # If this feature is enabled invisible players can't trigger pressure plates and tripwire.
+  DisablePressurePlates: true
+  # Should invisible players not be able to push other players or be able to be pushed?
+  # WARNING: Uses the scoreboard and may conflict with other plugins!
+  DisablePush: false
+  # Should invisible players be hidden in the tablist? This feature is currently not supported on 1.19.3 or higher.
+  # IMPORTANT: Not every player hider supports showing invisible players
+  # in the tablist, please use the Interception hider to be able to turn this off and to activate the -t flag
+  # (see the INVISIBILITY METHOD section below)
+  #
+  # If this is true, you can still be visible in the tablist using the "/pv -t" command flag (Requires pv.showintab).
+  # You can combine it with "-s" (Requires pv.silent) to silently vanish without being hidden in tab.
+  HideInTablist: true
+  # Should players who vanished with the -t (showInTab) flag be fully hidden again after a rejoin?
+  # This feature is currently not supported on 1.19.3 or higher.
+  # Command flags are stored locally and only affect the server you vanished on.
+  ResetShowInTabOnQuit: true
+  # Should invisible players be hidden in the game? This feature is currently not supported on 1.19.3 or higher.
+  # IMPORTANT: Not every player hider supports showing invisible players
+  # in the game, please use the Interception hider to be able to turn this off
+  # (see the INVISIBILITY METHOD section below)
+  #
+  # Please note that not hiding players in-game but hiding them in tab will lead to them being
+  # visible in the tablist for a split second whenever they move into viewing range.
+  # This is needed since the skin information of a player is transferred with the tablist packets.
+  HideInGame: true
+  # If HideInTablist is turned off, should players who can't see you not be able to
+  # This feature is currently not supported on 1.19.3 or higher.
+  # see you as a spectator in the tablist even if you are in spectator mode?
+  HideSpectatorMode: true
+  # Should vanished players pick up items by default? This can be changed individually with /pv tipu
+  DefaultPickUpItemsOption: false
+  # The commands to execute when a player vanishes (online or offline)
+  # These commands are ran by console by default, you can use %p% to get the player's name.
+  # You can also prefix the command with [P] to make the player run the command
+  # instead of the console (player online only)
+  # You can remove the # to make it a list if you'd like to enable this
+  VanishCommands:
+#  - examplecommand
+#  - examplecommand2
+
+  # The commands to execute when a player reappears (online or offline)
+  # These commands are ran by console by default, you can use %p% to get the player's name.
+  # You can also prefix the command with [P] to make the player run the command
+  # instead of the console (player online only)
+  # You can remove the # to make it a list if you'd like to enable this
+  ReappearCommands:
+#  - examplecommand
+#  - examplecommand2
+
+  # You can make any command not execute and instead return a custom message if an argument is a vanished
+  # player's name. Useful for faking 'Player not found' messages if there are unsupported plugins.
+  # You can use <vanished> as a placeholder for any vanished player's name.
+  # Any message which STARTS WITH the text you define below (case-insensitive) will
+  # be cancelled and will instead send the sender of the command a message you specify.
+  # The /plugin:command syntax is covered automatically.
+  # This is server-sided, for bungeecord commands go to the Bungee's PV config
+  CustomCommandMessages:
+    '/examplemsg1 <vanished>': "&cPlayer not found"
+  # For how many seconds should players not be able to take environmental damage after they reappear?
+  # e.g. fall damage or lava damage; Set to 0 to disable it
+  DisableEnvironmentalDamageAfterReappear: 5
+  # Should vanished players not be required to sleep for other players to wake up?
+  SetSleepingIgnored: true
+  # Should vanished players switch between their current gamemode and spectator mode when they
+  # press shift twice? Permission: pv.switch
+  SwitchGamemode: true
+  # Should advancement announcements of vanished players only be shown to players who can see the vanished player?
+  HideAdvancements: true
+  # Should vanished players be unable to trigger the vibration of a sculk sensor?
+  PreventSculkSensorActivation: true
+
+##################################################
+############# Vanish State Features ##############
+##################################################
+VanishStateFeatures:
+  # Should players with the permission 'pv.joinvanished' join vanished all the time?
+  # Might not work if you use GroupManager for permissions
+  AutoVanishOnJoin: false
+  # Should invisible players reappear automatically when they change their world?
+  ReappearOnWorldChange: false
+  # Should invisible players without 'pv.bypassreappearonquit' reappear automatically when they leave the server?
+  ReappearOnQuit: false
+  # Should invisible players reappear automatically
+  # when they change their world and don't have the permission 'pv.use' anymore?
+  CheckPermissionOnWorldChange: false
+  # Should invisible players reappear automatically
+  # when they leave the server and don't have the permission 'pv.use' anymore?
+  CheckPermissionOnQuit: false
+  # Should invisible players reappear automatically
+  # when they join the server and don't have the permission 'pv.use' anymore?
+  # Doesn't work if you use GroupManager for permissions
+  CheckPermissionOnLogin: false
+
+##################################################
+############## Indication Features ###############
+##################################################
+IndicationFeatures:
+  LayeredPermissions:
+    # Should players with the permission 'pv.see' be able to see invisible players in the tablist & in-game?
+    EnableSeePermission: true
+    # Should pv.use and pv.see be layered? => pv.use.levelX, pv.see.levelX
+    # Players can see a vanished player if their see level is higher or equal to the other player's use level
+    # Note: You have to rejoin for changes to take effect if you changed those permissions while being online
+    LayeredSeeAndUsePermissions: false
+    # What should be the highest level for both permissions?
+    # Lower amounts might improve performance with more players since they reduce the amount of permission checks
+    MaxLevel: 100
+    # If LayeredSeeAndUsePermissions is enabled, should /pv list only show players which the command sender is
+    # allowed to see and should players only be able to toggle the invisibility of players which they are allowed
+    # to see (Only affects online players)?
+    HideInvisibleInCommands: false
+    # Should PremiumVanish iterate through all the permissions of a player instead of checking for all
+    # possible layered permissions? Enabling this may or may not improve PV's performance.
+    # Warning: Enabling this may break PV depending on your permissions plugin
+    AlternatePermissionChecking: false
+    # Should you require the permission pv.setlevel.level<LEVEL> to set your level to <LEVEL>?
+    # Example: The permissions 'pv.setlevel' and 'pv.setlevel.level3' are required to use '/pv setlevel 3'
+    StrictSetLevelPermissionChecking: false
+  # Should vanished players show up dark gray in the tablist and should only their head be visible?
+  # This feature is currently not supported on 1.19.3 or higher.
+  # Only players who are allowed to see the player will see this effect; this helps other staff with
+  # differentiating them from players they should talk to
+  # If this feature causes conflicts with tablist/nametag plugins, you can try the next setting instead
+  MarkVanishedPlayersAsSpectators: true
+  # Should vanished players show up as glowing? It's recommended to turn off the TargetGlows option of the
+  # scoreboard to avoid conflicts when using this
+  # This feature is currently not supported on 1.19.3 or higher.
+  MarkVanishedPlayersWithGlow: false
+##################################################
+########### Survival Friendly Features ###########
+##################################################
+SurvivalFriendlyFeatures:
+
+  Fly:
+    # Should invisible players with the permission pv.fly be able to fly even if they aren't in creative/spectator mode?
+    Enable: true
+    # Should invisible players WITHOUT the permission 'pv.keepfly' lose the ability to fly on reappear?
+    DisableOnReappear: true
+
+  GameMode:
+    # The gamemode which players will get when they vanish
+    # 'Default' applies for every world which isn't mentioned below
+    # !! Warning: World names are case-sensitive !!
+    # Available gamemodes: SURVIVAL, ADVENTURE, CREATIVE, SPECTATOR, KEEP
+    # KEEP won't change the gamemode in any way
+    ChangeToOnVanish:
+      Default: KEEP
+      ExampleWorld123: SPECTATOR
+    # The gamemode which players will get when they reappear
+    # 'Default' applies for every world which isn't mentioned below
+    # Available gamemodes: SURVIVAL, ADVENTURE, CREATIVE, SPECTATOR, KEEP
+    # KEEP won't change the gamemode in any way
+    ChangeToOnReappear:
+      Default: KEEP
+      AnotherExampleWorld2: SURVIVAL
+    # Should PV update the gamemode 1 tick after a player joins/changes their world?
+    # The new gamemode will depend on the player's new world, as defined above
+    # Helpful if you want to force players to be in a gamemode in a specific world
+    # or if another plugin interferes with PV.
+    ReApplyGameModeChangeOnWorldChange: true
+    ReApplyGameModeChangeOnJoin: true
+    # Should the gamemode change when you join vanished *because of* your pv.joinvanished permission?
+    # Ignores the two settings above.
+    AlwaysApplyOnJoinVanished: true
+
+  Location:
+    # Should vanished players be teleported back to where they vanished when they reappear?
+    # The location is saved in the data.yml file and is therefore safe in case of a restart/crash
+    # Bypass permission: pv.bypassteleportback
+    TeleportBackOnReappear: false
+
+##################################################
+################ Message Options #################
+##################################################
+MessageOptions:
+
+  MessagesOnVanishReappear:
+    # Should PV broadcast any kind of announcement (fake quit or player vanished) when a player vanishes?
+    # You can change the messages in the messages.yml file.
+    BroadcastMessageOnVanish: true
+    # Should PV broadcast any kind of announcement (fake join or player reappeared) when a player reappears?
+    # You can change the messages in the messages.yml file.
+    BroadcastMessageOnReappear: true
+    # Should players with permission to see the player get an announcement instead of a fake join/quit message?
+    # The vanishing/reappearing player will always get the fake join/quit message.
+    AdminsGetAnnouncementInstead: true
+    # Should there only be announcements and no fake join/quit messages?
+    # This means players without permission to see the player don't get any message.
+    DontSendFakeJoinQuit: false
+    # Should there only be fake join/quit messages and no announcements?
+    # This means players with permission to see the player don't get any message.
+    DontSendAdminAnnouncements: false
+
+  MessagesOnJoinQuit:
+    # Should PV hide the real join/quit messages of invisible players?
+    HideRealJoinQuitMessages: true
+    # Should players with permission to see a vanished player get an announcement when they actually join/quit?
+    AnnounceRealJoinQuit: true
+    # Should PV still hide quit messages for invisible players if 'VanishStateFeatures->ReappearOnQuit' is turned on?
+    # Overrides 'HideRealJoinQuitMessages'
+    ReappearOnQuitHideMessage: true
+    # Should PV remind players who join the server vanished of being invisible (in chat)?
+    # You can change the message in the messages.yml file.
+    RemindVanishedOnJoin: true
+
+  # Should invisible players have an action bar which tells them that they're invisible?
+  # You can change the action bar in the messages.yml file.
+  DisplayActionBar: true
+
+##################################################
+############## Restrictive Options ###############
+##################################################
+RestrictiveOptions:
+  # Should invisible players not be able to break blocks?
+  # Bypass permission: pv.breakblocks
+  PreventBlockBreaking: false
+  # Should invisible players not be able to place blocks?
+  # Bypass permission: pv.placeblocks
+  PreventBlockPlacing: false
+  # Should invisible players not be able to interact with doors, levers, buttons, note blocks, etc?
+  # Doesn't prevent opening containers
+  # Bypass permission: pv.useblocks
+  PreventBlockUse: false
+  # Should invisible players not be able to interact with anything
+  # (blocks, buttons, pressure plates, chests, block breaking/placing, noteblocks, doors, ...)
+  # This setting overrides the three settings above
+  # Bypass permission: pv.interact
+  PreventInteract: false
+  # Should invisible players not be able to damage players or mobs?
+  # Bypass permission: pv.damage
+  PreventHittingEntities: false
+  # Should invisible players not be able to drop items?
+  # Bypass permission: pv.dropitems
+  PreventDroppingItems: false
+  # Should invisible players not be able to modify their own inventory?
+  # Bypass permission: pv.modifyowninv
+  PreventModifyingOwnInventory: false
+  # Should invisible players not be able to modify containers or other player's inventories?
+  # Overrides InvisibilityFeatures.AllowSpectatorInventoryEdit
+  # Bypass permission: pv.modifyotherinv
+  PreventModifyingOtherInventory: false
+  # Should invisible players not be able to tp to other players using the spectator menu?
+  # Bypass permission: pv.spectatortp
+  PreventSpectatorTeleporting: false
+  # Should invisible players in creative mode not be able to cheat items?
+  # Bypass permission: pv.creativeitems
+  PreventCreativeItemGrab: false
+  # Should invisible players not be able to view their coordinates? (client-side)
+  # Bypass permission: pv.viewcoords
+  HiddenCoordinates: false
+
+  Commands:
+    # Which commands should vanished players not be able to use?
+    # This blocks the 'plugin:command' syntax too but not aliases
+    # Bypass permission: pv.bypasscmd
+    VanishedCommandBlacklist:
+    - examplecommand123test
+    - anotherexamplecommand123
+    # Should vanished players only be able to use the commands listed above instead?
+    UseAsWhitelist: false
+
+##################################################
+############# External Invisibility ##############
+##################################################
+ExternalInvisibility:
+
+  ServerList:
+    # Please use PremiumVanish's bungeecord configuration instead if you use Bungeecord.
+    #
+    # Should this plugin adjust the amount of players in the serverlist? (-1 per invisible player)
+    AdjustAmountOfOnlinePlayers: true
+    # Should this plugin hide invisible players in the list of logged in players?
+    # You can view this list when your mouse hovers over the amount of online players.
+    AdjustListOfLoggedInPlayers: true
+
+##################################################
+############### Scoreboard Options ###############
+##################################################
+ScoreboardOptions:
+  # Disable this if you don't need PremiumVanish's scoreboard features
+  # You can also toggle your scoreboard with the '/pv scoreboard' command
+  #
+  # Note: If you are disabling this because it causes problems with other scoreboards/prefixes
+  # then you probably want to disable 'DisablePush' above as well since it uses the scoreboard too
+  Enable: true
+
+  # Should players require the permission pv.scoreboard to view the scoreboard?
+  Permission: false
+
+  Sidebar:
+    # The header/title of the scoreboard, default: '&6>       PremiumVanish       <'
+    # The length cannot be longer than 32 characters(including color codes) but can cause flickering
+    # if it isn't longer than the lines below it
+    ScoreboardHeader: "&6>       PremiumVanish       <"
+    # The lines of PremiumVanish's scoreboard
+    # Prefix a line with a # if it should only show up if there is a target (the placeholders will
+    # also be based on the target)
+    # A line can never be longer than 32 characters (watch out for player names, which can be up to 16 chars long)
+    # All general placeholders that work in the messages.yml file work here, too.
+    # Additionally to the messages.yml placeholders you can use %target% and %locked% (if the target has been fixed).
+    Lines:
+    - ""
+    - "&aTarget: &f%target% %locked%"
+    - "#"
+    # The color of the ping is based on how good the ping is, use %plain_ping% for no colors; same with tps
+    - "#&aPing: &f%ping%"
+    - ""
+    - "&aTPS: &f%tps%"
+    - "#"
+    - "#&aHealth: &f%health%/%maxhealth%hp"
+    - ""
+    - "&aTime: &f%time{hh:mma | yyyy/MM/dd}%"
+    - ""
+    # The interval between each update of the info on the scoreboard
+    # in ticks, decreasing this might decrease performance slightly
+    # 20 ticks equals to 1 second, default: 5
+    InfoUpdateInterval: 5
+  Targeting:
+    # Should the scoreboard show information about the closest player automatically?
+    # If you're spectating, this option would always show the info of the player you're currently spectating.
+    # Permission to be exempted from being targeted automatically: pv.exempttarget
+    AutoTargetClosestPlayer: true
+    # Should you target players when you right-click them?
+    # If both this option and 'OpenPlayerInventoryOnRightClick' is enabled then you
+    # are still able to lock a player by sneaking and right-clicking the player.
+    # (In spectator mode you can press space and shift at the same time for the same effect)
+    # If 'AutoTargetClosestPlayer' is enabled then it will stop targeting the closest player when
+    # you right-click a player until you type '/pv unlock', same for /pv target <player> even if this option
+    # is disabled
+    TargetOnRightClick: true
+    # Should your current target glow (only you see this effect)?
+    # This feature is currently not supported on 1.19.3 or higher.
+    TargetGlows: true
+
+##################################################
+################## Hook Options ##################
+##################################################
+HookOptions:
+  # Should PV hide invisible players in /who, /list, /online, /near, etc?
+  # Note: Players with the permission essentials.vanish.interact can still see invisible players in these commands
+  # Important: You have to reload both PV and Essentials if you change this setting (reload PV first)
+  EnableEssentialsHook: true
+  # Should PV hide invisible players on your dynamic map and broadcast join/leave messages if you use Dynmap?
+  EnableDynmapHook: true
+  # Should PV send fake join/leave messages in dynmap's web-chat?
+  # You can configure the join/leave messages in the messages.yml file
+  DynmapSendJoinLeaveMessages: true
+  # Should PV prevent players from being invisible and disguised at the same time? (LibsDisguises commands)
+  # It's recommended to keep this turned on to prevent incompatibility.
+  EnableLibsDisguisesHook: true
+  # Should PV prevent players from being invisible and disguised at the same time? (DisguiseCraft commands)
+  # It's recommended to keep this turned on to prevent incompatibility.
+  EnableDisguiseCraftHook: true
+  # Should PV hook into TrailGUI and disable trails while you're vanished?
+  EnableTrailGUIHook: true
+  # Should PV hook into SuperTrails and disable trails while you're vanished?
+  EnableSuperTrailsHook: true
+  # Should PV hook into PlaceholderAPI and add new placeholders to PV + register its own ones for other plugins?
+  # Own ones: isvanished, vanishprefix, vanishsuffix, vanishedplayers, playercount, bungeeplayercount, bungeeplayercount@<server>,
+  #           playercountwithoutshowintab, target, uselevel, seelevel
+  # Format: %premiumvanish_<placeholder>%
+  #
+  # The bungee placeholders require PV to be installed on bungee and set up with a MySQL database on all servers.
+  # They neither account for the showintab flag nor for the amount of vanished players that you are allowed to see.
+  #
+  # The result of the isvanished placeholder can be edited by changing HelpConsoleYes/No in the messages.yml file.
+  EnablePlaceholderAPIHook: true
+  # Should PV hook into MVdWPlaceholderAPI and add new placeholders to PV + register its own ones for other
+  # plugins?
+  # Own ones: isvanished, vanishprefix, vanishsuffix, vanishedplayers, playercount, bungeeplayercount, bungeeplayercount@<server>,
+  #           playercountwithoutshowintab, target, uselevel, seelevel
+  # Format: {premiumvanish_<placeholder>}
+  #
+  # The bungee placeholders require PV to be installed on bungee and set up with a MySQL database on all servers.
+  # They neither account for the showintab flag nor for the amount of vanished players that you are allowed to see.
+  #
+  # The result of the isvanished placeholder can be edited by changing HelpConsoleYes/No in the messages.yml file.
+  EnableMVdWPlaceholderAPIHook: true
+  # Should PV stop NPCs from greeting or talking about hidden players?
+  EnableCitizensHook: true
+  # Should PV hook into CustomParticleEffects and disable particles while you're vanished?
+  EnableCustomParticleEffectsHook: true
+  # Should PV use NametagEdit's API to prevent incompatibilities with its prefixes/suffixes?
+  EnableNametagEditHook: true
+  # Should PV hook into FeatherBoard to prevent incompatibilities with its scoreboard?
+  EnableFeatherBoardHook: true
+  # Should PV hook into EnjinMinecraftPlugin to prevent vanished players from showing up on its website?
+  EnableEnjinMinecraftPluginHook: true
+  # Should PV hook into CMI to prevent vanished players from entering AFK state?
+  EnableCMIHook: true
+  # Should PV hook into DiscordSRV to broadcast fake join/quit messages on Discord?
+  EnableDiscordSRVHook: true
+  # Should PV hook into TitleManager to prevent incompatibilities with its scoreboard?
+  EnableTitleManagerHook: true
+##################################################
+############## Invisibility Method ###############
+##################################################
+InvisibilityMethod:
+  # The method of hiding players; Available methods: Prevention, Interception, Hybrid
+
+  # 'Prevention': Uses Bukkit's API to hide players, this is an extremely reliable method if other plugins don't break it.
+  # This method ALWAYS hides invisible players in the tablist for players that can't see them.
+  # The chance that another plugin breaks this method is low depending on the amount and type of plugins.
+  # > Recommended if other hiders cause issues; other plugins can break this method though
+  # (Accuracy: 95%) (Plugin compatibility: 95%) (Uses game layer invisibility)
+
+  # 'Interception': Uses ProtocolLib to hide players. Takes the whole packet stuff into its own hands to cancel every
+  # single packet of hidden players. This option is currently not supported on 1.19.3 or higher.
+  # This method CAN show invisible players in the tablist for players who can't see them if that's enabled.
+  # Hard to break, however, other plugins might not provide direct support for this hider
+  # It's important to note that Essentials might not recognize vanished players as vanished in its commands with this hider.
+  # > Recommended if you want to show invisible players in the tablist
+  # (Accuracy: 95%) (Plugin compatibility: 90%) (Uses protocol layer invisibility)
+
+  # 'Hybrid: Uses both ProtocolLib and Bukkit's API to hide players, this method does NOT support showing players
+  # in the tablist but it contains two layers of security and is therefore an extremely effective method.
+  # The chance that another plugin breaks this method is extremely small
+  # > Default hider; Recommended if you don't want to show invisible players in the tablist
+  # (Accuracy: 100%) (Plugin compatibility: 98%) (Uses game and protocol layer invisibility) - DEFAULT
+
+  PlayerHider: "Hybrid"
+
+  # Note: Even 'Hybrid' can't stop players from figuring out whether invisible players are online if another
+  # plugin tells them but players will never be able to see them at all or figure out their location
+  # (Essentials is 99% compatible)
+
+  Advanced:
+  # Advanced section which affects the protocol layer invisibility for the Interception and Hybrid hiders
+
+    # Which protocol layer invisibility modules should be disabled?
+    # You can disable some modules here if they are causing issues or aren't supported on
+    # your server after an update or if you are using the Interception hider and simply don't want players
+    # to be invisible in some regards.
+    # You are unlikely to note invisibility changes here if you are using the Hybrid hider since it also has
+    # game layer invisibility which isn't affected here
+    # It's recommended to instead use the HideInTablist/Game options if that's what you want to change
+    DisabledInvisibilityModules:
+    # Physical appearance in the game
+#    - GeneralEntity
+    # Sounds in the world
+#    - NamedSoundEffect
+    # Tablist entry (includes hide spectator mode feature)
+    # Please uncomment this if you are using Maximvdw's Tab or AnimatedNames plugin and have issues with nametags
+#    - PlayerInfo
+    # Info about player prefixes, suffixes, etc (formerly 'StrictInvisibility'); this is
+    # disabled by default since it is very likely to cause issues with nametag/prefix plugins
+    # Comment this out (enable it) if it doesn't cause issues, since it can prevent vanished player information leaks
+    - ScoreboardTeam
+    # Tab completion suggestions (formerly 'DisableHandlingOfTabulatorPackets')
+    # Enable this module if you don't use bungeecord. It's disabled by default to prevent issues with bungee
+    - TabComplete
+    # Particles in the world
+#    - WorldParticles
+
+##################################################
+############# Compatibility Options ##############
+##################################################
+CompatibilityOptions:
+  # This section is for advanced users only!
+  # The event priority which PremiumVanish should use for the specific event.
+  # Allowed values are LOWEST, LOW, NORMAL, HIGH, HIGHEST and MONITOR
+  # Higher priorities might override other plugins while lower ones might not
+
+  # The priority for removing the join message
+  PlayerJoinEventPriority: HIGH # <- keep HIGH if you use Essentials to modify join/quit messages !!
+  # The priority for removing the quit message
+  PlayerQuitEventPriority: HIGH
+  # The priority for cancelling chat messages
+  AsyncPlayerChatEventPriority: HIGH
+  # The priority for cancelling commands
+  PlayerCommandPreprocessEventPriority: HIGH
+  # A whitelist of command usages where it should be allowed to tab-complete vanished players that you can't see.
+  # You can use this for commands that generally tab-complete any player, online or not.
+  # This section is for advanced users only and uses regular expressions.
+  # For changes to apply you need to change this on all spigot servers and on the bungee if you're using bungee.
+  TabCompleteWhitelist:
+    - "/(ps|plotsquared|p2|2|plotme|plot|p)\\s(visit|v|tp|teleport|goto|warp).*"
+
+##################################################
+############# Miscellaneous Options ##############
+##################################################
+MiscellaneousOptions:
+
+  Bungeecord:
+    # Should PremiumVanish store its data in a MySQL-Database and enable Bungeecord support?
+    # Bungeecord is not required for this feature but it's recommended!
+    # PremiumVanish will be disabled if this is enabled and the connection to the database failed.
+    #
+    # Important: Please make sure that ip-forwarding is enabled on your Bungee AND your Bukkit servers.
+    # It's also important that your database is firewalled so it's not accessible from the internet.
+    Enable: false
+    # The ip of your database server
+    Ip: ""
+    # The port of your database, usually 3306; just leave it empty if there is no specific port
+    Port: "3306"
+    # You can make PremiumVanish ignore the two options above and use a direct URI to connect instead
+    # Format for MySQL servers: jdbc:mysql://<yourIp>:<yourPort>/<yourDatabase>?useSSL=false
+    CustomURI: ""
+    # The name of your database user
+    User: ""
+    # The password of your database user
+    # WARNING: Please make sure only people who are allowed to know the password can access this file
+    Password: ""
+    # The name of the database which PremiumVanish should create its tables in
+    # Note: PremiumVanish won't create this database, it must be pre-created using eg. phpMyAdmin
+    Database: ""
+    # Not recommended; Makes PV use the standard JDBC connector instead of the more powerful multi-pooled HikariCP one
+    # You can give this a try if you have strange problems with connecting to your database
+    BasicDatabaseConnector: false
+
+  AntiSpam:
+    # Should PV prevent spamming commands which can cause lag or spam the console?
+    # Bypass permission: pv.bypassspam
+    # ("/pv list" (if mysql is enabled), "/pv [on|off] <Player>" (mysql), "/pv reload" (+5secs), "/pv printstacktrace")
+    AntiSpamCheck: true
+    # If so, how many seconds should players have to wait before running such a command again?
+    AntiSpamDelay: 1
+    # Should AntiSpam always cover actions which toggle vanish? e.g. /pv, /pv <Player>
+    AlwaysCoverVanish: false
+
+  Command:
+    # What should be PremiumVanish's main command?
+    Name: "pv"
+    # A list of possible aliases
+    Aliases:
+    - "premiumvanish"
+    - "v"
+    - "vanish"
+    # Should the aliases defined above override same-named commands of other plugins?
+    ForceOverrideForAliases: true
+
+  UpdateChecker:
+    # Should PV check for updates on spigot regularly? There is no automatic update; this just informs you
+    Enable: true
+    # Should players with the permission 'pv.notify' get notified if the current version of PV is outdated?
+    NotifyAdmins: true
+
+##################################################
+################# Do Not Touch ###################
+##################################################
+ConfigVersion: 2.8.0

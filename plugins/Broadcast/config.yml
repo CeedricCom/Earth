@@ -1,0 +1,12 @@
+# Do you want Broadcast to connect to https://spigotmc.org/ and check for updates?
+checkForUpdates: true
+
+# What do you want the prefix to be? This wont be shown on /broadcast -n <message> or /broadcast -j <JSONmessage>
+prefix: ''
+
+
+# What do you want the colour of the broadcast message to be? This wont be shown on /broadcast -j <message>
+broadcastColour: ''
+
+# Should we enable Bungeecord? This enables /broadcast -g <message>
+Bungeecord: false

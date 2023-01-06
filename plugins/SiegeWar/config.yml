@@ -210,7 +210,7 @@ war:
       # This value determines how long a town is safe from sieges, after the town is founded.
       # A high value allows more time to fortify new towns, but community engagement by mayors will be slower.
       # A low value allows less time to fortify new towns, but community engagement by mayors will be faster.
-      siege_immunity_time_new_town_hours: '120'
+      siege_immunity_time_new_town_hours: '168'
   
       # This value determines how long a town is safe from sieges, after a siege finishes.
       # The actual cooldown time will be the length of the previous siege, multiplied by this modifer.
@@ -352,7 +352,7 @@ war:
     death:
   
       # If enabled, a firework will get spawned whenever a player dies inside a siege zone.
-      spawn_firework: 'true'
+      spawn_firework: 'false'
   
   
 ############################################################
