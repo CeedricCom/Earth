@@ -12,7 +12,7 @@ settings:
   use-map-color-cache: true
 spawn-limits:
   monsters: 35
-  animals: 8
+  animals: 9
   water-animals: 10
   water-ambient: 5
   water-underground-creature: 5
