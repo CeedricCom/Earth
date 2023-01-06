@@ -1,0 +1,9 @@
+##################################################
+#  KnockbackMaster by xDefcon <luigi@xdefcon.com>
+# www.spigotmc.org/resources/knockbackmaster.42721/
+#             Lang configuration file
+##################################################
+
+combo:
+  activated: "&aYou activated the combo mode by eating a golden apple! &eYou will receive more hits per second."
+  deactivated: "&aThe combo mode has been deactivated! &eNormal PvP."

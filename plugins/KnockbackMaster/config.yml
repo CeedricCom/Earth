@@ -1,0 +1,282 @@
+####################################################
+#   KnockbackMaster by xDefcon <luigi@xdefcon.com>
+# www.spigotmc.org/resources/knockbackmaster.42721/
+#                Configuration File
+####################################################
+
+# Should the plugin notify OPs when a new update is released? (SUGGESTED VALUE IS "true")
+update-notify: true
+
+# Toggle debug mode (leave it as false if not requested by the developer).
+debug: false
+
+
+#**************************************************#
+#                    KNOCKBACK                     #
+#**************************************************#
+# Section related to the Knockback values and multipliers.
+# Be aware of the difference between a value and a multiplier (more below)
+#
+# These default config values emulate the standard knockback
+# in Minecraft. Proceed by applying small modifications.
+#
+# FOR CUSTOM KNOCKBACK (PER WORLD), PLEASE CHECK AT
+# THE VERY BOTTOM OF THIS CONFIG FILE.
+#**************************************************#
+knockback:
+  # Should the knockback module (normal,sprinting,in-air,enchantment) be enabled?
+  # Setting this to "false" will let the Spigot server handle the hits and the related knockback.
+  enabled: true
+
+  # DEFAULT KNOCKBACK VALUES
+  # THE FOLLOWING APPLIES FOR ALL WORLDS (IF NOT DIFFERENTLY SPECIFIED BELOW)
+  # Example: If you want in worldB a different "normal.vertical" modifier, just create
+  # a "worldB" entry in the section at the end of the config and specify JUST the "normal.vertical" value
+  # All the other values will be taken from the following default ones.
+  #
+  normal:
+    # Horizontal knockback, affects only X and Z coordinate values.
+    horizontal: 0.4
+    # Vertical knockback, affects only Y coordinate value.
+    vertical: 0.36
+
+  # Sprinting knockback values. This multipliers will be used if the damager is sprinting
+  # By default in Minecraft, if the damager player is sprinting, he deals more knockback to the damaged one.
+  # This is the reason of PvP movement-related actions like W-tapping.
+  sprinting:
+    # Select the sprinting module system. Available values: "standard" and "legacy".
+    # "standard" is the new module that will improve the sprinting detection (better detection)
+    # "legacy" is the old method (pre v2.10.0) that you may find better if you started with a version below 2.10.0.
+    # If you set "legacy" as method, you should set the "knockback.air.horizontal" multiplier to 1.0 to achieve the exact same
+    # as version 2.9 and below.
+    mode: "standard"
+    # Horizontal sprint knockback, affects only X and Z coordinate values.
+    horizontal: 0.8
+    # Vertical sprint knockback, affects only Y coordinate value.
+    vertical: 0.42
+
+  # Air knockback multipliers. Section related to the knockback that a player should receive if in air.
+  # Usually, if the damaged player is taking damage while he's in the air, he will receive less knockback
+  # both horizontally and vertically.
+  air:
+    # Air Multipliers, 1.0 means no difference, 0.8 means 20% less knockback while in air.
+    horizontal: 0.6
+    vertical: 0.8
+
+  # Enchantment section.
+  enchantment:
+    # Knockback enchantment multipliers. You can configure a specific multiplier (or value) for each knockback level (Knockback I, II, etc.)
+    # If you have, for instance, KnockbackIV, you can add '4' after '3'. If you set 1.10, this results in a 10% increase.
+    # If you set 2.15, this results in a 115% increase. The default values are similar to the standard Knockback I and II.
+    #
+    # If you do NOT want multipliers but instead you want custom values for a specific knockback enchantment level,
+    # you can add "horizontal" and "vertical" to the specific knockback level like following example.
+    #
+    # You can have all of the following values as multipliers, values or both, like in the example below that works like this:
+    # Knockback I will have a 105% increase in knockback.normal or knockback.sprinting values
+    # Knockback II will have a 190% increase
+    # Knockback III will overwrite knockback.normal values and sets them to 1.1 and 0.45 relatively.
+    # Please note that in the example below, the lines after '3' must have correct spacing or the config file will be invalid.
+    knockback-level:
+      '1': 2.05
+      '2': 2.9
+      '3': # Knockback III is not achievable in vanilla minecraft
+        horizontal: 1.1
+        vertical: 0.45
+      # If the enchantment level is none of the above, this multiplier will be used. This can only be a multiplier.
+      other: 3.5
+      # Should the knockback be the same also if the player is sprinting? (set to true for vanilla-like experience).
+      ignore-sprinting: true
+
+    # Section related to the knockback caused by the thorns enchantment
+    # You can choose to increase or decrease the knockback that players receive when attacking an armor with the thorns
+    # enchantment.
+    #
+    # Please note that everything related to the percentages of receiving an hit by the enchantment are not
+    # modified by the plugin and the vanilla behaviour remains: https://minecraft.gamepedia.com/Thorns
+    thorns:
+      # Should the plugin edit the THORNS knockback?
+      enabled: false
+      # Horizontal value. This is a value that will override the one defined in normal.horizontal or sprinting.horizontal
+      horizontal: 0.4
+      # Vertical value (same as horizontal, but for the other axis)
+      vertical: 0.38
+
+
+  # Section related to the knockback caused by BOW
+  bow:
+    # Toggle this to false if you want to use the Minecraft's standard method to handle the KB of a bow.
+    enabled: true
+
+    # Standard bow KB, horizontal and vertical
+    normal:
+      horizontal: 0.75
+      vertical: 0.35
+
+    # Air BOW knockback values. Section related to the knockback that a player should receive if in air.
+    air:
+      # Air Multiplier, 1.0 means no difference, 0.8 means 20% less knockback while in air.
+      in-air-multiplier: 0.8
+
+    # Enchantment section.
+    enchantment:
+      # Punch (Arrow Knockback) enchantment multipliers. You can configure a specific multiplier for each knockback level (Punch I, II, etc.)
+      # If you have, for instance, PunchIII, you can add '3' after '2'. If you set 1.10, this results in a 10% increase.
+      # If you set 2.15, this results in a 115% increase. The default values are similar to the standard Punch I and II.
+      punch-level:
+        '1': 2.0
+        '2': 2.85
+        # If the enchant level is none of the above, this multiplier will be used.
+        other: 3.0
+
+#**************************************************#
+#                     W-TAPPING                    #
+#**************************************************#
+w-tap:
+  # Should the w-tap manager be enabled and check when a player is w-tapping?
+  enabled: true
+
+  # Set this to true to enable debug mode. Debug mode will send a notification to OPs every tick that notify them
+  # when he is w-tapping or not. This is useful to check the w-tap values to see if the delays works for your pvp style.
+  debug: false
+
+  # How long (in ticks, 1 tick = 50ms) should the player stand still before detecting him as NOT moving?
+  not-moving-delay: 2
+
+  # What is the maximum delay (ms) between pressing W key twice (sprinting/not sprinting) for detecting a player as w-tapping?
+  # Lower value = pressing W faster for valid w-tap. Higher value = more easy to w-tap.
+  # (Please set values near multiples of 50 like: 150, 160, 195, 200, 455 to be more accurate as possible.)
+  sprinting-delay-ms: 200
+
+  # Section related to W-tap knockback modifiers. The knockback will be multiplied by this value.
+  # 1.05 means 5% MORE knockback while 0.98 means 2% LESS knockback (suggestion: keep this values between -10% and +10%)
+  knockback-modifier:
+      # kb modifiers for attacker player, this is the knockback (modifier) you DEAL if w-tapping:
+      as-damager:
+          horizontal: 1.05
+          vertical: 1.03
+      # kb modifiers for damaged player, this is the knockback (modifier) you RECEIVE if w-tapping:
+      as-damaged:
+          horizontal: 0.95
+          vertical: 0.97
+
+#**************************************************#
+#                   COMBO MODE                     #
+#**************************************************#
+combo-mode:
+  # Should the combo mode be enabled?
+  enabled: false
+  # A list of worlds where the combo mode should be disabled.
+  disabled-worlds:
+    - "exampleDisabledWorld1"
+    - "exampleDisabledWorld2"
+
+  # Enables the compatibility with minecraft versions above 1.9 (new combat system) and with plugins such as OldCombatMechanics
+  # Set this to true if you are using versions above 1.9 and you are using OldCombatMechanics or similar plugins.
+  # Set this to false if your server version is 1.8 or lower.
+  19-compatibility: false
+
+  # Select the type of the combo mode. 1 means that the combo mode will be enabled when a player eats an enchanted golden apple.
+  # 2 means a PERMANENT combo mode, from the login, to the logout of a player.
+  type: 1
+
+  # Section related for the knockback in combo mode. These values will replace the "knockback.normal" and
+  # "knockback.sprinting" values and will be applied only if the damaged player is in combo mode.
+  # Please consider that the "knockback.air.in-air-multiplier" is still valid here, and you should edit it if you
+  # want the players in combo to go too high when hit (some people like this behavior, some does not).
+  knockback:
+    # Standard knockback combo values. This multipliers will be used if the damaged player is in combo mode.
+    normal:
+      horizontal: 0.42
+      vertical: 0.32
+
+    # Sprinting knockback values. This multipliers will be used if the damager is sprinting and if the damaged player is in combo mode.
+    sprinting:
+      horizontal: 0.85
+      vertical: 0.37
+
+    # Combo mode air knockback values. Section related to the knockback that a player should receive if in air
+    # and he is in combo mode.
+    air:
+      # Air Multiplier, 1.0 means no difference, 0.6 means 40% less knockback while in air.
+      horizontal: 0.6
+      vertical: 0.6
+
+      # When enabled, height-control module will allow you to set a new vertical multiplier when the player is too high
+      # from the ground (configurable as height-blocks). This is useful to avoid getting players too high when in combo mode.
+      #
+      # NOTE: this module adds little computational effort to calculate the height of a player during combat, it won't hurt performance
+      # and it is here because you requested it. I recommend to find good combo-mode knockback values and no-damage-ticks so this
+      # module won't be needed as the players will naturally fall down and not exceed a certain height.
+      height-control:
+        enabled: false
+        # From what distance from the ground should we apply the new-vertical multiplier?
+        # 5.2 means that if the player is above 5.2 blocks from the ground then the new-vertical multiplier will be used.
+        height-blocks: 5.2
+        # The new vertical multiplier that has to be used ONLY when the player is above "height-blocks" from the ground,
+        # this will overwrite the combo-mode.knockback.air.vertical multiplier.
+        # 0.1 means 90% less vertical knockback, 0 means no vertical knockback.
+        new-vertical: 0.1
+
+  # Set this to true if you want to notify players when combo mode is enabled (after eating gapple)
+  # and disabled (when the time is expired). You can edit the messages in the messages.yml config file.
+  notify-player: true
+
+  # How long should the combo effect be active? Set this value in seconds.
+  gapple-duration: 30
+
+  # No damage ticks. This value represent the number of ticks (1 tick = 50ms) that should occur between 2 hits.
+  # The standard minecraft value of this parameter is 20
+  # The logic behind how this value is processed in minecraft is not as "logical" as you may think but basically
+  # the following is true: LOWER no-damage-ticks values means HIGHER max hits per second.
+  # EXAMPLE: If you set the following value to 5, the players will receive not more than 1 hit every 5 ticks (250ms);
+  # EXAMPLE 2: If you set the following value to 3, the players will receive not more than 1 hit every 3 ticks (150ms).
+  no-damage-ticks: 3
+
+#**************************************************#
+#                   RANDOMIZER                     #
+#**************************************************#
+randomizer:
+  # Set this to false if you want to DISABLE the randomize feature.
+  enabled: true
+
+  # Section related to random knockback modifiers. Values are in percentage.
+  modifier:
+    # Horizontal maximum percentage factor. (5 means that a maximum of 5% will be randomly added for each hit)
+    horizontal: 4
+    # Vertical maximum percentage factor.
+    vertical: 2
+
+#**************************************************#
+#                 PER-WORLD KNOCKBACK              #
+#**************************************************#
+# Custom knockback for specific worlds. Please specify world names lower-case!
+# How does it work?
+# 1) KnockbackMaster will read the values above in "knockback" section and consider them as DEFAULT.
+# 2) If a custom world name is specified here, the related values will overwrite the DEFAULT ones.
+# 3) You have to specify ONLY the values you want to be different from the DEFAULT ones
+#
+# EXAMPLE:
+# If you want to modify just the knockback.normal.horizontal and vertical values for world "MyCustomKbWorld1"
+# you have to write just 2 values under "mycustomworld1" section (note that world names must be lower-case)
+# you can follow the default example below:
+custom-worlds:
+  # Set to TRUE to enable custom KB by specifying worlds below.
+  enabled: false
+  worlds:
+    # Example world 1 (you can remove or edit this)
+    mycustomkbworld1:
+      knockback:
+        normal:
+          horizontal: 0.2
+          vertical: 0.23
+        sprinting:
+          mode: "legacy"
+        bow:
+          air:
+            in-air-multiplier: 0.8
+    # You can add/remove as many worlds as you want
+    mycustomkbworld2:
+      knockback:
+        normal:
+          horizontal: 1.1
