@@ -47,7 +47,7 @@ killaura:
     # Check if the player shows aiming characteristics similar to aimbot
     aimbot:
       vl_weight: 7
-      cancel_hit: true
+      cancel_hit: false
 
       check_aimbot_sync: true
       check_aimbot_shake: true
@@ -60,7 +60,7 @@ killaura:
     # KillAura NPC check, it will generate a fake player behind the player to detect
     # if the player is using KillAura, and don't worry, the player can only see his own NPC
     npc:
-      enable: true
+      enable: false
       vl_weight: 5
 
       # Should the position calculation of the NPC run asynchronously, as this may consume some resources
@@ -111,7 +111,7 @@ killaura:
     strafe:
       enable: true
       vl_weight: 3
-      cancel_move: true
+      cancel_move: false
 
     # Combine check
     combine:
@@ -134,7 +134,6 @@ killaura:
     10: 'matrix npc %player% 100'
     20: 'matrix notify %player% might be using combat hacks (KillAura)'
     35: 'matrix notify %player% is using combat hacks (KillAura) #2'
-    45: 'matrix delay 5 matrix kick %player% KillAura'
 
 ## HitBox
 # Description: This check prevents players from using HitBox, Angle, Reach hacks.
@@ -143,7 +142,7 @@ hitbox:
   enable: true
 
   # Maximum reach distance (default: 3.15)
-  max_reach: 3.05
+  max_reach: 3.45
 
   # The tick length of the traceback when calculating the hitbox
   trace_back_length: 8
@@ -153,7 +152,7 @@ hitbox:
   #  1. none   -  do nothing
   #  2. silent -  set damage to zero (Recommend)
   #  3. cancel -  cancel the attack
-  cancel_way: cancel
+  cancel_way: none
 
   # Violations needed to cancel illegal hits
   cancel_vl: 5
@@ -191,13 +190,12 @@ hitbox:
     10: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox)'
     12: 'matrix npc %player% 120'
     15: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox) #2'
-    24: 'matrix kick %player% Reach/HitBox Hacks'
 
 ## Click check
 # Prevent players from clicking too fast, or using autoclickers to attack other entities
 click:
   # Enable this check?
-  enable: true
+  enable: false
 
   # What should the player's highest CPS be? When the player exceeds this cps, it will be detected
   max_cps: 15
@@ -224,7 +222,6 @@ click:
   commands:
     10: 'matrix notify %player% tried to click abnormally (Click) #1'
     18: 'matrix notify %player% tried to click abnormally (Click) #2'
-    30: 'matrix kick %player% Click Abnormally'
 
 ## Movement Speed Check
 # This check prevents the player from moving abnormally
@@ -255,12 +252,12 @@ move:
   # the current VL and directly setback the player. But it's not 100% accurate,
   # so you can choose which situations matrix should force setback players
   force_setback_situations:
-    high_jump: true
-    ground_spoof_jump: true
-    bad_jumps: true
-    air_accel: true
-    air_mdf: true
-    step: true
+    high_jump: false
+    ground_spoof_jump: false
+    bad_jumps: false
+    air_accel: false
+    air_mdf: false
+    step: false
 
   # Should Matrix teleport the player into the void if the player cheats on the void?
   allow_setback_to_void: true
@@ -275,7 +272,6 @@ move:
   commands:
     55: 'matrix notify %player% tried to move abnormally (Move) #1'
     90: 'matrix notify %player% tried to move abnormally (Move) #2'
-    220: 'matrix kick %player% Move Abnormally'
 
 ## BadPackets
 # Prevents player from sending too many movement packets or sending illegal packets
@@ -307,7 +303,6 @@ badpackets:
   commands:
     100: 'matrix notify %player% is sending unusual packets to server (BadPackets) #1'
     150: 'matrix notify %player% is sending unusual packets to server (BadPackets) #2'
-    240: 'matrix kick %player% Sending Unusual Packets'
 
 ## Delay Check
 # It prevents the player from speeding up certain actions, such as eating quickly, or quickly healing
@@ -316,7 +311,7 @@ delay:
   enable: true
 
   # Should Matrix block player actions when cheating is detected?
-  cancel_action: true
+  cancel_action: false
 
   # Modules List
   # You can define the VL weight of each module, and -1 equals to disable it
@@ -336,15 +331,14 @@ delay:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    3: 'matrix notify %player% is tring to speed up actions (Delay) #1'
-    5: 'matrix notify %player% is tring to speed up actions (Delay) #2'
-    10: 'matrix kick %player% Speeding Up Operations'
+    9: 'matrix notify %player% is tring to speed up actions (Delay) #1'
+    15: 'matrix notify %player% is tring to speed up actions (Delay) #2'
 
 ## Block
 # Check prevents the player from breaking, placing block quickly
 block:
   # Enable this check?
-  enable: true
+  enable: false
 
   # Violations needed to cancel illegal breaking/placing of blocks (-1 = never cancel)
   cancel_vl: 5
@@ -379,7 +373,6 @@ block:
   # number_of_violations: '<command>'
   commands:
     10: 'matrix notify %player% tried to place/break a block too quickly (FastPlace/FastBreak)'
-    20: 'matrix kick %player% FastPlace/FastBreak Hacks'
 
 ## Scaffold check
 # Check prevents player bridging blocks or towering up faster than normal speed
@@ -402,7 +395,7 @@ scaffold:
     delay:
       enable: true
       vl_weight: 5
-      cancel_place: true
+      cancel_place: false
       min_delay: 6
       min_delay_diagonal: 3
 
@@ -427,7 +420,6 @@ scaffold:
   commands:
     10: 'matrix notify %player% tried to bridge blocks quickly (Scaffold)'
     15: 'matrix notify %player% tried to bridge blocks quickly (Scaffold) #2'
-    24: 'matrix kick %player% Scaffold/Tower'
 
 ## Jesus
 # Check prevents the player from moving too too quickly in liquids, or walking on liquid.
@@ -452,7 +444,6 @@ jesus:
   commands:
     20: 'matrix notify %player% tried to move illegally in liquid (Jesus)'
     40: 'matrix notify %player% tried to move illegally in liquid (Jesus) #2'
-    50: 'matrix kick %player% Jesus/WaterSpeed/WaterFly Hacks'
 
 ## Velocity
 # Check prevents the player from using any type of anti-knockback hacks.
@@ -485,13 +476,12 @@ velocity:
   commands:
     10: 'matrix notify %player% tried to ignore server velocity (Velocity)'
     15: 'matrix notify %player% tried to ignore server velocity (Velocity) #2'
-    20: 'matrix kick %player% Velocity/Anti-Knockback'
 
 ## Spam
 # Check prevents a player from spamming messages in the servers chat.
 chat:
   # Enable this check?
-  enable: false
+  enable: true
 
   # Minimum amount of time between messages (Seconds)
   min_time: 3
@@ -508,13 +498,12 @@ chat:
   # number_of_violations: '<command>'
   commands:
     4: 'matrix notify %player% is spamming the chat (ChatSpam)'
-    10: 'matrix kick %player% Stop spamming the chat!'
 
 ## Interact
 # Check prevents the player from illegally interacting with entities and blocks.
 interact:
   # Enable this check?
-  enable: true
+  enable: false
 
   # Which version of interaction check should be used?
   # v1 = old version
@@ -533,7 +522,6 @@ interact:
   # number_of_violations: '<command>'
   commands:
     10: 'matrix notify %player% tried to illegally interact with Entity/Block (Interact)'
-    15: 'matrix kick %player% Illegally Interacting with Block/Entity'
 
 ## Phase
 # Check prevents the player people glitching through blocks.
@@ -549,7 +537,7 @@ phase:
   cancel_vl: 5
 
   # Should Matrix prevent players from using Ender Pearl for close range teleportation?
-  prevent_close_range_enderpearl: true
+  prevent_close_range_enderpearl: false
 
   # Exclude block types
   exclude_types: []
@@ -582,7 +570,6 @@ autobot:
   commands:
     5: 'matrix notify %player% suspected use of automatic robots (AutoBot)'
     10: 'matrix notify %player% suspected use of automatic robots (AutoBot) #2'
-    15: 'matrix kick %player% Auto-Bot'
 
 ## Elytra
 # Checks prevents player using Elytra+, ElytraFlight, etc
@@ -612,7 +599,6 @@ elytra:
   commands:
     10: 'matrix notify %player% suspected using elytra flight (Elytra)'
     20: 'matrix notify %player% suspected using elytra flight (Elytra) #2'
-    40: 'matrix kick %player% Elytra Flight'
 
 ## Vehicle
 # Checks prevents player using VehicleFlight, VehicleSpeed, EntitySpeed..
@@ -655,4 +641,3 @@ vehicle:
   commands:
     5: 'matrix notify %player% suspected using vehicle cheat (Vehicle)'
     10: 'matrix notify %player% suspected using vehicle cheat (Vehicle) #2'
-    17: 'matrix kick %player% Suspicious vehicle movement'
