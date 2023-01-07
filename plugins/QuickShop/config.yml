@@ -198,7 +198,7 @@ shop-blocks:
 
 shop:
   #The cost to make a shop.
-  cost: 10
+  cost: 0
   #Should the cost go to the tax-account above?
   #Beware: This may cause could not create shop when tax-account could not be deposited
   cost-goto-tax-account: false
@@ -220,13 +220,13 @@ shop:
 
   #Should there be a fee for changing shop prices?
   #This can help with endless price undercutting.
-  price-change-requires-fee: true
+  price-change-requires-fee: false
   #The amount of this fee.
   fee-for-price-change: 50
 
   #Should QS try to lock shops for other players?
   #This prevents players from stealing from them.
-  lock: true
+  lock: false
 
   #Should QS disable the quick creation of shop?
   #Quick creation means the way of create a shop click a chest with an Item.

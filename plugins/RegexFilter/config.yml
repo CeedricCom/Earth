@@ -82,5 +82,10 @@ filters:
     warn-text: "&c\"{MATCH}\" was filtered. Please keep chat friendly."
     deny: true
 
+  - pattern: kys
+    warn-text: "&c\"{MATCH}\" was filtered. Please keep chat friendly."
+    deny: true
 
-
+  - pattern: kill yourself
+    warn-text: "&c\"{MATCH}\" was filtered. Please keep chat friendly."
+    deny: true

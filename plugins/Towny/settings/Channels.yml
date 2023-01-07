@@ -45,7 +45,7 @@ Channels:
         permission: 'towny.chat.general'
         default: true
         range: '-1'
-        spam_time: '1.5'
+        spam_time: '3'
         
     town:
         commands: [tc]
@@ -72,7 +72,7 @@ Channels:
         messagecolour: '&f'
         permission: 'towny.chat.alliance'
         range: '-1'
-        spam_time: '1.5'
+        spam_time: '3'
 
     admin:
         commands: [a,admin]
@@ -97,4 +97,4 @@ Channels:
         messagecolour: '&d'
         permission: 'towny.chat.local'
         range: '100'
-        spam_time: '1.5'
+        spam_time: '3'
