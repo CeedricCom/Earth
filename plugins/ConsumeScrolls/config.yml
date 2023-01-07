@@ -67,7 +67,7 @@ scrolls:
         itemstack:
           ==: org.bukkit.inventory.ItemStack
           v: 19
-          type: enchanted_book
+          type: DIAMOND_PICKAXE
           meta:
             ==: ItemMeta
             meta-type: UNSPECIFIC
@@ -118,7 +118,7 @@ scrolls:
         itemstack:
           ==: org.bukkit.inventory.ItemStack
           v: 19
-          type: enchanted_book
+          type: DIAMOND_SWORD
           meta:
             ==: ItemMeta
             meta-type: UNSPECIFIC
@@ -155,7 +155,7 @@ scrolls:
         itemstack:
           ==: org.bukkit.inventory.ItemStack
           v: 19
-          type: enchanted_book
+          type: TRIDENT
           meta:
             ==: ItemMeta
             meta-type: UNSPECIFIC
