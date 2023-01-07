@@ -38,17 +38,27 @@
 
 Channels:
     general:
-        commands: [g]
+        commands: [g, general]
         type: GLOBAL
         channeltag: '&2'
-        messagecolour: '&a'
+        messagecolour: '&f'
         permission: 'towny.chat.general'
+        default: true
+        range: '-1'
+        spam_time: '3'
+
+    trade:
+        commands: [tr, tradechat]
+        type: DEFAULT
+        channeltag: '&9[Trade] '
+        messagecolour: '&f'
+        permission: 'towny.chat.trade'
         default: true
         range: '-1'
         spam_time: '3'
         
     town:
-        commands: [tc]
+        commands: [tc, townchat]
         type: TOWN
         channeltag: '&f[&2TC&f]'
         messagecolour: '&f'
@@ -57,7 +67,7 @@ Channels:
         spam_time: '1.5'
          
     nation:
-        commands: [nc]
+        commands: [nc, nationchat]
         type: NATION
         channeltag: '&f[&6NC&f]'
         messagecolour: '&f'
@@ -66,7 +76,7 @@ Channels:
         spam_time: '1.5'
 
     alliance:
-        commands: [ac]
+        commands: [ac, alliancechat]
         type: ALLIANCE
         channeltag: '&f[&2AC&f]'
         messagecolour: '&f'
@@ -91,7 +101,7 @@ Channels:
         range: '-1'
         
     local:
-        commands: [l,lc]
+        commands: [l,lc, localchat]
         type: GLOBAL
         channeltag: '&5'
         messagecolour: '&d'
