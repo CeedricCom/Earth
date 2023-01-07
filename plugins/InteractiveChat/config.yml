@@ -172,9 +172,9 @@ Commands:
 Chat:
   # Convert alternate color code character
   # Only one character is allowed, leave blank to disable this feature
-  TranslateAltColorCode: '&'
+  TranslateAltColorCode: ''
   # Enable the mention title and sound
-  AllowMention: true
+  AllowMention: false
   # Time until a player can be mentioned by the same player again
   # In seconds
   MentionCooldown: 3
