@@ -45,6 +45,7 @@ nomad:
 - towny.command.town.reslist
 - towny.command.plot.group.*
 - towny.command.plot.perm
+- towny.command.plot.claim
 - towny.command.plot.perm.hud
 - towny.command.plot.trust
 - towny.command.nation.list.*
@@ -55,6 +56,8 @@ nomad:
 - towny.town.resident
 - towny.town.spawn.public
 - towny.chat.general
+- -townychat.chat.color
+- -townychat.chat.format.*
 - towny.command.towny.war.hud
   
 # This section of permissions covers players who are members of a town.
@@ -70,6 +73,8 @@ towns:
   - towny.command.plot.toggle.*
   - towny.command.plot.set.perm
   - towny.command.plot.set.reset
+  - -townychat.chat.color
+  - -townychat.chat.format.*
   - towny.command.town.online
   - towny.command.town.leave
   - towny.command.town.deposit
@@ -97,9 +102,11 @@ towns:
   ranks:
     mayor:
     - towny.command.town.*
+    - townymissions.mayor
     comayor:
     - towny.tax_exempt
     - towny.command.towny.top
+    - townymissions.mayor
     - towny.command.town.*
     - -towny.command.town.delete
     - -towny.command.town.set.mayor
@@ -158,6 +165,8 @@ nations:
   - towny.nation.spawn.nation
   - towny.nation.spawn.ally
   - towny.town.spawn.nation
+  - -townychat.chat.color
+  - -townychat.chat.format.*
   - towny.town.spawn.ally
   - towny.chat.nation
   - towny.chat.alliance

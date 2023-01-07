@@ -367,7 +367,7 @@ Player:
   CaseSensitive: true
   Hover:
     # Add a hover message to all player names in chat
-    Enable: true
+    Enable: false
     # The text to show in the hover message
     # Supports multiple lines
     Text:
@@ -377,7 +377,7 @@ Player:
       - '&bPing: &7%player_colored_ping% &bms'
   Click:
     # Add a click action to all player names in chat
-    Enable: true
+    Enable: false
     # The action to do when a player name is clicked
     # List of actions:
     # OPEN_URL

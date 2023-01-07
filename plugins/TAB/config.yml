@@ -225,10 +225,7 @@ assign-groups-by-permissions: false
 # if the option above is true, all groups are taken based on permissions and the one higher in this list is used as primary
 # Warning! This is not sorting list and has nothing to do with sorting players in tablist!
 primary-group-finding-list:
-  - Owner
-  - Admin
-  - Mod
-  - Helper
+  - mvp
   - default
 
 debug: false

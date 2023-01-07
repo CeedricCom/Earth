@@ -1,0 +1,6 @@
+# The message to notify a player that they cannot break a spawner
+denyMessage: "§4You can't break spawners"
+
+# The message to warn a player that has the permission 
+# unbreakablespawners.override that they just broke a spawner
+allowMessage: "§eYou broke an unbreakable spawner"

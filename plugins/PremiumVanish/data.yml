@@ -1,3 +1,18 @@
 # PremiumVanish v2.8.0 - Data file
 
-InvisiblePlayers: []
+InvisiblePlayers:
+- 2eedb599-e291-4f85-820c-58e5528e40b8
+PlayerData:
+  2eedb599-e291-4f85-820c-58e5528e40b8:
+    information:
+      name: Reyko
+    vanishLocation: world%-13525.995888544485%64.0%-9003.665883449534%-6.529901%32.016777
+  1f502439-54c4-4ddd-9b53-7f63061fecb6:
+    information:
+      name: Godsick
+  eb5e6429-327c-413c-a064-4e71c7098f0e:
+    information:
+      name: ceedric_
+  b974e6dc-6129-4c98-9369-8661d080358b:
+    information:
+      name: _ThatKid

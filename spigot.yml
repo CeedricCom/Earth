@@ -33,7 +33,7 @@ settings:
   log-villager-deaths: true
   log-named-deaths: true
 messages:
-  whitelist: Earth releases on January 6th at 2PM EST!
+  whitelist: Earth will be back soon!
   unknown-command: Unknown command. Type "/help" for help.
   server-full: The server is full!
   outdated-client: Outdated client! Please use {0}
@@ -42,7 +42,7 @@ messages:
 advancements:
   disable-saving: true
   disabled:
-  - minecraft:story/disabled
+  - '*'
 commands:
   spam-exclusions:
   - /skill

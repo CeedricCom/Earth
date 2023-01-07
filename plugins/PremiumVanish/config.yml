@@ -19,7 +19,7 @@ InvisibilityFeatures:
   # Should invisible players only be able to send chat messages if the message ends with the following character?
   # You can set this to 'deny' to cancel the message in any case.
   # Please leave this empty if you'd like to disable the feature.
-  RequireChatMessageSuffix: "/"
+  RequireChatMessageSuffix: ""
   # Should invisible players open chests and shulker boxes without the animation and sound?
   # This makes them go into spectator mode temporarily. It's better to only give access to this feature
   # to staff members since a server crash can cause players to stay in spectator mode.
@@ -202,7 +202,7 @@ SurvivalFriendlyFeatures:
     # Should vanished players be teleported back to where they vanished when they reappear?
     # The location is saved in the data.yml file and is therefore safe in case of a restart/crash
     # Bypass permission: pv.bypassteleportback
-    TeleportBackOnReappear: false
+    TeleportBackOnReappear: true
 
 ##################################################
 ################ Message Options #################
@@ -212,16 +212,16 @@ MessageOptions:
   MessagesOnVanishReappear:
     # Should PV broadcast any kind of announcement (fake quit or player vanished) when a player vanishes?
     # You can change the messages in the messages.yml file.
-    BroadcastMessageOnVanish: true
+    BroadcastMessageOnVanish: false
     # Should PV broadcast any kind of announcement (fake join or player reappeared) when a player reappears?
     # You can change the messages in the messages.yml file.
-    BroadcastMessageOnReappear: true
+    BroadcastMessageOnReappear: false
     # Should players with permission to see the player get an announcement instead of a fake join/quit message?
     # The vanishing/reappearing player will always get the fake join/quit message.
     AdminsGetAnnouncementInstead: true
     # Should there only be announcements and no fake join/quit messages?
     # This means players without permission to see the player don't get any message.
-    DontSendFakeJoinQuit: false
+    DontSendFakeJoinQuit: true
     # Should there only be fake join/quit messages and no announcements?
     # This means players with permission to see the player don't get any message.
     DontSendAdminAnnouncements: false

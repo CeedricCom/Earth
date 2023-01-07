@@ -33,6 +33,8 @@ groups:
     - confirm
     - g
     - cr
+    - qs
+    - quickshop
     - money
     - general
     - l
@@ -82,23 +84,21 @@ groups:
     - tips
     - tpa
     - warp
-    - suicide
     - sit
     - earth
     - navigate
     - continents
     - continent
+    - trade
     - interactivechat
     subcommands: []
   mvp:
     commands:
-    - hat
     - nick
     - tomap
     - playerskull
     - tag
     - tfly
-    - tppos
     - itemrename
     - rename
     - craft
@@ -111,6 +111,7 @@ groups:
     - v
     - tpo
     - co
+    - matrix
     - coreprotect
     - tppos
     - prefixadmin

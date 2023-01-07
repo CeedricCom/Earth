@@ -78,7 +78,7 @@ profiles:
     group:
       types:
         - "villager"
-      count: 11
+      count: 4
       distance: same-chunk
     actions:
       - remove

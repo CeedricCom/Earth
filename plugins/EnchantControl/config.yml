@@ -14,3 +14,6 @@ enchants:
   '19':
     disabled: true
     custom: false
+  '7':
+    disabled: true
+    custom: false

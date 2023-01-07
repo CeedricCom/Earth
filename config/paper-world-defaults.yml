@@ -15,8 +15,8 @@
 _version: 30
 anticheat:
   anti-xray:
-    enabled: true
-    engine-mode: 1
+    enabled: false
+    engine-mode: 2
     hidden-blocks:
     - copper_ore
     - deepslate_copper_ore
@@ -223,7 +223,7 @@ environment:
   portal-search-radius: 128
   portal-search-vanilla-dimension-scaling: true
   treasure-maps:
-    enabled: true
+    enabled: false
     find-already-discovered:
       loot-tables: default
       villager-trade: false

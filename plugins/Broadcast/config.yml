@@ -9,4 +9,4 @@ prefix: ''
 broadcastColour: ''
 
 # Should we enable Bungeecord? This enables /broadcast -g <message>
-Bungeecord: false
+Bungeecord: true
