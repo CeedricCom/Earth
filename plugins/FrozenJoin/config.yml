@@ -95,7 +95,8 @@ consoleMessages: 'ENABLED'
 # Determines what message is broadcast to the server when a new
 # user joins the server.
 #
-firstJoinMessage: []
+firstJoinMessage: 
+  - "[CONSOLECOMMAND] kit starter %player_name%"
 #
 #
 # » Message of The Day
