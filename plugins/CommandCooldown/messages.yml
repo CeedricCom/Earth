@@ -1,0 +1,18 @@
+bypassCooldown: '&eBypassing cooldowns'
+noLongerBypassing: '&eNo longer bypassing cooldowns'
+onCooldown: '&cYou still have &e%time% &cleft on that command'
+reload: '&eReloading all configs'
+resetCooldowns: '&aReset %player%s cooldowns'
+errors:
+  noPermission: '&cYou do not have the permission &e%perm%'
+  onlyPlayers: '&cOnly players can use that command!'
+baseMessage:
+- '&a&lCommand Cooldown %version%'
+- '  &7/cc help'
+helpHeader: '&a&lHelp Page &f%page%&7/&f%pageAmount%'
+commands:
+  editor: '&a/cc editor &7- Opens up the cooldown editor'
+  reload: '&a/cc reload &7- Reloads all configs'
+  bypass: '&a/cc bypass &7 - Bypass all cooldowns'
+  removecooldowns: '&a/cc removecooldowns [player] - Resets a players cooldowns'
+version: 2.4.4 beta

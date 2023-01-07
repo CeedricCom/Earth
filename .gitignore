@@ -97,6 +97,7 @@ plugins/FrozenJoin/positions.yml
 plugins/matrix.jar
 plugins/ContextualTips/data.yml
 plugins/Matrix*.jar
+orebfuscator_cache/
 plugins/matrix*.jar
 plugins/Matrix/logs
 plugins/Matrix/config.yml
@@ -104,3 +105,4 @@ plugins/Essentials/usermap.bin
 plugins/Essentials/uuids.bin
 plugins/ContextualTips/config.yml.save
 plugins/PremiumVanish/data.yml
+plugins/CommandCooldown/savedCooldowns.yml
