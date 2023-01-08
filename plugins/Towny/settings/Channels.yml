@@ -53,7 +53,7 @@ Channels:
         channeltag: '&9[Trade] '
         messagecolour: '&f'
         permission: 'towny.chat.trade'
-        default: true
+        default: false
         range: '-1'
         spam_time: '3'
         

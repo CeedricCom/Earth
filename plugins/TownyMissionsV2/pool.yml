@@ -503,7 +503,6 @@ pool:
 
 #---------- NATION MISSION SEPERATOR ------------#
 
-pool:
   nation-mission-gatherer:
     name: 'Gatherer'
     type: 'NATION'
