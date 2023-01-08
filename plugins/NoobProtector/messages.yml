@@ -4,7 +4,7 @@ msg_plistfooter: 'Page: [%1% / %2%]'
 msg_emptylist: There's no Noob-protected players
 msg_reloaded: configuration reloaded from file
 msg_pvponcmd: '&e%1% &6- to disable your own protection'
-msg_youunprotected: Your PVP-protection was removed
+msg_youunprotected: '&6Your PVP-protection was removed'
 msg_unprtfail: Failed to remove protection from %1%
 msg_plrisprotected: '&e%1% &6is now protected'
 msg_plrisunprotected: '&e%1% &6is unprotected'
@@ -12,21 +12,21 @@ msg_unknownplayer: Player %1% is unknown. May be he is offline?
 msg_alreadyunprotected: You are already unprotected!
 msg_pvponcooldown: '&6Type &e%1% &6again in the next &e%2% &6seconds to unprotect yourself'
 msg_currenttime: Time in defined time zone is %1%
-msg_warnpvpoff: You are now protected from PVP-attacks. But you cannot attack other
-  players too. PVP-protection will be removed at %1%
-msg_youcantattack: Hey! You cannot attack other players! Type %1% to remove protection.
+msg_warnpvpoff: '&6You are now protected from PVP-attacks. But you cannot attack other
+  players too. PVP-protection will be removed at &e%1%'
+msg_youcantattack: '&6Hey! You cannot attack other players! Type &e%1% &6to remove protection.'
 msg_warndefender: '%1% is trying to attack you!'
 msg_warnatacker: '%1% is PVP-protected. Your attack failed.'
 msg_protected: '&6You are protected.'
-msg_notprotected: You are unprotected.
+msg_notprotected: '&6You are unprotected.'
 msg_playtime: 'Play-time (online) limit: %1%'
-msg_realtime: 'Unprotection time: %1%'
+msg_realtime: '&6Unprotection time: &e%1%'
 msg_typepvpon: '&6Type &e%1% &6to remove protection.'
 msg_servertimezone: 'Default (system) time zone: %1%'
 msg_cfgtimezone: 'Time zone modifier (defined in config-file): %1%'
 msg_joinprotect: Auto protect new players
 msg_playerwarn: Warn player about protection
-msg_playerwarntime: 'Warning message delay: %1% minutes'
+msg_playerwarntime: '&6Warning message delay: &e%1% &6minutes'
 msg_useplaytime: Use play-time (online) protection
 msg_useplaytimevalue: Play-time protection limit %1% minutes
 msg_userealtime: Use real-time protection
