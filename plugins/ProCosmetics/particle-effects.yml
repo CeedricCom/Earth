@@ -287,7 +287,7 @@ particle-effects:
       rarity: LEGENDARY
       material: BLAZE_ROD
       amount: 1
-      slot: 29
+      slot: 12
       page: 1
       displayname: "%name%"
       lore:
@@ -385,7 +385,7 @@ particle-effects:
       rarity: RARE
       material: BLAZE_POWDER
       amount: 1
-      slot: 37
+      slot: 22
       page: 1
       displayname: "%name%"
       lore:
@@ -402,7 +402,7 @@ particle-effects:
       rarity: COMMON
       material: GOLD_NUGGET
       amount: 1
-      slot: 38
+      slot: 13
       page: 1
       displayname: "%name%"
       lore:
@@ -518,8 +518,8 @@ particle-effects:
       rarity: LEGENDARY
       material: BLAZE_ROD
       amount: 1
-      slot: 11
-      page: 2
+      slot: 28
+      page: 1
       displayname: "%name%"
       lore:
         - ""

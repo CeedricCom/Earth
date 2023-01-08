@@ -247,7 +247,7 @@ arrow-effects:
       rarity: COMMON
       material: FIREWORK_ROCKET
       amount: 1
-      slot: 25
+      slot: 12
       page: 1
       displayname: "%name%"
       lore:
