@@ -106,3 +106,5 @@ plugins/Essentials/uuids.bin
 plugins/ContextualTips/config.yml.save
 plugins/PremiumVanish/data.yml
 plugins/CommandCooldown/savedCooldowns.yml
+plugins/NoobProtector/players.yml
+plugins/ChestSort/playerdata/
