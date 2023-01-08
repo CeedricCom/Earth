@@ -109,3 +109,6 @@ plugins/CommandCooldown/savedCooldowns.yml
 plugins/NoobProtector/players.yml
 plugins/ChestSort/playerdata/
 plugins/ProCosmetics/data/
+plugins/ProCosmetics.jar
+plugins/HCFClasses.jar
+plugins/PremiumVanish.jar
