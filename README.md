@@ -27,6 +27,9 @@ The following plugins are connected to external databases. In order to get them 
 
 The following plugins are missing from this repository as they are paid however their configs can still be found
   - Matrix Anticheat
+  - ProCosmetics
+  - HCFClasses
+  - PremiumVanish
 
 Connect to the server on localhost:25564
 
