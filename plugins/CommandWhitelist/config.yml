@@ -97,6 +97,7 @@ groups:
     - continent
     - trade
     - interactivechat
+    - pvp-on
     subcommands: []
   mvp:
     commands:
