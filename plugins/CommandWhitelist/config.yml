@@ -109,6 +109,7 @@ groups:
     - itemrename
     - rename
     - craft
+    - cosmetics
     - workbench
     - hat
     - mapto
