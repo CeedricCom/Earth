@@ -112,6 +112,7 @@ groups:
     - workbench
     - hat
     - mapto
+    - sort
   moderator:
     commands:
     - endersee
