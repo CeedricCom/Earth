@@ -1,0 +1,17 @@
+protect:
+  after-join: false
+  realtime:
+    enable: true
+    time: 1440
+  playtime:
+    enable: false
+    time: 3
+general:
+  pvp-on-cool-down: 3
+schedule:
+  pvp-update-time: 1
+  player-warn:
+    enable: false
+    time: 0
+unprotected:
+  worlds: []
