@@ -1,0 +1,181 @@
+#  _____            _____                         _   _          
+# |  __ \          / ____|                       | | (_)
+# | |__) | __ ___ | |     ___  ___ _ __ ___   ___| |_ _  ___ ___
+# |  ___/ '__/ _ \| |    / _ \/ __| '_ ` _ \ / _ \ __| |/ __/ __|
+# | |   | | | (_) | |___| (_) \__ \ | | | | |  __/ |_| | (__\__ \
+# |_|   |_|  \___/ \_____\___/|___/_| |_| |_|\___|\__|_|\___|___/ COPYRIGHT ©
+#
+# Please read our wiki for further explanations: https://github.com/File14/ProCosmetics/wiki
+
+multi-world:
+  # Setting this to false will invert the feature to whitelisted-worlds.
+  blacklisted-worlds: true
+  worlds:
+    - world_no_cosmetics
+    - world_example
+
+# World Guard Support
+world-guard:
+  enable: true
+  # Setting this to false will invert the feature to whitelisted-regions.
+  blacklisted-regions: true
+  # This feature allows you to automatically re-equip players' cosmetics when they can use them again.
+  restore-cosmetics: true
+  unequip:
+    arrow-effects: false
+    balloons: true
+    banners: true
+    death-effects: false
+    emotes: true
+    gadgets: true
+    miniatures: true
+    morphs: true
+    mounts: true
+    music: true
+    particle-effects: false
+    pets: true
+    statuses: false
+  regions:
+    - "Region1"
+    - "Region2"
+
+3d-menu:
+  # This feature allows you to enable the 3D menu, note that the 2D menu will be disabled.
+  enable: false
+  display-item:
+    unequip-all-cosmetics: true
+    coins: true
+
+storage:
+  # Types: SQLITE or MYSQL.
+  type: SQLITE
+
+  mysql:
+    host: localhost
+    port: 3306
+    database: ProCosmetics
+    table: procosmetics
+    user: root
+    password: "password"
+    properties: "autoReconnect=true&useSSL=false&characterEncoding=UTF-8"
+
+  sqlite:
+    database: procosmetics
+    table: procosmetics
+
+economy:
+  # Types: VAULT, BUILT_IN
+  type: BUILT_IN
+  coin-party-bomb-amount: 10
+
+anti-lag:
+  enable: true
+  minimum-tps: 17.0
+  # This feature allows you to unequip players' cosmetics when the TPS is below the set value.
+  unequip-cosmetics: true
+  # This feature allows you to prevent players' from equipping cosmetics when the TPS is below the set value.
+  prevent-equipment: true
+
+settings:
+  # This feature allows you to check for updates when the plugin is starting.
+  check-updates: true
+
+  # This feature allows you to enable or disable sending statistics. Please keep this enabled.
+  enable-metrics: true
+
+  # Stores the players' last equipped cosmetics to automatically equip the next time they login.
+  restore-cosmetics: true
+
+  # This command executes once a player unlocks a cosmetic. Please change it based on your specific permission plugin.
+  permission-add-command: "lp user %player% permission set %permission% true"
+
+  cosmetic-menu:
+    title: "Cosmetic Menu"
+    rows: 6
+    fill-empty-slots: true
+    able-to-move: false
+    give-on:
+      join: false
+      world-change: false
+
+    material: CHEST
+    amount: 1
+    slot: 0
+    displayname: "&aCosmetic Menu &7(Right-click)"
+    lore:
+      - "&7Right-click to open the Cosmetic menu."
+
+  fill-empty-slots:
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+
+  unequip-all-cosmetics:
+    material: BARRIER
+    amount: 1
+    slot: 4
+    displayname: "&cUnequip All Cosmetics"
+    lore:
+      - ""
+      - "&7Right-click to unequip your current cosmetics!"
+
+  coins:
+    enable: false
+    material: SUNFLOWER
+    amount: 1
+    slot: 22
+    displayname: "&bYou have &e%coins% coins&b!"
+    lore:
+      - ""
+      - "&7Purchase more coins at our"
+      - "&7store: &9www.example.com"
+
+  go-back:
+    material: RED_BED
+    amount: 1
+    slot: 4
+    displayname: "&aGo back"
+    lore: [ ]
+
+  previous-page:
+    material: ARROW
+    amount: 1
+    slot: 45
+    displayname: "&aPrevious Page"
+    lore: [ ]
+
+  next-page:
+    material: ARROW
+    amount: 1
+    slot: 53
+    displayname: "&aNext Page"
+    lore: [ ]
+
+  purchase:
+    title: "Confirm Purchase"
+    rows: 3
+    fill-empty-slots: true
+
+    accept:
+      material: LIME_TERRACOTTA
+      amount: 1
+      slot: 16
+      displayname: "&aAccept Purchase"
+      lore:
+        - ""
+        - "&7Click to accept!"
+
+    deny:
+      material: RED_TERRACOTTA
+      amount: 1
+      slot: 10
+      displayname: "&cDeny Purchase"
+      lore:
+        - ""
+        - "&7Click to cancel!"
+
+  cosmetic-locked-description:
+    - "%cosmetic_description%"
+    - "&aClick to purchase for &e%cost% coins&a!"
+
+# Do not edit this!
+config-version: 1
