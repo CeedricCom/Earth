@@ -110,6 +110,8 @@ groups:
     - rename
     - craft
     - workbench
+    - hat
+    - mapto
   moderator:
     commands:
     - endersee
