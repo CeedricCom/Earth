@@ -31,6 +31,7 @@ The following plugins are missing from this repository as they are paid however 
   - HCFClasses
   - PremiumVanish
   - VillagerOverhaul
+  - HeadDatabase
 
 The following plugins are forks so caution should be taken when updating
   - SiegeWar
