@@ -281,6 +281,10 @@ pool:
     name: 'Fishing'
     type: 'TOWN'
     duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 2500
     goals:
       1:
         definition: 'GATHER'
@@ -353,6 +357,10 @@ pool:
     name: 'Miner'
     type: 'TOWN'
     duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 2500
     goals:
       1:
         definition: 'GATHER'
@@ -826,6 +834,10 @@ pool:
     name: 'Fishing'
     type: 'NATION'
     duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 3000
     goals:
       1:
         definition: 'GATHER'
@@ -898,6 +910,10 @@ pool:
     name: 'Miner'
     type: 'NATION'
     duration: '7d'
+    rewards:
+      1:
+        type: GOVERNMENT_BANK
+        total: 3000
     goals:
       1:
         definition: 'GATHER'
