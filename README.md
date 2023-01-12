@@ -30,6 +30,13 @@ The following plugins are missing from this repository as they are paid however 
   - ProCosmetics
   - HCFClasses
   - PremiumVanish
+  - VillagerOverhaul
+  - HeadDatabase
+
+The following plugins are forks so caution should be taken when updating
+  - SiegeWar
+  - ImageOnMap
+  - CombatPlus
 
 Connect to the server on localhost:25564
 
