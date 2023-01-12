@@ -33,7 +33,7 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GUNPOWDER
+              type: 'GUNPOWDER'
       2:
         definition: 'GATHER'
         goal: 6999
@@ -69,14 +69,14 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GOLD_INGOT
+              type: 'GOLD_INGOT'
           4:
             type: ITEM
             total: 450
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GLISTERING_MELON_SLICE
+              type: 'GLISTERING_MELON_SLICE'
           5:
             type: ITEM
             total: 300
@@ -379,7 +379,7 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GLOW_INK_SAC
+              type: 'GLOW_INK_SAC'
           4:
             type: ITEM
             total: 32
@@ -492,14 +492,14 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GOLD_INGOT
+              type: 'GOLD_INGOT'
           4:
             type: ITEM
             total: 500
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GLISTERING_MELON_SLICE
+              type: 'GLISTERING_MELON_SLICE'
           5:
             type: ITEM
             total: 500
@@ -537,7 +537,7 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GUNPOWDER
+              type: 'GUNPOWDER'
       2:
         definition: 'GATHER'
         goal: 11999
@@ -573,14 +573,14 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GOLD_INGOT
+              type: 'GOLD_INGOT'
           4:
             type: ITEM
             total: 900
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GLISTERING_MELON_SLICE
+              type: 'GLISTERING_MELON_SLICE'
           5:
             type: ITEM
             total: 600
@@ -932,7 +932,7 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GLOW_INK_SAC
+              type: 'GLOW_INK_SAC'
           4:
             type: ITEM
             total: 64
@@ -1045,14 +1045,14 @@ pool:
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GOLD_INGOT
+              type: 'GOLD_INGOT'
           4:
             type: ITEM
             total: 2000
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
-              type: GLISTERING_MELON_SLICE
+              type: 'GLISTERING_MELON_SLICE'
           5:
             type: ITEM
             total: 2000
