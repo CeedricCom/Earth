@@ -1,7 +1,7 @@
   
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: '0.99'
+  version: '0.1'
   # This is for showing the changelog on updates.  Please do not edit.
   last_run_version: '0.99'
   
@@ -74,15 +74,15 @@ chatconfigcomments: ''
 channel_formats:
   # This is the format which will be used for GLOBAL chat/channels.
   # This is also the format used when you have modify_chat.enable: true, but use other plugins to handle chat.
-  global: '{channelTag}&l%luckperms_prefix%{channelTag}{nationtagoverride}{towntagoverride}{msgcolour}{townyprefix}{modplayername}&f: {msg}'
+  global: '{channelTag}&l%luckperms_prefix%{channelTag}{nationtagoverride}{channelTag}{towntagoverride}{msgcolour}{townyprefix}{modplayername}&f: {msg}'
   # TOWN channel types.
-  town: '&3{towntagoverride}&b{modplayername}&f:{msgcolour} {msg}'
+  town: '&3{towntagoverride}&b{modplayername}&f {msg}'
   # NATION channel types.
-  nation: '&6{towntagoverride}&e{townyprefix}{modplayername}&f:{msgcolour} {msg}'
+  nation: '&6{towntagoverride}&e{townyprefix}{modplayername}&f {msg}'
   # ALLIANCE channel types.
-  alliance: '&1{nationtagoverride}{townyprefix}{modplayername}&f:{msgcolour} {msg}'
+  alliance: '&1{nationtagoverride}&9{modplayername}&f {msg}'
   # DEFAULT channel types.
-  default: '{channelTag}{playername}&f:{msgcolour} {msg}'
+  default: '{channelTag}{msgcolour}{playername}&f: {msg}'
   
 tag_formats:
   world: '[%s] '

@@ -348,9 +348,7 @@ shop:
   #This WILL AFFECT existing shops!
   maximum-price: -1
 
-  #Per item price restrictions.
-  #Format: <itemname>;<minprice>;<maxprice>
-  #e.g:
+  #Per item price restrictions. Format: <itemname>;<minprice>;<maxprice> e.g:
   # - DIAMOND;100;200
   price-restriction: []
 
@@ -424,7 +422,7 @@ shop:
 
   #Update the signs when something (eg Hoppers) triggers InventoryMoveItemEvent?
   #Disable this if you think that it impacts your server performance.
-  update-sign-when-inventory-moving: false
+  update-sign-when-inventory-moving: true
 
   #Allow player loans? (Requires an economy plugin with support)
   allow-economy-loan: false

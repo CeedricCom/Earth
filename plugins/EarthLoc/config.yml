@@ -688,7 +688,7 @@ continents:
           - '-11248,8240'
           - '-9296,5952'
 
-  Antarctica:
+  antarctica:
     display-name: 'Antarctica'
     tp-enabled: true
     ocean: false

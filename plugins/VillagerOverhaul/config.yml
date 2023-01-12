@@ -1,0 +1,4038 @@
+#######################################################################################################
+# Villager Overhaul                                                                                   #
+# Version: 1.1.3                                                                                      #
+# By: Xyaafol                                                                                         #
+# /vo help - to see all commands                                                                      #
+# Join my discord for help https://discord.com/invite/rBYrcYVYsP                                      #
+#######################################################################################################
+
+# begin: Time in ticks that villagers can be traded from (day starts at 1000 ticks). Set to 2000 by default.
+# end: Time in ticks that villagers can be traded until (night starts at 13000 ticks). Set to 8999 by default.
+
+Work:
+  begin: 2000
+  end: 8999
+
+
+# alert: Sends an alert to the players when they interact with an unavailable villager.
+# on: 0 for off, 1 for on.
+# message: The alert that will be sent to the player if alert is on.
+
+AlertOn: false
+AlertMessage: "This villager is outside of it's work times"
+
+# BaseWeightValue: Set the base value that all trades have for their weight, any trades that do not set their weight individually will take this value by default.
+#Set to 1 by default, best effect would be achieved by setting to 100 and individual trades higher/lower than that depending on rarity.
+
+BaseWeightValue: 1
+
+# AllVillagers: sets an override for all villagers
+# Restricted: False by default. Set to true for all villagers to be restricted to the work begin and work end times. Outside of those times all interactions with none whitelisted villagers will be stopped.
+# DisableXP: False by default, change to true to disable player gaining xp from all trades.
+# LevelMax: False by default, change to true in order to give all villagers max xp when first interacting with them. Players will then only have to trade once each time to level them up
+#Use in the case that you want all villager trades to be a lot more accessable to the players.
+# HotV: Value of 5 by default, sets the maximum level of hero of the villager that players can get. Will take effect whenever a player interacts with a villager.
+#Set to 0 to completely disable the potion effect. Used to restrict the discounts that players can get on the prices.
+
+# ChangeProfessions: Set to true by default - change this to false in order to stop villagers changing their professions once one has been chosen.
+#Adds a single experience point to villagers when they first choose thier trades - ensuring they cannot lose the profession.
+#Cannot be reversed, any villagers that have been affected by this are stuck with their trades.
+
+# KeepCurrentTrades: Add any Villager profession under this section in full capitals. Set to true in order to stop the trades of villagers being changed when the plugin has no record of them.
+#This means that old villagers level 2 or above will not change their existing trades, but will gain new trades from this config when they level up.
+#Villagers that are level 1 will not be affected and will still have their trades changed on first interaction.
+
+AllVillagers:
+  Restricted: false
+  DisableXP: false
+  LevelMax: false
+  HotV: 5
+  ChangeProfessions: true
+  KeepCurrentTrades:
+    LIBRARIAN: true
+
+
+# TradesOff: Set this to true in order to disable all villager trades. Good for completely removing the trading aspect of the game.
+
+TradesOff: false
+
+
+# KeepMaps: Due to the way that ocean and woodland explorer maps are handled by the game, it is not possible to put them as a custom item.
+#I have added this option as a way to still keep the maps in the villagers trades - by toggling this on the default trades that contain the maps
+#will not be overwritten but will instead use these values in order to configure the trade. The format follows the same as the other trades.
+#See below for a description of how each variable works.
+
+#Unfortunately I cannot distinguish between the two maps in the code and therefore both must use the same costs.
+
+#TLDR: SET ENABLED TO TRUE TO KEEP MAPS WHERE THEY ARE IN VILLAGER TRADES
+
+KeepMaps:
+  Enabled: false
+  Item1: EMERALD
+  Amount1: 15
+  Item2: AIR
+  Amount2: 0
+  Amount3: 1
+  TradesUntilDisabled: 16
+  XP: 2
+
+
+RANDOM_LISTS:
+  #Potion effects need to be in form 'NAME,DURATION(seconds),AMPLIFIER'
+  STEW:
+    - REGENERATION,100,0
+    - SPEED,100,0
+    - FIRE_RESISTANCE,100,0
+    - HEAL,0,0
+  POTION:
+    - REGENERATION,100,0
+    - SPEED,100,0
+    - FIRE_RESISTANCE,100,0
+    - HEAL,0,0
+  ARROW:
+    - REGENERATION,100,0
+    - SPEED,100,0
+    - FIRE_RESISTANCE,100,0
+    - HEAL,0,0
+
+
+GROUPS:
+  #Cannot use groups inside of groups
+  GROUP_1:
+    1:
+      Item1: COAL
+      Amount1: 15
+        #Item1Meta:
+        #==: ItemMeta
+        #meta-type: UNSPECIFIC
+      #enchants:
+      #DAMAGE_ALL: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+      #ModifierOveride: 0
+
+    2:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_HELMET
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+  ENCHANTED_BOOKS:
+    1:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          WATER_WORKER: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ARTHROPODS: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    3:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ARTHROPODS: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    4:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ARTHROPODS: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    5:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ARTHROPODS: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    6:
+      Item1: EMERALD
+      Amount1: 17-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ARTHROPODS: 5
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    7:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_EXPLOSIONS: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    8:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_EXPLOSIONS: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    9:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_EXPLOSIONS: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    10:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_EXPLOSIONS: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    11:
+      Item1: EMERALD
+      Amount1: 17-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_EXPLOSIONS: 5
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    12:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          CHANNELING: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    13:
+      Item1: EMERALD
+      Amount1: 10-38
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          BINDING_CURSE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    14:
+      Item1: EMERALD
+      Amount1: 10-38
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          VANSIHING_CURSE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    15:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DEPTH_STRIDER: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    16:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DEPTH_STRIDER: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    17:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DEPTH_STRIDER: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    18:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DIG_SPEED: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    19:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DIG_SPEED: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    20:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DIG_SPEED: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    21:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DIG_SPEED: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    22:
+      Item1: EMERALD
+      Amount1: 17-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DIG_SPEED: 5
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    23:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_FALL: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    24:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_FALL: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    25:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_FALL: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    26:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_FALL: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    27:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          FIRE_ASPECT: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    28:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          FIRE_ASPECT: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    29:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_FIRE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    30:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_FIRE: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    31:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_FIRE: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    32:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_FIRE: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    33:
+      Item1: EMERALD
+      Amount1: 17-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_FIRE: 5
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    34:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          ARROW_FIRE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    35:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOOT_BONUS_BLOCKS: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    36:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOOT_BONUS_BLOCKS: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    37:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOOT_BONUS_BLOCKS: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    38:
+      Item1: EMERALD
+      Amount1: 48-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          FROST_WALKER: 1
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+    39:
+      Item1: EMERALD
+      Amount1: 48-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          FROST_WALKER: 2
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+    40:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          IMPALING: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    41:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          IMPALING: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    42:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          IMPALING: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    43:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          IMPALING: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    44:
+      Item1: EMERALD
+      Amount1: 17-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          IMPALING: 5
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    45:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          ARROW_INFINITE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    46:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          KNOCKBACK: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    47:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          KNOCKBACK: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    48:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOOT_BONUS_MOBS: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    49:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOOT_BONUS_MOBS: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    50:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOOT_BONUS_MOBS: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    51:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOYALTY: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    52:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOYALTY: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    53:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LOYALTY: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    54:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LUCK: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    55:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LUCK: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    56:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LUCK: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    57:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LURE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    58:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LURE: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    59:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          LURE: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    60:
+      Item1: EMERALD
+      Amount1: 48-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          MENDING: 1
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+    61:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          MULTISHOT: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    62:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PIERCING: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    63:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PIERCING: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    64:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PIERCING: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    65:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PIERCING: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    66:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          ARROW_DAMAGE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    67:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          ARROW_DAMAGE: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    68:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          ARROW_DAMAGE: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    69:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          ARROW_DAMAGE: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    70:
+      Item1: EMERALD
+      Amount1: 17-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          ARROW_DAMAGE: 5
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    71:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_PROJECTILE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    72:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_PROJECTILE: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    73:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_PROJECTILE: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    74:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_PROJECTILE: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    75:
+      Item1: EMERALD
+      Amount1: 17-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_PROJECTILE: 5
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    76:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    77:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    78:
+      Item1: EMERALD
+      Amount1: 32-48
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+    79:
+      Item1: EMERALD
+      Amount1: 48-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+    81:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          ARROW_KNOCKBACK: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    82:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          ARROW_KNOCKBACK: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    83:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          QUICK_CHARGE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    84:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          QUICK_CHARGE: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    85:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          QUICK_CHARGE: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    86:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          OXYGEN: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    87:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          OXYGEN: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    88:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          OXYGEN: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    89:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          RIPTIDE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    90:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          RIPTIDE: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    91:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          RIPTIDE: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    92:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ALL: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    93:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ALL: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    94:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ALL: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    95:
+      Item1: EMERALD
+      Amount1: 32-48
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ALL: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    96:
+      Item1: EMERALD
+      Amount1: 48-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_ALL: 5
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    97:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          SILK_TOUCH: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    98:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_UNDEAD: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    99:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_UNDEAD: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    100:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_UNDEAD: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    101:
+      Item1: EMERALD
+      Amount1: 14-58
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_UNDEAD: 4
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    102:
+      Item1: EMERALD
+      Amount1: 17-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DAMAGE_UNDEAD: 5
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    103:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          SWEEPING_EDGE: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    104:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          SWEEPING_EDGE: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    105:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          SWEEPING_EDGE: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    106:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          THORNS: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    107:
+      Item1: EMERALD
+      Amount1: 8-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          THORNS: 2
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    108:
+      Item1: EMERALD
+      Amount1: 11-45
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          THORNS: 3
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    109:
+      Item1: EMERALD
+      Amount1: 5-19
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DURABILITY: 1
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    110:
+      Item1: EMERALD
+      Amount1: 24-32
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DURABILITY: 2
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+    111:
+      Item1: EMERALD
+      Amount1: 40-64
+      Item2: BOOK
+      Amount2: 1
+      Product: ENCHANTED_BOOK
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          DURABILITY: 3
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+
+# Armorer: This is the profession name of the villager, each villager with this profession will have their trades changed to the ones you set under here.
+#Do not change under any circumstances - will stop function of the plugin
+
+# PriceMultiplier: Controls the impact that positive gossips make on the prices of the trades, default values are 0.2 for trades in the first slot of the level and 0.05 for trades in the second.
+#Use ModifierOveride to set this for an individual trade.
+
+# Level_#: This is the level number of the villager, each villager has levels 1 through 5 - if any are removed they will simply have normal trades for the slots created by these levels.
+# #: Under each level you can put a series of trades, as many as you wish simply label them 1,2,3,etc.. Each villager will choose two trades from these when they reach the level that they are under.
+
+# Item1: This is the base cost of the trade - the item that the player will give to the villager. This name should match the bukkit item names in order to work properly https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+# Amount1: This is a simple value of how many of the first item should be required in the trade. You can use either a single number or have a range of numbers that the plugin chooses a random value from when creating the trade
+#e.g. 15 is always 15 cost, 10-20 will generate a cost anywhere between and including 10 and 20.
+# Item1Meta: This is an optional setting to add Item Meta to any of the trades, you can find how to add this by using the /vo meta command in game and adding it anywhere in a trade under the title 'Item1Meta'
+
+# Item2: This is an optional second item in the trade - most trades do not use this. If you want this to be empty please use the item name 'air'.
+# Amount2: Same as amount 1, if item2 is air then this value doesn't matter.
+# Item2Meta: This is an optional setting to add Item Meta to any of the trades, you can find how to add this by using the /vo meta command in game and adding it anywhere in a trade under the title 'Item2Meta'
+
+# Product: Item that the player receives from the trade. Use the correct bukkit name as with the items.
+# Amount3: Same as other amounts - determines the amount of the item that the player receives from the trade.
+# ProductMeta: This is an optional setting to add Item Meta to any of the trades, you can find how to add this by using the /vo meta command in game and adding it anywhere in a trade under the title 'ProductMeta'
+
+# TradesUntilDisabled: Number of times this trade can be used before the villager needs to restock. Villagers restock multiple times a day, read up more on the wiki in order to gain a better understanding of how many trades this actually allows.
+# XP: Set amount of experience that the villager receives from this trade towards leveling up their profession. Follow the examples for decent xp levels for cheap trades vs more expensive ones.
+
+# Group: Use to set a group of trades to select from. Overrides the other settings in the trade to choose a trade from the specified group.
+
+# Disabled: Set to true in order to completely disable the plugin on this type of villager.
+
+# ModifierOveride: Optional value to set the price multiplier for an individual trade. Useful for trades that you want to always keep at a set price.
+#Set to 0 to stop discounts on that trade.
+
+ARMORER:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Disabled: false
+  Level_1:
+    1:
+      Item1: COAL
+      Amount1: 15
+      #Item1Meta:
+        #==: ItemMeta
+        #meta-type: UNSPECIFIC
+        #enchants:
+          #DAMAGE_ALL: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+      #ModifierOveride: 0
+
+    2:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_HELMET
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+    3:
+      Item1: EMERALD
+      Amount1: 9
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_CHESTPLATE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+    4:
+      Item1: EMERALD
+      Amount1: 9
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_LEGGINGS
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+    5:
+      Item1: EMERALD
+      Amount1: 9
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_BOOTS
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: IRON_INGOT
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 36
+      Item2: AIR
+      Amount2: 0
+      Product: BELL
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+    3:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: CHAINMAIL_LEGGINGS
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+    4:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: CHAINMAIL_BOOTS
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: LAVA_BUCKET
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: DIAMOND
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    3:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: CHAINMAIL_HELMET
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    4:
+      Item1: EMERALD
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: CHAINMAIL_CHESTPLATE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    5:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: SHIELD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+  Level_4:
+    1:
+      Item1: EMERALD
+      Amount1: 19-33
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_LEGGINGS
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 15
+
+    2:
+      Item1: EMERALD
+      Amount1: 13-27
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_BOOTS
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: EMERALD
+      Amount1: 13-27
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_HELMET
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 21-35
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_CHESTPLATE
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 30
+
+BUTCHER:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: CHICKEN
+      Amount1: 14
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: PORKCHOP
+      Amount1: 7
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    3:
+      Item1: RABBIT
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    4:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: RABBIT_STEW
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: COAL
+      Amount1: 15
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: COOKED_PORKCHOP
+      Amount3: 5
+      TradesUntilDisabled: 16
+      XP: 5
+
+    3:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: COOKED_CHICKEN
+      Amount3: 8
+      TradesUntilDisabled: 16
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: MUTTON
+      Amount1: 7
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 20
+
+    2:
+      Item1: BEEF
+      Amount1: 10
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 20
+
+  Level_4:
+    1:
+      Item1: DRIED_KELP_BLOCK
+      Amount1: 10
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 2
+      Item2: AIR
+      Amount2: 0
+      Product: RABBIT_HIDE
+      Amount3: 3
+      TradesUntilDisabled: 16
+      XP: 30
+
+  Level_5:
+    1:
+      Item1: SWEET_BERRIES
+      Amount1: 10
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: RABBIT_FOOT
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+CARTOGRAPHER:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: PAPER
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 7
+      Item2: AIR
+      Amount2: 0
+      Product: MAP
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: GLASS_PANE
+      Amount1: 11
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 13
+      Item2: COMPASS
+      Amount2: 1
+      Product: CARTOGRAPHY_TABLE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: COMPASS
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 14
+      Item2: COMPASS
+      Amount2: 1
+      Product: CREEPER_BANNER_PATTERN
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+  Level_4:
+    1:
+      Item1: EMERALD
+      Amount1: 7
+      Item2: AIR
+      Amount2: 0
+      Product: ITEM_FRAME
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: RANDOM_BANNER
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: EMERALD
+      Amount1: 8
+      Item2: AIR
+      Amount2: 0
+      Product: GLOBE_BANNER_PATTERN
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 7
+      Item2: AIR
+      Amount2: 0
+      Product: FLOWER_BANNER_PATTERN
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+CLERIC:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: ROTTEN_FLESH
+      Amount1: 32
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: REDSTONE
+      Amount3: 2
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: GOLD_INGOT
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: LAPIS_LAZULI
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: RABBIT_FOOT
+      Amount1: 2
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: GLOWSTONE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+  Level_4:
+    1:
+      Item1: SCUTE
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: GLASS_BOTTLE
+      Amount1: 9
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    3:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: ENDER_PEARL
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: NETHER_WART
+      Amount1: 22
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: EXPERIENCE_BOTTLE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+FARMER:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: WHEAT
+      Amount1: 20
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: POTATO
+      Amount1: 26
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    3:
+      Item1: CARROT
+      Amount1: 22
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    4:
+      Item1: BEETROOT
+      Amount1: 15
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    5:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: BREAD
+      Amount3: 6
+      TradesUntilDisabled: 16
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: PUMPKIN
+      Amount1: 6
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: PUMPKIN_PIE
+      Amount3: 4
+      TradesUntilDisabled: 12
+      XP: 5
+
+    3:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: APPLE
+      Amount3: 4
+      TradesUntilDisabled: 12
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: MELON
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: COOKIE
+      Amount3: 18
+      TradesUntilDisabled: 12
+      XP: 10
+
+  Level_4:
+    1:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: CAKE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: RANDOM_STEW
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: GOLDEN_CARROT
+      Amount3: 3
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: GLISTERING_MELON_SLICE
+      Amount3: 3
+      TradesUntilDisabled: 12
+      XP: 30
+
+FISHERMAN:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: STRING
+      Amount1: 20
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: COAL
+      Amount1: 10
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    3:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: COD
+      Amount2: 6
+      Product: COOKED_COD
+      Amount3: 6
+      TradesUntilDisabled: 16
+      XP: 1
+
+    4:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: COD_BUCKET
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: COD
+      Amount1: 15
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: SALMON
+      Amount2: 6
+      Product: COOKED_SALMON
+      Amount3: 6
+      TradesUntilDisabled: 16
+      XP: 5
+
+    3:
+      Item1: EMERALD
+      Amount1: 2
+      Item2: AIR
+      Amount2: 0
+      Product: CAMPFIRE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: SALMON
+      Amount1: 13
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 7-22
+      Item2: AIR
+      Amount2: 0
+      Product: FISHING_ROD
+      ProductMeta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 3
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+  Level_4:
+    1:
+      Item1: TROPICAL_FISH
+      Amount1: 6
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 8
+      Item2: AIR
+      Amount2: 0
+      Product: PUFFERFISH_BUCKET
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+  Level_5:
+    1:
+      Item1: PUFFERFISH
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: RANDOM_BOAT
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+FLETCHER:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: STICK
+      Amount1: 32
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: ARROW
+      Amount3: 16
+      TradesUntilDisabled: 12
+      XP: 1
+
+    3:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: GRAVEL
+      Amount2: 10
+      Product: FLINT
+      Amount3: 10
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: FLINT
+      Amount1: 26
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 2
+      Item2: AIR
+      Amount2: 0
+      Product: BOW
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: STRING
+      Amount1: 14
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: CROSSBOW
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+  Level_4:
+    1:
+      Item1: FEATHER
+      Amount1: 24
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 7-21
+      Item2: AIR
+      Amount2: 0
+      Product: BOW
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: TRIPWIRE_HOOK
+      Amount1: 8
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 8-22
+      Item2: AIR
+      Amount2: 0
+      Product: CROSSBOW
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 15
+
+    3:
+      Item1: EMERALD
+      Amount1: 2
+      Item2: ARROW
+      Amount2: 5
+      Product: RANDOM_ARROW
+      Amount3: 5
+      TradesUntilDisabled: 12
+      XP: 30
+
+LEATHERWORKER:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: LEATHER
+      Amount1: 6
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: LEATHER_LEGGINGS
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+    3:
+      Item1: EMERALD
+      Amount1: 7
+      Item2: AIR
+      Amount2: 0
+      Product: LEATHER_CHESTPLATE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: FLINT
+      Amount1: 26
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: LEATHER_HELMET
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+    3:
+      Item1: EMERALD
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: LEATHER_BOOTS
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: RABBIT_HIDE
+      Amount1: 9
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 7
+      Item2: AIR
+      Amount2: 0
+      Product: LEATHER_CHESTPLATE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_4:
+    1:
+      Item1: SCUTE
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 6
+      Item2: AIR
+      Amount2: 0
+      Product: LEATHER_HORSE_ARMOR
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: EMERALD
+      Amount1: 6
+      Item2: AIR
+      Amount2: 0
+      Product: SADDLE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: LEATHER_HELMET
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+LIBRARIAN:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: PAPER
+      Amount1: 24
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 9
+      Item2: AIR
+      Amount2: 0
+      Product: BOOKSHELF
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+    3:
+      Group: ENCHANTED_BOOKS
+
+  Level_2:
+    1:
+      Item1: BOOK
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 3-6
+      Item2: AIR
+      Amount2: 0
+      Product: LANTERN
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+    3:
+      Group: ENCHANTED_BOOKS
+
+  Level_3:
+    1:
+      Item1: INK_SAC
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: GLASS
+      Amount3: 4
+      TradesUntilDisabled: 12
+      XP: 10
+
+    3:
+      Group: ENCHANTED_BOOKS
+
+  Level_4:
+    1:
+      Item1: WRITABLE_BOOK
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: CLOCK
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+    3:
+      Item1: EMERALD
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: COMPASS
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+    4:
+      Group: ENCHANTED_BOOKS
+
+  Level_5:
+    1:
+      Item1: EMERALD
+      Amount1: 20
+      Item2: AIR
+      Amount2: 0
+      Product: NAME_TAG
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: FEATHER
+      Amount1: 15
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+
+MASON:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: CLAY_BALL
+      Amount1: 10
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: BRICK
+      Amount3: 10
+      TradesUntilDisabled: 16
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: STONE
+      Amount1: 20
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: CHISELED_STONE_BRICKS
+      Amount3: 5
+      TradesUntilDisabled: 16
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: GRANITE
+      Amount1: 16
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 20
+
+    2:
+      Item1: DIORITE
+      Amount1: 16
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 20
+
+    3:
+      Item1: ANDESITE
+      Amount1: 16
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 20
+
+    4:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: POLISHED_ANDESITE
+      Amount3: 4
+      TradesUntilDisabled: 16
+      XP: 10
+
+    5:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: POLISHED_DIORITE
+      Amount3: 4
+      TradesUntilDisabled: 16
+      XP: 10
+
+    6:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: POLISHED_GRANITE
+      Amount3: 4
+      TradesUntilDisabled: 16
+      XP: 10
+
+  Level_4:
+    1:
+      Item1: QUARTZ
+      Amount1: 12
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: RANDOM_TERRACOTTA
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+    3:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: RANDOM_GLAZED_TERRACOTTA
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: QUARTZ_PILLAR
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: QUARTZ_BLOCK
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+SHEPHERD:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: RANDOM_WOOL
+      Amount1: 18
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 2
+      Item2: AIR
+      Amount2: 0
+      Product: SHEARS
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: RANDOM_DYE
+      Amount1: 12
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: RANDOM_WOOL
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 5
+
+    3:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: RANDOM_CARPET
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: RANDOM_DYE
+      Amount1: 12
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: RANDOM_BED
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+  Level_4:
+    1:
+      Item1: RANDOM_DYE
+      Amount1: 12
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: RANDOM_BANNER
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: EMERALD
+      Amount1: 2
+      Item2: AIR
+      Amount2: 0
+      Product: PAINTING
+      Amount3: 3
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 36
+      Item2: AIR
+      Amount2: 0
+      Product: BELL
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+TOOLSMITH:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: COAL
+      Amount1: 15
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: STONE_AXE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+    3:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: STONE_SHOVEL
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+    4:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: STONE_PICKAXE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+    5:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: STONE_HOE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: IRON_INGOT
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 36
+      Item2: AIR
+      Amount2: 0
+      Product: BELL
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: FLINT
+      Amount1: 30
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 6-20
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_AXE
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+    3:
+      Item1: EMERALD
+      Amount1: 7-21
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_SHOVEL
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+    4:
+      Item1: EMERALD
+      Amount1: 8-22
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_PICKAXE
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+    5:
+      Item1: EMERALD
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_HOE
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 10
+
+  Level_4:
+    1:
+      Item1: DIAMOND
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 17-31
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_AXE
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: EMERALD
+      Amount1: 18-32
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_PICKAXE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 17-31
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_SHOVEL
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 30
+
+WEAPONSMITH:
+  PriceMultiplier:
+    Trade1: 0.2
+    Trade2: 0.05
+  Level_1:
+    1:
+      Item1: COAL
+      Amount1: 15
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 16
+      XP: 2
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_AXE
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+    3:
+      Item1: EMERALD
+      Amount1: 7-21
+      Item2: AIR
+      Amount2: 0
+      Product: IRON_SWORD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 1
+
+  Level_2:
+    1:
+      Item1: IRON_INGOT
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 10
+
+    2:
+      Item1: EMERALD
+      Amount1: 36
+      Item2: AIR
+      Amount2: 0
+      Product: BELL
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 5
+
+  Level_3:
+    1:
+      Item1: FLINT
+      Amount1: 24
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 20
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 20
+
+  Level_4:
+    1:
+      Item1: DIAMOND
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: EMERALD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 17-31
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_AXE
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 15
+
+  Level_5:
+    1:
+      Item1: EMERALD
+      Amount1: 18-32
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_SWORD
+      Amount3: 1
+      TradesUntilDisabled: 12
+      XP: 30
+
+    2:
+      Item1: EMERALD
+      Amount1: 17-31
+      Item2: AIR
+      Amount2: 0
+      Product: DIAMOND_SWORD
+      Amount3: 1
+      TradesUntilDisabled: 3
+      XP: 30
+
+
+#Slots in the WANDERING_TRADER represent 1 trade, and therefore only need a minimum of 1 option
+# unlike the 2 needed for all other villager types. Enabled setting must be in full caps 'TRUE' to take effect
+WANDERING_TRADER:
+  Enabled: FALSE
+  Slot1:
+    1:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: ALLIUM
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    2:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: AZURE_BLUET
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    3:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: CORNFLOWER
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    4:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: DANDELION
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    5:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: POPPY
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    6:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: RED_TULIP
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    7:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: ORANGE_TULIP
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    8:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: PINK_TULIP
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    9:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: WHITE_TULIP
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    10:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: WHEAT_SEEDS
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    11:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: BEETROOT_SEEDS
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    12:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: PUMPKIN_SEEDS
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    13:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: MELON_SEEDS
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    14:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: BROWN_MUSHROOM
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    15:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: RED_MUSHROOM
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    16:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: VINE
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    17:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: BLUE_ORCHID
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    18:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: SAND
+      Amount3: 8
+      TradesUntilDisabled: 8
+
+    19:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: SUGAR_CANE
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    20:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: LILY_OF_THE_VALLY
+      Amount3: 1
+      TradesUntilDisabled: 7
+
+    21:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: RED_SAND
+      Amount3: 4
+      TradesUntilDisabled: 6
+
+    22:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: LILY_PAD
+      Amount3: 2
+      TradesUntilDisabled: 5
+
+    23:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: PUMPKIN
+      Amount3: 1
+      TradesUntilDisabled: 4
+
+  Slot2:
+    1:
+      Item1: EMERALD
+      Amount1: 2
+      Item2: AIR
+      Amount2: 0
+      Product: SEA_PICKLE
+      Amount3: 1
+      TradesUntilDisabled: 5
+
+    2:
+      Item1: EMERALD
+      Amount1: 2
+      Item2: AIR
+      Amount2: 0
+      Product: GLOWSTONE
+      Amount3: 1
+      TradesUntilDisabled: 5
+
+  Slot3:
+    1:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: KELP
+      Amount3: 1
+      TradesUntilDisabled: 12
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: CACTUS
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    3:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: BRAIN_CORAL_BLOCK
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    4:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: BUBBLE_CORAL_BLOCK
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    5:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: FIRE_CORAL_BLOCK
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    6:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: HORN_CORAL_BLOCK
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    7:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: TUBE_CORAL_BLOCK
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+  Slot4:
+    1:
+      Item1: EMERALD
+      Amount1: 4
+      Item2: AIR
+      Amount2: 0
+      Product: SLIME_BALL
+      Amount3: 1
+      TradesUntilDisabled: 5
+
+  Slot5:
+    1:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: OAK_SAPLING
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    2:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: SPRUCE_SAPLING
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    3:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: DARK_OAK_SAPLING
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    4:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: JUNGLE_SAPLING
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    5:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: BIRCH_SAPLING
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    6:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: NAUTILUS_SHELL
+      Amount3: 1
+      TradesUntilDisabled: 5
+
+  Slot6:
+    1:
+      Item1: EMERALD
+      Amount1: 1
+      Item2: AIR
+      Amount2: 0
+      Product: GUNPOWDER
+      Amount3: 1
+      TradesUntilDisabled: 8
+
+    2:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: PODZOL
+      Amount3: 3
+      TradesUntilDisabled: 6
+
+    3:
+      Item1: EMERALD
+      Amount1: 3
+      Item2: AIR
+      Amount2: 0
+      Product: PACKED_ICE
+      Amount3: 1
+      TradesUntilDisabled: 6
+
+    4:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: PUFFERFISH_BUCKET
+      Amount3: 1
+      TradesUntilDisabled: 4
+
+    5:
+      Item1: EMERALD
+      Amount1: 5
+      Item2: AIR
+      Amount2: 0
+      Product: TROPICAL_FISH_BUCKET
+      Amount3: 1
+      TradesUntilDisabled: 4
+
+    6:
+      Item1: EMERALD
+      Amount1: 6
+      Item2: AIR
+      Amount2: 0
+      Product: BLUE_ICE
+      Amount3: 1
+      TradesUntilDisabled: 6

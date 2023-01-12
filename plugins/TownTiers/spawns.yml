@@ -1,0 +1,22 @@
+towns:
+  4c4d0887-16fa-42eb-b201-b8e6d72a5b4b:
+    spawns:
+      '2':
+        world: world
+        x: -24017
+        y: 2
+        z: -6832
+  864f45f4-d755-4011-a9fc-9942ee4c5f31:
+    spawns:
+      '2':
+        world: world
+        x: -13527
+        y: 9
+        z: -9040
+  0ccdedf7-f2ce-4410-a203-0409fcd07411:
+    spawns:
+      '2':
+        world: world
+        x: -9288
+        y: 240
+        z: -12778

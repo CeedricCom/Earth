@@ -169,7 +169,6 @@ proximity:
     useFastGazeCheck: false
     useBlockBelow: true
     hiddenBlocks:
-      minecraft:mossy_cobblestone: {}
       minecraft:diamond_ore: {}
       minecraft:deepslate_diamond_ore: {}
       minecraft:emerald_ore: {}

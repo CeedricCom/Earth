@@ -570,6 +570,7 @@ autobot:
   commands:
     5: 'matrix notify %player% suspected use of automatic robots (AutoBot)'
     10: 'matrix notify %player% suspected use of automatic robots (AutoBot) #2'
+    20: 'matrix kick %player% suspected use of automatic robots'
 
 ## Elytra
 # Checks prevents player using Elytra+, ElytraFlight, etc
@@ -641,3 +642,4 @@ vehicle:
   commands:
     5: 'matrix notify %player% suspected using vehicle cheat (Vehicle)'
     10: 'matrix notify %player% suspected using vehicle cheat (Vehicle) #2'
+    20: 'matrix kick %player% suspected using vehicle cheat (Vehicle)'

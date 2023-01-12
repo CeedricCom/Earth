@@ -44,6 +44,7 @@ groups:
     - tr
     - tradechat
     - l
+    - lc
     - local
     - ac
     - alliancechat
@@ -60,6 +61,7 @@ groups:
     - mining
     - repair
     - salvage
+    - recipes
     - smelting
     - swords
     - taming
@@ -98,22 +100,32 @@ groups:
     - trade
     - interactivechat
     - pvp-on
+    - tiers
     subcommands: []
   mvp:
     commands:
     - nick
+    - chestsort
     - tomap
-    - playerskull
     - tag
     - tfly
-    - itemrename
+    - seen
+    - itemname
     - rename
     - craft
     - cosmetics
     - workbench
     - hat
+    - phead
+    - playerhead
+    - playerh
+    - playerskull
+    - heads
     - mapto
+    - loom
+    - stonecutter
     - sort
+    - maps
   moderator:
     commands:
     - endersee
@@ -124,6 +136,7 @@ groups:
     - co
     - matrix
     - coreprotect
+    - maps
     - tppos
     - prefixadmin
     - gms

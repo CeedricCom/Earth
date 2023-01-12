@@ -50,17 +50,6 @@ Excavation:
             Retro_Mode: 50
         Drops_From:
         - Mud
-    TRIDENT:
-        Amount: 1
-        XP: 100
-        Drop_Chance: 0.02
-        Level_Requirement:
-            Standard_Mode: 40
-            Retro_Mode: 400
-        Drops_From:
-        - Mud
-        - Clay
-        - Muddy_Mangrove_Roots
     CAKE:
         Amount: 1
         XP: 3000
@@ -83,7 +72,7 @@ Excavation:
     GUNPOWDER:
         Amount: 1
         XP: 30
-        Drop_Chance: 10.0
+        Drop_Chance: 15.0
         Level_Requirement:
             Standard_Mode: 10
             Retro_Mode: 100

@@ -1,0 +1,481 @@
+regional-capital-cost: 15000
+
+experience-m: 1.15
+experience-b: 1560
+experience-m-nation: 1.42594562
+experience-b-nation: 500000
+
+money-conversion-cost: 5
+xp-conversion-cost: 7
+nation-money-conversion-cost: 8
+nation-xp-conversion-cost: 5
+
+siege-scaling-factor: 0.51986
+siege-scaling-A: 100000
+
+nation-tiers:
+
+  0:
+    regional-capital: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 0
+    gun-price-reduction: 0
+    vehicle-price-reduction: 0
+    amount-of-generators: 1
+    extra-town-generator: false
+    announce-on-level: false
+    view-material: PAPER
+    
+  1:
+    regional-capital: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 1
+    gun-price-reduction: 0
+    vehicle-price-reduction: 0
+    amount-of-generators: 2
+    announce-on-level: false
+    view-material: GOLD_INGOT
+
+  2:
+    regional-capital: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 2
+    gun-price-reduction: 0
+    vehicle-price-reduction: 0
+    amount-of-generators: 3
+    announce-on-level: true
+    view-material: EMERALD
+
+  3:
+    regional-capital: 1
+    double-mission-contribution: 0
+    extra-mcmmo: 3
+    gun-price-reduction: 0
+    vehicle-price-reduction: 0
+    amount-of-generators: 4
+    announce-on-level: true
+    view-material: ENCHANTED_BOOK
+
+  4:
+    regional-capital: 2
+    double-mission-contribution: 0
+    extra-mcmmo: 4
+    gun-price-reduction: 0
+    vehicle-price-reduction: 0
+    amount-of-generators: 6
+    announce-on-level: true
+    view-material: ENCHANTED_GOLDEN_APPLE
+
+  5:
+    regional-capital: 4
+    double-mission-contribution: 0
+    extra-mcmmo: 5
+    gun-price-reduction: 0
+    vehicle-price-reduction: 0
+    amount-of-generators: 6
+    announce-on-level: true
+    view-material: NETHER_STAR
+
+
+
+
+
+#Nation Tiers:
+  #<tier-number>
+    #extra-claims: amount of extra claims a town of this tier is allowed to have
+    #
+    #town-bank-extra-mission: when a town completes a mission x% will go to the town bank,
+    #this is the extra amount that will go to it, so for example if the amount going to the town bank is 20% and this parameter
+    #is set to 10% then 30% will go to the town bank
+    #
+    #double-mission-contribution: THis is the chance the user has to double contribute to a town mission, if it is
+    #set to 10% then they have a 10% chance to contribute twice to a town mission with a single contribution
+    #
+    #extra-mcmmo: this determines the amount of extra mcmmo experience they will get from an action. If it is set to 10%
+    #and the user was going to get 2000 XP they will instead get 2200 XP
+    #
+    #gun-price-reduction: THis is the percentage reduction of gun prices from the shop. If it is 5% and a gun costed 1000
+    # then the gun will cost $950
+    #
+    #vehicle-price-reduction: same as gun prices but for vehicles
+    #
+    #extra-outposts: amount of extra outposts a town can have
+    #
+    #exta-town-spawns: amount of extra town spawns a town can have
+    #
+    #medium-mission-difficulty-chance: the chance that the town has of getting a medium town mission. If this is set
+    #to 20% and then it will be an 80% chance of getting an easy and a 20% chance of getting a medium
+    #
+    #hard-mission-difficulty-chance: the chance a town has of getting a hard town mission: if this is set to 30% and the medium
+    #chance is set to 10% then the chance of getting an easy mission will be 60%, teh chance of a hard 30% and a medium 10%
+    #
+    #pearls-lost: if set to true then pearls wont be lost in the town
+    #speed-in-claims: 1 means the player will get speed 1 in town claims, 2 speed II, 0 means no
+    #
+    #haste-in-claims: same as speed in claims but for haste
+    #
+    #announce-on-level-up: whether the entire server gets an announcement if the town levelled up to said tier
+
+
+town-tiers:
+
+  0:
+    extra-claims: 0
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 0
+    gun-price-reduction: 0
+    vehicle-price-reduction: 0
+    extra-outposts: 0
+    extra-town-spawns: 0
+    pearls-lost: true
+    speed-in-claims: 0
+    haste-in-claims: 0
+    amount-of-generators: 1
+    announce-on-level: false
+    fall-damage-claims: true
+    hunger-in-claims: true
+    view-material: PAPER
+
+  1:
+    extra-claims: 10
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 4
+    extra-town-spawns: 0
+    pearls-lost: true
+    speed-in-claims: 0
+    haste-in-claims: 0
+    amount-of-generators: 1
+    announce-on-level: false
+    fall-damage-claims: true
+    hunger-in-claims: true
+    view-material: PAPER
+
+  2:
+    extra-claims: 15
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 6
+    extra-town-spawns: 0
+    amount-of-generators: 2
+    pearls-lost: true
+    speed-in-claims: 0
+    haste-in-claims: 0
+    fall-damage-claims: true
+    hunger-in-claims: true
+    announce-on-level: false
+    view-material: IRON_INGOT
+  3:
+    extra-claims: 20
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 8
+    extra-town-spawns: 0
+    amount-of-generators: 2
+    pearls-lost: true
+    speed-in-claims: 0
+    haste-in-claims: 0
+    fall-damage-claims: true
+    hunger-in-claims: true
+    announce-on-level: false
+    view-material: GOLD_INGOT
+
+  4:
+    extra-claims: 25
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 12
+    extra-town-spawns: 0
+    amount-of-generators: 2
+    pearls-lost: true
+    speed-in-claims: 0
+    haste-in-claims: 0
+    fall-damage-claims: true
+    hunger-in-claims: true
+    announce-on-level: false
+    view-material: DIAMOND
+
+  5:
+    extra-claims: 30
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 12
+    extra-town-spawns: 1
+    amount-of-generators: 3
+    pearls-lost: true
+    speed-in-claims: 0
+    haste-in-claims: 0
+    fall-damage-claims: true
+    hunger-in-claims: true
+    announce-on-level: false
+    view-material: EMERALD
+
+  6:
+    extra-claims: 30
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 14
+    extra-town-spawns: 2
+    amount-of-generators: 3
+    pearls-lost: true
+    speed-in-claims: 0
+    haste-in-claims: 0
+    fall-damage-claims: true
+    hunger-in-claims: true
+    announce-on-level: false
+    view-material: NETHERITE_INGOT
+
+  7:
+    extra-claims: 30
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 16
+    extra-town-spawns: 2
+    amount-of-generators: 4
+    pearls-lost: false
+    speed-in-claims: 0
+    haste-in-claims: 0
+    fall-damage-claims: true
+    hunger-in-claims: true
+    announce-on-level: true
+    view-material: ENCHANTED_BOOK
+
+  8:
+    extra-claims: 30
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 18
+    extra-town-spawns: 2
+    amount-of-generators: 5
+    pearls-lost: false
+    speed-in-claims: 1
+    haste-in-claims: 0
+    fall-damage-claims: true
+    hunger-in-claims: false
+    announce-on-level: true
+    view-material: TOTEM_OF_UNDYING
+
+  9:
+    extra-claims: 30
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 20
+    extra-town-spawns: 2
+    amount-of-generators: 6
+    pearls-lost: false
+    speed-in-claims: 1
+    haste-in-claims: 1
+    fall-damage-claims: false
+    hunger-in-claims: false
+    announce-on-level: true
+    view-material: ENCHANTED_GOLDEN_APPLE
+
+  10:
+    extra-claims: 30
+    town-bank-extra-mission: 0
+    double-mission-contribution: 0
+    extra-mcmmo: 25
+    extra-town-spawns: 4
+    amount-of-generators: 6
+    pearls-lost: false
+    speed-in-claims: 2
+    haste-in-claims: 2
+    fall-damage-claims: false
+    hunger-in-claims: false
+    announce-on-level: true
+    view-material: NETHER_STAR
+
+
+generators:
+  0:
+    level: 0
+    storage: 1000
+    cost-to-upgrade: 1395
+    xp-per-hour: 200
+    town: true
+
+  1:
+    level: 1
+    storage: 2000
+    cost-to-upgrade: 2727
+    xp-per-hour: 400
+    town: true
+
+  2:
+    level: 2
+    storage: 3000
+    cost-to-upgrade: 6567
+    xp-per-hour: 600
+    town: true
+  3:
+    level: 3
+    storage: 4000
+    cost-to-upgrade: 13367
+    xp-per-hour: 800
+    town: true
+  4:
+    level: 4
+    storage: 10000
+    cost-to-upgrade: 32463
+    xp-per-hour: 1000
+    town: true
+  5:
+    level: 5
+    storage: 20000
+    cost-to-upgrade: 65493
+    xp-per-hour: 1300
+    town: true
+  6:
+    level: 6
+    storage: 30000
+    cost-to-upgrade: 130718
+    xp-per-hour: 1600
+    town: true
+  7:
+    level: 7
+    storage: 50000
+    cost-to-upgrade: 261997
+    xp-per-hour: 1900
+    town: true
+  8:
+    level: 8
+    storage: 75000
+    cost-to-upgrade: 348392
+    xp-per-hour: 2200
+    town: true
+  9:
+    level: 9
+    storage: 100000
+    cost-to-upgrade: 464277
+    xp-per-hour: 2800
+    town: true
+  10:
+    level: 10
+    storage: 150000
+    cost-to-upgrade: 932138
+    xp-per-hour: 3500
+    town: true
+  11:
+    level: 11
+    storage: 200000
+    cost-to-upgrade: 1872543
+    xp-per-hour: 4200
+    town: true
+  12:
+    level: 0
+    storage: 1000
+    cost-to-upgrade: 1395
+    xp-per-hour: 200
+    town: false
+
+  13:
+    level: 1
+    storage: 2000
+    cost-to-upgrade: 2727
+    xp-per-hour: 400
+    town: false
+
+  14:
+    level: 2
+    storage: 3000
+    cost-to-upgrade: 6567
+    xp-per-hour: 600
+    town: false
+  15:
+    level: 3
+    storage: 4000
+    cost-to-upgrade: 13367
+    xp-per-hour: 800
+    town: false
+  16:
+    level: 4
+    storage: 10000
+    cost-to-upgrade: 32463
+    xp-per-hour: 1000
+    town: false
+  17:
+    level: 5
+    storage: 20000
+    cost-to-upgrade: 65493
+    xp-per-hour: 1300
+    town: false
+  18:
+    level: 6
+    storage: 30000
+    cost-to-upgrade: 130718
+    xp-per-hour: 1600
+    town: false
+  19:
+    level: 7
+    storage: 50000
+    cost-to-upgrade: 261997
+    xp-per-hour: 1900
+    town: false
+  20:
+    level: 8
+    storage: 75000
+    cost-to-upgrade: 348392
+    xp-per-hour: 2200
+    town: false
+  21:
+    level: 9
+    storage: 100000
+    cost-to-upgrade: 464277
+    xp-per-hour: 2800
+    town: false
+  22:
+    level: 10
+    storage: 150000
+    cost-to-upgrade: 932138
+    xp-per-hour: 3500
+    town: false
+  23:
+    level: 11
+    storage: 200000
+    cost-to-upgrade: 1872543
+    xp-per-hour: 4200
+    town: false
+  24:
+    level: 12
+    storage: 400000
+    cost-to-upgrade: 1872543
+    xp-per-hour: 4900
+    town: false
+
+
+convertor-gold:
+  0:
+    level: 0
+    cost-to-upgrade: 5000
+    conversion-factor: 5
+  1:
+    level: 1
+    cost-to-upgrade: 35000
+    conversion-factor: 10
+  2:
+    level: 2
+    cost-to-upgrade: 100000
+    conversion-factor: 20
+  3:
+    level: 3
+    cost-to-upgrade: 250000
+    conversion-factor: 30 
+  4:
+    level: 4
+    cost-to-upgrade: 1
+    conversion-factor: 45 
+
+convertor-xp:
+  0:
+    level: 0
+    cost-to-upgrade: 35000
+    conversion-factor: 0.5
+  1: 
+    level: 1
+    cost-to-upgrade: 250000
+    conversion-factor: 1
+  2: 
+    level: 2
+    cost-to-upgrade: 1
+    conversion-factor: 2

@@ -301,8 +301,8 @@ contextual-tips:
     sound-enabled: true
   #netherrite/nether
   portal:
-    enabled: true
-    message: '&eNether portals are disabled on Datearth, use &6/travel &einstead to go to the Nether anytime.'
+    enabled: false
+    message: '&eNether portals are disabled, use &6/travel &einstead to go to the Nether anytime.'
     sound-enabled: true
   #breaking netherrite
   netherite:

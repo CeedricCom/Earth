@@ -36,7 +36,7 @@ settings:
          dropOnlyIfRipe: true
          # Note: While true, dropOnBreak allows mending to function.
          dropOnBreak: true
-         amount: 23
+         amount: 10
          
       # Note: Whether or not a permission is required to gain experience for this crop.
       # Note: hexp.user.gain.potato
@@ -61,7 +61,7 @@ settings:
          dropOnlyIfRipe: true
          # Note: While true, dropOnBreak allows mending to function.
          dropOnBreak: true
-         amount: 23
+         amount: 10
          
       # Note: Whether or not a permission is required to gain experience for this crop.
       # Note: hexp.user.gain.carrot
@@ -86,7 +86,7 @@ settings:
          dropOnlyIfRipe: true
          # Note: While true, dropOnBreak allows mending to function.
          dropOnBreak: true
-         amount: 23
+         amount: 5
          
       # Note: Whether or not a permission is required to gain experience for this crop.
       # Note: hexp.user.gain.wheat
@@ -136,7 +136,7 @@ settings:
          dropOnlyIfRipe: true
          # Note: While true, dropOnBreak allows mending to function.
          dropOnBreak: true
-         amount: 23
+         amount: 10
          
       # Note: Whether or not a permission is required to gain experience for this crop.
       # Note: hexp.user.gain.beetroot
@@ -211,7 +211,7 @@ settings:
          dropOnlyIfNaturallyGrown: true
          # Note: While true, dropOnBreak allows mending to function.
          dropOnBreak: true
-         amount: 19
+         amount: 20
          
       # Note: Whether or not a permission is required to gain experience for this crop.
       # Note: hexp.user.gain.pumpkin
@@ -236,7 +236,7 @@ settings:
          dropOnlyIfNaturallyGrown: true
          # Note: While true, dropOnBreak allows mending to function.
          dropOnBreak: true
-         amount: 19
+         amount: 20
          
       # Note: Whether or not a permission is required to gain experience for this crop.
       # Note: hexp.user.gain.melon

@@ -65,14 +65,14 @@ data:
   version: 5
 crafting_table:
   # If the advanced crafting table is enabled or not.
-  enable: true
+  enable: false
   # If the crafting table item should be reset on each server start. This means the config is replaced with a new version.
   reset: true
 recipe_book:
   # If the recipe book item should be reset on each server start. This means the config is replaced with a new version.
   reset: true
   # If closed and opened again, it'll open up the recipe and menu the player last left on.
-  keep_last_open: true
+  keep_last_open: false
   # The title of the single recipe menu
   recipe_type_titles:
     crafting_shaped: <translate:recipe.type.crafting.crafting_shaped>
@@ -108,4 +108,7 @@ recipes:
   # If the configs like items or recipes should be saved using formatting or just one continuous String.
   pretty_printing: true
   # The vanilla or custom recipes that are blocked from crafting.
-  disabled_recipes: []
+  disabled_recipes:
+  - customcrafting:customcrafting/recipe_book
+  - customcrafting:customcrafting/gunpowder
+  - customcrafting:customcrafting/advanced_crafting_table

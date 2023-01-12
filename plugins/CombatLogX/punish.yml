@@ -6,7 +6,7 @@ on-disconnect: true
 # Should CombatLogX punish players when they are kicked from the game?
 # Getting kicked from the game is usually not the fault of the player.
 # Default: false
-on-kick: false
+on-kick: true
 
 # Should CombatLogX punish players when their timer expires?
 # This option is not recommended unless you are testing something.
@@ -16,6 +16,7 @@ on-expire: false
 # Which kick reasons should not punish players?
 # This option is only used when the 'on-kick' option is set to true.
 kick-ignore-list:
+  - "Server is restarting"
   - "troll"
   - "kicked by SirBlobman"
 

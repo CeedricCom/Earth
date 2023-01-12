@@ -14,7 +14,7 @@ aliases:
   tell:
   - msg
   rename:
-  - itemrename
+  - itemname
   mapto:
   - tomap: null
   workbench:
@@ -25,3 +25,5 @@ aliases:
   - earth
   continents:
   - earth
+  playerskull:
+  - phead $1

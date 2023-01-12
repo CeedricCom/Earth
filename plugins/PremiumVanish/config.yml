@@ -326,7 +326,7 @@ ScoreboardOptions:
     # The header/title of the scoreboard, default: '&6>       PremiumVanish       <'
     # The length cannot be longer than 32 characters(including color codes) but can cause flickering
     # if it isn't longer than the lines below it
-    ScoreboardHeader: "&6>       PremiumVanish       <"
+    ScoreboardHeader: "&6Staff mode"
     # The lines of PremiumVanish's scoreboard
     # Prefix a line with a # if it should only show up if there is a target (the placeholders will
     # also be based on the target)
@@ -336,13 +336,10 @@ ScoreboardOptions:
     Lines:
     - ""
     - "&aTarget: &f%target% %locked%"
-    - "#"
     # The color of the ping is based on how good the ping is, use %plain_ping% for no colors; same with tps
     - "#&aPing: &f%ping%"
     - ""
     - "&aTPS: &f%tps%"
-    - "#"
-    - "#&aHealth: &f%health%/%maxhealth%hp"
     - ""
     - "&aTime: &f%time{hh:mma | yyyy/MM/dd}%"
     - ""

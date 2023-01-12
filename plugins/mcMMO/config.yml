@@ -348,7 +348,7 @@ Abilities:
 # ##
 Skills:
     Acrobatics:
-        Enabled_For_PVP: true
+        Enabled_For_PVP: false
         Enabled_For_PVE: true
         Prevent_Dodge_Lightning: false
         # Prevent earning Acrobatics XP a few seconds after teleporting

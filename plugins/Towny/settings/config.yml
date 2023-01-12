@@ -1,9 +1,9 @@
   
 version:
   # This is the current version of Towny. Please do not edit.
-  version: 0.98.4.17
+  version: 0.98.5.0
   # This is for showing the changelog on updates. Please do not edit.
-  last_run_version: 0.98.4.17
+  last_run_version: 0.98.5.0
   
 language:
   # The language file you wish to use for your default locale. Your default locale is what
@@ -323,7 +323,7 @@ town:
   # Put in other words: the buffer area around every homeblock that no other town can claim into.
   # Does not affect towns which are in the same nation.
   # This will prevent someone founding a town right on your doorstep
-  min_distance_from_town_homeblock: '0'
+  min_distance_from_town_homeblock: '10'
   
   # Minimum number of plots an outpost must be from any other town's plots.
   # Useful when min_plot_distance_from_town_plot is set to near-zero to allow towns to have claims
@@ -1612,7 +1612,7 @@ economy:
   price_nation_neutrality: '0'
   
   # The daily upkeep to remain neutral, paid by the Town bank. If unable to pay, neutral/peaceful status is lost.
-  price_town_neutrality: '100'
+  price_town_neutrality: '0'
   
   new_expand:
   
@@ -1675,7 +1675,7 @@ economy:
   
     # The price that a player pays when they die. If this is a PVP death, the amount is paid to the killed.
     # Either a flat rate or a percentage according to the price_death_type setting.
-    price_death: '0.5'
+    price_death: '0.0'
   
     # The price that a player's town pays when they die. If this is a PVP death, the amount is paid to the killed.
     # Either a flat rate or a percentage according to the price_death_type setting.

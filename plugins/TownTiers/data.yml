@@ -1,0 +1,43 @@
+town-data:
+  '1':
+    amount: 9
+  '2':
+    amount: 9
+  '0':
+    amount: -25
+  '3':
+    amount: 7
+  '4':
+    amount: 7
+  '5':
+    amount: 3
+generator-data:
+  '1':
+    amount: 57
+  '2':
+    amount: 45
+  '3':
+    amount: 29
+  '4':
+    amount: 15
+  '0':
+    amount: 44
+  '5':
+    amount: 8
+  '6':
+    amount: 3
+  '7':
+    amount: 3
+  '8':
+    amount: 1
+legacy-towns:
+  d27abc6a-a947-4b24-af98-d3731c73171f:
+    town: true
+    xp: 0
+    tier: 0
+    name: Southern_Vinovia
+    mayor: f2fc8dda-09ed-4f3b-aba3-07bb59f4f232
+    max-pop: 1
+nation-data:
+  '0':
+    amount: 4
