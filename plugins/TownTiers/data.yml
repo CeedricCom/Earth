@@ -1,34 +1,38 @@
 town-data:
   '1':
-    amount: 9
+    amount: 8
   '2':
-    amount: 9
+    amount: 11
   '0':
-    amount: -25
+    amount: -41
   '3':
-    amount: 7
+    amount: 11
   '4':
-    amount: 7
+    amount: 12
   '5':
-    amount: 3
+    amount: 9
+  '6':
+    amount: 2
 generator-data:
   '1':
-    amount: 57
+    amount: 118
   '2':
-    amount: 45
+    amount: 84
   '3':
-    amount: 29
+    amount: 65
   '4':
-    amount: 15
+    amount: 45
   '0':
-    amount: 44
+    amount: 102
   '5':
-    amount: 8
+    amount: 27
   '6':
-    amount: 3
+    amount: 12
   '7':
-    amount: 3
+    amount: 7
   '8':
+    amount: 3
+  '9':
     amount: 1
 legacy-towns:
   d27abc6a-a947-4b24-af98-d3731c73171f:
@@ -38,6 +42,13 @@ legacy-towns:
     name: Southern_Vinovia
     mayor: f2fc8dda-09ed-4f3b-aba3-07bb59f4f232
     max-pop: 1
+  30d23acc-00fd-442e-83f4-9daae28d46c5:
+    town: true
+    xp: 0
+    tier: 0
+    name: Saint_Korvistan
+    mayor: 326a68a9-3a48-4480-9231-7f1cb1b04095
+    max-pop: 1
 nation-data:
   '0':
-    amount: 4
+    amount: 19

@@ -348,7 +348,9 @@ shop:
   #This WILL AFFECT existing shops!
   maximum-price: -1
 
-  #Per item price restrictions. Format: <itemname>;<minprice>;<maxprice> e.g:
+  #Per item price restrictions.
+  #Format: <itemname>;<minprice>;<maxprice>
+  #e.g:
   # - DIAMOND;100;200
   price-restriction: []
 

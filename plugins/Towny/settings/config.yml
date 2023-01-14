@@ -1,9 +1,9 @@
   
 version:
   # This is the current version of Towny. Please do not edit.
-  version: 0.98.5.0
+  version: 0.98.6.0
   # This is for showing the changelog on updates. Please do not edit.
-  last_run_version: 0.98.5.0
+  last_run_version: 0.98.6.0
   
 language:
   # The language file you wish to use for your default locale. Your default locale is what
@@ -250,6 +250,11 @@ town:
   
   # Default neutral status of the town (are new towns neutral by default?)
   default_neutral: 'false'
+  
+  # Default status of new towns, (are they allowed to have a war/battle?)
+  # This setting is not used internally by Towny. It is available for war/battle plugins to use.
+  # Setting this false should mean your town cannot be involved in a war supplied by another plugin.
+  default_allowed_to_war: 'true'
   
   # Default town board
   default_board: /town set board [msg]
@@ -1066,7 +1071,7 @@ plugin:
   
   # A blacklist used for validating town/nation names.
   # Names must be seperated by a comma: name1,name2
-  name_blacklist: nigga,nigger,shit,fuck,ass,cunt,faggot,bitch,bastard,town,t,spawn,pussy,dick,cock,sex,penis,delete,list,say,help,online,outlaw,reslist,leave,online,outlawlist,plotgrouplist,here,mayor,enemylist,ranklist,plots,deposit,rank,toggle,baltop,bankhistory,reclaim,withdraw,kick,new,invite,jail
+  name_blacklist: nigga,nigger,shit,fuck,ass,cunt,faggot,bitch,bastard,town,t,spawn,pussy,dick,cock,sex,penis,delete,list,say,help,online,outlaw,reslist,leave,online,outlawlist,plotgrouplist,here,mayor,enemylist,ranklist,plots,deposit,rank,toggle,baltop,bankhistory,reclaim,withdraw,kick,new,invite,jail,[ender],[e],[item],[i],[e.],[ender.],[i.],[item,],&[e.],&[ender],&[i],&[item],&[e],[ender].,[item].,[e].,[i].
   
   update_notifications:
   
@@ -1094,7 +1099,7 @@ filters_colour_chat:
     name_filter_regex: '[\\\/]'
     name_check_regex: ^[\p{L}a-zA-Z0-9._\[\]-]*$
     string_check_regex: ^[a-zA-Z0-9 \s._\[\]\#\?\!\@\$\%\^\&\*\-\,\*\(\)\{\}]*$
-    name_remove_regex: '[^a-zA-Z0-9._\[\]-]'
+    name_remove_regex: '[^a-zA-Z0-9_\s]'
   
   modify_chat:
   

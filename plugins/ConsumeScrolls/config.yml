@@ -71,7 +71,6 @@ scrolls:
           meta:
             ==: ItemMeta
             meta-type: UNSPECIFIC
-            display-name: "&5&lObsidian Pickaxe"
             enchants:
               DIG_SPEED: 5
               LOOT_BONUS_BLOCKS: 4

@@ -26,6 +26,7 @@ groups:
     - r
     - balance
     - town
+    - sv
     - t
     - nation
     - n
@@ -134,6 +135,7 @@ groups:
     - v
     - tpo
     - co
+    - sv
     - matrix
     - coreprotect
     - maps

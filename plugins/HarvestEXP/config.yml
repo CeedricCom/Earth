@@ -211,7 +211,7 @@ settings:
          dropOnlyIfNaturallyGrown: true
          # Note: While true, dropOnBreak allows mending to function.
          dropOnBreak: true
-         amount: 20
+         amount: 12
          
       # Note: Whether or not a permission is required to gain experience for this crop.
       # Note: hexp.user.gain.pumpkin
@@ -236,7 +236,7 @@ settings:
          dropOnlyIfNaturallyGrown: true
          # Note: While true, dropOnBreak allows mending to function.
          dropOnBreak: true
-         amount: 20
+         amount: 12
          
       # Note: Whether or not a permission is required to gain experience for this crop.
       # Note: hexp.user.gain.melon

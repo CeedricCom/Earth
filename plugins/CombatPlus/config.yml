@@ -309,7 +309,7 @@ damage_modifiers:
   
 
   # Multiply final damage by this
-  multiplier: 1.38
+  multiplier: 1.40
 
 # Would you like to hide the item flags shown on tools indicating their damage and attack speed?
 hide_tool_flags: true

@@ -70,12 +70,12 @@ Settings:
   # Using PaperMC does NOT mean you need to set this to true
   UsePaperModernChatEvent: false
   # Only used if UsePaperModernChatEvent is true
-  PaperChatEventEditOriginalMessageField: true
+  PaperChatEventEditOriginalMessageField: false
   FormattingTags:
     # Allow the use of "[color=#123456]" RGB tags (1.16+)
-    AllowRGBTags: true
+    AllowRGBTags: false
     # Allow the use of "[font=uniform]" Font tags (1.16+)
-    AllowFontTags: true
+    AllowFontTags: false
     # Define custom RGB formats using regex
     # Matching group 1-6 should be EACH of the characters in the RGB hex code
     # For example, the regex for "#123456" should be
@@ -95,7 +95,7 @@ Settings:
   # Use individual permissions for custom placeholders
   # For example the first custom placeholder will have the permission
   # interactivechat.module.custom.1
-  UseCustomPlaceholderPermissions: false
+  UseCustomPlaceholderPermissions: true
   # The title of viewing a container inside an inventory view
   ContainerViewTitle: Container Contents
   # A list of private message commands on your server
@@ -122,7 +122,7 @@ Settings:
     # Hover message settings
     Hover:
       # Add a hover message
-      Enable: true
+      Enable: false
       # Text for the hover message
       # Supports multiple lines
       Text:
@@ -146,7 +146,7 @@ Settings:
     # Replace keyword settings
     Replace:
       # Whether the keyword should be replaced with another text
-      Enable: true
+      Enable: false
       # The text to replace the keyword
       # Use {Placeholder} for the name of the placeholder that was unable to be parsed
       ReplaceText: '&c{Placeholder}&r'
@@ -155,7 +155,7 @@ Settings:
 
 Commands:
   # Whether to make commands displayed in chat clickable
-  Enabled: true
+  Enabled: false
   # The formatting to trigger the command display function
   Format: '[{Command}]'
   # The text to replace the matched section of the message
@@ -179,7 +179,7 @@ Chat:
   # In seconds
   MentionCooldown: 3
   
-  DisableHere: false
+  DisableHere: true
   DisableEveryone: false
   # The prefix to trigger a mention
   MentionPrefix: '@'
@@ -261,7 +261,7 @@ ItemDisplay:
     # Enable players to show their items in main hand
     Enabled: true
     # The keyword to trigger the item display function (in regex)
-    Keyword: (?i)\[item\]|\[i\]
+    Keyword: (?i)\[item\]
     # The text to replace the keyword
     # Special Placeholders:
     # Use {Item} for item display name
@@ -338,7 +338,7 @@ ItemDisplay:
     # Enable players to show their ender chest
     Enabled: true
     # The keyword to trigger the ender chest display function (in regex)
-    Keyword: (?i)\[ender\]|\[e\]
+    Keyword: (?i)\[ender\]
     # The text to replace the keyword
     Text: '&f[&d%player_name%''s Ender Chest&f]'
     # The title of the ender chest inventory view

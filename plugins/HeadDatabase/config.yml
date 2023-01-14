@@ -3,8 +3,8 @@
 locale: "en_US"
 
 # put a cooldown on getting heads
-cooldown-heads: true
-cooldown-time: 3600
+cooldown-heads: false
+cooldown-time: 600
 
 # Should heads be dropped on the ground if the player inventory is full?
 drop-overflow-heads: false
@@ -151,7 +151,7 @@ loadTimeDelay: 10.0
 
 #Enable Economy here
 #If the price is 0 it won't show up!
-Economy-Enabled: false
+Economy-Enabled: true
 Economy-Currency: "$"
 #Type can be "item", "currency" or "playerpoints"
 Economy-Type: currency
@@ -165,23 +165,23 @@ Economy-ItemLore: ""
 #only works in versions above 1.14
 Economy-CustomModelData: -1
 
-alphabet-price: 100
-animals-price: 100
-blocks-price: 200
-decoration-price: 100
-food_drinks-price: 100
-humans-price: 100
-humanoid-price: 100
-miscellaneous-price: 100
-monsters-price: 100
-plants-price: 100
-custom-price: 1000
-custom2-price: 1000
-custom3-price: 1000
-custom4-price: 1000
-custom5-price: 1000
-online_players-price: 100
-phead-price: 100
+alphabet-price: 50
+animals-price: 50
+blocks-price: 50
+decoration-price: 50
+food_drinks-price: 50
+humans-price: 50
+humanoid-price: 50
+miscellaneous-price: 50
+monsters-price: 50
+plants-price: 50
+custom-price: 50
+custom2-price: 50
+custom3-price: 50
+custom4-price: 50
+custom5-price: 50
+online_players-price: 50
+phead-price: 50
 
 # you can set the category ID's here
 

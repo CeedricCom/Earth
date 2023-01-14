@@ -8,13 +8,13 @@ aliases:
   balance:
   - money
   baltop:
-  - money top
+  - money top $1
   pay:
   - money pay $1 $2
   tell:
   - msg
   rename:
-  - itemname
+  - itemname $1-
   mapto:
   - tomap: null
   workbench:

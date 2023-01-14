@@ -90,7 +90,9 @@ towns:
   - towny.command.plot.*
   - towny.claimed.owntown.*
   - towny.command.nation.new
-  - towny.outlaw.jailer
+  - -towny.command.town.jail
+  - -towny.command.town.jail.list
+  - -towny.command.town.unjail
   - towny.command.nation.join
   - towny.command.nation.leave
   - siegewar.town.siege.*
@@ -100,20 +102,19 @@ towns:
   # Ranks contain additional permissions residents will be
   # granted if they are assigned that specific rank.
   ranks:
-    mayor:
-    - towny.command.town.*
-    - townymissions.mayor
     comayor:
     - towny.tax_exempt
     - towny.command.towny.top
     - townymissions.mayor
     - towny.command.town.*
+    - -towny.command.town.jail
+    - -towny.command.town.jail.list
+    - -towny.command.town.unjail
     - -towny.command.town.delete
     - -towny.command.town.set.mayor
     - towny.command.plot.*
     - towny.claimed.owntown.*
     - towny.command.nation.new
-    - towny.outlaw.jailer
     - towny.command.nation.join
     - towny.command.nation.leave
     - siegewar.town.siege.*
@@ -129,7 +130,6 @@ towns:
     - towny.claimed.owntown.switch.*
     - towny.command.town.rank.vip
     - towny.command.town.rank.helper
-    - towny.outlaw.jailer
     - siegewar.town.siege.*
     - siegewar.command.siegewar.town.*
     helper:
@@ -142,15 +142,6 @@ towns:
     # Currently only an example rank holder with no extra permissions.
     vip:
     - foo.bar
-  
-    # Sheriff rank is able to jail other town members.
-    sheriff:
-    - towny.command.town.jail
-    - towny.command.town.unjail
-    - towny.command.town.jail.list
-    - towny.outlaw.jailer
-    - siegewar.town.siege.battle.points
-    - towny.command.town.rank.guard
     guard:
     - siegewar.town.siege.battle.points
   
