@@ -184,7 +184,7 @@ Excavation:
     COBWEB:
         Amount: 1
         XP: 150
-        Drop_Chance: 5.0
+        Drop_Chance: 0.1
         Level_Requirement:
             Standard_Mode: 75
             Retro_Mode: 750

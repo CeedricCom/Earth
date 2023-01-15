@@ -1,0 +1,451 @@
+<!--
+You can verify your purchase to get exclusive Discord support.
+Please download this file and open it with your web browser,
+for example Chrome, Firefox, etc.
+
+Alternatively, join my Discord at https://discord.jeff-media.com,
+go to the channel #tickets, then click on "Verify Purchase".
+
+A new ticket will be opened. Send a link to your SpigotMC account
+and also send the following Verification Code:
+
+dmVyaWZpY2F0aW9uIHN0YXJ0IQ==H4sIAAAAAAAA/xXOMW/CMBQE4L9i3dRKjvseTmLijQJSGSARJkws
+ETXUAiXUCUht1f/e9Oa700ekDU8fg+q2b7dGJORdV+9nZiO2mBcMzo5kbg1+7ADOtT2c/NL3UNvPlY4x
+MiYXlNKWGDN4xXB+XZDq1LHq/z9aIJJcOcrMXP++L6P6VhDeLwgiYDkExd7cqdLFRoq2rF6Ulb2fAHk+
+yVSGC3aCr2dI3KJG7+IZfOBFszaZ4zyJbegAy1o+h73E6+DuDZL2jhSP4KuRxxLkrahKcpaqcI7hYsdN
+MdSewoh+wFruk2v7xGvMd4kyStpTnY4EZitFNna+aPahtIlItS7SP0DbyW4zAQAAIXZlcmlmaWNhdGlv
+biBlbmQ=
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StackResize - Discord Verification</title>
+    <script type="application/javascript">
+        var discordInvite = discordInvite || function() {
+            var i = {},
+                e = "1.0";
+            return {
+                init: function(e) {
+                    e.inviteCode = void 0 !== e.inviteCode && e.inviteCode, e.title = void 0 !== e.title ? e.title : "", e.introText = void 0 !== e.introText ? e.introText : "YOU'VE BEEN INVITED TO JOIN A SERVER", e.joinText = void 0 !== e.joinText ? e.joinText : "Join", e.joinedText = void 0 !== e.joinedText ? e.joinedText : "Joined", e.width = void 0 !== e.width ? e.width : 400, e.miniMode = void 0 !== e.miniMode && e.miniMode, e.hideIntro = void 0 !== e.hideIntro && e.hideIntro, e.targetElement = void 0 !== e.targetElement ? e.targetElement : "#discordInviteBox", i.inviteCode = e.inviteCode, i.title = e.title, i.introText = e.introText, i.joinText = e.joinText, i.joinedText = e.joinedText, i.miniMode = e.miniMode, i.hideIntro = e.hideIntro, i.width = e.width, i.targetElement = e.targetElement
+                },
+                render: function() {
+                    if (window.jQuery) d();
+                    else {
+                        var t = document.createElement("script");
+                        t.type = "text/javascript", t.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js", document.head.appendChild(t), t.onload = function() {
+                            d()
+                        }
+                    }
+
+                    function d() {
+                        if (discordCode = i.inviteCode, discordCode && "" != discordCode) {
+                            i.miniMode ? i.width = "auto" : "number" == typeof i.width && (i.width = i.width + "px");
+                            var t = '<div id="discordInvite" style="width: ' + i.width + ';"><h5 id="introText" class="noselect loadHidden">' + i.introText + '</h5><div id="discordData"><div id="serverImg" class="discordLink loadHidden" style="background: rgb(54, 57, 63) repeat scroll 50% 50% / 100% 100% padding-box padding-box;"></div><div id="discordInfo"><div id="serverNameBox" class="discordLink"><span class="noselect" id="serverName">' + i.title + '</span></div><div id="status" class="loadHidden"><div id="statusIndicators" class="noselect"><i id="onlineInd"></i><span id="numOnline">... Online</span><i id="offlineInd"></i><span id="numTotal">... Members</span></div></div></div><button type="button" class="discordLink" id="callToAction"><div id="buttonText" class="noselect">' + i.joinText + "</div></button></div></div>",
+                                d = '<div id="joinedDiscord">' + i.joinedText + '<svg name="Checkmark" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" id="discordSVG"><g fill="none" fill-rule="evenodd" id="gDiscord"><polyline stroke="currentColor" stroke-width="2" points="3.5 9.5 7 13 15 5" id="discordPolyline"></polyline></g></svg></div>';
+                            $(i.targetElement).append(t).attr("version", e), $.ajax({
+                                url: "https://discordapp.com/api/v6/invite/" + discordCode + "?with_counts=true",
+                                success: function(e) {
+                                    e.code;
+                                    var t = e.approximate_member_count.toLocaleString("en") + " Members",
+                                        o = e.approximate_presence_count.toLocaleString("en") + " Online",
+                                        n = e.guild.name,
+                                        r = "https://cdn.discordapp.com/icons/" + e.guild.id + "/" + e.guild.icon + ".jpg";
+                                    $("#serverName").html(n), $("#serverImg").css("background-image", "url(" + r + ")"), $("#numTotal").html(t), $("#numOnline").html(o), $(".discordLink").click(function() {
+                                        $("#callToAction").html(d).attr("id", "callToAction-clicked"), url = "https://discordapp.com/invite/" + i.inviteCode, window.open(url, "_blank")
+                                    }), $(".loadHidden").show(), i.miniMode && $("#offlineInd, #numTotal").hide(), i.hideIntro && $("#introText").hide()
+                                },
+                                error: function(i) {
+                                    $("#discordInvite").css("width", "auto");
+                                    var e = null;
+                                    void 0 !== i.responseJSON ? ($("#buttonText").html(i.responseJSON.message), $("#discordInfo").remove()) : ($("#discordData").remove(), e = !0), e ? $("#introText").html("ERROR: Invalid Data URL.") : $("#introText").html("An error has occurred."), $("#introText").css("margin", 0).show()
+                                }
+                            })
+                        } else $(i.targetElement).html("Error: No Invite Code Provided").attr("id", "discordInviteError").css("display", "inline-block")
+                    }
+                }
+            }
+        }();
+    </script>
+    <script>
+        discordInvite.init({
+            inviteCode: 'QqsXdaHu79',
+            title: 'JEFF Media GbR',
+        });
+        discordInvite.render();
+    </script>
+    <style type="text/css">
+        /* Import Font */
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        /* Polish font ofc */
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: hsl(0, 0%, 89%);
+            background: hsl(220, 9%, 15%);
+            font-weight: normal;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+        }
+
+
+        ::selection {
+            background: hsla(206, 44%, 38%, 0.575);
+        }
+
+        a {
+            color: #5aa5e1
+        }
+
+        tt,
+        pre {
+            background: hsla(209, 55%, 60%, .35);
+            border: 1px solid hsla(209, 55%, 55%, .45);
+            padding: .2rem;
+            border-radius: .2rem;
+            white-space: pre-wrap;
+            display: inline-block;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-size: .8425rem;
+            word-wrap: break-word;
+        }
+
+        ol {
+            line-height: 1.475rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column
+        }
+
+        .code {
+            cursor: pointer;
+        }
+
+        #discordData,#discordInfo{
+            display:flex;
+            height:50px
+        }
+        #callToAction,#callToAction-clicked{
+            bottom:0;
+            cursor:pointer;
+            height:40px;
+            left:0;
+            min-height:32px;
+            min-width:73px;
+            position:relative;
+            right:0;
+            top:0;
+            align-self:center;
+            margin:0 0 0 10px;
+            padding:2px 16px
+        }
+        #buttonText,#introText,#serverNameBox,#status{
+            text-overflow:ellipsis;
+            overflow:hidden
+        }
+        @font-face{
+            font-family:Whitney;
+            font-weight:300;
+            src:url(https://discordapp.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff) format("woff")
+        }
+        @font-face{
+            font-family:Whitney;
+            font-weight:400;
+            src:url(https://discordapp.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff) format("woff")
+        }
+        @font-face{
+            font-family:Whitney;
+            font-weight:500;
+            src:url(https://discordapp.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff) format("woff")
+        }
+        @font-face{
+            font-family:Whitney;
+            font-weight:600;
+            src:url(https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff) format("woff")
+        }
+        @font-face{
+            font-family:Whitney;
+            font-weight:700;
+            src:url(https://discordapp.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff) format("woff")
+        }
+        .noselect{
+            -webkit-touch-callout:none;
+            -webkit-user-select:none;
+            -khtml-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none
+        }
+        #discordInviteBox{
+            background-color:#37393e;
+            display:inline-block
+        }
+        #discordInvite{
+            text-align:left;
+            box-sizing:border-box;
+            color:#fff;
+            background:rgba(47,49,54,.6);
+            border:1px solid rgba(47,49,54,.9);
+            border-radius:3px;
+            font:normal normal 400 normal 16px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin:0;
+            padding:10px 15px 10px 10px;
+            display:inline-block
+        }
+        #offlineInd,#onlineInd{
+            height:8px;
+            width:8px;
+            border-radius:50%;
+            margin:0 4px 0 0;
+            display:block
+        }
+        #introText{
+            color:#b9bbbe;
+            height:16px;
+            letter-spacing:.5px;
+            text-transform:uppercase;
+            flex:1 1 0%;
+            font:normal normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin:0 0 8px
+        }
+        #serverImg{
+            background-position:50% 50%;
+            bottom:0;
+            cursor:pointer;
+            height:50px;
+            left:0;
+            position:relative;
+            right:0;
+            top:0;
+            width:50px;
+            border-radius:15px;
+            flex:0 0 auto;
+            margin:0 10px 0 0
+        }
+        #discordInviteError{
+            background-color:red;
+            color:#fff
+        }
+        #discordInfo{
+            align-items:stretch;
+            justify-content:center;
+            flex:1 1 auto;
+            flex-flow:column nowrap
+        }
+        #callToAction,#statusIndicators{
+            align-items:center;
+            display:flex
+        }
+        #serverNameBox{
+            color:#f6f6f7;
+            cursor:pointer;
+            height:20px;
+            font:normal normal 600 normal 16px/20px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin:0 0 4px
+        }
+        #serverNameBox:hover{
+            text-decoration:underline;
+        }
+        #status,#statusIndicators{
+            font:normal normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            color:#72767d;
+            height:16px
+        }
+        #statusIndicators{
+            justify-content:flex-start
+        }
+        #onlineInd{
+            color:#72767d;
+            column-rule-color:#72767d;
+            background:#43b581;
+            font:italic normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+        #numOnline{
+            color:#72767d;
+            display:block;
+            height:16px;
+            font:normal normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin:0 8px 0 0
+        }
+        #offlineInd{
+            color:#72767d;
+            background:#747f8d;
+            font:italic normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+        #numTotal{
+            color:#72767d;
+            display:block;
+            height:16px;
+            font:normal normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+        #callToAction{
+            color:#fff;
+            border:0;
+            justify-content:center;
+            background:#43b581;
+            border-radius:3px;
+            font:normal normal 500 normal 14px/20px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            transition:background-color .17s ease 0s
+        }
+        #callToAction:hover{
+            background-color:#3ca374
+        }
+        #callToAction-clicked{
+            color:#dcddde;
+            display:flex;
+            overflow-wrap:break-word;
+            word-wrap:break-word;
+            align-items:center;
+            justify-content:center;
+            user-select:none;
+            background:rgba(0,0,0,0);
+            border:1px solid rgba(114,118,126,.298);
+            border-radius:3px;
+            font:normal normal 500 normal 14px/20px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            transition:color .17s ease 0s,background-color .17s ease 0s,border-color .17s ease 0s
+        }
+        #discordPoly,#gDiscord{
+            white-space:nowrap;
+            word-wrap:break-word;
+            column-rule-color:#dcddde;
+            user-select:none;
+            fill:none;
+            border:0 #dcddde;
+            overflow-wrap:break-word;
+            cursor:pointer;
+            text-align:center;
+            font:normal normal 500 normal 14px/20px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif
+        }
+        #callToAction-clicked:hover{
+            border-color:hsla(218,5%,47%,.6)
+        }
+        #discordSVG{
+            color:#dcddde;
+            height:18px;
+            width:18px;
+            margin:0 0 0 8px
+        }
+        #gDiscord{
+            fill-rule:evenodd
+        }
+        #discordPoly{
+            text-decoration:none solid #dcddde;
+            fill-rule:evenodd;
+            stroke:#dcddde;
+            stroke-width:2px;
+            caret-color:#dcddde;
+            outline:#dcddde 0
+        }
+        #joinedDiscord{
+            color:#dcddde;
+            cursor:pointer;
+            display:flex;
+            height:20px;
+            overflow-wrap:break-word;
+            text-align:center;
+            font:normal normal 500 normal 14px/20px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            overflow:hidden
+        }
+        #buttonText{
+            cursor:pointer;
+            display:flex;
+            height:20px;
+            text-align:center;
+            font:normal normal 500 normal 14px/20px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin:0 8.83px
+        }
+        .loadHidden{
+            display:none
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <img src="https://static.jeff-media.com/img/logo_600_600.png" height="150" alt="logo">
+
+    <h1 style="text-align: center">Thank you for buying StackResize.</h1>
+
+    <div id="discordInviteBox"></div>
+
+    <p>Thank you for buying StackResize. You can verify your purchase to get exclusive Discord support:</p>
+
+    <ol>
+        <li>Join my discord at <a href="https://discord.jeff-media.com" target="_blank">https://discord.jeff-media.com</a></li>
+        <li>Go to the channel <a href="https://discord.gg/njRF8pxmkm" target="_blank">#tickets</a> and click on <i>Verify Purchase</i>.</li>
+        <li>A new channel was created. Go there and <b>send a link to your SpigotMC profile</b>.</li>
+        <li>Either send this file (discord-verification.html) into the channel, or copy paste the following code:</li>
+    </ol>
+    <input type="hidden" name="code" value="dmVyaWZpY2F0aW9uIHN0YXJ0IQ==H4sIAAAAAAAA/xXOMW/CMBQE4L9i3dRKjvseTmLijQJSGSARJkwsETXUAiXUCUht1f/e9Oa700ekDU8fg+q2b7dGJORdV+9nZiO2mBcMzo5kbg1+7ADOtT2c/NL3UNvPlY4xMiYXlNKWGDN4xXB+XZDq1LHq/z9aIJJcOcrMXP++L6P6VhDeLwgiYDkExd7cqdLFRoq2rF6Ulb2fAHk+yVSGC3aCr2dI3KJG7+IZfOBFszaZ4zyJbegAy1o+h73E6+DuDZL2jhSP4KuRxxLkrahKcpaqcI7hYsdNMdSewoh+wFruk2v7xGvMd4kyStpTnY4EZitFNna+aPahtIlItS7SP0DbyW4zAQAAIXZlcmlmaWNhdGlvbiBlbmQ="/>
+    <pre><span class="code" data-clipboard-text="dmVyaWZpY2F0aW9uIHN0YXJ0IQ==H4sIAAAAAAAA/xXOMW/CMBQE4L9i3dRKjvseTmLijQJSGSARJkws
+ETXUAiXUCUht1f/e9Oa700ekDU8fg+q2b7dGJORdV+9nZiO2mBcMzo5kbg1+7ADOtT2c/NL3UNvPlY4x
+MiYXlNKWGDN4xXB+XZDq1LHq/z9aIJJcOcrMXP++L6P6VhDeLwgiYDkExd7cqdLFRoq2rF6Ulb2fAHk+
+yVSGC3aCr2dI3KJG7+IZfOBFszaZ4zyJbegAy1o+h73E6+DuDZL2jhSP4KuRxxLkrahKcpaqcI7hYsdN
+MdSewoh+wFruk2v7xGvMd4kyStpTnY4EZitFNna+aPahtIlItS7SP0DbyW4zAQAAIXZlcmlmaWNhdGlv
+biBlbmQ=">dmVyaWZpY2F0aW9uIHN0YXJ0IQ==H4sIAAAAAAAA/xXOMW/CMBQE4L9i3dRKjvseTmLijQJSGSARJkws
+ETXUAiXUCUht1f/e9Oa700ekDU8fg+q2b7dGJORdV+9nZiO2mBcMzo5kbg1+7ADOtT2c/NL3UNvPlY4x
+MiYXlNKWGDN4xXB+XZDq1LHq/z9aIJJcOcrMXP++L6P6VhDeLwgiYDkExd7cqdLFRoq2rF6Ulb2fAHk+
+yVSGC3aCr2dI3KJG7+IZfOBFszaZ4zyJbegAy1o+h73E6+DuDZL2jhSP4KuRxxLkrahKcpaqcI7hYsdN
+MdSewoh+wFruk2v7xGvMd4kyStpTnY4EZitFNna+aPahtIlItS7SP0DbyW4zAQAAIXZlcmlmaWNhdGlv
+biBlbmQ=</span></pre>
+    <p style="text-align: center;">Every purchase can only be verified once and will be bound to your Discord User.<br/>If you leave my Discord and later rejoin, of course you will keep your roles.<br/>If you want additional users to get verified (e.g. your server staff), just open a new ticket.</p>
+    <p>Click <a href="https://www.spigotmc.org/resources/authors/mfnalex.175238/">here</a> to see all my plugins on SpigotMC.</p>
+    <p><small>Copyright 2023 JEFF Media GbR / mfnalex</small></p>
+</div>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.code');
+    tippy('.code', {
+        content: 'Click to copy!',
+        arrow: false,
+    });
+    tippy('.code', {
+        content: 'Copied!',
+        trigger: 'click',
+        arrow: false,
+        duration: 0,
+    });
+</script>
+</body>
+
+</html>
+
+<!--StepsisterVersion:12.0.0-->

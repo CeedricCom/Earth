@@ -129,17 +129,19 @@ groups:
     - maps
   moderator:
     commands:
-    - endersee
-    - invsee
-    - vanish
-    - v
-    - tpo
-    - co
     - sv
-    - matrix
-    - coreprotect
     - maps
-    - tppos
+    - endersee
     - prefixadmin
+    - co
+    - matrix
     - gms
+    - tppos
+    - invsee
+    - tpo
     - gmsp
+    - spark
+    - v
+    - vanish
+    - coreprotect
+    subcommands: []

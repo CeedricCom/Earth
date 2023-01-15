@@ -312,7 +312,7 @@ town:
   
   # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
   # will be ignored for towns that are in the same nation. Setting to false will keep all towns separated the same.
-  min_distances_ignored_for_towns_in_same_nation: 'false'
+  min_distances_ignored_for_towns_in_same_nation: 'true'
   
   # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
   # will be ignored for towns that are mutually allied. Setting to false will keep all towns separated the same.

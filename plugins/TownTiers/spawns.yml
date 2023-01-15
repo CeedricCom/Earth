@@ -3,16 +3,26 @@ towns:
     spawns:
       '2':
         world: world
-        x: -24014
+        x: -24021
         y: 2
-        z: -6829
+        z: -6824
+      '3':
+        world: world
+        x: -24044
+        y: 63
+        z: -6806
   864f45f4-d755-4011-a9fc-9942ee4c5f31:
     spawns:
       '2':
         world: world
-        x: -13521
+        x: -13520
         y: 78
-        z: -8969
+        z: -8968
+      '3':
+        world: world
+        x: -13494
+        y: 24
+        z: -9004
   0ccdedf7-f2ce-4410-a203-0409fcd07411:
     spawns:
       '2':
@@ -26,53 +36,67 @@ towns:
         world: world
         x: 7232
         y: 40
-        z: -6820
+        z: -6819
   2edf89a2-83f3-4fa4-b131-d65c4a52eb25:
     spawns:
       '2':
         world: world
-        x: 13664
+        x: 13666
         y: 3
-        z: -11590
+        z: -11591
   ec2e0e68-b750-471d-8d2d-99a381fc06b3:
     spawns:
       '2':
         world: world
-        x: -7664
+        x: -7672
         y: 115
-        z: -14863
+        z: -14860
   facf9060-8c9b-47d9-a616-39cf8ad05330:
     spawns:
       '2':
         world: world
         x: 4265
         y: 55
-        z: -13138
+        z: -13137
   4f0d0cd3-ad7d-44aa-95e0-aad22564800f:
     spawns:
       '2':
         world: world
-        x: -1896
+        x: -1895
         y: 2
-        z: -7971
+        z: -7970
   3c2b25d6-a9c4-47a3-b85b-c3e522387c71:
     spawns:
       '2':
         world: world
         x: 313
         y: 51
-        z: -10053
+        z: -10052
   9ff0851b-ecee-4885-b6eb-313073f7d0ef:
     spawns:
       '2':
         world: world
-        x: -13113
+        x: -13115
         y: 63
-        z: -9620
+        z: -9622
   8fbd2267-6a7b-4764-8ba7-a646f3dd30da:
     spawns:
       '2':
         world: world
         x: 5328
         y: 1
-        z: -12198
+        z: -12197
+  9308e17a-5063-4e09-bf82-d5e30fd4b4f1:
+    spawns:
+      '2':
+        world: world
+        x: 6161
+        y: 2
+        z: -10408
+  150c30af-2e95-4922-a86b-ec54c0f212fa:
+    spawns:
+      '2':
+        world: world
+        x: 5736
+        y: 51
+        z: -6344

@@ -26,6 +26,8 @@ world-settings:
         - hard-nerf-fish
         - ai-wipe
         - trim-villager-chunks
+        - freeze-animal-farms
+        - villager-random-movement
       #  - trim-animal-farms
       #  - trim-sparse-animal-farms
 

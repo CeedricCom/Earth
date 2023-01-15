@@ -45,10 +45,12 @@ profiles:
     group:
       types:
         - "category:animal"
-      count: 15
-      distance: 5
+      count: 10
+      distance: 25
     actions:
       - remove-ai
+      - remove-random-movement
+      - remove-awareness
       - disable-collisions
 
   # No more than 20 animals (all of the same type) within close proximity
@@ -82,6 +84,15 @@ profiles:
       distance: same-chunk
     actions:
       - remove
+  villager-random-movement:
+    group:
+      types:
+        - "villager"
+      count: 1
+      distance: 60
+    actions:
+      - disable-random-movement
+      - disable-collisions
   trim-monsters:
     group:
       types:
