@@ -1,0 +1,159 @@
+menu_title: 'Recipes'
+open_command:
+  - recipes
+register_command: true
+size: 27
+
+items:
+  black-dye:
+    material: BLACK_DYE
+    slot: 0
+    hide_attributes: true
+    display_name: '&fBlack Dye'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] black-dye-recipe'
+  budding-amethyst:
+    material: BUDDING_AMETHYST
+    slot: 1
+    hide_attributes: true
+    display_name: '&fBudding Amethyst'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] budding-amethyst-recipe'
+  calcite:
+    material: CALCITE
+    slot: 2
+    hide_attributes: true
+    display_name: '&fCalcite'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] calcite-recipe'
+  cobbled-deepslate:
+    material: COBBLED_DEEPSLATE
+    slot: 3
+    hide_attributes: true
+    display_name: '&fCobbled Deepslate'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] cobbled-deepslate-recipe'
+  end-stone:
+    material: END_STONE
+    slot: 4
+    hide_attributes: true
+    display_name: '&fEnd Stone'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] end-stone-recipe'
+  fire-resistance-potion:
+    material: SPLASH_POTION
+    slot: 5
+    display_name: '&fSplash Potion of Fire Resistance'
+    potion_effects:
+      - "fire_resistance;9600;0"
+    rgb: '232,157,59'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] fire-res-recipe'
+  instant-health-potion:
+    material: SPLASH_POTION
+    slot: 6
+    display_name: '&fSplash Potion of Healing'
+    potion_effects:
+      - "heal;1;1"
+    rgb: '252,37,36'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] health-recipe'
+  speed-potion:
+    material: SPLASH_POTION
+    slot: 7
+    display_name: '&fSplash Potion of Swiftness'
+    rgb: '126,178,202'
+    potion_effects:
+      - "speed;1800;1"
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] speed-recipe'
+  verdant-froglight:
+    material: VERDANT_FROGLIGHT
+    slot: 8
+    hide_attributes: true
+    display_name: '&fVerdant Froglight'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] verdant-froglight-recipe'
+  mangrove-propagule:
+    material: MANGROVE_PROPAGULE
+    slot: 9
+    hide_attributes: true
+    display_name: '&fMangrove Propagule'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] mangrove-propagule-recipe'
+  pearlescent-froglight:
+    material: PEARLESCENT_FROGLIGHT
+    slot: 10
+    hide_attributes: true
+    display_name: '&fPearlescent Froglight'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] pearlescent-froglight-recipe'
+  purpur-block:
+    material: PURPUR_BLOCK
+    slot: 11
+    hide_attributes: true
+    display_name: '&fPurpur Block'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] purpur-block-recipe'
+  tuff:
+    material: TUFF
+    slot: 12
+    hide_attributes: true
+    display_name: '&fTuff'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] tuff-recipe'
+  ochre-froglight:
+    material: OCHRE_FROGLIGHT
+    slot: 13
+    hide_attributes: true
+    display_name: '&fOchre Froglight'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] ochre-froglight-recipe'
+  black-panel-fill:
+    material: BLACK_STAINED_GLASS_PANE
+    slots: 
+      - 14-26
+    hide_attributes: true
+    display_name: "&f "

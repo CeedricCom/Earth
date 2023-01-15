@@ -1,0 +1,53 @@
+menu_title: 'Recipes'
+size: 45
+
+items:
+  shapeless-recipe-symbol:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY2ZDMwOWM1Yjc4ZTBiZDQ3MTZkNWY1OTcyNGZkM2U3MDU3NGI2MjE1YWQwOTBlNWVkMjY3MzlkZGJhMDcxNCJ9fX0=
+    display_name: "&e&lShapeless Recipe"
+    slot: 22
+    lore:
+      - "&f"
+      - "&7This recipe will work in any shape!"
+  black-panel-fill:
+    material: BLACK_STAINED_GLASS_PANE
+    slots: 
+      - 0-9
+      - 31-39
+      - 41-44
+      - 13-18
+      - 23
+      - 25-27
+    hide_attributes: true
+    display_name: "&f "
+  back-button:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzYyNTkwMmIzODllZDZjMTQ3NTc0ZTQyMmRhOGY4ZjM2MWM4ZWI1N2U3NjMxNjc2YTcyNzc3ZTdiMWQifX19
+    slot: 40
+    display_name: "&e&lBack"
+    lore:
+      - "&f"
+      - "&7Click here to go back to"
+      - "&7the recipes menu"
+    left_click_commands:
+      - "[openguimenu] recipes"
+  #SLOTS
+  #10-12
+  #19-21
+  #28-30
+  #MIDDLE: 20
+  #OUTPUT: 24
+
+  coal:
+    material: SANDSTONE
+    slots:
+      - 20
+      - 10
+  charcoal:
+    material: WHITE_DYE
+    slots:
+      - 19
+      - 11
+  black-dye:
+    material: END_STONE
+    slot: 24
+    amount: 2

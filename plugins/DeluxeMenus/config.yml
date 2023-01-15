@@ -1,0 +1,38 @@
+# DeluxeMenus 1.13.7-DEV-153 main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: false
+check_updates: true
+gui_menus:
+  recipes:
+    file: recipes.yml
+  black-dye-recipe:
+    file: black-dye-recipe.yml
+  budding-amethyst-recipe:
+    file: budding-amethyst.yml
+  calcite-recipe:
+    file: calcite.yml
+  end-stone-recipe:
+    file: end-stone.yml
+  fire-res-recipe:
+    file: fire-resistance.yml
+  speed-recipe:
+    file: speed.yml
+  health-recipe:
+    file: health-pot.yml
+  verdant-froglight-recipe:
+    file: green-froglight.yml
+  mangrove-propagule-recipe:
+    file: mangrove-tree.yml
+  pearlescent-froglight-recipe:
+    file: pink-froglight.yml
+  purpur-block-recipe:
+    file: purpur-block.yml
+  tuff-recipe:
+    file: tuff.yml
+  cobbled-deepslate-recipe:
+    file: cobbled-deepslate.yml
+  ochre-froglight-recipe:
+    file: yellow-froglight.yml
