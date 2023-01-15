@@ -10,6 +10,8 @@
 
 verbose: false
 settings:
+  clamp-attributes: true
+  limit-armor: true
   messages:
     cannot-ride-mob: <red>You cannot mount that mob
     afk-broadcast-away: <yellow><italic>%s is now AFK
@@ -189,7 +191,7 @@ settings:
       minutes: '%02d minutes, and '
       second: '%02d second'
       seconds: '%02d seconds'
-config-version: 30
+config-version: 31
 world-settings:
   default:
     blocks:
@@ -203,6 +205,7 @@ world-settings:
       azalea:
         growth-chance: 0.0
       beacon:
+        allow-effects-with-tinted-glass: false
         effect-range:
           level-1: 20
           level-2: 30
@@ -213,7 +216,7 @@ world-settings:
         explode-on-villager-sleep: false
         explosion-power: 5.0
         explosion-fire: true
-        explosion-effect: DESTROY
+        explosion-effect: BLOCK
       big_dripleaf:
         tilt-delay:
           UNSTABLE: 10
@@ -239,16 +242,17 @@ world-settings:
       dragon_egg:
         teleport: true
       end-crystal:
+        cramming-amount: 0
         baseless:
           explode: true
           explosion-power: 6.0
           explosion-fire: false
-          explosion-effect: DESTROY
+          explosion-effect: BLOCK
         base:
           explode: true
           explosion-power: 6.0
           explosion-fire: false
-          explosion-effect: DESTROY
+          explosion-effect: BLOCK
       farmland:
         bypass-mob-griefing: false
         gets-moist-from-below: false
@@ -287,7 +291,7 @@ world-settings:
         explode: true
         explosion-power: 5.0
         explosion-fire: true
-        explosion-effect: DESTROY
+        explosion-effect: BLOCK
       sand:
         fix-duping: true
       sculk_shrieker:
@@ -510,6 +514,8 @@ world-settings:
       untamed-tamables-are-ridable: true
       use-night-vision: false
     mobs:
+      camel:
+        breeding-delay-ticks: 6000
       allay:
         ridable: false
         ridable-in-water: false
@@ -961,6 +967,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       piglin:
+        head-visibility-percent: 0.5
         ridable: false
         ridable-in-water: false
         controllable: true
@@ -1384,6 +1391,7 @@ world-settings:
       entity:
         shared-random: true
     gameplay-mechanics:
+      clamp-explosion-radius: true
       elytra:
         damage-per-second: 1
         damage-multiplied-by-speed: 0.0

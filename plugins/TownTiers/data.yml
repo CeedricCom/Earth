@@ -1,35 +1,35 @@
 town-data:
   '1':
-    amount: 9
+    amount: 8
   '2':
-    amount: 12
-  '0':
-    amount: -46
-  '3':
-    amount: 13
-  '4':
-    amount: 10
-  '5':
     amount: 11
+  '0':
+    amount: -49
+  '3':
+    amount: 11
+  '4':
+    amount: 15
+  '5':
+    amount: 14
   '6':
-    amount: 3
+    amount: 4
 generator-data:
   '1':
-    amount: 149
+    amount: 177
   '2':
-    amount: 96
+    amount: 105
   '3':
-    amount: 79
+    amount: 90
   '4':
-    amount: 59
+    amount: 70
   '0':
-    amount: 116
+    amount: 132
   '5':
-    amount: 31
+    amount: 37
   '6':
-    amount: 15
+    amount: 20
   '7':
-    amount: 10
+    amount: 11
   '8':
     amount: 4
   '9':
@@ -51,4 +51,4 @@ legacy-towns:
     max-pop: 1
 nation-data:
   '0':
-    amount: 40
+    amount: 53

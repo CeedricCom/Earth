@@ -102,6 +102,11 @@ groups:
     - interactivechat
     - pvp-on
     - tiers
+    - sethome
+    - home
+    - warschedule
+    - sessions
+    - siegeschedule
     subcommands: []
   mvp:
     commands:
@@ -145,3 +150,6 @@ groups:
     - vanish
     - coreprotect
     subcommands: []
+  admin:
+    commands:
+    - spark

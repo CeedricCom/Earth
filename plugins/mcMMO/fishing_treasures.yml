@@ -170,7 +170,7 @@ Fishing:
     NAUTILUS_SHELL:
         Amount: 1
         XP: 200
-        Rarity: RARE
+        Rarity: UNCOMMON
     DIAMOND_SWORD:
         Amount: 1
         XP: 200

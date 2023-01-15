@@ -22,7 +22,7 @@ projectile:
 # Optimizes entity brains when
 # they're far away from the player
 dab:
-  enabled: false
+  enabled: true
   start-distance: 12
   max-tick-freq: 20
   activation-dist-mod: 8
