@@ -1,5 +1,5 @@
 messages:
-  prefix: '<aqua><bold>Insights <dark_gray>» '
+  prefix: ' '
   update-available: '<prefix><dark_aqua>Version <green><version> <dark_aqua>of <aqua>Insights
     <dark_aqua>is now available! Info: <aqua><body>'
   configs-reloaded: <prefix><dark_aqua>All configurations have been reloaded!
