@@ -67,7 +67,7 @@ scrolls:
         itemstack:
           ==: org.bukkit.inventory.ItemStack
           v: 19
-          type: DIAMOND_PICKAXE
+          type: NETHERITE_PICKAXE
           meta:
             ==: ItemMeta
             meta-type: UNSPECIFIC
