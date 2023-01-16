@@ -9,8 +9,7 @@ info:
 # that number of ticks, then it will be removed. Setting a value to
 # -1 disables this feature.
 entity_timeouts:
-  SNOWBALL: -1
-  LLAMA_SPIT: -1
+  ENDER_PEARL: 200
 sentry-dsn: ''
 enable-books: true
 enable-suffocation-optimization: true
