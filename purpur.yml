@@ -142,7 +142,7 @@ settings:
       distance: 0.5
     minecraft:brown_bed:
       distance: 0.5
-  use-alternate-keepalive: false
+  use-alternate-keepalive: true
   command:
     rambar:
       title: <gray>Ram<yellow>:</yellow> <used>/<xmx> (<percent>)
