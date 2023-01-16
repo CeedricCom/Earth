@@ -12,7 +12,7 @@ settings:
     mode: ALWAYS
     player-tracker-interval-ticks: 5
   notification:
-    type: ACTIONBAR
+    type: BOSSBAR
     bossbar:
       color: BLUE
       overlay: NOTCHED_10
