@@ -1239,8 +1239,8 @@ world-settings:
         always-drop-exp: false
         minimum-demand: 0
         lobotomize:
-          enabled: false
-          check-interval: 100
+          enabled: true
+          check-interval: 200
         display-trade-item: true
         spawn-iron-golem:
           radius: 0
