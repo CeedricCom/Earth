@@ -1,39 +1,41 @@
 town-data:
   '1':
-    amount: 8
+    amount: 13
   '2':
-    amount: 11
+    amount: 17
   '0':
-    amount: -49
+    amount: -82
   '3':
     amount: 11
   '4':
-    amount: 15
+    amount: 25
   '5':
-    amount: 14
+    amount: 21
   '6':
-    amount: 4
+    amount: 14
+  '7':
+    amount: 2
 generator-data:
   '1':
-    amount: 177
+    amount: 346
   '2':
-    amount: 105
+    amount: 182
   '3':
-    amount: 90
+    amount: 160
   '4':
-    amount: 70
+    amount: 135
   '0':
-    amount: 132
+    amount: 216
   '5':
-    amount: 37
+    amount: 86
   '6':
-    amount: 20
+    amount: 55
   '7':
-    amount: 11
+    amount: 30
   '8':
-    amount: 4
+    amount: 6
   '9':
-    amount: 1
+    amount: 2
 legacy-towns:
   d27abc6a-a947-4b24-af98-d3731c73171f:
     town: true
@@ -49,6 +51,167 @@ legacy-towns:
     name: Saint_Korvistan
     mayor: 326a68a9-3a48-4480-9231-7f1cb1b04095
     max-pop: 1
+  18938cdb-7269-4de9-bf91-ae740e787805:
+    town: true
+    xp: 0
+    tier: 0
+    name: niseko
+    mayor: c5f4a710-837c-4514-878e-5b25e52aaad1
+    max-pop: 3
+  724eef2f-ead9-45b4-89cd-233356b7887e:
+    town: true
+    xp: 0
+    tier: 0
+    name: Shopham
+    mayor: 718c9d05-ab0c-4bb1-a5a7-e5d502f50b45
+    max-pop: 2
+  34df91ef-40e6-484f-9953-eddb0adfaa61:
+    town: true
+    xp: 0
+    tier: 0
+    name: Volarys
+    mayor: 1ed067ab-b393-4461-ba09-814073b42489
+    max-pop: 5
+  84a614eb-d4f6-4623-be86-e4422b9b6fa6:
+    town: true
+    xp: 0
+    tier: 0
+    name: New_Corsica
+    mayor: f2d18d68-cc4d-4c80-b161-3bdbf6dc3ee2
+    max-pop: 3
+  235c0d1d-9d66-4dbd-abb6-b59d38e94b9f:
+    town: true
+    xp: 0
+    tier: 0
+    name: joon_shane
+    mayor: a9f53ff6-80ce-4c39-a6fa-9c6acac59e39
+    max-pop: 2
+  b109692b-0aed-468a-98e9-f4f6ed7c3a78:
+    town: true
+    xp: 0
+    tier: 0
+    name: OBLOCK
+    mayor: a0ec653c-d95c-40ad-9f9b-1f2758912f4f
+    max-pop: 3
+  537191da-1f7d-4e2b-b1b2-cd193c02a6b8:
+    town: true
+    xp: 0
+    tier: 0
+    name: Crenshaw
+    mayor: 6f42bb86-0db2-4648-9ea3-e1a175194b69
+    max-pop: 2
+  85fedd8f-828b-444a-90e7-aa1b6e9bfb8e:
+    town: true
+    xp: 0
+    tier: 0
+    name: 63rd
+    mayor: 445c0ccf-83d4-49e0-afc0-a506f008e38b
+    max-pop: 2
+  6af7441a-047a-49e3-803e-7949cdc9a170:
+    town: true
+    xp: 0
+    tier: 0
+    name: East_Garfield_Park
+    mayor: 0a179f94-7387-4e34-b3ae-edf3a41345b7
+    max-pop: 2
+  14f68305-fb57-4b1d-a370-9f987b8e068f:
+    town: true
+    xp: 0
+    tier: 0
+    name: Mempish
+    mayor: 1063a6f0-74da-403d-9e62-e210e6903bbd
+    max-pop: 2
+  199df5b3-38e5-4b66-a198-87d266c866e7:
+    town: true
+    xp: 0
+    tier: 0
+    name: Atlantis_Blacksite
+    mayor: ca8dc493-4074-4e91-b580-6abcf522efb3
+    max-pop: 2
+  d7d69756-ceb3-40a8-a9f4-ec7f75fc418b:
+    town: true
+    xp: 0
+    tier: 0
+    name: Black_Sun
+    mayor: a70a1241-d82e-474e-925b-51bddc90ed06
+    max-pop: 2
+  6d8584ac-6f53-41c9-bb61-0fce7563e93f:
+    town: true
+    xp: 0
+    tier: 0
+    name: Kiwi_City
+    mayor: 8d9d335c-2745-4edd-b4a3-7e6c7f8d5de6
+    max-pop: 2
+  ccc6353c-f8d2-4e7f-bbc9-43ef06750cdc:
+    town: true
+    xp: 0
+    tier: 0
+    name: crip
+    mayor: 09d9857a-e5b8-4b2a-9012-a309b63ab9ac
+    max-pop: 2
+  fa1b2c4d-ca1d-4b87-b34a-ac8f694f20fb:
+    town: true
+    xp: 0
+    tier: 0
+    name: Wellington
+    mayor: fd407575-e343-43fb-8e88-23cf5de0015b
+    max-pop: 2
+  2a2df17d-48ae-42d6-9a05-e86bf9139ea6:
+    town: true
+    xp: 0
+    tier: 0
+    name: St_Addidis
+    mayor: c77c7ff3-09bf-445f-ad97-60226938a579
+    max-pop: 2
+  d778c598-16d4-427d-9215-3d8c71db3d60:
+    town: true
+    xp: 0
+    tier: 0
+    name: qtmx
+    mayor: cc010801-a2eb-4897-a512-c25848c319b6
+    max-pop: 2
+  6dd78230-b510-43c5-9cdc-8dde32528412:
+    town: true
+    xp: 0
+    tier: 0
+    name: Tengis
+    mayor: 3e4aa036-555c-463b-a893-d4a1f6e669ab
+    max-pop: 2
+  6500cff9-eaa6-48cc-8096-b729458a1dcd:
+    town: true
+    xp: 0
+    tier: 0
+    name: Brisbane
+    mayor: a73c05df-44ef-4ca8-836a-9dbc3be37f38
+    max-pop: 5
+  aa64025e-0c85-4096-ba9a-07706883b5de:
+    town: true
+    xp: 463
+    tier: 2
+    name: Peru
+    mayor: 844054b0-bb2e-4097-a95a-ceafcb754936
+    max-pop: 9
+  9a815a4c-b2c0-4a02-914e-feea2e1965de:
+    town: true
+    xp: 0
+    tier: 0
+    name: quickdroppedsquad
+    mayor: 1d229840-fc5c-459b-ad40-1cbc821914b3
+    max-pop: 2
+  d85c5590-7913-4340-92c8-6f0bcf87146f:
+    town: true
+    xp: 0
+    tier: 0
+    name: Perth
+    mayor: 9990750f-32d3-4fdd-8d29-c74ecd85b8be
+    max-pop: 2
+  4827bd47-7e35-4128-8ae4-1fd828cc3cfd:
+    town: true
+    xp: 0
+    tier: 0
+    name: Aucklandia
+    mayor: 5bdb6ea4-98ed-4cda-b5a7-368c3cfb7505
+    max-pop: 2
 nation-data:
   '0':
-    amount: 53
+    amount: 140

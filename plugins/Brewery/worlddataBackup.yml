@@ -1,3 +1,20 @@
+BCauldron:
+  6d81ea0a-5153-4e19-98f6-acf9ea3da237:
+    '0':
+      block: -15250/63/-2137
+      state: 1252
+      ingredients: BAAABtAA_Q[MDH;DhY~4CAAAF
+    '1':
+      block: -14715/58/-2239
+      state: 334
+      ingredients: BAAABtAA_Q[MGO^7HZgz[;[t=dEAAANA
+  7ae07698-2afd-434a-a14d-0a8762799e82: {}
+Barrel:
+  6d81ea0a-5153-4e19-98f6-acf9ea3da237:
+    '0':
+      spigot: -14710/57/-2236
+      bounds: -14711,57,-2238,-14710,58,-2237
+  7ae07698-2afd-434a-a14d-0a8762799e82: {}
 Worlds:
   6d81ea0a-5153-4e19-98f6-acf9ea3da237: world
   7ae07698-2afd-434a-a14d-0a8762799e82: world_nether

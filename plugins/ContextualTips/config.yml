@@ -270,7 +270,7 @@ contextual-tips:
   #6 minutes after joining the game
   starter-tip6:
     enabled: true
-    message: '&eTravel the world and teleport to various places using &6/navigate&e. You can also go to your town using &6/t spawn.'
+    message: '&eYou can make a &6Camp &eby placing a &6Campfire &eto protect your stuff while you save up for a town.'
     sound-enabled: true
 
   tips-off:

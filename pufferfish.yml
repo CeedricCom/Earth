@@ -10,6 +10,8 @@ info:
 # -1 disables this feature.
 entity_timeouts:
   ENDER_PEARL: 200
+  SNOWBALL: -1
+  LLAMA_SPIT: -1
 sentry-dsn: ''
 enable-books: true
 enable-suffocation-optimization: true

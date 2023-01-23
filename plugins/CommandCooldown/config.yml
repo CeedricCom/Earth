@@ -1,5 +1,0 @@
-# If enabled, the plugin will check for available updates when enabled
-checkUpdates: true
-# Informs a player know when they are bypassing a cooldown
-sendBypassMessage: true
-version: 2.4.4 beta

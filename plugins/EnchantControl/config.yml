@@ -17,3 +17,7 @@ enchants:
   '7':
     disabled: true
     custom: false
+  '49':
+    custom: true
+    disabled: false
+    maxLevel: 1

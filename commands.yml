@@ -27,3 +27,5 @@ aliases:
   - earth
   playerskull:
   - phead $1
+  recipes:
+  - recipelist

@@ -1,0 +1,45 @@
+name: TownyCamps
+version: 0.08
+language: Chinese
+author: LlmDl
+website: 'http://townyadvanced.github.io/'
+description: >
+    Language file for all game messages.  Do not alter this file.
+    If you wish to change any of the entries, make a copy named something else.
+    Alternate language files can be enabled by altering the
+    [language] entry in config.yml
+#
+#
+#         You MUST retain spacing in the texts.
+#  If a text begins or ends with a space, it must remain that way.
+#
+#
+#       %s = data to be supplied by the plugin.
+
+# Text colouring
+# --------------
+# Black = &0, Navy = &1, Green = &2, Blue = &3, Red = &4
+# Purple = &5, Gold = &6, LightGray = &7, Gray = &8
+# DarkPurple = &9, LightGreen = &a, LightBlue = &b
+# Rose = &c, LightPurple = &d, Yellow = &e, White = &f
+
+townycamps_plugin_prefix: '&f[&6城镇营地&f] '
+unable_to_make_camp: '&c你没有创建城镇营地的权限.'
+confirm_campfire_creation: '&f[&6城镇营地&f] 你想创建一个城镇营地吗?'
+you_have_made_a_camp: '你已经创建了一个城镇营地.'
+your_camp_was_removed: '你的营地已移除.'
+you_arent_allowed_to_interact_with_this_camp: '你不被允许与这个营地互动.'
+you_arent_allowed_to_claim_this_camp: '你不被允许认领这个营地.'
+this_area_already_has_a_camp: '这个地区已经有了一个营地.'
+townycamps_res_status_time_left: '&2营地剩余时间: &a%s'
+townycamps_res_status_location: '&2营地位置: &a%s'
+townycamps_camp_notification: '&6~ %s''s 营地'
+townycamps_wild_notification: '&6~ &2%s'
+new_camp_event_cancelled: '&4营地创建已取消.'
+townycamps_dynmap_layer_name: '城镇营地'
+townycamps_expiration: '你的营地将在 %s 后过期.'
+townycamps_pvp_disabled: '&cPVP在营地内被禁用.'
+unable_to_make_a_new_camp_for_x: '&c你创建营地的冷却时间剩余: %s.'
+townycamps_creation_cooldown_warning: '创建营地有 %s 冷却时间. 创建后，您将不得不再次等待才能制作下一个营地.'
+config_reload_success: '&2Successfully reloaded the camps config.'
+config_reload_failure: '&cAn error occurred when reloading the camps config, please check the console for more information.'

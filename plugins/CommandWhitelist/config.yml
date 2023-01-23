@@ -107,6 +107,7 @@ groups:
     - warschedule
     - sessions
     - siegeschedule
+    - bottle
     subcommands: []
   mvp:
     commands:
@@ -140,6 +141,8 @@ groups:
     - prefixadmin
     - co
     - matrix
+    - townyadmin
+    - ta
     - gms
     - tppos
     - invsee
@@ -148,6 +151,7 @@ groups:
     - spark
     - v
     - vanish
+    - switchperms
     - coreprotect
     subcommands: []
   admin:

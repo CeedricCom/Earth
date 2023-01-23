@@ -1,0 +1,64 @@
+bottle:
+  # Shows if there is available new version on login with bottledexp.versioncheck permission node
+  ShowNewVersion: true
+  # Language file you want to use
+  Language: EN
+  # How much player will spend converting his xp to bottles. This cant be lower than xpEarn
+  xpCost: 10
+  # How much player will get xp from xp bottle
+  # Default value: 8
+  # Having this value lower than xpCost will mean that players will loose some amount of exp while converting, which can help out in preventing mindless conversions or posible exploits with other plugins which could give out extra exp
+  xpEarn: 8
+  # Do you want to use custom items when converting xp to xp bottles
+  useItems: false
+  # Material name for custom item, by default its empty glass bottle
+  consumedItemMaterial: GLASS_BOTTLE
+  # How many to consume when converting. This is for every bottle you will get
+  amountConsumed: 1
+  # Do you want to charge money for xp conversion
+  useMoney: false
+  # How much it will gonna cost
+  moneyCost: 100
+  # Do you want to show extra information for how much its gonna cost to level up
+  useBottleMoney: false
+  # How much one xp bottle costs
+  bottleCost: 3.25
+  # Do you want to show exp consumed on enchant
+  ShowEnchantExp: true
+  # Do you want to show all enchantments player gets after enchanting item
+  ShowEnchant: false
+  # Do you want to use new 1.8 enchant system
+  UseThreeButtonEnchant: true
+  give:
+    # How much exp will be lost during transfer in percentage
+    LostDurringTransfer: 0
+  BlockInteraction:
+    Use: false
+    # Do you want to use right click, if false then left will be used, good for block with interactions like enchant table
+    UseRightClick: false
+    # Material of block will be used to convert xp to bottles
+    BlockMaterial: ENCHANTING_TABLE
+    # Material of item in hand when you want to convert xp by clicking block
+    HandItemMaterial: GLASS_BOTTLE
+    # How many bottles to give everytime
+    GiveEveryTime: 1
+    # How many times to multiply given bottles by clicking shift
+    Multiplayer: 10
+  CustomBlockInteraction:
+    Use: false
+    # Do you want to use right click, if false then left will be used, good for block with interactions like enchant table
+    UseRightClick: false
+    # Material of item in hand when you want to convert xp by clicking block
+    HandItemMaterial: GLASS_BOTTLE
+    # How many bottles to give everytime
+    GiveEveryTime: 1
+    # How many times to multiply given bottles by clicking shift
+    Multiplayer: 10
+  CraftExpContainer:
+    # When this set to true there will be option to craft special expbottle by placing empty glass bottle into crafting
+    # You can consume it by right clicking it
+    Use: false
+  # When this set to true, all trades with villgers involving exp will be disabled
+  DisableVillagerExpTrade: false
+  # When this set to true,destrying mob spawners wont drop exp
+  DisableMobSpawnerExp: false

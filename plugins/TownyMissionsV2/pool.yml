@@ -187,8 +187,10 @@ pool:
               ==: org.bukkit.inventory.ItemStack
               type: 'ENCHANTED_BOOK'
               meta:
-                enchants: 
-                  - protection:4
+                ==: ItemMeta
+                meta-type: ENCHANTED
+                stored-enchants: 
+                  PROTECTION_ENVIRONMENTAL: 4
       2:
         definition: 'GATHER'
         goal: 3000
@@ -305,8 +307,10 @@ pool:
               ==: org.bukkit.inventory.ItemStack
               type: 'ENCHANTED_BOOK'
               meta:
-                enchants:
-                  - 'sharpness:5'
+                ==: ItemMeta
+                meta-type: ENCHANTED
+                stored-enchants:
+                  DAMAGE_ALL: 5
       2:
         definition: 'GATHER'
         goal: 16
@@ -344,8 +348,10 @@ pool:
               ==: org.bukkit.inventory.ItemStack
               type: 'ENCHANTED_BOOK'
               meta:
-                enchants: 
-                  - mending:1
+                ==: ItemMeta
+                meta-type: ENCHANTED
+                stored-enchants: 
+                  MENDING: 1
           4:
             type: ITEM
             total: 64
@@ -685,14 +691,16 @@ pool:
             total: 5000
           3:
             type: ITEM
-            total: 1024
+            total: 4
             itemstack:
               v: 19
               ==: org.bukkit.inventory.ItemStack
               type: 'ENCHANTED_BOOK'
               meta:
-                enchants:
-                  - unbreaking:4
+                ==: ItemMeta
+                meta-type: ENCHANTED
+                stored-enchants:
+                  DURABILITY: 4
       2:
         definition: 'GATHER'
         goal: 10000
@@ -858,8 +866,10 @@ pool:
               ==: org.bukkit.inventory.ItemStack
               type: 'ENCHANTED_BOOK'
               meta:
-                enchants:
-                  - 'sharpness:5'
+                ==: ItemMeta
+                meta-type: ENCHANTED
+                stored-enchants:
+                  DAMAGE_ALL: 5
       2:
         definition: 'GATHER'
         goal: 32
@@ -897,8 +907,10 @@ pool:
               ==: org.bukkit.inventory.ItemStack
               type: 'ENCHANTED_BOOK'
               meta:
-                enchants: 
-                  - mending:1
+                ==: ItemMeta
+                meta-type: ENCHANTED
+                stored-enchants: 
+                  MENDING: 1
           4:
             type: ITEM
             total: 128

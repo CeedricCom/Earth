@@ -48,7 +48,6 @@ profiles:
       count: 10
       distance: 25
     actions:
-      - remove-ai
       - remove-random-movement
       - remove-awareness
       - disable-collisions
@@ -91,7 +90,6 @@ profiles:
       count: 1
       distance: 60
     actions:
-      - disable-random-movement
       - disable-collisions
   trim-monsters:
     group:

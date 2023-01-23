@@ -34,7 +34,7 @@ default-radius: 10
 
 # The maximum radius that can be used in a command. Set to "0" to disable.
 # To run a rollback or restore without a radius, you can use "r:#global".
-max-radius: 100
+max-radius: 150
 
 # If enabled, items taken from containers (etc) will be included in rollbacks.
 rollback-items: true

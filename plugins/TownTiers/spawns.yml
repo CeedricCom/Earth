@@ -3,68 +3,83 @@ towns:
     spawns:
       '2':
         world: world
-        x: -24019
+        x: -24017
         y: 2
         z: -6822
       '3':
         world: world
-        x: -24042
+        x: -24041
         y: 63
-        z: -6804
+        z: -6802
   864f45f4-d755-4011-a9fc-9942ee4c5f31:
     spawns:
       '2':
         world: world
-        x: -13573
-        y: 1
-        z: -9034
+        x: -13543
+        y: 2
+        z: -9026
       '3':
         world: world
-        x: -13492
-        y: 24
-        z: -9002
+        x: -13495
+        y: 63
+        z: -9058
   0ccdedf7-f2ce-4410-a203-0409fcd07411:
     spawns:
       '2':
         world: world
-        x: -9267
+        x: -9254
         y: 256
-        z: -12772
+        z: -12759
+      '3':
+        world: world
+        x: -9170
+        y: 41
+        z: -12749
   be6a3a45-d918-40d0-918b-7e0425c2bebe:
     spawns:
       '2':
         world: world
-        x: 7232
+        x: 7231
         y: 40
-        z: -6817
+        z: -6808
   2edf89a2-83f3-4fa4-b131-d65c4a52eb25:
     spawns:
       '2':
         world: world
-        x: 13666
+        x: 13663
         y: 3
-        z: -11589
+        z: -11581
+      '3':
+        world: world
+        x: 13658
+        y: 3
+        z: -11622
   ec2e0e68-b750-471d-8d2d-99a381fc06b3:
     spawns:
       '2':
         world: world
-        x: -7670
+        x: -7668
         y: 115
-        z: -14858
+        z: -14865
   facf9060-8c9b-47d9-a616-39cf8ad05330:
     spawns:
       '2':
         world: world
-        x: 4265
+        x: 4266
         y: 55
-        z: -13135
+        z: -13136
+      '3':
+        world: world
+        x: 4241
+        y: 11
+        z: -13133
   4f0d0cd3-ad7d-44aa-95e0-aad22564800f:
     spawns:
       '2':
         world: world
-        x: -1893
+        x: -1894
         y: 2
-        z: -7968
+        z: -7972
   3c2b25d6-a9c4-47a3-b85b-c3e522387c71:
     spawns:
       '2':
@@ -72,34 +87,54 @@ towns:
         x: 313
         y: 51
         z: -10050
+      '3':
+        world: world
+        x: 279
+        y: 4
+        z: -10053
   9ff0851b-ecee-4885-b6eb-313073f7d0ef:
     spawns:
       '2':
         world: world
-        x: -13113
+        x: -13108
         y: 63
-        z: -9620
+        z: -9610
   8fbd2267-6a7b-4764-8ba7-a646f3dd30da:
     spawns:
       '2':
         world: world
+        x: 5336
+        y: 64
+        z: -12198
+      '3':
+        world: world
         x: 5384
         y: 8
-        z: -12132
+        z: -12128
   9308e17a-5063-4e09-bf82-d5e30fd4b4f1:
     spawns:
       '2':
         world: world
-        x: 6161
+        x: 6165
         y: 2
-        z: -10406
+        z: -10405
+      '3':
+        world: world
+        x: 6201
+        y: 57
+        z: -10396
   150c30af-2e95-4922-a86b-ec54c0f212fa:
     spawns:
       '2':
         world: world
+        x: 5773
+        y: 65
+        z: -6325
+      '3':
+        world: world
         x: 5736
         y: 51
-        z: -6342
+        z: -6344
   087d1421-34cd-4022-9701-a871e5e7575c:
     spawns:
       '2':
@@ -107,24 +142,154 @@ towns:
         x: 9431
         y: 126
         z: -8004
+      '3':
+        world: world
+        x: 9467
+        y: 113
+        z: -8069
   6f9ccaff-f59e-4507-8913-4524e631d561:
     spawns:
       '2':
         world: world
-        x: 20478
-        y: 175
-        z: -6740
+        x: 20480
+        y: 176
+        z: -6735
+      '3':
+        world: world
+        x: 20514
+        y: 181
+        z: -6793
   6efcfb85-dbd2-4843-bda3-6ce05962a74f:
     spawns:
       '2':
         world: world
-        x: -11829
+        x: -11824
         y: 1
-        z: -7639
+        z: -7641
+      '3':
+        world: world
+        x: -11794
+        y: 63
+        z: -7623
   835de6cc-d041-4849-956a-7742b326acc6:
     spawns:
       '2':
         world: world
-        x: 4648
-        y: 1
-        z: -7560
+        x: 4673
+        y: 58
+        z: -7591
+  8c7ad46c-af06-4a5e-b91d-0ea0570be189:
+    spawns:
+      '2':
+        world: world
+        x: -15215
+        y: 69
+        z: -1277
+  a0b4e4bc-13c5-4426-8768-c979aa876ddc:
+    spawns:
+      '2':
+        world: world
+        x: -16557
+        y: 63
+        z: -5357
+      '3':
+        world: world
+        x: -16746
+        y: 64
+        z: -5396
+  f3358afe-d780-4e13-8589-55105c2bd18c:
+    spawns:
+      '2':
+        world: world
+        x: 2491
+        y: 17
+        z: -10502
+      '3':
+        world: world
+        x: 2504
+        y: 66
+        z: -10518
+  1b06d48b-9974-40c7-9dad-fc4c3ab58ce3:
+    spawns:
+      '2':
+        world: world
+        x: 2517
+        y: 57
+        z: -8556
+  08140e98-62d3-41b2-9cb1-b9bba75f864a:
+    spawns:
+      '2':
+        world: world
+        x: 6662
+        y: 26
+        z: -7167
+  91f95e27-4725-4c67-8d1b-10685a0b672b:
+    spawns:
+      '2':
+        world: world
+        x: -12916
+        y: 67
+        z: -10113
+  1f72a90f-ff28-4ed6-b961-757eb5233c4b:
+    spawns:
+      '2':
+        world: world
+        x: 35945
+        y: 20
+        z: 7637
+  f344a027-7dd6-4cf7-b71a-251d0e1f584a:
+    spawns:
+      '2':
+        world: world
+        x: 18659
+        y: 2
+        z: -4661
+  82cf056c-b070-46c3-bedd-bbeec193bc24:
+    spawns:
+      '2':
+        world: world
+        x: -14218
+        y: 115
+        z: -3848
+  d465a8f5-b55c-44df-8d13-c9eb1c89310b:
+    spawns:
+      '2':
+        world: world
+        x: 12029
+        y: 46
+        z: -8093
+  9b8518ae-6dc0-40ea-ada4-b78f6fd0f5ba:
+    spawns:
+      '2':
+        world: world
+        x: -18618
+        y: 63
+        z: 167
+  d249a8c6-e7f7-4697-b5f8-eb325b7dc2c9:
+    spawns:
+      '2':
+        world: world
+        x: -17063
+        y: 2
+        z: -8666
+  3639db7e-e05f-4df9-8772-06212663d759:
+    spawns:
+      '2':
+        world: world
+        x: -9806
+        y: 71
+        z: -12743
+  8ac52874-7a9a-427c-be33-0038becb4638:
+    spawns:
+      '2':
+        world: world
+        x: 859
+        y: 69
+        z: -9770
+  69da1a23-5e9e-4c47-a4ce-acabee07e6ed:
+    spawns:
+      '2':
+        world: world
+        x: 30141
+        y: 67
+        z: 8529

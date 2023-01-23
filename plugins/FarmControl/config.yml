@@ -26,9 +26,8 @@ world-settings:
         - hard-nerf-fish
         - ai-wipe
         - trim-villager-chunks
-        - freeze-animal-farms
-        - villager-random-movement
-      #  - trim-animal-farms
+      #  - freeze-animal-farms
+        - trim-animal-farms
       #  - trim-sparse-animal-farms
 
       # These profiles only run when the server is performing poorly and are progressively undone as performance

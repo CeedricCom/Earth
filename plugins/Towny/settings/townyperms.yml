@@ -171,11 +171,11 @@ nations:
   ranks:
     coking:
     - towny.command.nation.*
-    - -towny.command.nation.delete
-    - -towny.command.nation.set.king
     - towny.command.nation.deposit.other
     - siegewar.nation.siege.*
     - siegewar.command.siegewar.nation.*
+    - -towny.command.nation.delete
+    - -towny.command.nation.set.king
     assistant:
     - towny.command.nation.rank.helper
     - towny.command.nation.invite.add

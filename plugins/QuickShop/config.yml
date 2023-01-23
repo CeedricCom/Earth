@@ -776,7 +776,7 @@ integration:
 #The protection that a shop should check.
 protect:
   explode: true
-  hopper: true
+  hopper: false
   entity: true
 
 #This option allows you to set custom item max stacksizes.

@@ -25,6 +25,7 @@ static:
   EGG: 16
   BUCKET: 16
   WATER_BUCKET: 1
+  TIPPED_ARROW: 1
 
 regex:
   ^.*_CHESTPLATE$: 1 # All chestplates

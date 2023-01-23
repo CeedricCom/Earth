@@ -1,0 +1,46 @@
+name: TownyCamps
+version: 0.08
+language: english
+author: LlmDl
+website: 'http://townyadvanced.github.io/'
+description: >
+    Language file for all game messages.  Do not alter this file.
+    If you wish to change any of the entries, make a copy named something else.
+    Alternate language files can be enabled by altering the
+    [language] entry in config.yml
+#
+#
+#         You MUST retain spacing in the texts.
+#  If a text begins or ends with a space, it must remain that way.
+#
+#
+#       %s = data to be supplied by the plugin.
+
+# Text colouring
+# --------------
+# Black = &0, Navy = &1, Green = &2, Blue = &3, Red = &4
+# Purple = &5, Gold = &6, LightGray = &7, Gray = &8
+# DarkPurple = &9, LightGreen = &a, LightBlue = &b
+# Rose = &c, LightPurple = &d, Yellow = &e, White = &f
+
+townycamps_plugin_prefix: '&f[&6TownyCamps&f] '
+unable_to_make_camp: '&cYou don''t have permission to make a Towny Camp.'
+confirm_campfire_creation: '&f[&6TownyCamps&f] Would you like to make a Towny Camp?'
+you_have_made_a_camp: 'You have created a Towny Camp.'
+your_camp_was_removed: 'Your camp was removed.'
+you_arent_allowed_to_interact_with_this_camp: 'You aren''t allowed to interact with this camp.'
+you_arent_allowed_to_claim_this_camp: 'You aren''t allowed to claim this camp.'
+this_area_already_has_a_camp: 'This area already has a camp.'
+townycamps_res_status_time_left: '&2Camp time left: &a%s'
+townycamps_res_status_location: '&2Camp location: &a%s'
+townycamps_camp_notification: '&6~ %s''s Camp'
+townycamps_wild_notification: '&6~ &2%s'
+new_camp_event_cancelled: '&4Camp creation was cancelled.'
+townycamps_dynmap_layer_name: 'TownyCamps'
+townycamps_expiration: 'Your camp will expire in %s.'
+townycamps_pvp_disabled: '&cPVP is disabled inside of camps.'
+unable_to_make_a_new_camp_for_x: '&cYour ability to make a Camp is on cooldown: %s remains.'
+townycamps_creation_cooldown_warning: 'There is a cooldown on camp creation of %s. Upon creation you will have to wait again before making your next camp.'
+config_reload_success: '&2Successfully reloaded the camps config.'
+config_reload_failure: '&cAn error occurred when reloading the camps config, please check the console for more information.'
+your_camp_has_expired: 'Your camp has expired, re-light the campfire in order to reset your timer.'
