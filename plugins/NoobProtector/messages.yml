@@ -15,8 +15,8 @@ msg_currenttime: Time in defined time zone is %1%
 msg_warnpvpoff: '&6You are now protected from PVP-attacks. But you cannot attack other
   players too. PVP-protection will be removed at &e%1%'
 msg_youcantattack: '&6Hey! You cannot attack other players! Type &e%1% &6to remove protection.'
-msg_warndefender: '&6%1% is trying to attack you!'
-msg_warnatacker: '&6%1% is PVP-protected. Your attack failed.'
+msg_warndefender: '%1% is trying to attack you!'
+msg_warnatacker: '%1% is PVP-protected. Your attack failed.'
 msg_protected: '&6You are protected.'
 msg_notprotected: '&6You are unprotected.'
 msg_playtime: 'Play-time (online) limit: %1%'
