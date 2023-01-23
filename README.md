@@ -32,6 +32,8 @@ The following plugins are missing from this repository as they are paid however 
   - PremiumVanish
   - VillagerOverhaul
   - HeadDatabase
+  - StackResize
+  - TownyCamps
 
 The following plugins are forks so caution should be taken when updating
   - SiegeWar
