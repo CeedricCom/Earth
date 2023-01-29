@@ -1,4 +1,4 @@
-# DeluxeMenus 1.13.6-Release main configuration file
+# DeluxeMenus 1.13.7-DEV-153 main configuration file
 #
 # A full wiki on how to use this plugin can be found at:
 # https://wiki.helpch.at/clips-plugins/deluxemenus
@@ -36,3 +36,16 @@ gui_menus:
     file: cobbled-deepslate.yml
   ochre-froglight-recipe:
     file: yellow-froglight.yml
+  glow-berries:
+    file: glow_berries.yml
+  glow-lichen:
+    file: glow_lichen.yml
+  raw-copper:
+    file: raw_copper.yml
+  sculk:
+    file: sculk.yml
+  sculk-sensor:
+    file: sculk_sensor.yml
+  sculk-shrieker:
+    file: sculk_shrieker.yml
+

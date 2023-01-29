@@ -1,6 +1,6 @@
 menu_title: 'Recipes'
 open_command:
-  - recipelist
+  - recipes
 register_command: true
 size: 27
 
@@ -151,9 +151,71 @@ items:
       - '&eLeft-Click to view recipe'
     left_click_commands:
       - '[openguimenu] ochre-froglight-recipe'
+  glow-berries:
+    material: GLOW_BERRIES
+    slot: 14
+    hide_attributes: true
+    display_name: '&fGlow Berries'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] glow-berries'
+  glow-lichen:
+    material: GLOW_LICHEN
+    amount: 4
+    slot: 15
+    hide_attributes: true
+    display_name: '&fGlow Lichen'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] glow-lichen'
+  raw-copper:
+    material: RAW_COPPER
+    amount: 4
+    slot: 16
+    hide_attributes: true
+    display_name: '&fRaw Copper'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] raw-copper'
+  sculk:
+    material: SCULK
+    slot: 17
+    hide_attributes: true
+    display_name: '&fSculk'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] sculk'
+  sculk-sensor:
+    material: SCULK_SENSOR
+    slot: 18
+    hide_attributes: true
+    display_name: '&fSculk Sensor'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] sculk-sensor'
+  sculk-shrieker:
+    material: SCULK_SHRIEKER
+    slot: 19
+    hide_attributes: true
+    display_name: '&fSculk Shrieker'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] sculk-shrieker'
   black-panel-fill:
     material: BLACK_STAINED_GLASS_PANE
     slots: 
-      - 14-26
+      - 20-26
     hide_attributes: true
     display_name: "&f "
