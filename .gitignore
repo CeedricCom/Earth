@@ -43,6 +43,7 @@ plugins/dynmap/version.txt
 plugins/dynmap/hiddenplayers.txt
 plugins/dynmap/world.pending
 plugins/TAB/placeholder-errors.log
+plugins/TAB/errors.log
 plugins/spark/activity.json
 plugins/Essentials/usermap.csv
 plugins/Essentials/userdata/
@@ -120,3 +121,7 @@ plugins/StackResize-1.3.0.jar
 plugins/Brewery/data.yml
 plugins/Brewery/worlddata.yml
 plugins/Brewery/worlddataBackup.yml
+plugins/SiegeStats/reports/
+plugins/TownTiers/data.yml
+plugins/TownTiers/spawns.yml
+plugins/GSit/data/

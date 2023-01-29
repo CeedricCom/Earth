@@ -104,6 +104,7 @@ groups:
     - tiers
     - sethome
     - home
+    - delhome
     - warschedule
     - sessions
     - siegeschedule
@@ -133,6 +134,14 @@ groups:
     - stonecutter
     - sort
     - maps
+  helper:
+    commands:
+    - maps
+    - grim
+    - v
+    - vanish
+    - grim
+    - co
   moderator:
     commands:
     - sv
@@ -148,11 +157,13 @@ groups:
     - invsee
     - tpo
     - gmsp
-    - spark
     - v
     - vanish
     - switchperms
     - coreprotect
+    - grim
+    - siegestats
+    - spark
     subcommands: []
   admin:
     commands:

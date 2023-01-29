@@ -307,7 +307,7 @@ war:
         # - Assuming this value is 3,
         # - If team A reverses banner control, any cap-points they get after that will be multiplied by 3.
         # - If team B re-reverses banner control, any cap-points they get after that will be multiplied by 6.
-        multiplier_value: '0.75'
+        multiplier_value: '1.25'
   
   
       # +------------------------------------------------------+ #
@@ -337,7 +337,7 @@ war:
         # Set to -1 to disable the cap.
         # The value applies to both positive and negative balances e.g. 20000 means a lower limit of -20000 and an upper limit of 20000.
         # TIP: Set this value HIGH to give advantage to big nations, and LOW to give advantage to small nations.
-        value: '20000'
+        value: '40000'
   
   
       # +------------------------------------------------------+ #
@@ -607,17 +607,17 @@ battle_session_scheduler:
     # This setting applies to Monday, Tuesday, Wednesday, Thursday, and Friday.
     # The format is HOUR:MINUTE.
     # The default values are all at ten past the hour, so that the critical point of the battle (the final minutes), will fall on the hour.
-    weekdays: 0:10,1:20,2:40,9:30,11:00,12:10,13:10,14:10,15:10,16:10,17:10,18:10,19:10,20:10,21:10,22:10,23:10
+    weekdays: 16:00,19:00,22:00,01:00
   
     # This value determines the weekend times (in Server timezone) when each battle session will start.
     # This setting applies to Saturday and Sunday.
     # The format is HOUR:MINUTE.
     # The default values are all at ten past the hour, so that the critical point of the battle (the final minutes), will fall on the hour.
-    weekend_days: 0:10,1:20,2:40,9:30,11:00,12:10,13:10,14:10,15:10,16:10,17:10,18:10,19:10,20:10,21:10,22:10,23:10
+    weekend_days: 10:00,14:00,17:00,20:00,23:00,02:00
   
   # This value determines the duration of each battle session.
   # TIP: The default value of 50 is deliberately designed to give players a 10 minute break after each battle session, for reasons of health and safety.
-  duration_minutes: '50'
+  duration_minutes: '120'
   
   # Should sessions be cancelled when there are no active sieges?
   cancel_session_when_no_active_sieges: 'false'

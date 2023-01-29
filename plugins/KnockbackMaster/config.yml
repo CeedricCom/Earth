@@ -38,7 +38,7 @@ knockback:
     # Horizontal knockback, affects only X and Z coordinate values.
     horizontal: 0.4
     # Vertical knockback, affects only Y coordinate value.
-    vertical: 0.36
+    vertical: 0.30
 
   # Sprinting knockback values. This multipliers will be used if the damager is sprinting
   # By default in Minecraft, if the damager player is sprinting, he deals more knockback to the damaged one.

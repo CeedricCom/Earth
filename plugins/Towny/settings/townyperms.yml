@@ -119,6 +119,8 @@ towns:
     - towny.command.nation.leave
     - siegewar.town.siege.*
     - siegewar.command.siegewar.town.*
+    builder:
+    - towny.claimed.owntown.*
   
     # assistants are able to grant VIP and helper rank.
     assistant:

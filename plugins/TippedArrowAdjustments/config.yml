@@ -1,0 +1,4 @@
+max-seconds:
+  SLOW_FALLING: 2
+  SLOW: 2
+  WEAKNESS: 1

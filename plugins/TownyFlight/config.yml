@@ -65,7 +65,7 @@ options:
   
   # If set to true, players entering their town will have flight auto-enabled.
   # When set to true, the plugin will use slightly more resources due to the EnterTown listener.
-  auto_Enable_Flight: 'false'
+  auto_Enable_Flight: 'true'
   
   # If set to true, players entering their town will have flight auto-enabled without being notified in chat.
   auto_Enable_Silent: 'false'

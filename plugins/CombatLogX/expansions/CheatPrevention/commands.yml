@@ -18,6 +18,7 @@ blocked-command-list:
   - "/t spawn"
   - "/res spawn"
   - "/player spawn"
+  - "/earth"
   - "/resources"
   - "/cosmetics"
   - "/res spawn"

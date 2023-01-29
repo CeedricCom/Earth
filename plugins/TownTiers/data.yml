@@ -1,40 +1,42 @@
 town-data:
   '1':
-    amount: 13
+    amount: 16
   '2':
-    amount: 17
+    amount: 13
   '0':
-    amount: -82
+    amount: -94
   '3':
-    amount: 11
-  '4':
-    amount: 25
-  '5':
-    amount: 21
-  '6':
     amount: 14
+  '4':
+    amount: 32
+  '5':
+    amount: 23
+  '6':
+    amount: 19
   '7':
-    amount: 2
+    amount: 5
 generator-data:
   '1':
-    amount: 346
+    amount: 451
   '2':
-    amount: 182
+    amount: 224
   '3':
-    amount: 160
+    amount: 195
   '4':
-    amount: 135
+    amount: 168
   '0':
-    amount: 216
+    amount: 266
   '5':
-    amount: 86
+    amount: 110
   '6':
-    amount: 55
+    amount: 67
   '7':
-    amount: 30
+    amount: 39
   '8':
-    amount: 6
+    amount: 11
   '9':
+    amount: 4
+  '10':
     amount: 2
 legacy-towns:
   d27abc6a-a947-4b24-af98-d3731c73171f:
@@ -212,6 +214,120 @@ legacy-towns:
     name: Aucklandia
     mayor: 5bdb6ea4-98ed-4cda-b5a7-368c3cfb7505
     max-pop: 2
+  44dbd228-d38c-4099-bb78-a30356ef9f27:
+    town: false
+    xp: 16950
+    tier: 0
+    name: DIGGERS
+    mayor: 938f0879-9a4b-46ab-9c5d-9962d31b10f1
+    max-pop: 22
+  3c09807b-d724-473c-913f-f2cd0eb84a96:
+    town: true
+    xp: 1680
+    tier: 2
+    name: Madrid
+    mayor: 5de5b0db-d83f-434e-a323-13bb334adcfd
+    max-pop: 3
+  cc115fa2-418a-4f67-9b9a-fd725e2befd8:
+    town: true
+    xp: 0
+    tier: 0
+    name: Maid_Eldercare
+    mayor: 0dedbdaf-4671-4157-b3dc-a5c1dcee9bba
+    max-pop: 3
+  624c77c7-07a8-4745-b19f-d835ff043151:
+    town: true
+    xp: 0
+    tier: 0
+    name: Ashanagroth
+    mayor: 7ed679e7-1655-4d8d-a86b-33781521a6ff
+    max-pop: 2
+  4a9c9638-a717-410d-96ca-857fa9bc19c0:
+    town: true
+    xp: 0
+    tier: 0
+    name: New_Jersey
+    mayor: 828a3588-c084-4994-9abc-bb0749d3233c
+    max-pop: 2
+  6ef687f2-9f29-48cf-a9bf-ca915a5d01dd:
+    town: true
+    xp: 0
+    tier: 0
+    name: Anyang
+    mayor: 063d2d57-783c-475c-90d7-1654ab62cf6f
+    max-pop: 2
+  63f0a65a-5fda-41bf-83f9-3e9f45ecb471:
+    town: true
+    xp: 0
+    tier: 0
+    name: RoleplayDefenseForce
+    mayor: e284eed9-d504-4165-867a-14529b3dfc5c
+    max-pop: 2
+  04441208-ce54-44a8-b599-ef72998ce3fd:
+    town: true
+    xp: 0
+    tier: 0
+    name: kevs_gaff
+    mayor: 939bee25-3933-4551-9618-2904cedfd482
+    max-pop: 2
+  def90504-0fc3-4ff7-8365-f477fdf4fe4e:
+    town: true
+    xp: 0
+    tier: 0
+    name: Brisban
+    mayor: efbb37fe-fcb1-42ee-8660-c52025a0c6b3
+    max-pop: 2
+  854fc49c-441b-4360-a1ca-a1d2e3c7f95e:
+    town: true
+    xp: 0
+    tier: 0
+    name: Brisbann
+    mayor: a0d5ac8b-e13b-4bd3-8595-b5cae165c242
+    max-pop: 2
+  a2676a50-e7fb-43c1-af24-b4e462e4d967:
+    town: true
+    xp: 0
+    tier: 0
+    name: Christchurch
+    mayor: 8ad94951-ae84-48c3-9cea-1307d1f2c612
+    max-pop: 2
+  879cff16-cccc-44ba-89fe-e8e85f4bb4ec:
+    town: true
+    xp: 0
+    tier: 0
+    name: Churchchrist
+    mayor: 43efabf4-deec-4d0b-847c-73d84fbaf294
+    max-pop: 2
+  4219c7f5-b8ea-4a8b-9e57-9263030db066:
+    town: true
+    xp: 0
+    tier: 0
+    name: CanIsBad
+    mayor: 102ec310-0f43-46e1-84d7-0fa7aa0093f6
+    max-pop: 2
+  73b23a66-4a16-4947-ab31-a6bf5b3ec35d:
+    town: true
+    xp: 0
+    tier: 0
+    name: Daddy
+    mayor: 7b6c7c2f-f3d3-4c78-b6b1-0bd8b35ed979
+    max-pop: 2
+  3b915d86-2902-4987-8c67-d37c5768c77d:
+    town: true
+    xp: 0
+    tier: 0
+    name: Soap
+    mayor: 8e498bea-edda-4c01-ab82-e1788e89ed0a
+    max-pop: 2
+  570ba8d2-ca42-4019-93ac-b9dc6dcc584d:
+    town: true
+    xp: 0
+    tier: 0
+    name: Sunshine
+    mayor: 3e628f3b-7062-457b-bc61-8889f877e635
+    max-pop: 2
 nation-data:
   '0':
-    amount: 140
+    amount: 191
+  '1':
+    amount: 2
