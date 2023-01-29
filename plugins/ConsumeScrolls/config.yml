@@ -173,8 +173,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -187,8 +187,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -201,8 +201,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -215,8 +215,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -229,8 +229,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -243,8 +243,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -257,8 +257,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -271,8 +271,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -285,8 +285,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -299,8 +299,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -313,8 +313,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -327,8 +327,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -341,8 +341,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -355,8 +355,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -369,8 +369,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$75"
-        command: "money grant {0} 75"
+        name: "$150"
+        command: "money grant {0} 150"
       2:
         type: command
         name: "500 XP"
@@ -385,8 +385,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -399,8 +399,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -413,8 +413,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -427,8 +427,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -441,8 +441,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -455,8 +455,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -469,8 +469,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -483,8 +483,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -497,8 +497,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -511,8 +511,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -525,8 +525,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -539,8 +539,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -553,8 +553,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -567,8 +567,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -581,8 +581,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$150"
-        command: "money grant {0} 150"
+        name: "$250"
+        command: "money grant {0} 250"
       2:
         type: command
         name: "750 XP"
@@ -597,8 +597,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -611,8 +611,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -625,8 +625,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -639,8 +639,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -653,8 +653,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -667,8 +667,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -681,8 +681,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -695,8 +695,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -709,8 +709,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -723,8 +723,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -737,8 +737,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -751,8 +751,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -765,8 +765,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -779,8 +779,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
@@ -793,8 +793,8 @@ scrolls:
     rewards:
       1: 
         type: command
-        name: "$250"
-        command: "money grant {0} 250"
+        name: "$350"
+        command: "money grant {0} 350"
       2:
         type: command
         name: "1000 XP"
