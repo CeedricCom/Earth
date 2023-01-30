@@ -109,7 +109,7 @@ killaura:
 
     # Strafe Check
     strafe:
-      enable: true
+      enable: false
       vl_weight: 3
       cancel_move: false
 
@@ -139,7 +139,7 @@ killaura:
 # Description: This check prevents players from using HitBox, Angle, Reach hacks.
 hitbox:
   # Enable HitBox check?
-  enable: true
+  enable: false
 
   # Maximum reach distance (default: 3.15)
   max_reach: 3.45
@@ -227,10 +227,10 @@ click:
 # This check prevents the player from moving abnormally
 move:
   # Enable this check?
-  enable: true
+  enable: false
 
   # Should Matrix block NoSlow cheating?
-  check_noslow: true
+  check_noslow: false
 
   # When the player reaches this VL, start to pull back the player's abnormal movement
   cancel_vl: 35
@@ -277,7 +277,7 @@ move:
 # Prevents player from sending too many movement packets or sending illegal packets
 badpackets:
   # Enable this check?
-  enable: true
+  enable: false
 
   # Timer check settings
   timer:
@@ -308,7 +308,7 @@ badpackets:
 # It prevents the player from speeding up certain actions, such as eating quickly, or quickly healing
 delay:
   # Enable this check?
-  enable: true
+  enable: false
 
   # Should Matrix block player actions when cheating is detected?
   cancel_action: false
@@ -348,20 +348,20 @@ block:
   modules:
     # It can detect player breaking block faster
     fastbreak:
-      enable: true
+      enable: false
       vl_weight: 4
     # It can detect player placing block faster
     fastplace:
-      enable: true
+      enable: false
       vl_weight: 1
       max_place_per_second: 9
     # It can detect player placing block without swing hand
     noswing:
-      enable: true
+      enable: false
       vl_weight: 1
     # detect player not send abort breaking packet
     abort:
-      enable: true
+      enable: false
       vl_weight: 0
 
   # Custom vl decay interval(seconds) and vl decay step size
@@ -425,7 +425,7 @@ scaffold:
 # Check prevents the player from moving too too quickly in liquids, or walking on liquid.
 jesus:
   # Enable this check?
-  enable: true
+  enable: false
 
   # Violations needed to cancel illegal movements (-1 = never cancel)
   cancel_vl: 15
@@ -449,7 +449,7 @@ jesus:
 # Check prevents the player from using any type of anti-knockback hacks.
 velocity:
   # Enable this check?
-  enable: true
+  enable: false
 
   # The time to wait for players to respond to velocity (ticks)
   # If the player does not respond to velocity after that
@@ -527,7 +527,7 @@ interact:
 # Check prevents the player people glitching through blocks.
 phase:
   # Enable this check?
-  enable: true
+  enable: false
 
   # How much time should Matrix prevent the player from moving if
   # the player frequently tries to move the block? (milliseconds)
@@ -577,7 +577,7 @@ autobot:
 # Only works for 1.9+
 elytra:
   # Enable this check?
-  enable: true
+  enable: false
 
   # Should Matrix be forced to pull back players who are particularly
   # cheating? Even if they do not reach cancel_vl (default: true)
@@ -606,7 +606,7 @@ elytra:
 # Only works for 1.9+
 vehicle:
   # Enable this check?
-  enable: true
+  enable: false
 
   # Prevent players from using certain creatures as vehicles
   # All entity types: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
@@ -616,7 +616,7 @@ vehicle:
   # Vehicle Speed/ Entity Speed
   speed:
     # Enable this modules?
-    enable: true
+    enable: false
 
     # setback VL (-1 = disable setback)
     setback_vl: 2
@@ -624,7 +624,7 @@ vehicle:
   # Vehicle Flight / Boat Flight
   flight:
     # Enable this modules?
-    enable: true
+    enable: false
 
     # setback vl (-1 = never setback)
     setback_vl: 4

@@ -1,6 +1,6 @@
 menu_title: 'Recipes'
 open_command:
-  - recipes
+  - recipelist
 register_command: true
 size: 27
 

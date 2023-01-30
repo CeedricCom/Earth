@@ -820,3 +820,7 @@ domination_awards:
     # This list is in the form of: {top_nation}, {next nation},......{bottom_nation}
     # Within each nation, the form is: {num_tier_1_offers, num_tier_2_offers .....}. etc.
     granted_artefact_offers: '{8,7,5,3,2} {7,6,4,2,1} {6,5,3,1,0} {5,4,2,0,0} {4,3,1,0,0} {3,2,0,0,0} {2,1,0,0,0}'
+ceedric_com:
+  # If set to true a nation will lose points when their soldier rank
+  # is removed while they are in an active siege zone
+  lose-points-on-removal: 'true'
