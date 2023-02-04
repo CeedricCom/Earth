@@ -300,7 +300,7 @@ war:
         # Subsequent reversals increase the rate further by that amount.
         # TIP: This feature grants small skilled armies a tactic to win battles against larger unskilled armies,
         # Tactic: Wait for the large army to cap the banner, then ambush/counterattack them, grabbing the reversal bonus, and holding the area to net an enhanced cap-point score.
-        enabled: 'true'
+        enabled: 'false'
   
         # This setting determines the strength of the bonus multiplier.
         # Example: 
@@ -607,17 +607,17 @@ battle_session_scheduler:
     # This setting applies to Monday, Tuesday, Wednesday, Thursday, and Friday.
     # The format is HOUR:MINUTE.
     # The default values are all at ten past the hour, so that the critical point of the battle (the final minutes), will fall on the hour.
-    weekdays: 16:00,19:00,22:00,01:00
+    weekdays: 0:00,2:30,14:00,16:30,19:00,21:30
   
     # This value determines the weekend times (in Server timezone) when each battle session will start.
     # This setting applies to Saturday and Sunday.
     # The format is HOUR:MINUTE.
     # The default values are all at ten past the hour, so that the critical point of the battle (the final minutes), will fall on the hour.
-    weekend_days: 10:00,14:00,17:00,20:00,23:00,02:00
+    weekend_days: 0:00,2:30,5:00,11:30,14:00,16:30,19:00,21:30
   
   # This value determines the duration of each battle session.
   # TIP: The default value of 50 is deliberately designed to give players a 10 minute break after each battle session, for reasons of health and safety.
-  duration_minutes: '120'
+  duration_minutes: '90'
   
   # Should sessions be cancelled when there are no active sieges?
   cancel_session_when_no_active_sieges: 'false'
