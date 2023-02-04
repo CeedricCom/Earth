@@ -207,10 +207,6 @@ Fishing:
         Amount: 1
         XP: 200
         Rarity: LEGENDARY
-    NETHERITE_SWORD:
-        Amount: 1
-        XP: 200
-        Rarity: MYTHIC
     NETHERITE_SHOVEL:
         Amount: 1
         XP: 200
@@ -224,22 +220,6 @@ Fishing:
         XP: 200
         Rarity: MYTHIC
     NETHERITE_HOE:
-        Amount: 1
-        XP: 200
-        Rarity: MYTHIC
-    NETHERITE_BOOTS:
-        Amount: 1
-        XP: 200
-        Rarity: MYTHIC
-    NETHERITE_HELMET:
-        Amount: 1
-        XP: 200
-        Rarity: MYTHIC
-    NETHERITE_LEGGINGS:
-        Amount: 1
-        XP: 200
-        Rarity: MYTHIC
-    NETHERITE_CHESTPLATE:
         Amount: 1
         XP: 200
         Rarity: MYTHIC
