@@ -1,0 +1,124 @@
+AlienRebound:
+  Cooldown: 25
+  Conditions:
+    targetwithin 15
+  Skills:
+    - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+    - effect:particles{p=happyVillager;amount=500;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+    - delay 10
+    - effect:particles{p=happyVillager;amount=500;hSpread=5;ySpread=1;speed=0;yOFfset=0.5} @Self
+    - damage{amount=20} @PlayersInRadius{r=5}
+    - delay 20
+    - effect:particles{p=happyVillager;amount=1000;hSpread=5;ySpread=1;speed=0;yOFfset=0.5} @Self
+    - damage{amount=20} @PlayersInRadius{r=5}
+    - delay 20
+    - effect:particles{p=happyVillager;amount=500;hSpread=10;ySpread=1;speed=0;yOFfset=0.5} @Self
+    - damage{amount=20} @PlayersInRadius{r=10}
+    - delay 20
+    - effect:particles{p=happyVillager;amount=500;hSpread=10;ySpread=1;speed=0;yOFfset=0.5} @Self
+    - throw{velocity=30;velocityY=30} @PlayersInRadius{r=10}
+
+ExtremeThrow:
+  Cooldown: 5
+  Skills:
+    - throw{velocity=30;velocityY=30} @Target
+    - delay 10
+    - effect:particles{p=happyVillager;amount=40;hSpread=5;ySpread=5;speed=0;yOFfset=0.5} @Self
+    - throw{velocity=3;velocityY=3} @PlayersInRadius{r=3}
+
+AlienPotion:
+  Cooldown: 30
+  Conditions: 
+    targetwithin: 20
+  Skills:
+    - effect:particles{p=dragon_breath;amount=4000;hSpread=20;ySpread=1;speed=0;yOFfset=0.5} @Self
+    - delay 40
+    - effect:particles{p=dragon_breath;amount=4000;hSpread=20;ySpread=1;speed=0;yOFfset=0.5} @Self
+    - delay 40    
+    - potion{type=POISON;lvl=3;duration=300} @PlayersInRadius{r=20}
+    - potion{type=WITHER;lvl=4;duration=60} @PlayersInRadius{r=20}
+
+AlienShield:
+  Cooldown: 10
+  Skills:
+  - damage{amount=20} @Trigger ~onAttack
+  - potion{type=BLINDNESS;lvl=1;duration=40} @Trigger ~onAttack
+
+AlienGrip:
+  Cooldown: 3
+  Conditions:
+    targetwithin: 12
+  Skills:
+  - effect:particles{p=enchant;amount=2000;hSpread=12;ySpread=1;speed=0;yOFfset=0.5} @Self
+  - delay 20
+  - pull{velocity=10} @PlayersInRadius {r=25}
+  - delay 20
+  - effect:explosion @Self
+  - ignite{ticks=100} @PlayersInRadius {r=2}
+  - damage{amount=50} @PlayersInRadius {r=2} 
+
+
+SmallSummon:
+  Skills:
+  - 'message{m="&2[Martians] [Alien Nexus] &aMother Martia: &fOsseus! Shield me from these degenerates"} @PlayersInWorld'
+  - teleport @target
+  - delay 60
+  - effect:particles{p=enchant;amount=200;hSpread=2;ySpread=3;speed=0;yOFfset=0.5} @Self
+  - summon{mob=AlienBrute;amount=7;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienBrute;amount=7;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienSkeleton;amount=7;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienSkeleton;amount=7;noise=5} @Self
+
+BigSummon:
+  Skills:
+  - 'message{m="&2[Martians] [Alien Nexus] &aMother Martia: &fMay the Obitus crush your souls"} @PlayersInWorld'
+  - teleport @target
+  - delay 60
+  - effect:particles{p=enchant;amount=200;hSpread=2;ySpread=3;speed=0;yOFfset=0.5} @Self
+  - summon{mob=AlienBrute;amount=7;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienBrute;amount=7;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienSkeleton;amount=7;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienSkeleton;amount=7;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienSkeleton;amount=7;noise=5} @Self
+
+HugeSummon:
+  Skills:
+  - 'message{m="&2[Martians] [Alien Nexus] &aMother Martia: &fThis will be fun :)"} @PlayersInWorld'
+  - teleport @target
+  - delay 60
+  - effect:particles{p=enchant;amount=200;hSpread=2;ySpread=3;speed=0;yOFfset=0.5} @Self
+  - summon{mob=AlienBrute;amount=9;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienBrute;amount=9;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienSkeleton;amount=9;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienSkeleton;amount=9;noise=5} @Self
+  - delay 20
+  - summon{mob=AlienSkeleton;amount=9;noise=5} @Self
+
+
+SummonBombers:
+  Skills:
+  - 'message{m="&2[Martians] [Alien Nexus] &aMother Martia: &fYou humans think you are very smart"} @PlayersInWorld'
+  - delay 60
+  - effect:particles{p=enchant;amount=200;hSpread=2;ySpread=3;speed=0;yOFfset=0.5} @Self
+  - summon{mob=SuicideBomber;amount=4;noise=5} @RandomLocationsNearOrigin{a=40;r=40;s=10;minr=1}
+
+SummonMiniBoss:
+  Skills:
+  - 'message{m="&2[Martians] [Alien Nexus] &aMother Martia: &fBeware of my GREATEST CREATION"} @PlayersInWorld'    
+  - 'message{m="&2[Martians] [Alien Nexus] &aMother Martia: &fThe Nexonium Sentinel!"} @PlayersInWorld'
+  - delay 20
+  - summon{mob=AlienMiniBoss;amount=2;noise=5} @Self
+
+SummonMiniBoss1:
+  Skills:
+  - summon{mob=AlienMiniBoss;amount=1;noise=5} @Self

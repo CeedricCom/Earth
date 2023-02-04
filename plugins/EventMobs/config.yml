@@ -1,0 +1,444 @@
+names:
+  boss: 'Aliens'
+  players: 'Humans'
+
+events:
+  aliens:
+    type: 'BOSS'
+    world: 'invasion'
+    spawn-location:
+      x: 106
+      y: 102.5
+      z: 211
+      yaw: -45
+      pitch: 25
+    display-name: '&e&lAlien Invasion'
+    command-name: 'Aliens'
+    bosses:
+      1:
+        name: 'Alien'
+        spawn-location:
+          x: 154
+          y: 68.5
+          z: 266
+
+    topNRewards:
+      top1:
+        n: 1
+        rewards:
+          1:
+            type: command
+            name: "&6&lStaff of Martia"
+            command: "eventadmin item aliens {0} martianstaff"
+      top3:
+        n: 3
+        rewards:
+          1:
+            type: command
+            name: "50000 xp"
+            command: "minecraft:xp add {0} 50000"
+          2:
+            type: command
+            name: "&6&lSkull of Martia"
+            command: "eventadmin skull aliens {0}"
+      top10:
+        n: 10
+        rewards:
+          1:
+            type: command
+            name: "20000 xp"
+            command: "minecraft:xp add {0} 20000"
+          2:
+            type: item
+            amount: 1
+            name: "&4&lChrono-Plated Boots"
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: netherite_boots
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: "&4&lChrono-Plated Boots"
+                lore:
+                  - ''
+                  - '&7Made from a scarce but'
+                  - '&7durable metal alloy, these'
+                  - '&7boots have a high resistance'
+                  - '&7to all types of attacks.'
+                  - '&7It was once worn by the Mater'
+                  - '&7Martia.'
+                  - ''
+                  - '&cThis was awarded to {0}'
+                  - '&cfor being one of the ten'
+                  - '&cbravest defenders during the'
+                  - '&calien invasion'
+                enchants:
+                  PROTECTION_ENVIRONMENTAL: 4
+                  PROTECTION_FIRE: 4
+                  PROTECTION_FALL: 4
+                  PROTECTION_EXPLOSIONS: 4
+                  DURABILITY: 4
+                  SOUL_SPEED: 3
+                  MENDING: 1
+                  DEPTH_STRIDER: 3
+          3:
+            type: item
+            amount: 1
+            name: "&4&lChrono-Plated Leggings"
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: netherite_leggings
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: "&4&lChrono-Plated Leggings"
+                lore:
+                  - ''
+                  - '&7Made from a scarce but'
+                  - '&7durable metal alloy, these'
+                  - '&7leggings have a high resistance'
+                  - '&7to all types of attacks.'
+                  - '&7It was once worn by the Mater'
+                  - '&7Martia.'
+                  - ''
+                  - '&cThis was awarded to {0}'
+                  - '&cfor being one of the ten'
+                  - '&cbravest defenders during the'
+                  - '&calien invasion'
+                enchants:
+                  PROTECTION_ENVIRONMENTAL: 4
+                  PROTECTION_FIRE: 4
+                  PROTECTION_EXPLOSIONS: 4
+                  DURABILITY: 4
+                  MENDING: 1
+          4:
+            type: item
+            amount: 1
+            name: "&4&lChrono-Plated Chestplate"
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: netherite_chestplate
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: "&4&lChrono-Plated Chestplate"
+                lore:
+                  - ''
+                  - '&7Made from a scarce but'
+                  - '&7durable metal alloy, this'
+                  - '&7chestplate has a high resistance'
+                  - '&7to all types of attacks.'
+                  - '&7It was once worn by the Mater'
+                  - '&7Martia.'
+                  - ''
+                  - '&cThis was awarded to {0}'
+                  - '&cfor being one of the ten'
+                  - '&cbravest defenders during the'
+                  - '&calien invasion'
+                enchants:
+                  PROTECTION_ENVIRONMENTAL: 4
+                  PROTECTION_FIRE: 4
+                  PROTECTION_EXPLOSIONS: 4
+                  DURABILITY: 4
+                  MENDING: 1
+          5:
+            type: item
+            amount: 1
+            name: "&4&lChrono-Plated Boots"
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: netherite_helmet
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: "&4&lChrono-Plated Boots"
+                lore:
+                  - ''
+                  - '&7Made from a scarce but'
+                  - '&7durable metal alloy, this'
+                  - '&7helmet has a high resistance'
+                  - '&7to all types of attacks.'
+                  - '&7It was once worn by the Mater'
+                  - '&7Martia.'
+                  - ''
+                  - '&cThis was awarded to {0}'
+                  - '&cfor being one of the ten'
+                  - '&cbravest defenders during the'
+                  - '&calien invasion'
+                enchants:
+                  PROTECTION_ENVIRONMENTAL: 4
+                  PROTECTION_FIRE: 4
+                  PROTECTION_EXPLOSIONS: 4
+                  WATER_WORKER: 1
+                  OXYGEN: 5
+                  DURABILITY: 4
+                  MENDING: 1
+          6: 
+            type: item
+            name: "&dEnchanted Golden Apple"
+            amount: 2
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: enchanted_golden_apple
+          9: 
+            type: item
+            name: "Shulker Spawn Egg"
+            amount: 1
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: shulker_spawn_egg
+          7: 
+            type: item
+            name: "Sponge"
+            amount: 5
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: wet_sponge
+          8:
+            type: item
+            amount: 1
+            name: "&4&lXalax's Horn"
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: goat_horn
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                display-name: "&4&lXalax's Horn"
+                lore:
+                  - ''
+                  - '&7Belonging to a fearsome'
+                  - '&7creature, this horn has'
+                  - '&7since been separated and'
+                  - '&7was used during the'
+                  - '&7Invasion by Mater Martia'
+                  - '&7to rally her minions'
+                  - ''
+                  - '&cAwarded to {0} for being one of the'
+                  - '&cten greatest defenders against the'
+                  - '&calien invasion'
+                  - ''
+                  - '&74th Feb 2023'
+                enchants:
+                  damage_all: 1
+                ItemFlags:
+                  - 'HIDE_ENCHANTS'
+      top10000:
+        n: 10000
+        rewards:
+          1:
+            type: command
+            name: "$500"
+            command: "money grant {0} 500"
+          2:
+            type: item
+            amount: 1
+            name: "&4&lAlien Soul"
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: wither_rose
+              display-name: "§4§lAlien Soul"
+              meta:
+                ==: ItemMeta
+                meta-type: UNSPECIFIC
+                lore:
+                  - '&7A fragmented whisp of Mater'
+                  - "&7Martia's soul encased in"
+                  - '&7the petals of a withdered'
+                  - "&7rose... It is said that"
+                  - "&7depending on the holder's"
+                  - "&7true nature, it may bestow"
+                  - '&7a blessing or a curse'
+                  - ''
+                  - '&cAwarded to {0} for their '
+                  - '&cparticipation in the defence of earth'
+                  - '&cagainst the alien invasion'
+                  - ''
+                  - '&74th Feb 2023'
+                enchants:
+                  DAMAGE_ALL: 1
+                ItemFlags:
+                  - 'HIDE_ENCHANTS'
+          3:
+            type: command
+            name: "5000 xp"
+            command: "minecraft:xp add {0} 5000"
+  koth:
+    type: 'KOTH'
+    world: 'koth_world'
+    display-name: '&e&lKoth'
+    command-name: 'koth'
+    spawn-location: 
+      x: -13
+      y: 31
+      z: 106
+      yaw: -172
+      pitch: 10
+    display-name: '&c&lKing of the Hill'
+    command-name: 'KOTH'
+    start-commands: 
+      - 'koth stop piratecave'
+      - 'koth start piratecave 5'
+    respawn-time: '3m'
+    max-players: 1
+    topNRewards:
+      top1:
+        n: 1
+        rewards:
+          1:
+            type: item
+            amount: 1
+            name: "&6&lThe Pirate's Call"
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: GOAT_HORN
+              meta:
+                meta-type: UNSPECIFIC
+                ==: ItemMeta
+                v: 19
+                lore:
+                  - ""
+                  - "&eYou won!"
+                  - "&7A symbol of your victory against"
+                  - "&7unknwons in the Pirate Cave"
+                  - ""
+                  - "&8&o- \"That's yet another victory for my PvP curriculum.\""
+                  - "&8&o- \"I recorded my POV. Montage coming out\""
+                  - "&8&o- \"1v1 me on Prac!\""
+                  - ""
+                  - "&cTHE KING OF CEEDRIC.COM"
+                  - ""
+                  - "&3Awarded to &6{0} &3for"
+                  - "&3winning the KOTH Event on"
+                  - "&6February 4th, 2023."
+          2:
+            type: item
+            amount: 1
+            name: "&6&lChampion's Totem"
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: TOTEM_OF_UNDYING
+              meta:
+                meta-type: UNSPECIFIC
+                ==: ItemMeta
+                v: 19
+                lore:
+                  - ""
+                  - "&aGG! That was easy."
+                  - ""
+                  - "&7&o- \"My 27 hour shifts on every siege finally paid off!\""
+                  - "&7&o- \"List your past factions before you say my name.\""
+                  - "&7&o- \"We did not do the Laoster.\""
+                  - ""
+                  - "&3Awarded to the winning team"
+                  - "&3of the first &6ceedric.com &3KOTH"
+          3:
+            type: item
+            amount: 3
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: shulker_spawn_egg
+          4:
+            type: item
+            amount: 2
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: sponge
+          5:
+            type: item
+            amount: 1
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: villager_spawn_egg
+          6: 
+            type: item
+            amount: 128
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: gunpowder
+          7: 
+            type: item
+            amount: 128
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: diamond
+          8: 
+            type: item
+            amount: 128
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: gold_ingot
+          9: 
+            type: item
+            amount: 16
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: crying_obsidian
+          10:
+            type: item
+            amount: 1
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: dragon_breath
+
+
+      top2:
+        n: 3
+        rewards:
+          1:
+            type: item
+            amount: 1
+            name: "&6&lMVP's Delight"
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: enchanted_golden_apple
+              meta:
+                meta-type: UNSPECIFIC
+                ==: ItemMeta
+                v: 19
+                lore:
+                  - ""
+                  - "&aThat was a lot of swinging."
+                  - ""
+                  - "&7&oAfter your performance, you definitely"
+                  - "&7&odeserve a break. Enjoy this amazing"
+                  - "&7&ogolden apple to go with it!"
+                  - ""
+                  - "&3Awarded to &6{0} &3for being"
+                  - "&3one of 3 highest damagers on the"
+                  - "&3first &6ceedric.com &3KOTH"
+          2:
+            type: item
+            amount: 1
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: zombie_villager_spawn_egg
+          3:
+            type: item
+            amount: 1
+            itemstack:
+              ==: org.bukkit.inventory.ItemStack
+              v: 19
+              type: nether_star
+

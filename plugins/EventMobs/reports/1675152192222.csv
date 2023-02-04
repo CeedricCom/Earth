@@ -1,0 +1,88 @@
+Aliens vs Humans
+
+Attacker,Aliens
+Defender,Humans
+Winner,Humans
+
+Participant Logs,,,,,,Kill Logs,,,,,
+Player,Damage,Kills,Deaths,KDR,,Time (h),Killer Side,Killer,Victim,Location
+Cubanned,10404.78,20,12,1.67,,0,Aliens,Osseus Guard,DeltaOrion,"(137.18, 66.00, 260.12)"
+DeltaOrion,3312.67,6,3,2.00,,0,Humans,Cubanned,Osseus Guard,"(138.52, 66.00, 258.88)"
+"#Fire tick",720.68,8,0,8.00,,0,Humans,DeltaOrion,Osseus Guard,"(130.34, 65.00, 261.92)"
+Osseus Guard,461.80,5,15,0.33,,0,Humans,Cubanned,Osseus Guard,"(114.19, 64.00, 256.98)"
+"#Fall",97.17,20,0,20.00,,0,Humans,Cubanned,Osseus Guard,"(131.50, 66.54, 271.85)"
+Ferrum Alpha,86.71,4,1,4.00,,0,Humans,DeltaOrion,Osseus Guard,"(141.61, 67.00, 265.97)"
+Obitus Brute,65.87,3,12,0.25,,0,Humans,Cubanned,Osseus Guard,"(109.71, 64.00, 273.72)"
+Creepitus Worker,59.81,0,24,0.00,,0,Humans,Cubanned,Osseus Guard,"(124.33, 64.54, 266.64)"
+"#Custom",27.50,0,0,0.00,,0,Humans,Cubanned,Osseus Guard,"(107.20, 64.00, 274.09)"
+"#Poison",15.48,0,0,0.00,,0,Aliens,Osseus Guard,DeltaOrion,"(137.80, 66.00, 261.28)"
+"#Wither",10.80,1,0,1.00,,0,Aliens,Osseus Guard,Cubanned,"(129.91, 65.42, 261.07)"
+Mater Martia,10.37,0,0,0.00,,0,Humans,Cubanned,Osseus Guard,"(143.50, 68.00, 283.68)"
+"#Entity explosion",0.00,0,0,0.00,,0,Humans,Cubanned,Osseus Guard,"(131.71, 66.00, 261.13)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(119.82, 65.00, 252.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(143.82, 67.00, 257.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(124.82, 66.00, 274.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(126.82, 65.00, 267.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(137.82, 66.00, 257.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(101.82, 66.00, 289.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(111.82, 64.00, 267.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(109.82, 65.00, 274.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(126.82, 66.00, 249.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(103.82, 64.00, 249.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(125.82, 66.00, 237.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(100.82, 63.00, 261.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(120.82, 65.00, 253.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(132.82, 66.00, 277.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(104.82, 64.00, 258.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(119.82, 64.00, 265.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(101.82, 64.00, 310.99)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(105.82, 63.00, 263.99)"
+"",,,,,,0,Humans,DeltaOrion,Creepitus Worker,"(151.36, 68.00, 265.60)"
+"",,,,,,0,Aliens,Obitus Brute,Cubanned,"(147.04, 67.00, 265.10)"
+"",,,,,,0,Humans,Cubanned,Creepitus Worker,"(177.84, 70.02, 261.58)"
+"",,,,,,0,Aliens,Obitus Brute,Cubanned,"(166.18, 69.00, 257.06)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(118.53, 69.00, 241.33)"
+"",,,,,,0,Aliens,"#Fire tick",Cubanned,"(160.30, 70.00, 246.59)"
+"",,,,,,0,Humans,Cubanned,Creepitus Worker,"(136.02, 66.00, 241.02)"
+"",,,,,,0,Humans,"#Fall",Creepitus Worker,"(118.66, 69.00, 241.37)"
+"",,,,,,0,Aliens,Osseus Guard,Cubanned,"(125.30, 68.02, 235.33)"
+"",,,,,,0,Humans,DeltaOrion,Creepitus Worker,"(136.72, 66.00, 239.39)"
+"",,,,,,0,Aliens,Ferrum Alpha,Cubanned,"(130.89, 66.00, 259.20)"
+"",,,,,,0,Aliens,Ferrum Alpha,DeltaOrion,"(132.38, 67.25, 268.32)"
+"",,,,,,0,Humans,Cubanned,Osseus Guard,"(150.53, 68.00, 243.80)"
+"",,,,,,0,Aliens,"#Wither",Cubanned,"(152.85, 70.34, 239.63)"
+"",,,,,,0,Humans,Cubanned,Obitus Brute,"(154.96, 68.00, 250.91)"
+"",,,,,,0,Humans,Cubanned,Obitus Brute,"(161.13, 74.00, 221.13)"
+"",,,,,,0,Aliens,Obitus Brute,Cubanned,"(158.90, 74.00, 215.30)"
+"",,,,,,0,Humans,"#Fire tick",Obitus Brute,"(160.24, 74.00, 219.26)"
+"",,,,,,0,Humans,"#Fire tick",Obitus Brute,"(160.23, 74.00, 217.13)"
+"",,,,,,0,Humans,DeltaOrion,Obitus Brute,"(160.55, 73.00, 224.49)"
+"",,,,,,0,Humans,"#Fire tick",Obitus Brute,"(159.33, 74.00, 219.51)"
+"",,,,,,0,Humans,DeltaOrion,Obitus Brute,"(159.32, 74.00, 219.87)"
+"",,,,,,0,Humans,Cubanned,Obitus Brute,"(156.64, 73.00, 225.44)"
+"",,,,,,0,Humans,Cubanned,Osseus Guard,"(155.59, 72.00, 225.73)"
+"",,,,,,0,Aliens,"#Fire tick",Cubanned,"(151.90, 74.25, 221.38)"
+"",,,,,,0,Humans,"#Fire tick",Osseus Guard,"(154.73, 74.25, 221.55)"
+"",,,,,,0,Humans,Cubanned,Obitus Brute,"(158.12, 74.00, 219.36)"
+"",,,,,,0,Humans,"#Fire tick",Obitus Brute,"(158.75, 73.00, 229.05)"
+"",,,,,,0,Humans,"#Fire tick",Obitus Brute,"(155.11, 73.00, 224.52)"
+"",,,,,,0,Humans,Cubanned,Obitus Brute,"(156.85, 71.37, 233.55)"
+"",,,,,,0,Humans,Cubanned,Osseus Guard,"(132.02, 66.00, 237.61)"
+"",,,,,,0,Aliens,Osseus Guard,Cubanned,"(130.00, 65.00, 243.04)"
+"",,,,,,0,Aliens,Ferrum Alpha,Cubanned,"(154.52, 68.00, 249.53)"
+"",,,,,,0,Aliens,Ferrum Alpha,Cubanned,"(163.90, 70.00, 249.23)"
+"",,,,,,0,Humans,Cubanned,Ferrum Alpha,"(163.13, 69.00, 250.45)"
+"",,,,,,0,Humans,Cubanned,Osseus Guard,"(153.54, 68.00, 246.46)"
+
+Kills over time
+time,Humans,Aliens
+0,0,0
+1,0,0
+2,0,0
+3,0,0
+4,0,0
+5,0,0
+6,0,0
+7,0,0
+8,0,0
+9,15,52

@@ -1,0 +1,17 @@
+
+
+Attacker,Aliens
+Defender,Humans
+Winner,Other
+
+Participant Logs,,,,,,Kill Logs,,,,,
+Player,Damage,Kills,Deaths,KDR,,Time (h),Killer Side,Killer,Victim,Location
+DeltaOrion,433.63,1,0,1.00,,0,epic,DeltaOrion,Untrusty,"(15.39, 21.06, 49.37)"
+Untrusty,23.00,0,1,0.00,,,,,,
+"#Fall",16.00,0,0,0.00,,,,,,
+"#Suffocation",4.00,0,0,0.00,,,,,,
+
+Kills over time
+time,epic
+0,0
+1,1

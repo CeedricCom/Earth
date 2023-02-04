@@ -1,0 +1,15 @@
+Aliens vs Humans
+
+Attacker,Aliens
+Defender,Humans
+Winner,Humans
+
+Participant Logs,,,,,,Kill Logs,,,,,
+Player,Damage,Kills,Deaths,KDR,,Time (h),Killer Side,Killer,Victim,Location
+DeltaOrion,2582.74,4,1,4.00,,0,Humans,DeltaOrion,Osseus Guard,"(155.93, 68.00, 270.70)"
+Obitus Brute,36.79,1,1,1.00,,0,Humans,DeltaOrion,Osseus Guard,"(156.54, 69.00, 271.78)"
+Mater Martia,0.00,0,0,0.00,,0,Humans,DeltaOrion,Osseus Guard,"(162.04, 68.00, 269.01)"
+"#Fall",0.00,0,0,0.00,,0,Humans,DeltaOrion,Obitus Brute,"(161.56, 68.00, 270.17)"
+Osseus Guard,0.00,0,3,0.00,,0,Aliens,Obitus Brute,DeltaOrion,"(157.46, 68.00, 266.20)"
+
+Kills over time

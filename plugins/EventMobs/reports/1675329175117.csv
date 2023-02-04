@@ -1,0 +1,18 @@
+Aliens vs Humans
+
+Attacker,Aliens
+Defender,Humans
+Winner,com.ceedric.event.eventmobs.model.koth.KothSide@2539ee
+
+Participant Logs,,,,,,Kill Logs,,,,,
+Player,Damage,Kills,Deaths,KDR,,Time (h),Killer Side,Killer,Victim,Location
+Auslord,23.76,1,0,1.00,,0,epic,Auslord,DeltaOrion,"(-3.64, 22.00, 52.14)"
+"#Fall",2.00,0,0,0.00,,,,,,
+DeltaOrion,1.00,0,1,0.00,,,,,,
+
+Kills over time
+time,epic
+0,0
+1,0
+2,0
+3,1

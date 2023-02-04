@@ -1,0 +1,40 @@
+koth: |-
+  {
+    "name": "PirateCave",
+    "active": false,
+    "tempDisabled": false,
+    "kothLoc": {
+      "world": "koth_world",
+      "x1": 1,
+      "y1": 255,
+      "z1": 45,
+      "x2": -9,
+      "y2": 0,
+      "z2": 55
+    },
+    "kothSchedule": {
+      "scheduledKOTHs": [],
+      "nextId": 0,
+      "randomSchedule": false
+    },
+    "kothDetails": {
+      "runTime": 13,
+      "maxRunTime": 0,
+      "maxPoints": 0,
+      "captureTime": 0,
+      "requiredTime": 5,
+      "asyncTaskID": 19,
+      "chatDelay": 5,
+      "disableChat": true
+    },
+    "kothLoot": {
+      "lootItems": [],
+      "lootLocations": [],
+      "lootType": "INVENTORY"
+    },
+    "kothAutoStart": {
+      "players": 0,
+      "runTime": 0
+    },
+    "kothPoints": {}
+  }

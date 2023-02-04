@@ -1,0 +1,6 @@
+schedule: |-
+  {
+    "scheduledKOTHs": [],
+    "nextId": 0,
+    "randomSchedule": true
+  }

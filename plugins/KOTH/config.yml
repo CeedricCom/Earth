@@ -1,0 +1,284 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                                                      | #
+# |              KOTH Plugin Configuration               | #
+# |                                                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Information:
+
+# Author: Benzimmer
+# Profile: http://tiny.cc/benzimmer
+# Discord Link: https://discord.gg/fuffySb
+# Resource Link: http://tiny.cc/kothplugin
+
+############################################################
+#                                                          #
+#                    Scoreboard Section                    #
+#                                                          #
+############################################################
+
+SCOREBOARD:
+  USE_SCOREBOARD: true
+  UPDATE_TICKS: 20
+  SCOREBOARD_TITLE: '&6&lKOTH'
+  SCOREBOARD_LINES:
+  - ' '
+  - '&3Team: &b%mcmmo_party_name%'
+  - '&3Time: &b%timeleft%'
+  - '&3Capper: &b%koth_capping_players%'
+  - ' '
+  - '&eceedric.com'
+  
+  DISABLE_IN_WORLD: # Any player in these worlds will not receive scoreboard updates (LOWERCASE WORLD NAMES)
+  - world
+  - world_nether
+  - invasion
+  
+  WHITELISTED_WORLDS: # Any player in these worlds will not receive scoreboard updates (LOWERCASE WORLD NAMES)
+    ENABLED: true
+    WORLD_NAMES:
+    - koth_world
+  
+  SCOREBOARD_RADIUS:
+    ENABLED: false
+    DISTANCE: 30
+  
+  ONLY_IN_REGION: # If you only want to display the scoreboard in these KOTH regions 
+    ENABLED: false
+    REGIONS:
+    - example
+
+FEATHERBOARD_TRIGGER: # Make sure the scoreboard name is in the "scoreboards" folder of Featherboard
+  ENABLED: false
+  SCOREBOARD_NAME: koth
+  
+KITEBOARD_TRIGGER: # Make sure the scoreboard name is in the "scoreboards" folder of Kiteboard
+  ENABLED: false
+  SCOREBOARD_NAME: koth  
+  
+############################################################
+#                                                          #
+#                      Rewards Section                     #
+#                                                          #
+############################################################  
+  
+REWARDS:
+  USE_REWARDS: false
+  MAX_LOOT_ITEMS: 5
+  MIN_LOOT_ITEMS: 3
+  GIVE_ALL_ITEMS: false # If this is true then the above values are not used
+  CHEST_SIZE: 27
+  VIEW_INVENTORY_NAME: '&cKOTH LOOT' # The real inventory name must be different from the view
+  REAL_INVENTORY_NAME: '&aKOTH LOOT' # The real inventory name must be different from the view
+  DUPLICATE_LOOT: false
+  LEFT_CLICK_SHOW_LOOT: true
+  GIVE_TEAM_LEADER: false # Give rewards to faction leader
+  GIVE_ALL_MEMBERS: false # Give rewards to all members
+  KEY:
+    ITEM_MATERIAL: TRIPWIRE_HOOK
+    ITEM_DISPLAY_NAME: '&aKOTH Key'
+    ITEM_DISPLAY_LORE:
+    - '&7This is the default lore.'
+    ITEM_AMOUNT: 1
+    GLOW: false
+    
+############################################################
+#                                                          #
+#                      General Section                     #
+#                                                          #
+############################################################  
+
+# Use this feature to use a point system instead of a timer
+
+KOTH_POINTS_SYSTEM:
+  ENABLED: false
+  STORED_TYPE: 'PLAYER' # Put either 'PLAYER' or 'TEAM' here
+  MAX_POINTS: true # Set this to true to specify max points
+  MAX_RUNTIME: false # Set this to true to specify max run time
+
+KNOCK_DELAY: 5 # This will prevent the chat from being spammed.
+
+MAX_KOTHS_ACTIVE: -1 # Maximum amount of koths at once (Set to -1 to disable)
+
+ANNOUNCE_KOTH_ON_JOIN: true
+  
+RESET_MAXRUNTIME_ON_CAPTURE: false # Set this to true to reset the maxruntime every time a player starts capturing
+
+PLAYER_COOLDOWN: # Use this to allow players to start KOTH via command but have a cooldown once started
+  USE_COOLDOWN: true
+  COOLDOWN_TIME: 30
+
+KOTH_TOP:
+  ENABLED: true
+  SORT_DELAY: 300
+  DEFAULT_TYPE: 'TEAM' # Enter PLAYER or TEAM here which will be displayed when players do /koth top without specifying a type
+
+KOTH_STARTER_ITEM:
+  START_TIME: 300 # This will only be used if timer is enabled (not points system)
+  MAX_POINTS: 100 # To disable this set to -1
+  MAX_RUN_TIME: 600 # To disable this set to -1
+  ONE_KOTH_ACTIVE: false # Set this to true to only allow one koth to be started from the item at a time
+  MINIMUM_PLAYERS: 2
+  BLACKLISTED: # KOTHS need to be in lowercase
+  - examplekoth
+  NAME: '&aKOTH Start'
+  MATERIAL: EMERALD
+  LORE:
+  - '&7> Right-click to start the KOTH event.'
+
+# Make it so they can only see commands they have permission to
+
+VIEW_COMMAND_PER_PERMISSION: true
+
+# Using a custom help menu makes the above feature irrelevant 
+
+CUSTOM_HELP_PAGE:
+  ENABLED: false
+  TITLE: '&aCustom KOTH Help Menu'
+  PAGES:
+    1: # List the page number here
+    - '&a/koth times &b- View the scheduled KOTHs.'
+    
+SEARCH_FOR_UPDATES: true # Search for updates on startup
+
+KOTH_NEXT_COUNTDOWN: false # Use a countdown instead of an exact time
+  
+############################################################
+#                                                          #
+#                     Scheduler Section                    #
+#                                                          #
+############################################################
+
+# List of timezones can be found here https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# Any spaces in a timezone should be used as an "_"
+
+CURRENT_TIMEZONE: Europe/London
+  
+MINIMUM_PLAYERS_FOR_SCHEDULE_START: -1 # Set to -1 for this to be disabled
+
+USE_NEW_TIMEFORMAT: false # If this is set to true all time formats will be hh,mm,ss.
+
+############################################################
+#                                                          #
+#                      Feature Section                     #
+#                                                          #
+############################################################  
+
+BOSS_BAR: # You must be using 1.9+ for this feature to be enabled.
+  ENABLED: true
+  TEXT: '&aKOTH Percentage Capped'
+  COLOR: 'BLUE'
+  UPDATE_TITLE_TASK: 20 # This is in seconds (Set to -1 if no need to update title)
+
+TITLES:
+  KOTH_START:
+    ENABLED: false
+    TITLE: '&aThe koth %koth% has just started!'
+    SUBTITLE: '&7To participate in this event, type /warp koth.'
+  KOTH_END:
+    ENABLED: false
+    TITLE: '&cThe koth %koth% has just ended!'
+    SUBTITLE: '&7This was ended manually and there was no winner.'
+  KOTH_CAPTURE:
+    ENABLED: false 
+    TITLE: '&e%player% has just captured %koth%!'
+    SUBTITLE: '&7%team% have received commands and rewards.'
+    
+KEEP_INVENTORY_WHILE_ACTIVE:
+  ENABLED: false # Set this to true for all players to keep inventory on death while KOTH is active
+  DISABLE_IN_WORLD: # List of worlds this will be enabled in
+  - exampleworld
+  ONLY_IN_REGION:
+   ENABLED: false
+   REGIONS:
+   - example
+  
+############################################################
+#                                                          #
+#                     Advanced Section                     #
+#                                                          #
+#     Only change this section if you actually need to     #
+#                                                          #
+############################################################  
+  
+# Set this to true if you want to make the capper time and lose capture to be a priority and not be affected by TPS
+# Be warned if you set this to true it could cause more lag on your server
+
+RUN_CAPPER_SYNC: true  
+  
+PERMISSION_FOR_CAPTURE: false # Enable this to have players require this permission to capture koth
+
+BROADCAST_PERMISSION: # Enable this to have players require this permission to see messages
+  ENABLED: false # Permission is KOTH.MESSAGES
+  
+DISABLE_BROADCASTS_IN_WORLDS: # Disable any KOTH related broadcasts in these worlds
+- example  
+
+WHITELISTED_BROADCASTS_WORLDS: # Use this instead of disabling each individual world
+  ENABLED: false 
+  WORLD_NAMES:
+  - example
+
+TIME_FORMAT: # Create a custom time format, the final format will have all of them appended together
+  HOURS: '%hours%:'
+  MINUTES: '%minutes%:'
+  SECONDS: '%seconds%'
+
+DEFAULT_CAPTURE:
+  TIMER: 1 # Amount of seconds added per second
+  POINTS: 1.0 # Amount of points added per second (can be decmial)
+  
+  # If this is set to true you can give players permissions such as KOTH.CAPTURESPEED.5
+  # You can use permissions KOTH.CAPTURESPEED.1 - KOTH.CAPTURESPEED.10
+  
+  PERMISSION_BASED: false 
+  
+# This feature allows you to set a maximum amount of time allowed off the capture zone before losing control
+# Set to -1 to disable this feature, by default it's off so you instantly lose control  
+  
+DELAYED_PLAYER_LOSE_CAPTURE: -1
+  
+ALLOW_NO_TEAM_CAPTURE: true # Set this to false to disable players without a team to capture
+
+ALLOW_FULL_TEAM_CAPTURE: false # Set this to true to allow a whole team to capture rather than a player
+
+PAUSE_OTHER_TEAMS: false # Pause capture if another team is stood on the zone  
+
+SET_LOOT_PERCENT: true # If this is false you cannot edit percent items from /koth setloot
+
+DISABLE_KNOCKBACK_IN_KOTH: false # Disable knockback enchant inside of koth zones
+  
+############################################################
+#                                                          #
+#                    Custom GUI Section                    #
+#                                                          #
+############################################################
+
+KOTH_ADMIN_GUI:
+  NAME: '&aKOTH START GUI'
+  SIZE: 27
+
+KOTH_PLAYER_GUI:
+  NAME: '&aKOTH PLAYER GUI'
+  SIZE: 27
+
+############################################################
+#                                                          #
+#                 Forced Team Hook Section                 #
+#                                                          #
+#       ONLY use this if you have multiple team plugins    #
+#                on the supported plugin list              #
+#                                                          #
+#                                                          #
+############################################################      
+
+TOWNY_USE_NATIONS: false # Set this to true to enable nations instead of towns
+MCMMO_USE_PARTIES: true # Set this to true to enable McMMO parties
+
+# Please type the plugin name you want to force hook
+
+FORCED_HOOK:
+  ENABLED: false
+  PLUGIN: ''  
