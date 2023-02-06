@@ -46,10 +46,10 @@ supplycrate:
             - 'unique:(), chance:(1), item:(trident 1)'
             - 'unique:(), chance:(1), item:(panda_spawn_egg 1)'
 
-votingcrate:
+tier_1_votingcrate:
     type: MYSTERYCRATE
-    item: 'CHEST 1 name:&6&lVote_Crate lore:&7Right_click_to_open glow:false'
-    animation: ROULETTE
+    item: 'CHEST 1 name:&6&lTier_1_Voting_Crate lore:&7Right_click_to_open glow:false'
+    animation: CSGO
     buy:
         enabled: false
         cost: 0
@@ -61,11 +61,7 @@ votingcrate:
         minimum-rewards: 1
         maximum-rewards: 1
         rewards:
-            - 'unique:(), chance:(12), cmd:(/eco give {player} 125), msg:(&eYou received $125), display:(gold_ingot 1 name:&6$125)'
-            - 'unique:(), chance:(7), cmd:(/eco give {player} 150), msg:(&eYou received $150), display:(gold_ingot 1 name:&6$150)'
-            - 'unique:(), chance:(5), cmd:(/eco give {player} 165), msg:(&eYou received $165), display:(gold_ingot 1 name:&6$165)'
-            - 'unique:(), chance:(5), cmd:(/eco give {player} 200), msg:(&eYou received $200), display:(gold_ingot 1 name:&6$200)'
-            - 'unique:(), chance:(1),  cmd:(/eco give {player} 350), msg:(&eYou received $350), display:(gold_ingot 1 name:&6$350)'
+            - 'unique:(), chance:(30), cmd:(/eco give {player} 250), msg:(&eYou received $250), display:(gold_ingot 1 name:&6$250)'
             - 'unique:(), chance:(20), item:(iron_ingot {random:10,40})'
             - 'unique:(), chance:(10), item:(gold_ingot {random:10,40})'
             - 'unique:(), chance:(10), item:(diamond {random:10,25})'
@@ -76,7 +72,138 @@ votingcrate:
             - 'unique:(), chance:(15), item:(gunpowder {random:10,48})'
             - 'unique:(), chance:(0.98), item:(zombie_villager_spawn_egg 1)'
             - 'unique:(), chance:(2), item:(villager_spawn_egg 1)'
-            - 'unique:(), chance:(5), item:(diamond_sword 1 sharpness:5 durability:3 fire_aspect:2)'
-            - 'unique:(), chance:(5), item:(diamond_helmet 1 protection_environmental:4 durability:3 oxygen:3)'
-            - 'unique:(), chance:(0.01), item:(diamond_sword 1 name:&6&lThe_Reaper lore:&fForged_in_the_fires_of_hell sharpness:6 durability:3 fire_aspect:2)'
-            - "unique:(), chance:(0.01), item:(diamond_chestplate 1 name:&6&lThe_Dragons_Scale lore:&fGrants_the_power_of_the_end protection_environmental:5 durability:3)"
+
+tier_2_votingcrate:
+    type: MYSTERYCRATE
+    item: 'CHEST 1 name:&6&lTier_2_Voting_Crate lore:&7Right_click_to_open glow:false'
+    animation: CSGO
+    buy:
+        enabled: false
+        cost: 0
+    message:
+        open: ''
+        broadcast: ''
+    effect: {}
+    reward:
+        minimum-rewards: 1
+        maximum-rewards: 1
+        rewards:
+            - 'unique:(), chance:(35),  cmd:(/eco give {player} 350), msg:(&eYou received $350), display:(gold_ingot 1 name:&6$350)'
+            - 'unique:(), chance:(15),  item:(potion 1 name:&e&lFast_Break_Potion effect:speed power:2 duration:180 effect:haste power:2 duration:180)'
+            - 'unique:(), chance:(10), item:(gunpowder {random:32,48})'
+            - 'unique:(), chance:(5), item:(netherite_ingot {random:4,8})'
+            # tune all of this
+            - 'unique:(), chance:(5), item:(emerald {random:10,15})'
+            - 'unique:(), chance:(5), item:(lapis_lazuli {random:32,64})'
+            - 'unique:(), chance:(5), item:(diamond {random:15,30})'
+            - 'unique:(), chance:(5), item:(quartz {random:24,48})'
+            - 'unique:(), chance:(5), item:(prismarine_shard {random:16,32})'
+            - 'unique:(), chance:(5), item:(prismarine_crystals {random:16,32})'
+            - 'unique:(), chance:(1), item:(zombie_villager_spawn_egg 1)'
+            - 'unique:(), chance:(2), item:(villager_spawn_egg 1)'
+            - 'unique:(), chance:(2), item:(emerald_block {random:8,16})'
+
+tier_3_votingcrate:
+    type: MYSTERYCRATE
+    item: 'CHEST 1 name:&6&lTier_3_Voting_Crate lore:&7Right_click_to_open glow:false'
+    animation: CSGO
+    buy:
+        enabled: false
+        cost: 0
+    message:
+        open: ''
+        broadcast: ''
+    effect: {}
+    reward:
+        minimum-rewards: 1
+        maximum-rewards: 1
+        rewards:
+            - 'unique:(), chance:(120),  cmd:(/eco give {player} 400), msg:(&eYou received $400), display:(gold_ingot 1 name:&6$400)'
+            - 'unique:(), chance:(8), item:(villager_spawn_egg 1)'
+            - 'unique:(), chance:(8), item:(beacon 1)'
+            - 'unique:(), chance:(8), item:(zombie_villager_spawn_egg 1)'
+            - 'unique:(), chance:(8), item:(dragon_breath 8)'
+
+            - 'unique:(), chance:(20), item:(gold_block {random:24,32})'
+            - 'unique:(), chance:(20), item:(iron_block {random:24,32})'
+            - 'unique:(), chance:(20), item:(diamond_block {random:24,32})'
+            - 'unique:(), chance:(20), item:(emerald_block {random:24,32})'
+            
+            - 'unique:(), chance:(30), item:(blaze_powder 128)'
+            - 'unique:(), chance:(30), item:(gunpowder 128)'
+            - 'unique:(), chance:(30), item:(glowstone_dust 128)'
+            - 'unique:(), chance:(30), item:(glistering_melon_slice 128)'
+
+tier_4_votingcrate:
+    type: MYSTERYCRATE
+    item: 'CHEST 1 name:&6&lTier_4_Voting_Crate lore:&7Right_click_to_open glow:false'
+    animation: CSGO
+    buy:
+        enabled: false
+        cost: 0
+    message:
+        open: ''
+        broadcast: ''
+    effect: {}
+    reward:
+        minimum-rewards: 3
+        maximum-rewards: 3
+        rewards:
+            - 'unique:(), chance:(140),  cmd:(/eco give {player} 450), msg:(&eYou received $450), display:(gold_ingot 1 name:&6$450)'
+            - 'unique:(), chance:(15), item:(villager_spawn_egg 1)'
+            - 'unique:(), chance:(15), item:(beacon 1)'
+            - 'unique:(), chance:(7), item:(zombie_villager_spawn_egg 1)'
+            - 'unique:(), chance:(6), item:(trident 1)'
+            - 'unique:(), chance:(1), item:(elytra 1)'
+            - 'unique:(), chance:(15), item:(netherite_ingot 8)'
+
+            - 'unique:(), chance:(20), item:(gold_block {random:32,64})'
+            - 'unique:(), chance:(20), item:(iron_block {random:32,64})'
+            - 'unique:(), chance:(20), item:(diamond_block {random:32,64})'
+            - 'unique:(), chance:(20), item:(emerald_block {random:32,64})'
+
+            - 'unique:(), chance:(40), item:(blaze_powder 320)'
+            - 'unique:(), chance:(40), item:(gunpowder 320)'
+            - 'unique:(), chance:(40), item:(glowstone_dust 320)'
+            - 'unique:(), chance:(40), item:(glistering_melon_slice 320)'
+
+tier_5_votingcrate:
+    type: MYSTERYCRATE
+    item: 'CHEST 1 name:&6&lTier_5_Voting_Crate lore:&7Right_click_to_open glow:false'
+    animation: CSGO
+    buy:
+        enabled: false
+        cost: 0
+    message:
+        open: ''
+        broadcast: ''
+    effect: {}
+    reward:
+        minimum-rewards: 3
+        maximum-rewards: 3
+        rewards:
+            - 'unique:(), chance:(200),  cmd:(/eco give {player} 550), msg:(&eYou received $550), display:(gold_ingot 1 name:&6$550)'
+            - 'unique:(), chance:(7), item:(netherite_helmet 1)'
+            - 'unique:(), chance:(7), item:(netherite_chestplate 1)'
+            - 'unique:(), chance:(7), item:(netherite_leggings 1)'
+            - 'unique:(), chance:(7), item:(netherite_boots 1)'
+            - 'unique:(), chance:(4), item:(trident 1)'
+            - 'unique:(), chance:(5), item:(totem_of_undying 1)'
+            - 'unique:(), chance:(3), item:(elytra 1)'
+
+            - 'unique:(), chance:(15), item:(fox_spawn_egg 1)'
+            - 'unique:(), chance:(10), item:(beacon 1)'
+            - 'unique:(), chance:(10), item:(zombie_villager_spawn_egg 1)'
+            - 'unique:(), chance:(8), item:(dragon_breath 16)'
+
+            - 'unique:(), chance:(30), item:(gold_block 64)'
+            - 'unique:(), chance:(30), item:(iron_block 64)'
+            - 'unique:(), chance:(30), item:(diamond_block 64)'
+            - 'unique:(), chance:(30), item:(emerald_block 64)'
+            
+            - 'unique:(), chance:(40), item:(magma_cream 512)'
+            - 'unique:(), chance:(40), item:(blaze_powder 512)'
+            - 'unique:(), chance:(40), item:(gunpowder 512)'
+            - 'unique:(), chance:(40), item:(glowstone_dust 512)'
+            - 'unique:(), chance:(40), item:(glistering_melon_slice 512)'
+            - 'unique:(), chance:(40), item:(nether_wart 512)'

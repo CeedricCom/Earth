@@ -1,0 +1,24 @@
+command: vote
+permission: virtualbooks.vote
+Title: Voting tiers
+Author: ceedric_
+pages:
+  '1':
+  - '&2&lVote for rewards!&r'
+  - ' '
+  - '&8Vote to earn crates, missions, boosts, money, and XP.'
+  - ''
+  - '&8Higher tiers grant better rewards.'
+  - ' '
+  - '&8Current tier: &2&l%votingtiers_tier%&r'
+  - '&8Total votes: &2&l%votingtiers_votes%&r'
+  - '&8Next tier: &2&l%votingtiers_nexttier%&r'
+  - ' '
+  - '{votelink}'
+
+
+votelink:
+  TEXT: '&2&l&nClick here to vote'
+  HOVER_TEXT: "&fOpens our website with all voting links!"
+  CLICK_EVENT:
+    OPEN_URL: https://www.ceedric.com/vote/

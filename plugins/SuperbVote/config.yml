@@ -5,7 +5,7 @@
 
 # Database configuration.
 storage:
-  database: mysql
+  database: json
   json:
     file: votes.json
   mysql:
@@ -47,26 +47,7 @@ streaks:
       You've voted on %streak_today_services% website(s) out of 5 today.
 
 # Rewards. This is the main section you will need to edit. Ordering is important.
-rewards:
-  # Example of matchers. See https://github.com/minecrafter/SuperbVote/wiki/Configuration#if for a full list of available
-  # matchers.
-  # A default reward is required. Default rewards are defined by using default: true as a matcher. No other matchers can
-  # be used with this matcher and only one such reward can be the default reward.
-  - if:
-      every-cumulative-votes: 5
-    commands:
-    - money grant %player% 50
-    - scrolladmin give random %player%
-    - cr give to %player% votingcrate 1
-    broadcast-message: "&e&l%player% &ehas voted for &6ceedric.com &eand has earned &6&lBig Rewards! &eUse &6&l/vote &eto vote and earn rewards!"
-    player-message: "&eThanks for voting for &6ceedric.com, you have been rewarded with &6$50 &eand a &6mission."
-  - if:
-      default: true
-    commands:
-    - money grant %player% 50
-    - scrolladmin give random %player%
-    player-message: "&eThanks for voting for &6ceedric.com, you have been rewarded with &6$50 &eand a &6mission."
-
+rewards: {}
 # Whether or not players need to be online to vote. If set, offline player votes are queued for when the player next logs in.
 require-online: true
 
@@ -103,7 +84,7 @@ vote-command:
 
 # Vote reminder.
 vote-reminder:
-  message: "&6Don't forget to vote for rewards! &e/vote"
+  message: "&6Vote for rewards! You can earn Towny Missions boosts, mcMMO boosts, missions, and more! &e/vote"
   on-join: false
   repeat: 900
 

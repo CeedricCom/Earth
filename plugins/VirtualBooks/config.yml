@@ -1,0 +1,103 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                     VirtualBooks                     | #
+# |                   By TheBlazingPro                   | #
+# |                Thanks for downloading!               | #
+# +------------------------------------------------------+ #
+############################################################
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |               No Permission Message                  | #
+# | This no permission is used throughout the plugin     | # 
+# | You can change it to whatever you want.              | #
+# | (Also supports PlaceholderAPI)                       | #
+# +------------------------------------------------------+ #
+############################################################  
+
+No_Permission_Msg: "&cYou do not have permission to run this command!"
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   On Join Book                       | #
+# | Type the name of the book file from the books folder.| # 
+# | Also include .yml in the file name.                  | #
+# | Won't be opened if the person is joining for         | #         
+# | the first time! This is default but can be changed!  | #
+# +------------------------------------------------------+ #
+############################################################  
+
+on-join-book: ""
+physical-on-join-book: false
+
+############################################################
+# +------------------------------------------------------+ #
+# |                 On First-Join Book                   | #
+# | Type the name of the book file from the books folder.| # 
+# | Also include .yml in the file name.                  | #
+# | Will be opened to the person joining for the first   | #         
+# | time on the server! This is default but changeable!  | #
+# +------------------------------------------------------+ #
+############################################################  
+
+on-first-join-book: ""
+physical-on-first-join-book: false
+
+############################################################
+# +------------------------------------------------------+ #
+# |                  Creating a Book                     | #
+# | You can create as many books as you like.            | # 
+# | Just create a <name>.yml file in the books folder    | #
+# | and follow the format below (without #)              | #
+# | You can also duplicate the thanks.yml file given     | #
+# | and edit as per your liking. Format is given below.  | #
+# | Every option is necessary!                           | #
+# | Now also supports json! Example json given below!    | #
+# +------------------------------------------------------+ #
+############################################################
+
+############################################################
+# +------------------------------------------------------+ #
+#                                                   
+# command: "thanks"                                        #This command will be used to access the book!        
+# permission: "thanks.book"                                #This is the permission for the command
+# physical: false                                          #Changing this to true will give a physical copy of the book
+# command_aliases:
+#   - 'thank_you'
+#   - 'ty'
+# Title: "ThanksBook"                                      #This will be the title if the book is given physically!
+# Author: "TheBlazingPro"                                  #Book author if book given physically!
+# pages:   
+#        
+#   '1':                                                   #Page Number - You can create as many pages as you like!
+#    - "&2&lExample Help!&r"                               #Page line - Each line here represents a line on the book page.
+#    - "{json}"                                                                   
+#    - "*/help: Shows help!"                               #You may use color codes here. NOTE: Color codes also count as a character!    
+#    - "*Forums: forum.servername.com"                     #PlaceholderAPI supported!
+#    - "*/report: Report hackers or cheaters!"
+#    '2':                                                 
+#    - "&2&lThanks for downloading!"       
+#    - "&c<3 - TheBlazingPro"   
+#
+#
+# examplejson:                                             #You can name this anything. Then just put {name} anywhere in the plugin!
+#   TEXT: "&c[JSON]"                                       #This part is necessary. This is the text that will display in the book!  
+#   HOVER_TEXT: "&aThis is the tooltip!"                   #This is optional. Will display something when hovering over the json!
+#   CLICK_EVENT:                                           #Click event will be activated when clicked on the json
+#     OPEN_URL: "https://spigotmc.org"                     #OPEN_URL will open a url. Can be replaced with RUN_COMMAND or CHANGE_PAGE
+#                                                          #Everything supports PlaceholderAPI
+#                                                          #Example json book given in bookfolder. Run the command /jsonexample to see it!
+# lore:
+#   - "&cLore line 1"                                      #Lore can be added to physical books
+#   - "&6Lore line 2"                                      #Lores also support PlaceholderAPI!
+#                                                          #
+# +------------------------------------------------------+ #
+############################################################
+
+############################################################
+# +------------------------------------------------------+ #
+# |   Please restart server after adding/editing books   | #
+# |   Or use /vb reload                                  | #
+# +------------------------------------------------------+ #
+############################################################

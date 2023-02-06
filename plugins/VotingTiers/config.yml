@@ -1,0 +1,203 @@
+tiers:
+
+########################################
+#                                      #
+#               TIER 1                 #
+#                                      #
+########################################
+
+  1:
+    display-name: "Tier 1"
+    required-votes: -1
+    per-vote-rewards:
+      1:
+        type: command
+        commands:
+          - "scrolladmin give matrix %player% common:80 rare:15 epic:4 legendary:1"
+          - "money grant %player% 75"
+          - "minecraft:xp add %player% 500"
+    every-cumulative-votes:
+      amount: 5
+      rewards:
+        1:
+          type: command
+          commands:
+            - "cr give to %player% tier_1_votingcrate 1"
+            - "minecraft:give %player% minecraft:golden_apple 6"
+            - "lp user %player% permission settemp mcmmo.perks.xp.10percentboost.all true 15m"
+            - "missions admin 2 %player% 5m"
+        2:
+          type: messages
+          messages:
+            - "&d10% mcMMO boost activated for 15 minutes."
+            - "&dDouble towny mission contributions activated for 5 minutes."
+    immediate-upgrade-rewards: {}
+
+
+########################################
+#                                      #
+#               TIER 2                 #
+#                                      #
+########################################
+
+  2:
+    display-name: "Tier 2"
+    required-votes: 35
+    per-vote-rewards:
+      1:
+        type: command
+        commands:
+          - "scrolladmin give matrix %player% common:70 rare:20 epic:4 legendary:1"
+          - "money grant %player% 100"
+          - "minecraft:xp add %player% 750"
+
+    every-cumulative-votes:
+      amount: 5
+      rewards:
+        1:
+          type: command
+          commands:
+            - "cr give to %player% tier_2_votingcrate 1"
+            - "minecraft:give %player% minecraft:golden_apple 10"
+            - "lp user %player% permission settemp mcmmo.perks.xp.50percentboost.all true 25m"
+            - "missions admin 2 %player% 20m"
+        2:
+          type: messages
+          messages:
+            - "&d50% mcMMO boost activated for 25 minutes."
+            - "&dDouble towny mission contributions activated for 20 minutes."
+    immediate-upgrade-rewards:
+      1:
+        type: command
+        commands:
+          - "cr give to %player% tier_2_votingcrate 1"
+      2:
+        type: broadcast
+        messages:
+          - "&3&lCongratulations! %player_name% have been promoted to &6&lTier 2. &3&lUse &6&l/vote &3&lto vote and earn rewards!"
+
+########################################
+#                                      #
+#               TIER 3                 #
+#                                      #
+########################################
+
+  3:
+    display-name: "Tier 3"
+    required-votes: 65
+    per-vote-rewards:
+      1:
+        type: command
+        commands:
+          - "scrolladmin give matrix %player% common:60 rare:25 epic:13 legendary:2"
+          - "money grant %player% 150"
+          - "minecraft:xp add %player% 1000"
+
+    every-cumulative-votes:
+      amount: 5
+      rewards:
+        1:
+          type: command
+          commands:
+            - "cr give to %player% tier_3_votingcrate 1"
+            - "minecraft:give %player% minecraft:golden_apple 10"
+            - "lp user %player% permission settemp mcmmo.perks.xp.50percentboost.all true 35m"
+            - "missions admin 2 %player% 30m"
+        2:
+          type: messages
+          messages:
+            - "&d50% mcMMO boost activated for 35 minutes."
+            - "&dDouble towny mission contributions activated for 30 minutes."
+    immediate-upgrade-rewards:
+      1:
+        type: command
+        commands:
+          - "cr give to %player% tier_3_votingcrate 1"
+      2:
+        type: broadcast
+        messages:
+          - "&3&lCongratulations! %player_name% have been promoted to &6&lTier 3. &3&lUse &6&l/vote &3&lto vote and earn rewards!"
+
+########################################
+#                                      #
+#               TIER 4                 #
+#                                      #
+########################################
+
+  4:
+    display-name: "Tier 4"
+    required-votes: 95
+    per-vote-rewards:
+      1:
+        type: command
+        commands:
+          - "scrolladmin give matrix %player% common:50 rare:20 epic:27 legendary:3"
+          - "money grant %player% 175"
+          - "minecraft:xp add %player% 1000"
+
+    every-cumulative-votes:
+      amount: 5
+      rewards:
+        1:
+          type: command
+          commands:
+            - "cr give to %player% tier_4_votingcrate 1"
+            - "minecraft:give %player% minecraft:golden_apple 10"
+            - "lp user %player% permission settemp mcmmo.perks.xp.150percentboost.all true 1h"
+            - "missions admin 2 %player% 1h"
+        2:
+          type: messages
+          messages:
+            - "&d150% mcMMO boost activated for 1 hour."
+            - "&dDouble towny mission contributions activated for 1 hour."
+    immediate-upgrade-rewards:
+      1:
+        type: command
+        commands:
+          - "cr give to %player% tier_4_votingcrate 1"
+      2:
+        type: broadcast
+        messages:
+          - "&3&lCongratulations! %player_name% have been promoted to &6&lTier 4. &3&lUse &6&l/vote &3&lto vote and earn rewards!"
+
+########################################
+#                                      #
+#               TIER 5                 #
+#                                      #
+########################################
+
+  5:
+    display-name: "Tier 5"
+    required-votes: 200
+    per-vote-rewards:
+      1:
+        type: command
+        commands:
+          - "scrolladmin give matrix %player% common:50 rare:15 epic:31 legendary:4"
+          - "money grant %player% 200"
+          - "minecraft:xp add %player% 1000"
+
+    every-cumulative-votes:
+      amount: 5
+      rewards:
+        1:
+          type: command
+          commands:
+            - "cr give to %player% tier_5_votingcrate 1"
+            - "minecraft:give %player% minecraft:golden_apple 10"
+            - "lp user %player% permission settemp mcmmo.perks.xp.150percentboost.all true 2h"
+            - "missions admin 2 %player% 1h"
+        2:
+          type: messages
+          messages:
+            - "&d150% mcMMO boost activated for 2 hours."
+            - "&dDouble towny missions boost activated for 1 hour."
+    immediate-upgrade-rewards:
+      1:
+        type: command
+        commands:
+          - "cr give to %player% tier_5_votingcrate 1"
+      2:
+        type: broadcast
+        messages:
+          - "&3&lCongratulations! %player_name% have been promoted to &6&lTier 5. &3&lUse &6&l/vote &3&lto vote and earn rewards!"
