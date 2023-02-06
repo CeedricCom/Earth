@@ -111,3 +111,7 @@ worlds:
   #      mapzoomin: 1
   - name: world_the_end
     enabled: false
+  - name: koth_world
+    enabled: false
+  - name: invasion
+    enabled: false

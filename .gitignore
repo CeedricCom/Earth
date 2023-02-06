@@ -1,3 +1,5 @@
+plugins/KOTH/top/players/
+plugins/PlaceholderAPI/expansions/
 banned-players.json
 banned-ips.json
 cache
@@ -125,3 +127,7 @@ plugins/SiegeStats/reports/
 plugins/TownTiers/data.yml
 plugins/TownTiers/spawns.yml
 plugins/GSit/data/
+plugins/MythicMobs/SavedData/
+plugins/EventMobs/reports/
+invasion/
+koth_world/

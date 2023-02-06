@@ -32,6 +32,7 @@ groups:
     - n
     - accept
     - confirm
+    - sit
     - g
     - cr
     - qs
@@ -93,7 +94,6 @@ groups:
     - tips
     - tpa
     - warp
-    - sit
     - earth
     - navigate
     - continents

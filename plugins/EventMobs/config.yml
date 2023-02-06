@@ -287,9 +287,9 @@ events:
     command-name: 'KOTH'
     start-commands: 
       - 'koth stop piratecave'
-      - 'koth start piratecave 5'
+      - 'koth start piratecave 180'
     respawn-time: '3m'
-    max-players: 1
+    max-players: 10
     topNRewards:
       top1:
         n: 1

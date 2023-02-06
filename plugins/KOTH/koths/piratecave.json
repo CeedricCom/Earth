@@ -18,12 +18,12 @@ koth: |-
       "randomSchedule": false
     },
     "kothDetails": {
-      "runTime": 13,
+      "runTime": 182,
       "maxRunTime": 0,
       "maxPoints": 0,
       "captureTime": 0,
-      "requiredTime": 5,
-      "asyncTaskID": 19,
+      "requiredTime": 180,
+      "asyncTaskID": 8,
       "chatDelay": 5,
       "disableChat": true
     },

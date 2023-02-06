@@ -103,22 +103,47 @@ towns:
   # granted if they are assigned that specific rank.
   ranks:
     comayor:
-    - towny.tax_exempt
-    - towny.command.towny.top
-    - townymissions.mayor
-    - towny.command.town.*
     - -towny.command.town.jail
     - -towny.command.town.jail.list
     - -towny.command.town.unjail
-    - -towny.command.town.delete
-    - -towny.command.town.set.mayor
+    - towny.command.towny.top
+    - towny.command.town.rank.*
+    - towny.command.town.set.board
+    - towny.command.town.set.homeblock
+    - towny.command.town.set.spawn
+    - towny.command.town.set.spawncost
+    - towny.command.town.set.outpost
+    - towny.command.town.set.perm
+    - towny.command.town.set.taxes
+    - towny.command.town.set.plottax
+    - towny.command.town.set.shoptax
+    - towny.command.town.set.embassytax
+    - towny.command.town.set.plotprice
+    - towny.command.town.set.shopprice
+    - towny.command.town.set.embassyprice
+    - towny.command.town.set.mapcolor
+    - towny.command.town.set.name
+    - towny.command.town.set.tag
+    - towny.command.town.set.taxpercentcap
+    - towny.command.town.set.title
+    - towny.command.town.set.surname
+    - towny.command.town.toggle.*
+    - towny.command.town.trust
+    - towny.command.town.claim.*
+    - towny.command.town.unclaim
+    - towny.command.town.kick
+    - towny.command.town.invite.*
+    - towny.command.town.here
+    - towny.command.town.withdraw
+    - towny.command.town.deposit
+    - towny.command.town.buy
+    - towny.command.town.say
     - towny.command.plot.*
-    - towny.claimed.owntown.*
-    - towny.command.nation.new
     - towny.command.nation.join
     - towny.command.nation.leave
     - siegewar.town.siege.*
     - siegewar.command.siegewar.town.*
+    - towny.claimed.owntown.*
     builder:
     - towny.claimed.owntown.*
   

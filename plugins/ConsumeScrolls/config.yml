@@ -112,7 +112,7 @@ scrolls:
     rewards:
       1:
         type: item
-        amount: 3
+        amount: 1
         name: "&5&lObsidian Sword"
         itemstack:
           ==: org.bukkit.inventory.ItemStack
