@@ -34,13 +34,13 @@ war:
       conquest_sieges_enabled: 'true'
   
       # If true, then nations can start liberation sieges.
-      liberation_sieges_enabled: 'false'
+      liberation_sieges_enabled: 'true'
   
       # If true, then towns can start revolt sieges.
-      revolt_sieges_enabled: 'false'
+      revolt_sieges_enabled: 'true'
   
       # If true, then nations can start suppression sieges.
-      suppression_sieges_enabled: 'false'
+      suppression_sieges_enabled: 'true'
   
       # If true, then attackers can abandon sieges.
       abandon_enabled: 'true'

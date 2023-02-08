@@ -48,4 +48,7 @@ gui_menus:
     file: sculk_sensor.yml
   sculk-shrieker:
     file: sculk_shrieker.yml
-
+  moss-block:
+    file: moss-block.yml
+  dripstone-block:
+    file: dripstone_block.yml

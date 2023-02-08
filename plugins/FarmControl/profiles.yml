@@ -40,6 +40,24 @@ profiles:
     actions:
       - remove
 
+  animal-ai-wipe:
+    group:
+      types:
+        - "category:animal"
+    count: 40
+    distance: 40
+    actions:
+      - remove-ai
+
+  normal-animal-ai-wipe:
+    group:
+      types:
+        - "category:animal"
+    count: 60
+    distance: 20
+    actions:
+      - remove-ai
+
   # Remove the AI of mobs in animal farms
   freeze-animal-farms:
     group:

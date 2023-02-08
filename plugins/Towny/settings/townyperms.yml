@@ -106,6 +106,7 @@ towns:
     - -towny.command.town.jail
     - -towny.command.town.jail.list
     - -towny.command.town.unjail
+    - towny.command.town.outlaw
     - towny.command.towny.top
     - towny.command.town.rank.*
     - towny.command.town.set.board

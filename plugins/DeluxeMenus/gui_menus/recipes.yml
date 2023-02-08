@@ -213,9 +213,29 @@ items:
       - '&eLeft-Click to view recipe'
     left_click_commands:
       - '[openguimenu] sculk-shrieker'
+  moss-block:
+    material: MOSS_BLOCK
+    slot: 20
+    hide_attributes: true
+    display_name: '&fMoss Block'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] moss-block'
+  dripstone-block:
+    material: DRIPSTONE_BLOCK
+    slot: 21
+    hide_attributes: true
+    display_name: '&fDripstone Block'
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] dripstone-block'
   black-panel-fill:
     material: BLACK_STAINED_GLASS_PANE
     slots: 
-      - 20-26
+      - 22-26
     hide_attributes: true
     display_name: "&f "

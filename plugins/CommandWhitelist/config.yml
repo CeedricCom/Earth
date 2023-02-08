@@ -42,6 +42,7 @@ groups:
     - townchat
     - alliancechat
     - nationchat
+    - discord
     - localchat
     - tr
     - tradechat

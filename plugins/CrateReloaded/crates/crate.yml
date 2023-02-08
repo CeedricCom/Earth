@@ -27,8 +27,8 @@ supplycrate:
             - 'unique:(), chance:(50), item:(lapis_lazuli {random:8,24})'
             - 'unique:(), chance:(50), item:(redstone {random:8,24})'
             - 'unique:(), chance:(50), item:(quartz {random:16,32})'
-            - 'unique:(), chance:(50), item:(prismarine_shard {random:16,32})'
-            - 'unique:(), chance:(50), item:(prismarine_crystals {random:16,32})'
+            - 'unique:(), chance:(50), item:(prismarine_shard {random:48,64})'
+            - 'unique:(), chance:(50), item:(prismarine_crystals {random:48,64})'
 
             - 'unique:(), chance:(50), item:(spider_eye {random:16,32})'
             - 'unique:(), chance:(50), item:(magma_cream {random:16,32})'
@@ -119,15 +119,15 @@ tier_3_votingcrate:
         maximum-rewards: 1
         rewards:
             - 'unique:(), chance:(120),  cmd:(/eco give {player} 400), msg:(&eYou received $400), display:(gold_ingot 1 name:&6$400)'
-            - 'unique:(), chance:(8), item:(villager_spawn_egg 1)'
-            - 'unique:(), chance:(8), item:(beacon 1)'
-            - 'unique:(), chance:(8), item:(zombie_villager_spawn_egg 1)'
-            - 'unique:(), chance:(8), item:(dragon_breath 8)'
+            - 'unique:(), chance:(3), item:(villager_spawn_egg 1)'
+            - 'unique:(), chance:(3), item:(beacon 1)'
+            - 'unique:(), chance:(3), item:(zombie_villager_spawn_egg 1)'
+            - 'unique:(), chance:(7), item:(dragon_breath 8)'
 
-            - 'unique:(), chance:(20), item:(gold_block {random:24,32})'
-            - 'unique:(), chance:(20), item:(iron_block {random:24,32})'
-            - 'unique:(), chance:(20), item:(diamond_block {random:24,32})'
-            - 'unique:(), chance:(20), item:(emerald_block {random:24,32})'
+            - 'unique:(), chance:(20), item:(gold_block {random:8,16})'
+            - 'unique:(), chance:(20), item:(iron_block {random:8,16})'
+            - 'unique:(), chance:(20), item:(diamond_block {random:8,16})'
+            - 'unique:(), chance:(20), item:(emerald_block {random:8,16})'
             
             - 'unique:(), chance:(30), item:(blaze_powder 128)'
             - 'unique:(), chance:(30), item:(gunpowder 128)'
@@ -157,15 +157,15 @@ tier_4_votingcrate:
             - 'unique:(), chance:(1), item:(elytra 1)'
             - 'unique:(), chance:(15), item:(netherite_ingot 8)'
 
-            - 'unique:(), chance:(20), item:(gold_block {random:32,64})'
-            - 'unique:(), chance:(20), item:(iron_block {random:32,64})'
-            - 'unique:(), chance:(20), item:(diamond_block {random:32,64})'
-            - 'unique:(), chance:(20), item:(emerald_block {random:32,64})'
+            - 'unique:(), chance:(20), item:(gold_block {random:16,32})'
+            - 'unique:(), chance:(20), item:(iron_block {random:16,32})'
+            - 'unique:(), chance:(20), item:(diamond_block {random:16,32})'
+            - 'unique:(), chance:(20), item:(emerald_block {random:16,32})'
 
-            - 'unique:(), chance:(40), item:(blaze_powder 320)'
-            - 'unique:(), chance:(40), item:(gunpowder 320)'
-            - 'unique:(), chance:(40), item:(glowstone_dust 320)'
-            - 'unique:(), chance:(40), item:(glistering_melon_slice 320)'
+            - 'unique:(), chance:(40), item:(blaze_powder 256)'
+            - 'unique:(), chance:(40), item:(gunpowder 256)'
+            - 'unique:(), chance:(40), item:(glowstone_dust 256)'
+            - 'unique:(), chance:(40), item:(glistering_melon_slice 256)'
 
 tier_5_votingcrate:
     type: MYSTERYCRATE
@@ -196,14 +196,14 @@ tier_5_votingcrate:
             - 'unique:(), chance:(10), item:(zombie_villager_spawn_egg 1)'
             - 'unique:(), chance:(8), item:(dragon_breath 16)'
 
-            - 'unique:(), chance:(30), item:(gold_block 64)'
-            - 'unique:(), chance:(30), item:(iron_block 64)'
-            - 'unique:(), chance:(30), item:(diamond_block 64)'
-            - 'unique:(), chance:(30), item:(emerald_block 64)'
+            - 'unique:(), chance:(30), item:(gold_block 32,64)'
+            - 'unique:(), chance:(30), item:(iron_block 32,64)'
+            - 'unique:(), chance:(30), item:(diamond_block 32,64)'
+            - 'unique:(), chance:(30), item:(emerald_block 32,64)'
             
-            - 'unique:(), chance:(40), item:(magma_cream 512)'
-            - 'unique:(), chance:(40), item:(blaze_powder 512)'
-            - 'unique:(), chance:(40), item:(gunpowder 512)'
-            - 'unique:(), chance:(40), item:(glowstone_dust 512)'
-            - 'unique:(), chance:(40), item:(glistering_melon_slice 512)'
+            - 'unique:(), chance:(40), item:(magma_cream 320)'
+            - 'unique:(), chance:(40), item:(blaze_powder 320)'
+            - 'unique:(), chance:(40), item:(gunpowder 320)'
+            - 'unique:(), chance:(40), item:(glowstone_dust 320)'
+            - 'unique:(), chance:(40), item:(glistering_melon_slice 320)'
             - 'unique:(), chance:(40), item:(nether_wart 512)'

@@ -81,6 +81,20 @@ command:
         - "&6Check out the shop at &ehttps://shop.ceedric.com"
       console: []
       broadcast: []
+  'discord':
+    permission: "util.discord"
+    usage: "&c/discord"
+    no_permission: "You don't have permission to do this."
+    usage: '&c/discord' #command usage message
+    cooldown: 0 #10 seconds cooldown | bypass permission: commandtool.cooldown.bypass
+    cooldown-message: '&cThis command is on cooldown for &2&l%ct-cooldown-secondsLeft% &cseconds!' #cooldown message with PlaceholderA>    command:
+    command:
+      - discord #command
+    output:
+      message:
+        - "&6Join the discord! &ehttps://discord.gg/&eJKqP2zBmFT"
+      console: []
+      broadcast: []
 
 #Config Version. Don't change
 config-version: '2'

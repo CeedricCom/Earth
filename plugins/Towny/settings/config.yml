@@ -1876,7 +1876,7 @@ economy:
       kick_towns_that_reach_debt_cap: 'false'
   
       # Does a conquered town which cannot pay the nation tax get deleted?
-      does_nation_tax_delete_conquered_towns_that_cannot_pay: 'false'
+      does_nation_tax_delete_conquered_towns_that_cannot_pay: 'true'
   
   
 ############################################################
