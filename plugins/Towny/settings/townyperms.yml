@@ -141,7 +141,7 @@ towns:
     - towny.command.town.say
     - towny.command.plot.*
     - towny.command.nation.join
-    - towny.command.nation.leave
+    - towny.command.town.bankhistory
     - siegewar.town.siege.*
     - siegewar.command.siegewar.town.*
     - towny.claimed.owntown.*

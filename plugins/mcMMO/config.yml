@@ -257,7 +257,7 @@ Mods:
 # ##
 Items:
     Chimaera_Wing:
-        Enabled: true
+        Enabled: false
         Cooldown: 240
         Warmup: 5
         RecentlyHurt_Cooldown: 60

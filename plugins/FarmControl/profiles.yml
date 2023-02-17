@@ -8,16 +8,27 @@ profiles:
         - "category:animal"
       count: 1
     actions:
+      - disable-collisions     
+
+  soft-nerf-animal-farms-2:
+    group:
+      types:
+        - "category:animal"
+      count: 20
+      distance: 10
+    actions:
       - remove-random-movement
-      - disable-collisions
 
   # Remove the awareness of mobs in animal farms
   hard-nerf-fish:
     group:
       types:
         - "category:fish"
-        - "squid"
+        - "category:ambient"
         - "glow_squid"
+        - "dolphin"
+        - "squid"
+        - "rabbit"
       count: 1
       distance: 40
     actions:
@@ -53,7 +64,7 @@ profiles:
     group:
       types:
         - "category:animal"
-    count: 60
+    count: 150
     distance: 20
     actions:
       - remove-ai

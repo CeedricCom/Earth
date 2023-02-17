@@ -22,6 +22,7 @@ Concoctions:
     Tier_Two_Ingredients: 
         - EMERALD_BLOCK
         - NAUTILUS_SHELL
+        - AMETHYST_SHARD
     Tier_Three_Ingredients: []
     Tier_Four_Ingredients: []
     Tier_Five_Ingredients: []
@@ -118,6 +119,13 @@ Potions:
             RABBIT_FOOT: POTION_OF_LEAPING
             EMERALD_BLOCK: POTION_OF_VILLAGE_HERO
             NAUTILUS_SHELL: POTION_OF_DOLPHINS_GRACE
+            AMETHYST_SHARD: POTION_OF_LUCK
+    POTION_OF_LUCK:
+        Material: POTION
+        Name: '&fPotion of Luck'
+        PotionData:
+            PotionType: UNCRAFTABLE
+        Effects: ["LUCK 0 6000"]
     POTION_OF_DOLPHINS_GRACE:
         Material: POTION
         Name: "&b&LThe WaterFly Potion"
@@ -411,12 +419,6 @@ Potions:
             Extended: true
         Children:
             GUNPOWDER: SPLASH_POTION_OF_WEAKNESS_EXTENDED
-    POTION_OF_LUCK:
-        Material: POTION
-        PotionData:
-            PotionType: LUCK
-        Children:
-            GUNPOWDER: SPLASH_POTION_OF_LUCK
     POTION_OF_TURTLE_MASTER:
         Material: POTION
         PotionData:
@@ -1019,12 +1021,6 @@ Potions:
             Extended: true
         Children:
             DRAGON_BREATH: LINGERING_POTION_OF_WEAKNESS_EXTENDED
-    SPLASH_POTION_OF_LUCK:
-        Material: SPLASH_POTION
-        PotionData:
-            PotionType: LUCK
-        Children:
-            DRAGON_BREATH: LINGERING_POTION_OF_LUCK
     SPLASH_POTION_OF_TURTLE_MASTER:
         Material: SPLASH_POTION
         PotionData:
@@ -1576,10 +1572,6 @@ Potions:
         PotionData:
             PotionType: WEAKNESS
             Extended: true
-    LINGERING_POTION_OF_LUCK:
-        Material: LINGERING_POTION
-        PotionData:
-            PotionType: LUCK
     LINGERING_POTION_OF_TURTLE_MASTER:
         Material: LINGERING_POTION
         PotionData:

@@ -233,9 +233,21 @@ items:
       - '&eLeft-Click to view recipe'
     left_click_commands:
       - '[openguimenu] dripstone-block'
-  black-panel-fill:
-    material: BLACK_STAINED_GLASS_PANE
-    slots: 
-      - 22-26
+  prismarine-crystal:
+    material: PRISMARINE_CRYSTALS
+    slot: 22
     hide_attributes: true
-    display_name: "&f "
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] prismarine-crystal'
+  prismarine-shard:
+    material: PRISMARINE_SHARD
+    slot: 23
+    hide_attributes: true
+    lore:
+      - ''
+      - '&eLeft-Click to view recipe'
+    left_click_commands:
+      - '[openguimenu] prismarine-SHARD'

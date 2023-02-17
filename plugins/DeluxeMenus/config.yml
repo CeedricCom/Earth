@@ -52,3 +52,7 @@ gui_menus:
     file: moss-block.yml
   dripstone-block:
     file: dripstone_block.yml
+  prismarine-crystal:
+    file: prismarine-crystal.yml
+  prismarine-shard:
+    file: prismarine-shard.yml

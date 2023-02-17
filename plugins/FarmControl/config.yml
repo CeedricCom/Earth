@@ -24,7 +24,6 @@ world-settings:
       proactive:
         - soft-nerf-animal-farms
         - hard-nerf-fish
-        - ai-wipe
         - trim-villager-chunks
       #  - freeze-animal-farms
         - trim-animal-farms
@@ -72,7 +71,7 @@ world-settings:
       tamed: true
 
       # Should we not perform actions on named mobs?
-      named: true
+      named: false
 
       # Should we not perform actions on mobs in love-mode (breeding animals)?
       love-mode: true

@@ -1,5 +1,5 @@
 host: localhost
-port: 9225
+port: 9227
 enable_metrics:
   entities_total: true
   villagers_total: true

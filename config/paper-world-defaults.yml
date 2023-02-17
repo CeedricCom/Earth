@@ -58,14 +58,21 @@ chunks:
   auto-save-interval: default
   delay-chunk-unloads-by: 10s
   entity-per-chunk-save-limit:
-    arrow: -1
-    ender_pearl: -1
-    experience_orb: -1
-    fireball: -1
-    small_fireball: -1
-    snowball: -1
+    arrow: 32
+    egg: 10
+    ender_pearl: 64
+    experience_bottle: 3
+    experience_orb: 20
+    eye_of_ender: 10
+    fireball: 6
+    firework_rocket: 8
+    shulker_bullet: 10
+    small_fireball: 10
+    snowball: 10
+    trident: 16
+    wither_skull: 4
   fixed-chunk-inhabited-time: -1
-  max-auto-save-chunks-per-tick: 6
+  max-auto-save-chunks-per-tick: 10
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
@@ -244,7 +251,7 @@ fixes:
 hopper:
   cooldown-when-full: true
   disable-move-event: false
-  ignore-occluding-blocks: false
+  ignore-occluding-blocks: true
 lootables:
   auto-replenish: false
   max-refills: -1

@@ -71,6 +71,12 @@ groups:
     - unarmed
     - plot
     - towny
+    - towny:confirm
+    - towny:cancel
+    - towny:accept
+    - towny:deny
+    - deny
+    - cancel
     - tw
     - townyworld
     - player
@@ -110,7 +116,6 @@ groups:
     - sessions
     - siegeschedule
     - bottle
-    - playtime
     subcommands: []
   mvp:
     commands:

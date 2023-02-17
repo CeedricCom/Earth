@@ -61,11 +61,11 @@ disabled-command-tips:
   #triggered on /tpa or /tpaccept
   tpa:
     enabled: true
-    message: '&eUse &6/navigate&e to teleport around. You can find towns by using &6/map&e. Use &6/help &efor more info.'
+    message: '&ePlayer to Player teleportation is disabled. You can find towns by using &6/map&e. View &6https://www.ceedric.com/guide/teleport&e for more info'
   #triggered on /warp, /pwarp, /pw
   warp:
     enabled: true
-    message: '&eUse &6/navigate&e to teleport around. You can find towns by using &6/map&e. Use &6/help &efor more info.'
+    message: '&eYou can find towns by using &6/map&e. View &6https://www.ceedric.com/guide/teleport&e for more info'
 
 contextual-tips:
   #triggered when some iron
@@ -131,7 +131,7 @@ contextual-tips:
     sound-enabled: true
   sethomes:
     enabled: false
-    message: '&eYou can set one home in your town using &6/sethome&e. You can then travel to your town or home with &6/navigate &eand &6/t spawn [town]&e.'
+    message: '&eYou can set one home in your town using &6/sethome&e. You can then travel to your town or home with &6/home &eand &6/t spawn [town]&e.'
     sound-enabled: true
 
   chats:
@@ -262,9 +262,9 @@ contextual-tips:
     message: '&eView more information using &6/help&e.'
     sound-enabled: true
 
-  starter-tip5:
+  starter-tip5: 
     enabled: true
-    message: '&eYou can view the map of the world by using &6/map&e, and travel around using &6/navigate&e.'
+    message: '&eYou can view the map of the world by using &6/map&e, and travel around using &6/t spawn&e.'
     sound-enabled: true
 
   #6 minutes after joining the game
@@ -280,13 +280,13 @@ contextual-tips:
   #3 minutes after they join the game
   starter-tip5:
     enabled: true
-    message: '&eYou can view the map of the world by using &6/map&e, and travel around using &6/navigate&e.'
+    message: '&eYou can view the map of the world by using &6/map&e, and travel around the world using &6/earth <continent>&e.'
     sound-enabled: true
 
   #6 minutes after joining the game
   starter-tip6:
     enabled: true
-    message: '&eTravel the world and teleport to various places using &6/navigate&e. You can also go to your town using &6/t spawn'
+    message: '&eYou can view the map of the world by using &6/map&e, and travel around the world using &6/earth <continent>&e.'
     sound-enabled: true
 
   #chestshop - triggered by placing a chest
@@ -343,6 +343,11 @@ static-tips:
     message: '&ePlease carefully read and obey our rules using &6/rules&e.'
     weight: 'EVERYONE'
 
+  earth-command:
+    enabled: true
+    message: '&eUse &6/earth <continent> &eto teleport to the continent of your choice'
+    weight: 'EVERYONE'
+
   discord:
     enabled: true
     message: '&eJoin the &6/discord&e to get involved in our community and advertise your towns or nations.'
@@ -396,7 +401,7 @@ static-tips:
 
   navigate:
     enabled: true
-    message: '&eTravel the world and teleport around using &6/navigate&e. You can go to another town using &6/t spawn [town]&e.'
+    message: '&eTeleport to your town by using &6/t spawn[town]&e.'
     weight: 'RESIDENT'
 
   chat:

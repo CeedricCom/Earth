@@ -22,7 +22,7 @@ settings:
   save-user-cache-on-stop-only: true
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
-  netty-threads: 4
+  netty-threads: 6
   attribute:
     maxHealth:
       max: 32000
@@ -111,7 +111,7 @@ world-settings:
       glowberry-modifier: 100
     entity-activation-range:
       animals: 16
-      monsters: 32
+      monsters: 24
       raiders: 48
       misc: 8
       water: 16
@@ -137,8 +137,8 @@ world-settings:
       ignore-spectators: false
     entity-tracking-range:
       players: 48
-      animals: 12
-      monsters: 24
+      animals: 32
+      monsters: 32
       misc: 32
       other: 64
     ticks-per:
