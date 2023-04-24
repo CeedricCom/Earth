@@ -1,8 +1,8 @@
 # Gladia 2.0
 
-![Banner](https://github.com/DeltaOrion/Gladia2.0/blob/master/branding/Banner.png?raw=true)
+![Banner](https://github.com/CeedricCom/Earth/blob/master/branding/Banner.png?raw=true)
 
-Gladia, is a 1:500 scale Minecraft Earth Server gamemode on <a href="https://ceedric.com">ceedric.com</a>, featuring Towny, SiegeWar, and an active economy. With a wide range of gameplay options and a friendly community, there's something for everyone on Gladia 2.0. We welcome players of all skill levels and encourage you to join us and start exploring the world of Gladia. Simply join at ceedric.com to get started!
+Ceedric.com Earth is a 1:500 scale Minecraft Earth Server gamemode on <a href="https://ceedric.com">ceedric.com</a>, featuring Towny, SiegeWar, and an active economy. With a wide range of gameplay options and a friendly community, there's something for everyone on our Earth server. We welcome players of all skill levels and encourage you to join us and start exploring the world. Simply join at ceedric.com to get started!
 
 Links
 - IP: `ceedric.com`
@@ -14,7 +14,7 @@ Links
 Clone the repository into the folder Gladia2.0
 ```sh
 sudo apt-get install screen -y
-git clone https://github.com/DeltaOrion/Gladia2.0
+git clone https://github.com/CeedricCom/Earth
 ```
 
 Unless you connect the server to a bungeecord network it may not work as expected. To fix this you will need to edit the spigot.yml and change `settings.bungeecord` to false. If you want to host this on an actual server you may need to create firewall rules to open certain ports.
@@ -164,7 +164,7 @@ Then launch the server
 
 The following repositories are linked to the project and contain other important plugins
 - https://github.com/DeltaOrion/GladiaWebsite - The website for <a href="https://www.ceedric.com">ceedric.com</a>
-- https://github.com/DeltaOrion/GladiaClonePlugins - Any custom plugins used for the server
+- https://github.com/CeedricCom/GladiaClonePlugins - Any custom plugins used for the server
 
 ## Contributing
 
