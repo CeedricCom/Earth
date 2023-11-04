@@ -160,11 +160,11 @@ allow-sorting-hotkeys: true
 #
 sorting-hotkeys:
   # Use middle click (mousewheel) on ANY inventory slot as hotkey. Permission: chestsort.hotkey.middleclick
-  middle-click: true 
+  middle-click: true
   # Use shift + left-click on any EMPTY inventory slot as hotkey. Permission: chestsort.hotkey.shiftclick
   shift-click: true
   # Use double left-click on any EMPTY inventory slot as hotkey. Permission: chestsort.hotkey.doubleclick
-  double-click: true 
+  double-click: true
   # Use shift + right-click on any EMPTY inventory slot as hotkey. Permission: chestsort.hotkey.shiftrightclick
   shift-right-click: true
 
@@ -249,7 +249,7 @@ hook-crackshot: true
 # for all CrackShot weapon names.
 # E.g. when you set this to "crackshot_weapon", an AK-47
 # will be called "crackshot_weapon_AK-47"
-hook-crackshot-prefix: "crackshot_weapon"
+hook-crackshot-prefix: crackshot_weapon
 
 ##### InventoryPages ##### -> https://www.spigotmc.org/resources/inventorypages.32432/
 # When InventoryPages is installed, ChestSort will not sort
@@ -362,7 +362,7 @@ mute-protection-plugins: false
 #   sort by category, but keep exactly the same order as defined in each category file, then sort any undefined items by name and color
 #      '{category},{keepCategoryOrder},{name},{color}
 #
-sorting-method: '{category},{itemsFirst},{name},{color},{customName}'
+sorting-method: "{category},{itemsFirst},{name},{color},{customName}"
 
 #########################
 ##### Localization ######
@@ -825,5 +825,5 @@ debug2: false
 log: false
 
 # Do not change the following lines!
-config-version: 202301040117
-plugin-version: 13.5.1
+config-version: 202309171542
+plugin-version: 13.6.4

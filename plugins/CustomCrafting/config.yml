@@ -1,4 +1,4 @@
-# Config for CustomCrafting v4.16.3.2
+# Config for CustomCrafting v4.16.8.3
 # -
 # PlaceholderAPI:
 # Identifier: customcrafting
@@ -15,6 +15,10 @@
 #       - %customcrafting_recipe_permission_[namespaced_key]%   > If the recipe requires a permission
 #       - %customcrafting_recipe_available_[namespaced_key]%    > If the recipe is available for the player
 
+cooking:
+  # Toggles the vanilla recipe fallback matching, that occurs when the custom recipe check fails
+  # Note: If a custom recipe is using an item used in a vanilla recipe, the vanilla recipe will be overridden.
+  match_vanilla_recipes: true
 debug: false
 language: en_US
 gui:
@@ -91,6 +95,7 @@ recipe_book:
     brewing_stand: <translate:recipe.type.brewing_stand>
 workstation:
   cauldron:
+    interaction: NORMAL
     sound: {}
     gui:
       main_menu:

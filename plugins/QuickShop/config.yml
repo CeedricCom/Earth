@@ -1,7 +1,7 @@
 # QuickShop-Reremake Plugin Configuration
 
 #Do not touch this if you don't know what you're doing!
-config-version: 162
+config-version: 163
 
 #Set the default language code the plugin should use, it will apply to:
 #Item Name
@@ -14,7 +14,11 @@ config-version: 162
 game-language: default
 
 #Choose which languages should be enabled
-#Any client connect to server that using disabled language, will fallback to game-language option there
+#All clients connect to server that using disabled language using following fallback logic:
+# 1. if just one language was enabled, then it will use this language (Static language)
+# 2. if not, it will use the value of game-language option there
+# 3. if still could not find a valid language, it will use built-in en_us language
+#
 #Set to - '*' to enable all available languages
 #The language files will automatically update thorough Crowdin OTA system, you can translate it there:
 #https://crowdin.com/project/quickshop-reremake
@@ -270,7 +274,7 @@ shop:
   #Old mode, ArmorStand (display-type=1) is Outdated and could not be used
   #0=Normal Dropped Item
   #2=Virtual Item (Requires ProtocolLib, fallback to type 0 if ProtocolLib is not installed)
-  display-type: 2
+  display-type: 0
 
   #Allow QuickShop to automatically despawn displays when no players are in range of the shop.
   display-auto-despawn: false
@@ -832,4 +836,10 @@ custom-commands:
 #Let this stay false, DO NOT TOUCH IT!
 config-damaged: false
 server-uuid: 1ac61366-4338-4584-84ad-95ca11be473f
+
+#Should QS including offline player for the command which needed the specified player?
+#This might improve player experience, but can cause lag for large amount of offline player
+#false = Only include OnlinePlayer
+#true = Include all players that have ever joined your server.
+include-offlineplayer-for-command: false
 
